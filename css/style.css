@@ -501,6 +501,9 @@ nav {
   color: #999;
   margin-top: 0.25rem;
 }
+@media (max-width: 768px) {
+  .desktop-only { display: none; }
+}
 
 /* Preview */
 .preview-wrap {
