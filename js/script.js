@@ -236,6 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
   applyTranslations(currentLang);
   initMobileNav();
   setActiveLink();
+  const yearEl = document.getElementById('copyrightYear');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
   const langBtn = document.querySelector('.lang-toggle');
   if (langBtn) langBtn.addEventListener('click', toggleLanguage);
 });
