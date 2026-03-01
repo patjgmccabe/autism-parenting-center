@@ -25,7 +25,7 @@ const translations = {
     card_books_title:   'Our Books',
     card_books_desc:    'Browse our Core Words and Wh-Question books — designed to support communication and language development.',
     card_books_link:    'View Books →',
-    card_stories_title: 'Social Story & Visual Schedule Creator',
+    card_stories_title: 'Social Story or Visual Schedule Creator',
     card_stories_desc:  'Build custom printable social stories or visual schedules with photos and captions to help children navigate everyday situations.',
     card_stories_link:  'Create a Story or Schedule →',
     card_contact_title: 'Contact Us',
@@ -57,7 +57,7 @@ const translations = {
     how_result_desc:  ' A printed sheet with up to 6 picture cards per page. Cut along the dotted lines to create individual cards you can arrange, laminate, or share!',
 
     // Social Stories page
-    stories_page_title:        'Social Story & Visual Schedule Creator',
+    stories_page_title:        'Social Story or Visual Schedule Creator',
     stories_page_sub:          'Create a custom printable social story or visual schedule, one page at a time.',
     stories_progress_singular: 'page saved',
     stories_progress_plural:   'pages saved',
