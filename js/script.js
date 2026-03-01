@@ -41,6 +41,21 @@ const translations = {
     category_wh_desc:    'These books help children understand and answer who, what, where, when, and why questions.',
     btn_amazon: 'Buy on Amazon',
 
+    // Social Stories — How It Works
+    how_title:        'How It Works',
+    how_intro:        'This tool lets you build a custom social story — a short picture book that helps children understand and prepare for everyday situations. Follow the steps below to create and print yours!',
+    how_step:         'Step',
+    how1_title:       'Pick a Photo',
+    how1_desc:        'Upload a photo from your device, take one with your camera, or search the image library for the perfect picture.',
+    how2_title:       'Write a Caption',
+    how2_desc:        'Type a short sentence that describes what is happening in the picture. Keep it simple and clear!',
+    how3_title:       'Add More Pages',
+    how3_desc:        'Click + Add Another Page to keep building your story, one picture at a time.',
+    how4_title:       'Finish & Print',
+    how4_desc:        'When your story is complete, click Finish & Print. Each page of your story will be printed with the picture and caption inside a dotted cut-out box.',
+    how_result_title: 'What you\'ll get:',
+    how_result_desc:  ' A printed sheet with up to 6 picture cards per page. Cut along the dotted lines to create individual story cards you can arrange, laminate, or share!',
+
     // Social Stories page
     stories_page_title:        'Social Story Creator',
     stories_page_sub:          'Create a custom printable social story, one page at a time.',
@@ -109,6 +124,21 @@ const translations = {
     category_wh_title:   'Libros de Preguntas Qué/Quién/Dónde',
     category_wh_desc:    'Estos libros ayudan a los niños a comprender y responder preguntas de quién, qué, dónde, cuándo y por qué.',
     btn_amazon: 'Comprar en Amazon',
+
+    // Social Stories — How It Works (ES)
+    how_title:        'Cómo Funciona',
+    how_intro:        'Esta herramienta te permite crear una historia social personalizada — un pequeño libro de imágenes que ayuda a los niños a entender y prepararse para situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir la tuya!',
+    how_step:         'Paso',
+    how1_title:       'Elige una Foto',
+    how1_desc:        'Sube una foto de tu dispositivo, toma una con tu cámara, o busca en la biblioteca de imágenes la foto perfecta.',
+    how2_title:       'Escribe una Leyenda',
+    how2_desc:        'Escribe una oración corta que describa lo que está pasando en la imagen. ¡Mantenla simple y clara!',
+    how3_title:       'Agrega Más Páginas',
+    how3_desc:        'Haz clic en + Agregar Otra Página para continuar construyendo tu historia, una imagen a la vez.',
+    how4_title:       'Terminar e Imprimir',
+    how4_desc:        'Cuando tu historia esté completa, haz clic en Terminar e Imprimir. Cada página de tu historia se imprimirá con la imagen y leyenda dentro de un recuadro de líneas punteadas para recortar.',
+    how_result_title: 'Lo que obtendrás:',
+    how_result_desc:  ' Una hoja impresa con hasta 6 tarjetas de imágenes por página. ¡Recorta a lo largo de las líneas punteadas para crear tarjetas individuales que puedes ordenar, laminar o compartir!',
 
     stories_page_title:        'Creador de Historias Sociales',
     stories_page_sub:          'Crea una historia social personalizada e imprimible, una página a la vez.',
