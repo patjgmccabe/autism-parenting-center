@@ -33,16 +33,44 @@
     return (window.translations && window.translations[lang] && window.translations[lang][key]) || key;
   }
 
+  // ---- Image compression ----
+  // Resizes and compresses any image to a manageable size before storing.
+  // Phone cameras can produce 10-15 MB images; this keeps each panel ~100-200 KB.
+  // MAX_SIDE: panels print at ~3.5" so 900px gives plenty of quality at 150-250 DPI.
+
+  const MAX_SIDE = 900;
+  const JPEG_Q  = 0.78;
+
+  function compressDataURL(dataURL, callback) {
+    const img = new Image();
+    img.onload = function () {
+      let w = img.naturalWidth;
+      let h = img.naturalHeight;
+      if (w > MAX_SIDE || h > MAX_SIDE) {
+        if (w >= h) { h = Math.round(h * MAX_SIDE / w); w = MAX_SIDE; }
+        else        { w = Math.round(w * MAX_SIDE / h); h = MAX_SIDE; }
+      }
+      const canvas = document.createElement('canvas');
+      canvas.width  = w;
+      canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      callback(canvas.toDataURL('image/jpeg', JPEG_Q));
+    };
+    img.src = dataURL;
+  }
+
   // ---- Image loading ----
 
   function loadFile(file) {
     if (!file || !file.type.startsWith('image/')) return;
     const reader = new FileReader();
     reader.onload = (e) => {
-      currentImageDataURL = e.target.result;
-      previewImg.src = currentImageDataURL;
-      previewWrap.style.display = 'block';
-      uploadZone.style.display  = 'none';
+      compressDataURL(e.target.result, (compressed) => {
+        currentImageDataURL = compressed;
+        previewImg.src = currentImageDataURL;
+        previewWrap.style.display = 'block';
+        uploadZone.style.display  = 'none';
+      });
     };
     reader.readAsDataURL(file);
   }
@@ -275,19 +303,25 @@
   }
 
   function selectLibraryImage(url) {
-    // Try to convert to data URL via canvas so it embeds cleanly in print
     const img = new Image();
     img.crossOrigin = 'anonymous';
 
     img.onload = function () {
       try {
+        // Compress to same budget as uploaded photos
+        let w = img.naturalWidth;
+        let h = img.naturalHeight;
+        if (w > MAX_SIDE || h > MAX_SIDE) {
+          if (w >= h) { h = Math.round(h * MAX_SIDE / w); w = MAX_SIDE; }
+          else        { w = Math.round(w * MAX_SIDE / h); h = MAX_SIDE; }
+        }
         const canvas = document.createElement('canvas');
-        canvas.width  = img.naturalWidth;
-        canvas.height = img.naturalHeight;
-        canvas.getContext('2d').drawImage(img, 0, 0);
-        currentImageDataURL = canvas.toDataURL('image/jpeg', 0.88);
+        canvas.width  = w;
+        canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        currentImageDataURL = canvas.toDataURL('image/jpeg', JPEG_Q);
       } catch (e) {
-        // CORS blocked canvas — fall back to URL directly (still prints in most browsers)
+        // CORS blocked canvas — fall back to URL directly
         currentImageDataURL = url;
       }
       showSelectedImage();
