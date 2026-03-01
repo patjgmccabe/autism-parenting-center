@@ -8,7 +8,7 @@ const translations = {
     // Nav
     nav_home:    'Home',
     nav_books:   'Our Books',
-    nav_stories: 'Social Story Creator',
+    nav_stories: 'Story & Schedule Creator',
     nav_contact: 'Contact Us',
     nav_lang:    'Español',
 
@@ -25,9 +25,9 @@ const translations = {
     card_books_title:   'Our Books',
     card_books_desc:    'Browse our Core Words and Wh-Question books — designed to support communication and language development.',
     card_books_link:    'View Books →',
-    card_stories_title: 'Social Story Creator',
-    card_stories_desc:  'Build custom printable social stories with photos and captions to help children navigate everyday situations.',
-    card_stories_link:  'Create a Story →',
+    card_stories_title: 'Social Story & Visual Schedule Creator',
+    card_stories_desc:  'Build custom printable social stories or visual schedules with photos and captions to help children navigate everyday situations.',
+    card_stories_link:  'Create a Story or Schedule →',
     card_contact_title: 'Contact Us',
     card_contact_desc:  'Have a question or want to connect? We\'d love to hear from you.',
     card_contact_link:  'Get in Touch →',
@@ -43,7 +43,7 @@ const translations = {
 
     // Social Stories — How It Works
     how_title:        'How It Works',
-    how_intro:        'This tool lets you build a custom social story — a short picture book that helps children understand and prepare for everyday situations. Follow the steps below to create and print yours!',
+    how_intro:        'This tool lets you build a custom social story or visual schedule — a picture-based book or daily schedule that helps children understand, prepare for, and navigate everyday situations. Follow the steps below to create and print yours!',
     how_step:         'Step',
     how1_title:       'Pick a Photo',
     how1_desc:        'Upload a photo from your device, take one with your camera, or search the image library for the perfect picture.',
@@ -54,11 +54,11 @@ const translations = {
     how4_title:       'Finish & Print',
     how4_desc:        'When your story is complete, click Finish & Print. Each page of your story will be printed with the picture and caption inside a dotted cut-out box.',
     how_result_title: 'What you\'ll get:',
-    how_result_desc:  ' A printed sheet with up to 6 picture cards per page. Cut along the dotted lines to create individual story cards you can arrange, laminate, or share!',
+    how_result_desc:  ' A printed sheet with up to 6 picture cards per page. Cut along the dotted lines to create individual cards you can arrange, laminate, or share!',
 
     // Social Stories page
-    stories_page_title:        'Social Story Creator',
-    stories_page_sub:          'Create a custom printable social story, one page at a time.',
+    stories_page_title:        'Social Story & Visual Schedule Creator',
+    stories_page_sub:          'Create a custom printable social story or visual schedule, one page at a time.',
     stories_progress_singular: 'page saved',
     stories_progress_plural:   'pages saved',
     stories_step:              'Page',
@@ -71,7 +71,7 @@ const translations = {
     stories_caption_ph:        'Type your caption here…',
     stories_continue:          '+ Add Another Page',
     stories_finish:            'Finish & Print',
-    stories_thumbs_label:      'Pages in your story:',
+    stories_thumbs_label:      'Pages in your story or schedule:',
     stories_error_image:       'Please select or take a photo before continuing.',
     stories_library_btn:       'Search Library',
     stories_library_search:    'Search',
@@ -97,7 +97,7 @@ const translations = {
   es: {
     nav_home:    'Inicio',
     nav_books:   'Nuestros Libros',
-    nav_stories: 'Creador de Historias Sociales',
+    nav_stories: 'Historias y Horarios Visuales',
     nav_contact: 'Contáctenos',
     nav_lang:    'English',
 
@@ -111,9 +111,9 @@ const translations = {
     card_books_title:   'Nuestros Libros',
     card_books_desc:    'Explora nuestros libros de Palabras Clave y Preguntas Qué — diseñados para apoyar la comunicación y el aprendizaje.',
     card_books_link:    'Ver Libros →',
-    card_stories_title: 'Creador de Historias Sociales',
-    card_stories_desc:  'Crea historias sociales personalizadas e imprimibles con fotos y leyendas para ayudar a los niños.',
-    card_stories_link:  'Crear una Historia →',
+    card_stories_title: 'Creador de Historias Sociales y Horarios Visuales',
+    card_stories_desc:  'Crea historias sociales o horarios visuales personalizados con fotos y leyendas para ayudar a los niños a entender situaciones cotidianas.',
+    card_stories_link:  'Crear una Historia o Horario →',
     card_contact_title: 'Contáctenos',
     card_contact_desc:  '¿Tienes alguna pregunta? Nos encantaría saber de ti.',
     card_contact_link:  'Ponerse en Contacto →',
@@ -128,7 +128,7 @@ const translations = {
 
     // Social Stories — How It Works (ES)
     how_title:        'Cómo Funciona',
-    how_intro:        'Esta herramienta te permite crear una historia social personalizada — un pequeño libro de imágenes que ayuda a los niños a entender y prepararse para situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir la tuya!',
+    how_intro:        'Esta herramienta te permite crear una historia social personalizada o un horario visual — un libro o cronograma de imágenes que ayuda a los niños a entender, prepararse y desenvolverse en situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir el tuyo!',
     how_step:         'Paso',
     how1_title:       'Elige una Foto',
     how1_desc:        'Sube una foto de tu dispositivo, toma una con tu cámara, o busca en la biblioteca de imágenes la foto perfecta.',
@@ -141,8 +141,8 @@ const translations = {
     how_result_title: 'Lo que obtendrás:',
     how_result_desc:  ' Una hoja impresa con hasta 6 tarjetas de imágenes por página. ¡Recorta a lo largo de las líneas punteadas para crear tarjetas individuales que puedes ordenar, laminar o compartir!',
 
-    stories_page_title:        'Creador de Historias Sociales',
-    stories_page_sub:          'Crea una historia social personalizada e imprimible, una página a la vez.',
+    stories_page_title:        'Creador de Historias Sociales y Horarios Visuales',
+    stories_page_sub:          'Crea una historia social o un horario visual personalizado, una página a la vez.',
     stories_progress_singular: 'página guardada',
     stories_progress_plural:   'páginas guardadas',
     stories_step:              'Página',
@@ -155,7 +155,7 @@ const translations = {
     stories_caption_ph:        'Escribe tu leyenda aquí…',
     stories_continue:          '+ Agregar Otra Página',
     stories_finish:            'Terminar e Imprimir',
-    stories_thumbs_label:      'Páginas en tu historia:',
+    stories_thumbs_label:      'Páginas en tu historia o horario:',
     stories_error_image:       'Por favor selecciona o toma una foto antes de continuar.',
     stories_library_btn:       'Buscar Imágenes',
     stories_library_search:    'Buscar',
