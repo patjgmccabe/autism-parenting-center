@@ -501,9 +501,6 @@ nav {
   color: #999;
   margin-top: 0.25rem;
 }
-@media (max-width: 768px) {
-  .desktop-only { display: none; }
-}
 
 /* Preview */
 .preview-wrap {
@@ -731,6 +728,8 @@ footer a:hover { text-decoration: underline; }
   .story-actions { flex-direction: column; }
 
   .contact-card { padding: 1.5rem; }
+
+  .desktop-only { display: none !important; }
 }
 
 /* --- Pixabay Library --- */

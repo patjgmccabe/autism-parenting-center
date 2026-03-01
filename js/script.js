@@ -64,7 +64,7 @@ const translations = {
     stories_step:              'Page',
     stories_upload_btn:        'Upload Photo',
     stories_camera_btn:        'Take Photo',
-    stories_upload_hint_drag:  'Drag & drop, or ',
+    stories_upload_hint_drag:  'Drag & drop, ',
     stories_upload_hint_rest:  'upload from your device, take a photo, or search our library',
     stories_change:            'Change photo',
     stories_caption_label:     'Caption (text that will appear below the picture)',
