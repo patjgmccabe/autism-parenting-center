@@ -8,4 +8,4 @@
    4. Replace YOUR_PIXABAY_KEY_HERE below with your actual key
    ============================================================ */
 
-const PIXABAY_KEY = 'YOUR_PIXABAY_KEY_HERE';
+const PIXABAY_KEY = '54851723-3283b21dab74c1d79e477ad9d';
