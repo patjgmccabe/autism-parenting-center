@@ -197,4 +197,115 @@
     window.print();
   });
 
+  // ---- Pixabay Library ----
+
+  const libraryBtn         = document.getElementById('libraryBtn');
+  const libraryPanel       = document.getElementById('libraryPanel');
+  const librarySearchInput = document.getElementById('librarySearchInput');
+  const librarySearchBtn   = document.getElementById('librarySearchBtn');
+  const libraryResults     = document.getElementById('libraryResults');
+  const filterBtns         = document.querySelectorAll('.filter-btn');
+
+  let activeFilter = 'all';
+
+  // Toggle library panel open/closed
+  libraryBtn.addEventListener('click', () => {
+    const isOpen = libraryPanel.style.display === 'block';
+    libraryPanel.style.display = isOpen ? 'none' : 'block';
+    if (!isOpen) librarySearchInput.focus();
+  });
+
+  // Filter buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.type;
+    });
+  });
+
+  librarySearchBtn.addEventListener('click', searchPixabay);
+  librarySearchInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') searchPixabay();
+  });
+
+  async function searchPixabay() {
+    const query = librarySearchInput.value.trim();
+    if (!query) return;
+
+    const key = (typeof PIXABAY_KEY !== 'undefined') ? PIXABAY_KEY : '';
+    if (!key || key === 'YOUR_PIXABAY_KEY_HERE') {
+      libraryResults.innerHTML = `<p class="library-hint">${t('stories_library_nokey')}</p>`;
+      return;
+    }
+
+    libraryResults.innerHTML = `<p class="library-loading">Searching…</p>`;
+
+    const type = activeFilter === 'all' ? 'all' : activeFilter;
+    const url  = `https://pixabay.com/api/?key=${key}&q=${encodeURIComponent(query)}&image_type=${type}&per_page=24&safesearch=true&min_width=300`;
+
+    try {
+      const res  = await fetch(url);
+      const data = await res.json();
+
+      if (!data.hits || data.hits.length === 0) {
+        libraryResults.innerHTML = `<p class="library-hint">${t('stories_library_none')}</p>`;
+        return;
+      }
+
+      const grid = document.createElement('div');
+      grid.className = 'library-grid';
+
+      data.hits.forEach(hit => {
+        const img   = document.createElement('img');
+        img.src     = hit.previewURL;
+        img.className = 'library-img';
+        img.alt     = hit.tags;
+        img.title   = hit.tags;
+        img.addEventListener('click', () => selectLibraryImage(hit.webformatURL));
+        grid.appendChild(img);
+      });
+
+      libraryResults.innerHTML = '';
+      libraryResults.appendChild(grid);
+
+    } catch (err) {
+      libraryResults.innerHTML = `<p class="library-hint">${t('stories_library_error')}</p>`;
+    }
+  }
+
+  function selectLibraryImage(url) {
+    // Try to convert to data URL via canvas so it embeds cleanly in print
+    const img = new Image();
+    img.crossOrigin = 'anonymous';
+
+    img.onload = function () {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width  = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        canvas.getContext('2d').drawImage(img, 0, 0);
+        currentImageDataURL = canvas.toDataURL('image/jpeg', 0.88);
+      } catch (e) {
+        // CORS blocked canvas — fall back to URL directly (still prints in most browsers)
+        currentImageDataURL = url;
+      }
+      showSelectedImage();
+    };
+
+    img.onerror = function () {
+      currentImageDataURL = url;
+      showSelectedImage();
+    };
+
+    img.src = url;
+  }
+
+  function showSelectedImage() {
+    previewImg.src = currentImageDataURL;
+    previewWrap.style.display = 'block';
+    uploadZone.style.display  = 'none';
+    libraryPanel.style.display = 'none';
+  }
+
 })();

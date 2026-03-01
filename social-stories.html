@@ -51,8 +51,28 @@
           <button class="btn-camera" id="cameraBtn" type="button">
             📷 <span data-i18n="stories_camera_btn">Take Photo</span>
           </button>
+          <button class="btn-library" id="libraryBtn" type="button">
+            🔍 <span data-i18n="stories_library_btn">Search Library</span>
+          </button>
         </div>
-        <p class="upload-hint" data-i18n="stories_upload_hint">Drag &amp; drop, upload from your device, or take a photo</p>
+        <p class="upload-hint" data-i18n="stories_upload_hint">Drag &amp; drop, upload from your device, or search the image library</p>
+      </div>
+
+      <!-- Pixabay Library Search Panel -->
+      <div class="library-panel" id="libraryPanel">
+        <div class="library-search-bar">
+          <input type="text" class="library-search-input" id="librarySearchInput"
+            data-i18n-ph="stories_library_ph" placeholder="e.g. classroom, brushing teeth, happy…" />
+          <button class="btn-lib-search" id="librarySearchBtn" type="button" data-i18n="stories_library_search">Search</button>
+        </div>
+        <div class="library-filters">
+          <button class="filter-btn active" data-type="all">All</button>
+          <button class="filter-btn" data-type="photo">Photos</button>
+          <button class="filter-btn" data-type="illustration">Illustrations</button>
+        </div>
+        <div class="library-results" id="libraryResults">
+          <p class="library-hint" data-i18n="stories_library_hint">Search for any image above to get started.</p>
+        </div>
       </div>
 
       <!-- Hidden file inputs -->
@@ -97,6 +117,7 @@
     <p>&copy; 2025 Autism Parenting Center. All rights reserved.</p>
   </footer>
 
+  <script src="js/config.js"></script>
   <script src="js/script.js"></script>
   <script src="js/social-stories.js"></script>
 </body>

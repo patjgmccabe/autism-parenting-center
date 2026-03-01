@@ -632,6 +632,124 @@ footer a:hover { text-decoration: underline; }
   .contact-card { padding: 1.5rem; }
 }
 
+/* --- Pixabay Library --- */
+.btn-library {
+  background: #f4a94e;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.btn-library:hover { background: #e09840; }
+
+.library-panel {
+  display: none;
+  border: 2px solid #f4e4c8;
+  border-radius: 12px;
+  padding: 1.25rem;
+  background: #fffaf4;
+  margin-bottom: 1.25rem;
+}
+
+.library-search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.library-search-input {
+  flex: 1;
+  padding: 0.65rem 1rem;
+  border: 2px solid #dde8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.library-search-input:focus {
+  outline: none;
+  border-color: #f4a94e;
+}
+
+.btn-lib-search {
+  background: #f4a94e;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s;
+}
+
+.btn-lib-search:hover { background: #e09840; }
+
+.library-filters {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 0.35rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filter-btn.active {
+  background: #f4a94e;
+  color: #fff;
+}
+
+.library-results {
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  gap: 0.5rem;
+}
+
+.library-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.15s, transform 0.15s;
+  display: block;
+}
+
+.library-img:hover {
+  border-color: #f4a94e;
+  transform: scale(1.04);
+}
+
+.library-hint, .library-loading {
+  color: #aaa;
+  font-size: 0.88rem;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 /* ============================================================
    PRINT STYLES — Social Story Creator
    ============================================================ */

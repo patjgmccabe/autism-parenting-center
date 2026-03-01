@@ -57,6 +57,13 @@ const translations = {
     stories_finish:            'Finish & Print',
     stories_thumbs_label:      'Pages in your story:',
     stories_error_image:       'Please select or take a photo before continuing.',
+    stories_library_btn:       'Search Library',
+    stories_library_search:    'Search',
+    stories_library_ph:        'e.g. classroom, brushing teeth, happy…',
+    stories_library_hint:      'Search for any image above to get started.',
+    stories_library_none:      'No results found. Try a different search term.',
+    stories_library_error:     'Search failed. Please check your internet connection.',
+    stories_library_nokey:     'API key not set. Please add your Pixabay key to js/config.js.',
 
     // Contact page
     contact_page_title: 'Contact Us',
@@ -118,6 +125,13 @@ const translations = {
     stories_finish:            'Terminar e Imprimir',
     stories_thumbs_label:      'Páginas en tu historia:',
     stories_error_image:       'Por favor selecciona o toma una foto antes de continuar.',
+    stories_library_btn:       'Buscar Imágenes',
+    stories_library_search:    'Buscar',
+    stories_library_ph:        'ej. salón de clases, cepillarse los dientes, feliz…',
+    stories_library_hint:      'Busca cualquier imagen arriba para comenzar.',
+    stories_library_none:      'Sin resultados. Intenta con otro término.',
+    stories_library_error:     'Búsqueda fallida. Verifica tu conexión a internet.',
+    stories_library_nokey:     'Clave de API no configurada. Agrega tu clave de Pixabay a js/config.js.',
 
     contact_page_title: 'Contáctenos',
     contact_page_sub:   '¡Nos encantaría saber de ti!',
