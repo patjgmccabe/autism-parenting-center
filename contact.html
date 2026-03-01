@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Autism Parenting Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Autism Parenting Center</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html"          data-i18n="nav_home">Home</a></li>
+        <li><a href="books.html"          data-i18n="nav_books">Our Books</a></li>
+        <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
+        <li><a href="contact.html"        data-i18n="nav_contact">Contact Us</a></li>
+      </ul>
+      <button class="lang-toggle" data-i18n="nav_lang">Español</button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1 data-i18n="contact_page_title">Contact Us</h1>
+    <p data-i18n="contact_page_sub">We'd love to hear from you!</p>
+  </div>
+
+  <div class="contact-section">
+    <div class="contact-card">
+
+      <form id="contactForm" novalidate>
+
+        <div class="form-group">
+          <label for="contactName" data-i18n="contact_name">Your Name</label>
+          <input
+            type="text"
+            id="contactName"
+            class="form-control"
+            required
+            data-i18n-ph="contact_name_ph"
+            placeholder="Jane Smith"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail" data-i18n="contact_email">Email Address</label>
+          <input
+            type="email"
+            id="contactEmail"
+            class="form-control"
+            required
+            data-i18n-ph="contact_email_ph"
+            placeholder="jane@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage" data-i18n="contact_message">Message</label>
+          <textarea
+            id="contactMessage"
+            class="form-control"
+            required
+            data-i18n-ph="contact_msg_ph"
+            placeholder="How can we help you?"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit" data-i18n="contact_submit">Send Message</button>
+
+      </form>
+
+      <div class="form-success" id="formSuccess">
+        <p data-i18n="contact_success">Thank you! Your message has been received.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Autism Parenting Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

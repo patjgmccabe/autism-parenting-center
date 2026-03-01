@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Story Creator — Autism Parenting Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Autism Parenting Center</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html"          data-i18n="nav_home">Home</a></li>
+        <li><a href="books.html"          data-i18n="nav_books">Our Books</a></li>
+        <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
+        <li><a href="contact.html"        data-i18n="nav_contact">Contact Us</a></li>
+      </ul>
+      <button class="lang-toggle" data-i18n="nav_lang">Español</button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1 data-i18n="stories_page_title">Social Story Creator</h1>
+    <p data-i18n="stories_page_sub">Create a custom printable social story, one page at a time.</p>
+  </div>
+
+  <div class="story-container">
+
+    <!-- Pages-saved indicator -->
+    <div class="story-progress" id="progressBar"></div>
+
+    <!-- Story builder card -->
+    <div class="story-card">
+
+      <div class="story-card-header">
+        <div class="step-badge" id="stepBadge">1</div>
+        <h2>
+          <span data-i18n="stories_step">Page</span>&nbsp;<span id="stepNumber">1</span>
+        </h2>
+      </div>
+
+      <!-- Upload zone -->
+      <div class="upload-zone" id="uploadZone">
+        <div class="upload-buttons">
+          <button class="btn-upload" id="uploadBtn" type="button">
+            📁 <span data-i18n="stories_upload_btn">Upload Photo</span>
+          </button>
+          <button class="btn-camera" id="cameraBtn" type="button">
+            📷 <span data-i18n="stories_camera_btn">Take Photo</span>
+          </button>
+        </div>
+        <p class="upload-hint" data-i18n="stories_upload_hint">Drag &amp; drop, upload from your device, or take a photo</p>
+      </div>
+
+      <!-- Hidden file inputs -->
+      <input type="file" id="uploadInput" accept="image/*" />
+      <input type="file" id="cameraInput" accept="image/*" capture="environment" />
+
+      <!-- Image preview -->
+      <div class="preview-wrap" id="previewWrap">
+        <img id="previewImg" src="" alt="Selected photo preview" />
+        <button class="change-photo-btn" id="changePhotoBtn" type="button" data-i18n="stories_change">Change photo</button>
+      </div>
+
+      <!-- Caption -->
+      <label class="caption-label" for="captionInput" data-i18n="stories_caption_label">Caption (text that will appear below the picture)</label>
+      <textarea
+        class="caption-input"
+        id="captionInput"
+        data-i18n-ph="stories_caption_ph"
+        placeholder="Type your caption here…"
+      ></textarea>
+
+      <!-- Actions -->
+      <div class="story-actions">
+        <button class="btn-continue" id="continueBtn" type="button" data-i18n="stories_continue">+ Add Another Page</button>
+        <button class="btn-finish"   id="finishBtn"   type="button" data-i18n="stories_finish">Finish &amp; Print</button>
+      </div>
+
+    </div>
+
+    <!-- Thumbnail strip (appears after first page is saved) -->
+    <div class="pages-strip" id="pagesStrip">
+      <h4 data-i18n="stories_thumbs_label">Pages in your story:</h4>
+      <div class="pages-thumbs" id="pagesThumbs"></div>
+    </div>
+
+  </div>
+
+  <!-- Print output — hidden on screen, shown only when printing -->
+  <div id="printArea"></div>
+
+  <footer>
+    <p>&copy; 2025 Autism Parenting Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/social-stories.js"></script>
+</body>
+</html>
