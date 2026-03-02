@@ -395,6 +395,84 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Connecticut": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Connecticut Council on Developmental Disabilities (CTCDD)",
+      category: "government",
+      description: "Connecticut's federally mandated DD Council; funds advocacy, community inclusion, and systems-change initiatives that benefit individuals with developmental disabilities and their families statewide.",
+      website: "https://ct.gov/ctcdd"
+    },
+    {
+      name: "Connecticut Department of Developmental Services (DDS)",
+      category: "government",
+      description: "The primary state agency providing lifelong services to individuals with intellectual and developmental disabilities and their families, including service coordination, home and community-based waiver supports, family support grants, and respite funding.",
+      website: "https://portal.ct.gov/dds",
+      phone: "860-418-6000"
+    },
+    {
+      name: "Connecticut Birth to Three System",
+      category: "government",
+      description: "Connecticut's Part C IDEA early intervention program serving infants and toddlers (birth–age 3) with developmental delays or disabilities; provides service coordination, family support, and in-home therapy to build family capacity.",
+      website: "https://portal.ct.gov/birthtothree",
+      phone: "800-505-7000"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Connecticut Parent Advocacy Center (CPAC)",
+      category: "parent-family",
+      description: "Connecticut's federally designated Parent Training and Information (PTI) Center; offers free workshops, one-on-one support, and IEP navigation assistance to families of children with disabilities from birth through age 26, in English and Spanish.",
+      website: "https://cpacinc.org",
+      phone: "800-445-2722"
+    },
+    {
+      name: "Family Support Network – Connecticut DDS",
+      category: "parent-family",
+      description: "A DDS-funded statewide network providing peer support, resource navigation, and connection to local family support services for parents and caregivers of individuals with developmental disabilities.",
+      website: "https://portal.ct.gov/dds"
+    },
+    {
+      name: "Autism Speaks Connecticut Chapter",
+      category: "parent-family",
+      description: "Regional affiliate providing local families with resource guides, peer connections, walk events, and access to Autism Speaks' national tool kits, resource library, and 100 Day Kit for newly diagnosed families.",
+      website: "https://autismspeaks.org"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Connecticut",
+      category: "advocacy",
+      description: "Connecticut's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, information, and representation to protect the rights of Connecticut residents with disabilities in areas including special education, Medicaid, and abuse and neglect.",
+      website: "https://disabilityrightsct.org",
+      phone: "860-297-4300"
+    },
+    {
+      name: "The Arc of Connecticut",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, referrals, and connection to local Arc affiliates.",
+      website: "https://thearcct.org",
+      phone: "860-246-6000"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Connecticut Lifespan Respite Care Program – DDS",
+      category: "respite",
+      description: "Administered through Connecticut DDS, this program provides respite vouchers and caregiver relief funding for families caring for individuals with developmental disabilities, as well as training and a statewide provider directory.",
+      website: "https://portal.ct.gov/dds"
+    },
+    {
+      name: "The Kennedy Center – Respite Services",
+      category: "respite",
+      description: "A statewide nonprofit providing in-home and community-based respite care for families of individuals with intellectual and developmental disabilities, offering trained relief caregivers and flexible scheduling to reduce caregiver stress.",
+      website: "https://thekennedycenterinc.org",
+      phone: "203-366-7561"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
