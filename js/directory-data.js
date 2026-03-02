@@ -395,4 +395,91 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Colorado": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Colorado Department of Health Care Policy and Financing – IDD Medicaid Waivers",
+      category: "government",
+      description: "Administers multiple Medicaid waiver programs for individuals with intellectual and developmental disabilities, including the Children's Extensive Support (CES) Waiver, Supported Living Services (SLS) Waiver, and IDD Waiver, funding home and community-based services, respite, and family supports.",
+      website: "https://hcpf.colorado.gov"
+    },
+    {
+      name: "Colorado Department of Human Services – Office of Community Living",
+      category: "government",
+      description: "Oversees the statewide system of services for individuals with developmental disabilities, contracting with 20 Community Centered Boards (CCBs) to determine eligibility, provide case management, and coordinate family support services including respite and the Family Support Services Program (FSSP).",
+      website: "https://cdhs.colorado.gov"
+    },
+    {
+      name: "Early Intervention Colorado",
+      category: "government",
+      description: "Colorado's Part C IDEA program providing family-centered services and supports for infants and toddlers (birth–age 3) with developmental delays or disabilities; emphasizes building family capacity through service coordination and in-home supports.",
+      website: "https://eicolorado.org"
+    },
+    {
+      name: "JFK Partners – University of Colorado Anschutz (UCEDD)",
+      category: "government",
+      description: "Colorado's federally designated University Center for Excellence in Developmental Disabilities; provides interdisciplinary training, research, and community services benefiting individuals with developmental disabilities and their families, and houses Colorado's LEND program.",
+      website: "https://medschool.cuanschutz.edu/jfk-partners"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Ability Connection Colorado – Parent to Parent of Colorado",
+      category: "parent-family",
+      description: "A statewide peer support program matching families of children and adults with disabilities or special health care needs with trained volunteer parent mentors who share similar experiences; provides emotional and informational support at no cost.",
+      website: "https://abilityconnectioncolorado.org",
+      phone: "877-472-7201"
+    },
+    {
+      name: "Autism Society of Colorado",
+      category: "parent-family",
+      description: "Statewide affiliate of the Autism Society of America; connects autistic individuals and their families to peer support, community programs, resource navigation, and advocacy, with expanded service offerings across Colorado.",
+      website: "https://autismcolorado.org"
+    },
+    {
+      name: "Family Voices Colorado",
+      category: "parent-family",
+      description: "Colorado's affiliate of the national Family Voices network; provides information, resources, and peer support for families of children and youth with special health care needs, and helps families connect with state agencies and insurance systems.",
+      website: "https://familyvoicesco.org"
+    },
+    {
+      name: "PEAK Parent Center",
+      category: "parent-family",
+      description: "Colorado's federally designated Parent Training and Information (PTI) Center; provides free training, information, and technical assistance to families of children with all disabilities from birth through age 26, equipping parents to advocate effectively in educational and community settings.",
+      website: "https://peakparent.org",
+      phone: "719-531-9400"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Colorado Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Colorado's federally mandated DD Council; advocates for policy changes and funds initiatives to advance the independence, productivity, and full community integration of individuals with developmental disabilities and their families.",
+      website: "https://cddc.colorado.gov"
+    },
+    {
+      name: "Disability Law Colorado",
+      category: "advocacy",
+      description: "Colorado's federally designated Protection and Advocacy (P&A) organization; provides free legal representation, advocacy, and education to protect the civil, human, and legal rights of Coloradans with disabilities, including those with autism and developmental disabilities.",
+      website: "https://disabilitylawco.org",
+      phone: "800-288-1376"
+    },
+    {
+      name: "The Arc of Colorado",
+      category: "advocacy",
+      description: "Statewide advocacy organization supporting individuals with intellectual and developmental disabilities and their families through legislative advocacy, IEP assistance, community inclusion efforts, and connection to local Arc chapters across the state.",
+      website: "https://thearcofco.org"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Colorado Respite Coalition – Easterseals Colorado",
+      category: "respite",
+      description: "A statewide program of Easterseals Colorado strengthening Colorado's lifespan respite care network; offers a bilingual (English/Spanish) Navigating Respite Care guide, caregiver resource navigation, and coalition-building among respite providers statewide.",
+      website: "https://coloradorespitecoalition.org"
+    },
+
+  ],
+
 };
