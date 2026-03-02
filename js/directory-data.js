@@ -473,6 +473,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Delaware": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Delaware Division of Developmental Disabilities Services (DDDS)",
+      category: "government",
+      description: "The primary state agency providing residential, day, employment, and family support services for Delawareans with intellectual and developmental disabilities; administers Medicaid waiver supports and service coordination for eligible individuals and their families.",
+      website: "https://dhss.delaware.gov/dds",
+      phone: "302-255-9390"
+    },
+    {
+      name: "Delaware Developmental Disabilities Council (DDDC)",
+      category: "government",
+      description: "Delaware's federally mandated DD Council; funds advocacy, self-determination, and systems-change projects to improve the lives of individuals with developmental disabilities and their families statewide.",
+      website: "https://ddc.delaware.gov",
+      phone: "302-739-3333"
+    },
+    {
+      name: "Delaware Early Intervention Program – Birth to Three",
+      category: "government",
+      description: "Delaware's Part C IDEA early intervention program providing service coordination, therapy, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities.",
+      website: "https://dhss.delaware.gov/dph/cphpc/bthreeabout.html",
+      phone: "302-295-8620"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parent Information Center of Delaware (PIC-DE)",
+      category: "parent-family",
+      description: "Delaware's federally designated Parent Training and Information (PTI) Center; provides free training, individual support, and IEP navigation assistance to families of children and youth with disabilities from birth through age 26.",
+      website: "https://picofdel.org",
+      phone: "302-999-7394"
+    },
+    {
+      name: "Family-to-Family Health Information Center – Delaware",
+      category: "parent-family",
+      description: "A parent-staffed program helping families of children with special health care needs navigate medical systems, access community resources, and connect with peer support statewide.",
+      website: "https://fhsc.com/delaware"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Delaware",
+      category: "advocacy",
+      description: "Delaware's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, representation, and information to protect the rights of Delawareans with disabilities in areas including special education, Medicaid, and abuse prevention.",
+      website: "https://disabilityrightsde.org",
+      phone: "302-336-5400"
+    },
+    {
+      name: "The Arc of Delaware",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and community inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public awareness, and connection to local resources.",
+      website: "https://arcde.org",
+      phone: "302-836-4464"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Delaware Lifespan Respite Program – Easterseals Delaware",
+      category: "respite",
+      description: "Coordinates and expands access to respite care for family caregivers of individuals with disabilities of all ages; provides caregiver navigation, voucher assistance, and a statewide respite provider directory.",
+      website: "https://easterseals.com/de",
+      phone: "302-324-4444"
+    },
+    {
+      name: "DDDS Family Support Services – Respite Care",
+      category: "respite",
+      description: "Through Delaware DDDS, eligible families of individuals with developmental disabilities may access funded in-home respite care to provide temporary relief, reduce caregiver burnout, and support family stability.",
+      website: "https://dhss.delaware.gov/dds",
+      phone: "302-255-9390"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
