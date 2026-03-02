@@ -781,6 +781,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Idaho": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Idaho Division of Developmental Disabilities (DDD) – Department of Health and Welfare",
+      category: "government",
+      description: "The primary state agency administering Medicaid waiver services, service coordination, and community-based supports for Idahoans with intellectual and developmental disabilities and their families.",
+      website: "https://healthandwelfare.idaho.gov/services-programs/disabilities",
+      phone: "208-334-5531"
+    },
+    {
+      name: "Idaho Council on Developmental Disabilities (ICDD)",
+      category: "government",
+      description: "Idaho's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives that improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://icdd.idaho.gov",
+      phone: "208-334-2178"
+    },
+    {
+      name: "Idaho Infant/Toddler Program (Infants and Toddlers with Disabilities)",
+      category: "government",
+      description: "Idaho's Part C IDEA early intervention program providing service coordination, therapies, and family supports for children (birth–age 3) with developmental delays or disabilities; builds family capacity to support their child's development.",
+      website: "https://healthandwelfare.idaho.gov/services-programs/children-families/infant-toddler-program",
+      phone: "800-926-2588"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Idaho Parents Unlimited (IPUL)",
+      category: "parent-family",
+      description: "Idaho's federally designated Parent Training and Information (PTI) Center; provides free training, individual support, IEP navigation, and peer mentoring to families of children with disabilities from birth through age 26 statewide.",
+      website: "https://ipulidaho.org",
+      phone: "208-342-5884"
+    },
+    {
+      name: "Autism Society of the Treasure Valley",
+      category: "parent-family",
+      description: "Idaho's primary Autism Society affiliate; offers peer support groups, resource navigation, community events, and advocacy assistance for families of individuals with autism across the Treasure Valley region.",
+      website: "https://autismsocietytreasurevalley.org",
+      phone: "208-377-7099"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Idaho",
+      category: "advocacy",
+      description: "Idaho's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Idahoans with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://disabilityrightsidaho.org",
+      phone: "208-336-5353"
+    },
+    {
+      name: "The Arc of Idaho",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arcidaho.org",
+      phone: "208-377-6400"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Idaho Lifespan Respite Coalition",
+      category: "respite",
+      description: "A statewide coalition working to expand and coordinate respite care resources for family caregivers of individuals with disabilities of all ages; provides caregiver navigation, provider training, and a respite resource locator.",
+      website: "https://icdd.idaho.gov"
+    },
+    {
+      name: "Idaho Department of Health and Welfare – Family Support Services",
+      category: "respite",
+      description: "Through Idaho's Medicaid waiver programs, eligible families of individuals with developmental disabilities can access funded respite care to provide temporary caregiver relief and support family stability.",
+      website: "https://healthandwelfare.idaho.gov",
+      phone: "208-334-5531"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
