@@ -855,6 +855,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Illinois": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Illinois Department of Human Services – Division of Developmental Disabilities (DDD)",
+      category: "government",
+      description: "The primary state agency providing residential, day, employment, and family support services for Illinoisans with developmental disabilities; administers Medicaid waiver programs and service coordination through a statewide network of community agencies.",
+      website: "https://dhs.illinois.gov/page.aspx?item=29737",
+      phone: "800-843-6154"
+    },
+    {
+      name: "Illinois Council on Developmental Disabilities (ICDD)",
+      category: "government",
+      description: "Illinois's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives to improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://icdd.illinois.gov",
+      phone: "217-782-9696"
+    },
+    {
+      name: "Illinois Early Intervention Program",
+      category: "government",
+      description: "Illinois's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities through a statewide network of providers.",
+      website: "https://earlyintervention.illinois.gov",
+      phone: "800-323-4769"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Designs for Change – Family Resource Center on Disabilities",
+      category: "parent-family",
+      description: "Illinois's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, IEP navigation, workshops, and advocacy training to families of children with disabilities from birth through age 26 across Illinois.",
+      website: "https://frcdonline.org",
+      phone: "312-939-3513"
+    },
+    {
+      name: "Autism Society of Illinois",
+      category: "parent-family",
+      description: "Statewide affiliate of the Autism Society of America; provides peer support, resource navigation, community events, and public education for families of individuals with autism across Illinois.",
+      website: "https://www.autismillinois.org",
+      phone: "630-691-1270"
+    },
+    {
+      name: "Family Support Network – Illinois DHS",
+      category: "parent-family",
+      description: "DHS-funded statewide network providing peer support, resource navigation, and connection to local family support services for parents and caregivers of individuals with developmental disabilities.",
+      website: "https://dhs.illinois.gov"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Equip for Equality",
+      category: "advocacy",
+      description: "Illinois's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, self-advocacy support, and representation to protect the rights of Illinoisans with physical and mental disabilities, including in special education, Medicaid, and abuse and neglect.",
+      website: "https://equipforequality.org",
+      phone: "800-537-2632"
+    },
+    {
+      name: "The Arc of Illinois",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, resource referrals, and a statewide chapter network.",
+      website: "https://thearcofil.org",
+      phone: "630-920-0000"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Illinois Lifespan Respite Program",
+      category: "respite",
+      description: "Coordinates access to respite care resources for family caregivers of individuals with disabilities of any age; provides caregiver education, voucher assistance, and a statewide respite provider network to reduce caregiver burnout.",
+      website: "https://illinoisrespite.org"
+    },
+    {
+      name: "Illinois DHS – Community Care Program & Caregiver Support",
+      category: "respite",
+      description: "Through Illinois Medicaid waiver programs, eligible families of individuals with developmental disabilities can access funded respite care services, providing temporary in-home or community-based caregiver relief.",
+      website: "https://dhs.illinois.gov",
+      phone: "800-843-6154"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
