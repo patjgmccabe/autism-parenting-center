@@ -707,6 +707,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Hawaii": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Hawaii Department of Health – Developmental Disabilities Division (DDD)",
+      category: "government",
+      description: "The primary state agency providing community-based services, service coordination, and Medicaid waiver supports for Hawaiians with developmental disabilities and their families across all islands.",
+      website: "https://health.hawaii.gov/ddd",
+      phone: "808-733-9370"
+    },
+    {
+      name: "Hawaii Developmental Disabilities Council",
+      category: "government",
+      description: "Hawaii's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives to improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://hiddc.org",
+      phone: "808-586-8100"
+    },
+    {
+      name: "Hawaii Early Intervention Section – Zero-to-Three",
+      category: "government",
+      description: "Hawaii's Part C IDEA early intervention program providing family-centered services for infants and toddlers (birth–age 3) with developmental delays or disabilities; offers service coordination, therapies, and family supports across all islands.",
+      website: "https://health.hawaii.gov/eis",
+      phone: "808-594-0600"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "AWARE Hawaiʻi – Parent Training and Information Center",
+      category: "parent-family",
+      description: "Hawaii's federally designated PTI Center serving families of children with all disabilities from birth through age 26; provides free IEP navigation, individual support, workshops, and peer mentoring in multiple languages including English, Spanish, and Hawaiian Creole English.",
+      website: "https://awarehawaii.org",
+      phone: "808-536-9684"
+    },
+    {
+      name: "Family Support Services – Hawaii DDD",
+      category: "parent-family",
+      description: "DDD-funded program providing peer support, caregiver training, and connection to community resources for families of individuals with developmental disabilities across Hawaii's islands.",
+      website: "https://health.hawaii.gov/ddd"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Hawaiʻi",
+      category: "advocacy",
+      description: "Hawaii's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy and representation to protect the rights of Hawaiians with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://drhi.org",
+      phone: "808-949-2922"
+    },
+    {
+      name: "The Arc of Hawaii",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and community inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and direct services.",
+      website: "https://thearcofhawaii.org",
+      phone: "808-835-1555"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Respite Care Hawaiʻi",
+      category: "respite",
+      description: "A nonprofit organization providing in-home respite care and caregiver relief services for families of individuals with developmental disabilities and special needs across Oahu; also offers caregiver training and support groups.",
+      website: "https://respitecarehawaii.org",
+      phone: "808-737-2477"
+    },
+    {
+      name: "Hawaii Caregiver Support Program – Executive Office on Aging",
+      category: "respite",
+      description: "Provides information, counseling, respite funding, and supplemental services for family caregivers of individuals with disabilities or chronic conditions, including grandparents raising grandchildren with special needs.",
+      website: "https://health.hawaii.gov/eoa",
+      phone: "808-586-0100"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
