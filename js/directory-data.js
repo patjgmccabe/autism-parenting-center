@@ -1243,6 +1243,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Louisiana": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Louisiana Office for Citizens with Developmental Disabilities (OCDD)",
+      category: "government",
+      description: "The primary state agency providing community-based services, service coordination, and Medicaid waiver supports for Louisianans with developmental disabilities and their families through a statewide network of Human Services Districts and Authorities.",
+      website: "https://ldh.la.gov/ocdd",
+      phone: "800-229-4432"
+    },
+    {
+      name: "Louisiana Developmental Disabilities Council",
+      category: "government",
+      description: "Louisiana's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives that improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://laddc.org",
+      phone: "225-342-6804"
+    },
+    {
+      name: "Louisiana Early Steps – Early Intervention Program",
+      category: "government",
+      description: "Louisiana's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities through a statewide provider network.",
+      website: "https://ldh.la.gov/earlysteps",
+      phone: "800-922-3425"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Families Helping Families of Louisiana",
+      category: "parent-family",
+      description: "Louisiana's federally designated Parent Training and Information (PTI) Center and Family-to-Family Health Information Center; a statewide network of 8 regional centers staffed by parents of children with special needs, providing free IEP navigation, peer support, and resource referrals in English and Spanish.",
+      website: "https://familyhelpingfamilies.com",
+      phone: "800-766-7736"
+    },
+    {
+      name: "Autism Society of Greater Baton Rouge",
+      category: "parent-family",
+      description: "Louisiana's primary Autism Society affiliate; provides peer support groups, resource navigation, community events, and advocacy assistance for families of individuals with autism across the Greater Baton Rouge area and statewide.",
+      website: "https://autismbr.com",
+      phone: "225-706-9556"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Louisiana",
+      category: "advocacy",
+      description: "Louisiana's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Louisianans with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://disabilityrightsla.org",
+      phone: "800-960-7705"
+    },
+    {
+      name: "The Arc of Louisiana",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arcofla.com",
+      phone: "225-383-0140"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Louisiana Lifespan Respite Coalition",
+      category: "respite",
+      description: "A statewide coalition coordinating respite care resources for family caregivers of individuals with disabilities of any age; provides caregiver education, provider training, and navigation to local respite services.",
+      website: "https://laddc.org"
+    },
+    {
+      name: "OCDD New Opportunities Waiver – Respite Services",
+      category: "respite",
+      description: "Through Louisiana's Medicaid HCBS waivers, eligible families of individuals with developmental disabilities can access funded in-home and community-based respite care to provide temporary caregiver relief and support family stability.",
+      website: "https://ldh.la.gov/ocdd",
+      phone: "800-229-4432"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
