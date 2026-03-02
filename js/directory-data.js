@@ -123,4 +123,68 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Alaska": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Alaska Aging and Disability Resource Centers (ADRC)",
+      category: "government",
+      description: "A statewide network of regional centers connecting seniors, people with disabilities, and their caregivers to long-term services and supports including Medicaid options, respite, transportation, and home modifications—regardless of age or income.",
+      website: "https://health.alaska.gov/ADRC",
+      phone: "855-565-2017"
+    },
+    {
+      name: "Alaska Division of Senior and Disabilities Services – Home and Community-Based Services (HCBS) Waivers",
+      category: "government",
+      description: "Administers Medicaid waiver programs that fund home and community-based supports for Alaskans with disabilities, enabling families to access in-home care and individualized services as alternatives to institutionalization.",
+      website: "https://dhss.alaska.gov"
+    },
+    {
+      name: "Governor's Council on Disabilities and Special Education (GCDSE)",
+      category: "government",
+      description: "Alaska's federally mandated Developmental Disabilities Council; advocates for systems change and improved services for individuals with disabilities and their families through policy, planning, and community engagement.",
+      website: "https://health.alaska.gov/GCDSE",
+      phone: "888-269-8990"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Stone Soup Group",
+      category: "parent-family",
+      description: "Alaska's only federally designated Parent Training and Information (PTI) Center and Family-to-Family Health Information Center; staffed almost entirely by parents of children with special needs, offering free one-on-one navigation, workshops, advocacy training, and a peer-matching program statewide.",
+      website: "https://stonesoupgroup.org",
+      phone: "907-561-3701"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Law Center of Alaska",
+      category: "advocacy",
+      description: "Alaska's federally designated Protection and Advocacy (P&A) organization, providing free legal representation, education, and systemic advocacy to Alaskans with disabilities on issues including special education rights, abuse and neglect, and Medicaid access; offices in Anchorage, Fairbanks, and Juneau.",
+      website: "https://dlcak.org",
+      phone: "800-478-1234"
+    },
+    {
+      name: "Key Coalition of Alaska",
+      category: "advocacy",
+      description: "A statewide nonprofit advocacy organization of individuals with intellectual and developmental disabilities and their families, working to strengthen community-based services and amplify the family voice in state policy decisions.",
+      website: "https://keycoalition.org"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Alaska Family Caregiver Support Program (FCSP)",
+      category: "respite",
+      description: "Administered through the Division of Senior and Disabilities Services; provides caregivers with information, counseling, support groups, caregiver training, and respite funding, including serving grandparents (age 55+) raising grandchildren with special needs.",
+      website: "https://health.alaska.gov/FCSP"
+    },
+    {
+      name: "UReCares Stipend and Respite Program – Alaska Impact Alliance",
+      category: "respite",
+      description: "Funded by the Alaska Mental Health Trust Authority; provides direct financial stipends to eligible caregivers of individuals with special needs—including a general-use stipend and a designated respite/self-care stipend—to reduce caregiver burnout statewide.",
+      website: "https://alaskaimpactalliance.com"
+    },
+
+  ],
+
 };
