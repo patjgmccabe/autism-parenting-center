@@ -1163,6 +1163,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Kentucky": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Kentucky Department for Behavioral Health, Developmental and Intellectual Disabilities (DBHDID)",
+      category: "government",
+      description: "The primary state agency overseeing services for Kentuckians with intellectual and developmental disabilities; administers Medicaid waiver programs, service coordination, and community-based supports for eligible individuals and their families.",
+      website: "https://dbhdid.ky.gov",
+      phone: "502-564-4527"
+    },
+    {
+      name: "Kentucky Council on Developmental Disabilities",
+      category: "government",
+      description: "Kentucky's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives that improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://kcdd.ky.gov",
+      phone: "502-564-7841"
+    },
+    {
+      name: "Kentucky First Steps – Early Intervention Program",
+      category: "government",
+      description: "Kentucky's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity.",
+      website: "https://chfs.ky.gov/firststeps",
+      phone: "800-442-0087"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Kentucky Special Parent Involvement Network (KY-SPIN)",
+      category: "parent-family",
+      description: "Kentucky's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, IEP navigation, workshops, and peer mentoring to families of children with disabilities from birth through age 26 statewide, in English and Spanish.",
+      website: "https://kyspin.com",
+      phone: "800-525-7746"
+    },
+    {
+      name: "Autism Society of Kentucky",
+      category: "parent-family",
+      description: "Statewide affiliate of the Autism Society of America; provides peer support, resource navigation, community events, and public education for families of individuals with autism across Kentucky.",
+      website: "https://autismkytn.org",
+      phone: "502-894-9090"
+    },
+    {
+      name: "Family Voices Kentucky",
+      category: "parent-family",
+      description: "Kentucky's affiliate of the national Family Voices network; provides information, peer support, and resource navigation for families of children and youth with special health care needs, helping families navigate insurance and state service systems.",
+      website: "https://familyvoicesky.org"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Kentucky",
+      category: "advocacy",
+      description: "Kentucky's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Kentuckians with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://drky.org",
+      phone: "800-787-0040"
+    },
+    {
+      name: "The Arc of Kentucky",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arcofky.org",
+      phone: "502-875-5225"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Kentucky Lifespan Respite Coalition",
+      category: "respite",
+      description: "A statewide coalition coordinating respite care resources for family caregivers of individuals with disabilities of any age; provides caregiver education, provider training, and navigation to local respite services.",
+      website: "https://kcdd.ky.gov"
+    },
+    {
+      name: "DBHDID Medicaid Waiver – Respite Services",
+      category: "respite",
+      description: "Through Kentucky's Medicaid HCBS waivers, eligible families of individuals with developmental disabilities can access funded respite care to provide temporary caregiver relief and support long-term family stability.",
+      website: "https://dbhdid.ky.gov",
+      phone: "502-564-4527"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
