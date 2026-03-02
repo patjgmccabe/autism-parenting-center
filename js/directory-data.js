@@ -1015,6 +1015,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Iowa": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Iowa Department of Human Services – Medicaid Home and Community-Based Services Waivers",
+      category: "government",
+      description: "Administers Medicaid HCBS waivers for Iowans with intellectual disabilities, including the Brain Injury and ID waivers, funding service coordination, residential supports, respite, and family-centered services.",
+      website: "https://dhs.iowa.gov",
+      phone: "800-972-2017"
+    },
+    {
+      name: "Iowa Developmental Disabilities Council",
+      category: "government",
+      description: "Iowa's federally mandated DD Council; funds advocacy, self-determination, and systems-change projects to improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://iddc.iowa.gov",
+      phone: "515-725-1707"
+    },
+    {
+      name: "Iowa Early ACCESS – Early Intervention Program",
+      category: "government",
+      description: "Iowa's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity and support child development.",
+      website: "https://educateiowa.gov/earlyaccess",
+      phone: "888-425-4371"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Iowa Compass – University of Iowa",
+      category: "parent-family",
+      description: "A free information and referral service helping Iowans with disabilities and their families navigate community resources, Medicaid waivers, and support services; staffed by specialists with expertise in disability-related systems.",
+      website: "https://iowacompass.org",
+      phone: "800-779-2001"
+    },
+    {
+      name: "Iowa Parents and Families for Children and Youth with Disabilities (Iowa PTI)",
+      category: "parent-family",
+      description: "Iowa's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, IEP navigation, workshops, and peer mentoring to families of children with disabilities from birth through age 26 statewide.",
+      website: "https://iowaptifamilies.org",
+      phone: "515-243-1713"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Iowa",
+      category: "advocacy",
+      description: "Iowa's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Iowans with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://driowa.org",
+      phone: "800-779-2502"
+    },
+    {
+      name: "The Arc of Iowa",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arc-ia.org",
+      phone: "515-282-2358"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Iowa Lifespan Respite Coalition",
+      category: "respite",
+      description: "A statewide coalition coordinating respite care resources for family caregivers of individuals with disabilities of any age; provides caregiver education, provider training, and navigation to local respite services.",
+      website: "https://iddc.iowa.gov"
+    },
+    {
+      name: "Iowa DHS – Medicaid Waiver Respite Services",
+      category: "respite",
+      description: "Through Iowa's Medicaid HCBS waivers, eligible families of individuals with developmental disabilities can access funded respite care to provide temporary caregiver relief and support long-term family stability.",
+      website: "https://dhs.iowa.gov",
+      phone: "800-972-2017"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
