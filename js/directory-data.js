@@ -627,6 +627,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Georgia": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Georgia Department of Behavioral Health and Developmental Disabilities (DBHDD)",
+      category: "government",
+      description: "The primary state agency overseeing services for Georgians with intellectual and developmental disabilities; administers Medicaid waiver programs, residential supports, and community-based services for eligible individuals and their families.",
+      website: "https://dbhdd.georgia.gov",
+      phone: "800-436-7442"
+    },
+    {
+      name: "Georgia Council on Developmental Disabilities (GCDD)",
+      category: "government",
+      description: "Georgia's federally mandated DD Council; funds advocacy, self-determination, and systems-change projects to advance the inclusion and independence of individuals with developmental disabilities and their families statewide.",
+      website: "https://gcdd.org",
+      phone: "888-275-4233"
+    },
+    {
+      name: "Georgia's Early Intervention Program – Babies Can't Wait",
+      category: "government",
+      description: "Georgia's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities, building family capacity to support their child's growth.",
+      website: "https://dph.georgia.gov/bcw",
+      phone: "800-229-2038"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parents Educating and Advocating for Children with Disabilities (PEACH) – Georgia",
+      category: "parent-family",
+      description: "Georgia's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, workshops, and IEP navigation assistance to families of children with all disabilities from birth through age 26, in English and Spanish.",
+      website: "https://peachparent.org",
+      phone: "877-252-6600"
+    },
+    {
+      name: "Autism Society of Georgia",
+      category: "parent-family",
+      description: "Statewide affiliate of the Autism Society of America; connects families of individuals with autism to peer support, resource navigation, community events, and advocacy across Georgia.",
+      website: "https://autismsocietyofga.org",
+      phone: "404-657-7998"
+    },
+    {
+      name: "Family-to-Family Health Information Center – Georgia",
+      category: "parent-family",
+      description: "A parent-staffed program helping Georgia families of children with special health care needs navigate medical and community systems, access resources, and connect with peer support.",
+      website: "https://georgiaadvocacy.org"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Georgia Advocacy Office (GAO)",
+      category: "advocacy",
+      description: "Georgia's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Georgians with disabilities in areas including special education, Medicaid, institutional abuse, and employment.",
+      website: "https://thegao.org",
+      phone: "800-537-2329"
+    },
+    {
+      name: "The Arc of Georgia",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and community inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arcga.org",
+      phone: "404-814-6204"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Georgia Lifespan Respite Resource Network (GLRRN)",
+      category: "respite",
+      description: "A statewide network coordinating access to respite care for family caregivers of individuals with disabilities or chronic conditions of any age; provides caregiver education, provider training, and a respite locator tool.",
+      website: "https://georgiarespite.org"
+    },
+    {
+      name: "DBHDD NOW and COMP Waiver – Respite Services",
+      category: "respite",
+      description: "Through Georgia's NOW and COMP Medicaid waivers, eligible families of individuals with developmental disabilities can access funded respite care services, providing temporary in-home or out-of-home caregiver relief.",
+      website: "https://dbhdd.georgia.gov",
+      phone: "800-436-7442"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
