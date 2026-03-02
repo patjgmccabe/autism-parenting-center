@@ -187,4 +187,62 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Arizona": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Arizona Developmental Disabilities Planning Council (ADDPC)",
+      category: "government",
+      description: "Arizona's federally mandated DD Council; funds advocacy, systems-change projects, and capacity-building grants that benefit individuals with intellectual and developmental disabilities and their families statewide.",
+      website: "https://addpc.az.gov"
+    },
+    {
+      name: "Arizona Division of Developmental Disabilities (DDD) – Department of Economic Security",
+      category: "government",
+      description: "The primary state agency administering home and community-based services, Medicaid waivers, and support coordination for Arizonans with developmental disabilities and their families.",
+      website: "https://des.az.gov/DDD",
+      phone: "844-770-9500"
+    },
+    {
+      name: "Arizona Early Intervention Program (AzEIP)",
+      category: "government",
+      description: "Arizona's Part C IDEA program providing early intervention services and family support for infants and toddlers (birth–age 3) with developmental delays or disabilities, building family capacity to support their child's development.",
+      website: "https://azdes.gov/azeip"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Encircle Families (formerly Raising Special Kids)",
+      category: "parent-family",
+      description: "Arizona's federally designated Parent Training and Information (PTI) Center and Family-to-Family Health Information Center; offers free, statewide support to families of children with disabilities from birth to age 26, including one-on-one navigation, peer mentoring, workshops in English and Spanish, and Positive Behavior Support training.",
+      website: "https://encirclefamilies.org",
+      phone: "602-242-4366"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Arizona",
+      category: "advocacy",
+      description: "Arizona's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, representation, and systemic change work to protect the rights of Arizonans with disabilities in areas including special education, Medicaid, abuse and neglect, and employment.",
+      website: "https://disabilityrightsaz.org",
+      phone: "800-927-2260"
+    },
+    {
+      name: "The Arc of Arizona",
+      category: "advocacy",
+      description: "Statewide advocacy organization and affiliate network promoting and protecting the rights of individuals with intellectual and developmental disabilities; supports families through policy advocacy, resource referrals, self-advocate leadership, and community inclusion initiatives.",
+      website: "https://arcaz.org"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Arizona Caregiver Coalition",
+      category: "respite",
+      description: "A statewide nonprofit operating a Caregiver Resource Line offering information, referrals, respite vouchers, and support services for family caregivers of individuals with disabilities or chronic conditions of any age.",
+      website: "https://azcaregiver.org",
+      phone: "888-737-7494"
+    },
+
+  ],
+
 };
