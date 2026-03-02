@@ -245,4 +245,72 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Arkansas": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Arkansas Division of Developmental Disabilities Services (DDS) – Department of Human Services",
+      category: "government",
+      description: "The primary state agency administering the Community and Employment Supports (CES) Waiver, Home and Community-Based Services, and residential programs for Arkansans with intellectual and developmental disabilities; supports families in accessing services and care coordination.",
+      website: "https://humanservices.arkansas.gov",
+      phone: "501-683-5687"
+    },
+    {
+      name: "Arkansas Early Intervention System (AEIS)",
+      category: "government",
+      description: "Part C IDEA program providing family-centered early intervention services for infants and toddlers (birth–age 3) with developmental delays or disabilities, including service coordination and family training to support the child's development at home.",
+      website: "https://humanservices.arkansas.gov/aeis"
+    },
+    {
+      name: "Arkansas Governor's Council on Developmental Disabilities (GCDD)",
+      category: "government",
+      description: "Arkansas's federally mandated DD Council; funds advocacy, self-determination training, and systems-change initiatives benefiting individuals with intellectual and developmental disabilities and their families statewide.",
+      website: "https://gcdd.arkansas.gov"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Arkansas Autism Resource & Outreach Center (AAROC)",
+      category: "parent-family",
+      description: "A statewide nonprofit providing hope, direction, and support to families of individuals with autism spectrum disorder; offers free parent training, resource navigation, educational advocacy assistance, and technical assistance to families across all 75 Arkansas counties.",
+      website: "https://aaroc.org"
+    },
+    {
+      name: "Arkansas Disability Coalition – Parent Training & Information (PTI) Center",
+      category: "parent-family",
+      description: "Arkansas's federally designated PTI Center serving families of children with any disability from birth through age 26; provides free training, information, and one-on-one support to help parents effectively participate in their child's education and access services.",
+      website: "https://ardisabilitycoalition.org"
+    },
+    {
+      name: "Partners for Inclusive Communities – University of Arkansas",
+      category: "parent-family",
+      description: "Arkansas's federally designated University Center on Excellence in Developmental Disabilities (UCEDD); provides research, training, technical assistance, and community education to improve outcomes for individuals with disabilities and their families.",
+      website: "https://uark.edu/partners"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Arkansas (DRA)",
+      category: "advocacy",
+      description: "Arkansas's federally mandated Protection and Advocacy (P&A) organization; provides free legal advocacy and representation to Arkansans with disabilities covering special education, abuse and neglect, Medicaid access, and civil rights.",
+      website: "https://disabilityrightsar.org",
+      phone: "501-296-1775"
+    },
+    {
+      name: "The Arc of Arkansas",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and quality of life of people with intellectual and developmental disabilities; supports families through legislative advocacy, community inclusion initiatives, and healthcare access efforts.",
+      website: "https://arcarkansas.org"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Arkansas Lifespan Respite Coalition (ALRC) – Department of Human Services",
+      category: "respite",
+      description: "A statewide coalition coordinating respite care access for family caregivers of individuals with special needs of any age; administers respite vouchers, offers free online caregiver training, and maintains a statewide provider network to reduce caregiver burnout.",
+      website: "https://humanservices.arkansas.gov/lifespan-respite"
+    },
+
+  ],
+
 };
