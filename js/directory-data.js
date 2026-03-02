@@ -1089,6 +1089,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Kansas": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Kansas Department for Aging and Disability Services (KDADS)",
+      category: "government",
+      description: "Administers Medicaid HCBS waivers for Kansans with intellectual and developmental disabilities, including the Intellectual and Developmental Disability (IDD) Waiver, funding service coordination, residential supports, respite, and community-based services.",
+      website: "https://kdads.ks.gov",
+      phone: "785-296-4986"
+    },
+    {
+      name: "Kansas Council on Developmental Disabilities",
+      category: "government",
+      description: "Kansas's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives to improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://kcdd.org",
+      phone: "785-296-2608"
+    },
+    {
+      name: "Kansas Infant-Toddler Services – Early Intervention Program",
+      category: "government",
+      description: "Kansas's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity.",
+      website: "https://ksde.org/its",
+      phone: "785-296-6135"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Families Together – Kansas PTI Center",
+      category: "parent-family",
+      description: "Kansas's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, IEP navigation, workshops, and peer mentoring to families of children with disabilities from birth through age 26 statewide, in English and Spanish.",
+      website: "https://familiestogetherinc.org",
+      phone: "888-815-6364"
+    },
+    {
+      name: "Autism Society of the Heartland",
+      category: "parent-family",
+      description: "Kansas and Missouri affiliate of the Autism Society of America; provides peer support, resource navigation, community events, and advocacy assistance for families of individuals with autism across the Heartland region.",
+      website: "https://autismsocietyoftheheartland.org",
+      phone: "913-706-0042"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Center of Kansas (DRC)",
+      category: "advocacy",
+      description: "Kansas's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Kansans with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://drckansas.org",
+      phone: "877-776-1541"
+    },
+    {
+      name: "The Arc of Kansas",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, public education, and connection to local Arc chapters.",
+      website: "https://arcks.org",
+      phone: "785-232-8855"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Kansas Lifespan Respite Coalition",
+      category: "respite",
+      description: "A statewide coalition coordinating respite care resources for family caregivers of individuals with disabilities of any age; provides caregiver education, provider training, and navigation to local respite services.",
+      website: "https://kcdd.org"
+    },
+    {
+      name: "KDADS IDD Waiver – Respite Services",
+      category: "respite",
+      description: "Through Kansas's IDD Medicaid waiver, eligible families of individuals with developmental disabilities can access funded respite care to provide temporary caregiver relief and support long-term family stability.",
+      website: "https://kdads.ks.gov",
+      phone: "785-296-4986"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
