@@ -1317,6 +1317,80 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Maine": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Maine Department of Health and Human Services – Office of Aging and Disability Services (OADS)",
+      category: "government",
+      description: "Administers Maine's Section 21 and Section 29 Medicaid waivers for adults with intellectual disabilities and autism, coordinating residential, day, and employment support services.",
+      website: "https://www.maine.gov/dhhs/oads",
+      phone: "207-287-9200"
+    },
+    {
+      name: "Maine Developmental Services Oversight and Advisory Board (DSOAB)",
+      category: "government",
+      description: "Independent oversight body that monitors quality and safety of services for people with intellectual disabilities and autism in Maine, issuing reports and recommendations to the legislature.",
+      website: "https://www.maine.gov/dhhs/oads/dsoab"
+    },
+    {
+      name: "Maine Early Intervention – Child Development Services (CDS)",
+      category: "government",
+      description: "Provides early intervention services under IDEA Part C for children birth to age 3 with developmental delays or disabilities, including service coordination and family support.",
+      website: "https://www.maine.gov/doe/cds",
+      phone: "207-624-6650"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Maine Parent Federation (MPF)",
+      category: "parent-family",
+      description: "Statewide parent training and information center providing workshops, one-on-one assistance, and resources to families of children with disabilities navigating special education and services.",
+      website: "https://www.maineparent.com",
+      phone: "800-870-7746"
+    },
+    {
+      name: "Autism Society of Maine",
+      category: "parent-family",
+      description: "Offers family support, social programs, and community events for individuals on the autism spectrum and their families, with a focus on building connections across Maine.",
+      website: "https://www.autismsocietyofmaine.org",
+      phone: "207-338-4404"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Maine (DRM)",
+      category: "advocacy",
+      description: "Maine's federally designated Protection & Advocacy organization providing free legal assistance, advocacy, and self-advocacy training to people with disabilities, including autism.",
+      website: "https://www.drme.org",
+      phone: "207-626-2774"
+    },
+    {
+      name: "Maine Council on Developmental Disabilities (MCDD)",
+      category: "advocacy",
+      description: "Federally funded council that advocates for systems change, community inclusion, and self-determination for Mainers with developmental disabilities and their families.",
+      website: "https://www.mainecdd.org",
+      phone: "207-287-4213"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Maine Caregivers Support Network (MCSN)",
+      category: "respite",
+      description: "Provides education, peer support, and respite resources for family caregivers across Maine, helping them sustain their caregiving role and reduce burnout.",
+      website: "https://mainecaregivers.org",
+      phone: "877-624-0661"
+    },
+    {
+      name: "The Opportunity Alliance – Respite Services",
+      category: "respite",
+      description: "Offers respite care and family support services in southern Maine for families caring for individuals with developmental disabilities, including autism spectrum disorder.",
+      website: "https://www.opportunityalliance.org",
+      phone: "207-874-1175"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
