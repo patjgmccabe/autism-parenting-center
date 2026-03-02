@@ -1391,6 +1391,81 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Maryland": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Maryland Developmental Disabilities Administration (DDA)",
+      category: "government",
+      description: "Administers Maryland's Community Pathways and Family Supports Medicaid waivers for individuals with developmental disabilities, including autism, providing residential, day, and employment services.",
+      website: "https://dda.health.maryland.gov",
+      phone: "410-402-9400"
+    },
+    {
+      name: "Maryland State Department of Education – Division of Early Intervention and Special Education Services",
+      category: "government",
+      description: "Oversees special education and early intervention services statewide, ensuring children with disabilities including autism receive a free appropriate public education (FAPE).",
+      website: "https://marylandpublicschools.org/programs/Pages/Special-Education",
+      phone: "410-767-0238"
+    },
+    {
+      name: "Maryland Infant and Toddlers Program (MITP)",
+      category: "government",
+      description: "Provides IDEA Part C early intervention services for children birth to age 3 with developmental delays or disabilities, including service coordination and family support plans.",
+      website: "https://health.maryland.gov/mitp",
+      phone: "410-767-5671"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "The Parents' Place of Maryland",
+      category: "parent-family",
+      description: "Maryland's federally funded Parent Training and Information Center offering free guidance, workshops, and one-on-one support to families of children with disabilities navigating education and services.",
+      website: "https://www.ppmd.org",
+      phone: "410-768-9100"
+    },
+    {
+      name: "Autism Society of Greater Baltimore",
+      category: "parent-family",
+      description: "Provides community support, social programs, family education events, and resource navigation for individuals with autism and their families in the greater Baltimore area.",
+      website: "https://www.autismsociety-baltimore.org",
+      phone: "410-655-7933"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Maryland (DRM)",
+      category: "advocacy",
+      description: "Maryland's federally designated Protection & Advocacy organization providing free legal services, investigations, and self-advocacy support to people with disabilities, including autism.",
+      website: "https://www.disabilityrightsmd.org",
+      phone: "410-727-6352"
+    },
+    {
+      name: "Maryland Developmental Disabilities Council (MDDC)",
+      category: "advocacy",
+      description: "Federally funded council that promotes systems change, community inclusion, and self-determination for Marylanders with developmental disabilities through advocacy, education, and grants.",
+      website: "https://mddc.maryland.gov",
+      phone: "410-333-3686"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Maryland Family Network – Judy Centers",
+      category: "respite",
+      description: "Community hubs offering family support, parenting resources, and connections to respite and early childhood services for families of children with developmental needs across Maryland.",
+      website: "https://marylandfamilynetwork.org",
+      phone: "410-576-9669"
+    },
+    {
+      name: "Therapeutic Recreation Inclusion Services (TRIS) – Maryland",
+      category: "respite",
+      description: "Offers inclusive recreation programs and respite activities for children and adults with autism and other developmental disabilities in Maryland communities.",
+      website: "https://www.pgparks.com/tris",
+      phone: "301-446-3388"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
