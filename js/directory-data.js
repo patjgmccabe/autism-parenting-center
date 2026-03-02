@@ -1466,6 +1466,81 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Massachusetts": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Massachusetts Department of Developmental Services (DDS)",
+      category: "government",
+      description: "Administers Medicaid waivers and state-funded services for adults and children with intellectual and developmental disabilities, including autism, providing residential, employment, and family support.",
+      website: "https://www.mass.gov/dds",
+      phone: "617-727-5608"
+    },
+    {
+      name: "Massachusetts Early Intervention Program",
+      category: "government",
+      description: "Provides IDEA Part C services for children birth to age 3 with developmental delays or disabilities, including service coordination, therapy, and family support through local provider agencies.",
+      website: "https://www.mass.gov/early-intervention",
+      phone: "617-624-5070"
+    },
+    {
+      name: "Massachusetts Department of Elementary and Secondary Education – Special Education",
+      category: "government",
+      description: "Oversees special education services under IDEA for students with disabilities including autism, providing guidance, monitoring, and dispute resolution supports for families.",
+      website: "https://www.doe.mass.edu/sped",
+      phone: "781-338-3000"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Federation for Children with Special Needs (FCSN)",
+      category: "parent-family",
+      description: "Massachusetts' federally funded Parent Training and Information Center offering free training, information, and support to families of children with disabilities navigating education and services.",
+      website: "https://fcsn.org",
+      phone: "617-236-7210"
+    },
+    {
+      name: "Autism Alliance of MetroWest",
+      category: "parent-family",
+      description: "Provides family support, social skills programs, and community connections for individuals with autism and their families in the greater MetroWest region of Massachusetts.",
+      website: "https://autismalliancemetrowest.org",
+      phone: "508-879-0727"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Law Center (DLC) – Massachusetts",
+      category: "advocacy",
+      description: "Massachusetts' federally designated Protection & Advocacy organization providing free legal assistance, investigations, and advocacy for people with disabilities, including autism.",
+      website: "https://www.dlc-ma.org",
+      phone: "617-723-8455"
+    },
+    {
+      name: "Massachusetts Developmental Disabilities Council (MDDC)",
+      category: "advocacy",
+      description: "Federally funded council advocating for systems change, community inclusion, and self-determination for people with developmental disabilities across Massachusetts.",
+      website: "https://www.mass.gov/mddc",
+      phone: "617-770-7676"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Massachusetts Families Organizing for Change (MFOFC)",
+      category: "respite",
+      description: "Family-led organization providing peer support, family advocacy, and navigation of respite and community services for families of individuals with developmental disabilities.",
+      website: "https://www.mfofc.org",
+      phone: "781-221-9699"
+    },
+    {
+      name: "Autism Resource Center of Central Massachusetts (ARC)",
+      category: "respite",
+      description: "Offers respite, family support, and recreational programs for individuals with autism and their caregivers in central Massachusetts, helping families build community connections.",
+      website: "https://autism-resource.org",
+      phone: "508-835-4278"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
