@@ -6,11 +6,12 @@
 const translations = {
   en: {
     // Nav
-    nav_home:    'Home',
-    nav_books:   'Our Books',
-    nav_stories: 'Story & Schedule Creator',
-    nav_contact: 'Contact Us',
-    nav_lang:    'Español',
+    nav_home:      'Home',
+    nav_books:     'Our Books',
+    nav_stories:   'Story & Schedule Creator',
+    nav_directory: 'Resource Directory',
+    nav_contact:   'Contact Us',
+    nav_lang:      'Español',
 
     // Home — hero
     hero_title:    'Welcome to the Autism Parenting Center',
@@ -28,9 +29,23 @@ const translations = {
     card_stories_title: 'Social Story or Visual Schedule Creator',
     card_stories_desc:  'Build custom printable social stories or visual schedules with photos and captions to help children navigate everyday situations.',
     card_stories_link:  'Create a Story or Schedule →',
+    card_dir_title:     'Support Organization Directory',
+    card_dir_desc:      'Find government agencies, family support networks, advocacy groups, and respite services — organized by state.',
+    card_dir_link:      'Browse Directory →',
     card_contact_title: 'Contact Us',
     card_contact_desc:  'Have a question or want to connect? We\'d love to hear from you.',
     card_contact_link:  'Get in Touch →',
+
+    // Directory page
+    dir_page_title:    'Support Organization Directory',
+    dir_page_sub:      'Find support organizations for parents and caregivers of individuals with special needs — filtered by state and category.',
+    dir_state_label:   'State:',
+    dir_all_states:    'All States',
+    dir_cat_all:       'All Categories',
+    dir_cat_gov:       'Government & Benefits',
+    dir_cat_family:    'Parent & Family',
+    dir_cat_advocacy:  'Advocacy & Legal',
+    dir_cat_respite:   'Respite & Wellness',
 
     // Books page
     books_page_title:   'Our Books',
@@ -97,9 +112,10 @@ const translations = {
   es: {
     nav_home:    'Inicio',
     nav_books:   'Nuestros Libros',
-    nav_stories: 'Historias y Horarios Visuales',
-    nav_contact: 'Contáctenos',
-    nav_lang:    'English',
+    nav_stories:   'Historias y Horarios Visuales',
+    nav_directory: 'Directorio de Recursos',
+    nav_contact:   'Contáctenos',
+    nav_lang:      'English',
 
     hero_title:    'Bienvenidos al Centro de Crianza del Autismo',
     hero_subtitle: 'Un centro de recursos para padres, maestros y terapeutas — todo lo que necesitas, en un solo lugar.',
@@ -114,9 +130,23 @@ const translations = {
     card_stories_title: 'Creador de Historias Sociales y Horarios Visuales',
     card_stories_desc:  'Crea historias sociales o horarios visuales personalizados con fotos y leyendas para ayudar a los niños a entender situaciones cotidianas.',
     card_stories_link:  'Crear una Historia o Horario →',
+    card_dir_title:     'Directorio de Organizaciones de Apoyo',
+    card_dir_desc:      'Encuentra agencias gubernamentales, redes de apoyo familiar, grupos de defensa y servicios de respiro — organizados por estado.',
+    card_dir_link:      'Explorar Directorio →',
     card_contact_title: 'Contáctenos',
     card_contact_desc:  '¿Tienes alguna pregunta? Nos encantaría saber de ti.',
     card_contact_link:  'Ponerse en Contacto →',
+
+    // Directory page (ES)
+    dir_page_title:    'Directorio de Organizaciones de Apoyo',
+    dir_page_sub:      'Encuentra organizaciones de apoyo para padres y cuidadores de personas con necesidades especiales — filtra por estado y categoría.',
+    dir_state_label:   'Estado:',
+    dir_all_states:    'Todos los Estados',
+    dir_cat_all:       'Todas las Categorías',
+    dir_cat_gov:       'Gobierno y Beneficios',
+    dir_cat_family:    'Familia y Apoyo',
+    dir_cat_advocacy:  'Defensa y Legal',
+    dir_cat_respite:   'Respiro y Bienestar',
 
     books_page_title:   'Nuestros Libros',
     books_page_sub:     'Libros educativos para el desarrollo del lenguaje y la comunicación — disponibles en Amazon.',

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Organization Directory — Autism Parenting Center</title>
+  <link rel="stylesheet" href="css/style.css?v=4" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Autism Parenting Center</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html"          data-i18n="nav_home">Home</a></li>
+        <li><a href="books.html"          data-i18n="nav_books">Our Books</a></li>
+        <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
+        <li><a href="directory.html"      data-i18n="nav_directory">Resource Directory</a></li>
+        <li><a href="contact.html"        data-i18n="nav_contact">Contact Us</a></li>
+      </ul>
+      <button class="lang-toggle" data-i18n="nav_lang">Español</button>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1 data-i18n="dir_page_title">Support Organization Directory</h1>
+    <p data-i18n="dir_page_sub">Find support organizations for parents and caregivers of individuals with special needs — filtered by state and category.</p>
+  </div>
+
+  <!-- Filters -->
+  <div class="dir-filters-bar">
+    <div class="dir-filters-inner">
+
+      <div class="dir-state-row">
+        <label class="dir-state-label" for="stateFilter" data-i18n="dir_state_label">State:</label>
+        <select id="stateFilter" class="dir-state-select">
+          <option value="all" data-i18n="dir_all_states">All States</option>
+        </select>
+      </div>
+
+      <div class="dir-cat-row">
+        <button class="dir-cat-btn active" data-cat="all"          data-i18n="dir_cat_all">All Categories</button>
+        <button class="dir-cat-btn"        data-cat="government"    data-i18n="dir_cat_gov">Government &amp; Benefits</button>
+        <button class="dir-cat-btn"        data-cat="parent-family" data-i18n="dir_cat_family">Parent &amp; Family</button>
+        <button class="dir-cat-btn"        data-cat="advocacy"      data-i18n="dir_cat_advocacy">Advocacy &amp; Legal</button>
+        <button class="dir-cat-btn"        data-cat="respite"       data-i18n="dir_cat_respite">Respite &amp; Wellness</button>
+      </div>
+
+      <p class="dir-count"><span id="resultCount"></span></p>
+
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="dir-container">
+    <div id="directoryResults" class="dir-results"></div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="copyrightYear"></span> Autism Parenting Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js?v=2"></script>
+  <script src="js/directory-data.js"></script>
+  <script src="js/directory.js"></script>
+</body>
+</html>

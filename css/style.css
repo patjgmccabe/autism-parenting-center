@@ -851,6 +851,185 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
+   DIRECTORY — Support Organization Directory
+   ============================================================ */
+
+.dir-filters-bar {
+  background: #fff;
+  border-bottom: 1px solid #e8edf3;
+  padding: 1.25rem 1.5rem;
+  position: sticky;
+  top: 62px;
+  z-index: 90;
+}
+
+.dir-filters-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.dir-state-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.dir-state-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #4a5568;
+  white-space: nowrap;
+}
+
+.dir-state-select {
+  padding: 0.5rem 0.85rem;
+  border: 1.5px solid #d1d9e0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #2d3748;
+  background: #f7f9fc;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.dir-state-select:focus {
+  outline: none;
+  border-color: #7dbfef;
+}
+
+.dir-cat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.dir-cat-btn {
+  background: #f0f4f8;
+  border: 1.5px solid transparent;
+  padding: 0.4rem 0.9rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #4a5568;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.dir-cat-btn:hover { background: #e2eaf3; }
+
+.dir-cat-btn.active {
+  background: #5a9fd4;
+  color: #fff;
+  border-color: #5a9fd4;
+}
+
+.dir-count {
+  font-size: 0.82rem;
+  color: #888;
+}
+
+.dir-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.dir-results { min-height: 200px; }
+
+.dir-state-group { margin-bottom: 2.5rem; }
+
+.dir-state-heading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid #e8edf3;
+}
+
+.dir-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.dir-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #e8edf3;
+  transition: box-shadow 0.2s;
+}
+
+.dir-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+
+.dir-badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  align-self: flex-start;
+}
+
+.dir-org-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1.3;
+}
+
+.dir-desc {
+  font-size: 0.87rem;
+  color: #5a6a7a;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.dir-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.25rem;
+}
+
+.dir-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #5a9fd4;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.dir-link:hover { color: #3a7fb4; text-decoration: underline; }
+
+.dir-link-phone { color: #6daf7e; }
+.dir-link-phone:hover { color: #4d9060; }
+
+.dir-empty {
+  color: #aaa;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .dir-filters-bar { top: 0; position: static; }
+  .dir-cards-grid { grid-template-columns: 1fr; }
+  .dir-state-select { min-width: 100%; }
+  .dir-state-row { flex-direction: column; align-items: flex-start; }
+}
+
+/* ============================================================
    PRINT STYLES — Social Story Creator
    ============================================================ */
 
