@@ -2363,6 +2363,20 @@ const DIRECTORY_DATA = {
       website: "https://www.nyfoundling.org",
       phone: "212-870-3333"
     },
+    {
+      name: "David's Refuge",
+      category: "respite",
+      description: "Provides respite retreats and ongoing support for parents and guardians of children with special needs, offering a community of care, renewal, and connection for caregivers across New York.",
+      website: "https://www.davidsrefuge.org",
+      phone: "315-682-5644"
+    },
+    {
+      name: "Long Island Advocacy Center",
+      category: "advocacy",
+      description: "Provides legal advocacy, systems navigation, and support services for individuals with disabilities and their families on Long Island, helping them access education, housing, and community resources.",
+      website: "https://www.longislandadvocacycenter.org",
+      phone: "516-465-8700"
+    },
 
   ],
 
