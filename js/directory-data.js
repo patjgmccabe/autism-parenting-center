@@ -1616,6 +1616,2106 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Minnesota": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Minnesota Department of Human Services – Disability Services Division",
+      category: "government",
+      description: "Administers Medicaid Home and Community-Based Services waivers for individuals with developmental disabilities, including autism, funding residential, day, employment, and family support services.",
+      website: "https://mn.gov/dhs/people-we-serve/people-with-disabilities",
+      phone: "651-431-2225"
+    },
+    {
+      name: "Minnesota Department of Education – Special Education",
+      category: "government",
+      description: "Oversees special education for students with disabilities statewide, providing guidance on IEPs, due process rights, and compliance monitoring for families of children with autism.",
+      website: "https://education.mn.gov/MDE/dse/sped",
+      phone: "651-582-8289"
+    },
+    {
+      name: "Minnesota Early Intervention Program",
+      category: "government",
+      description: "Coordinates IDEA Part C services for children birth to age 3 with developmental delays, connecting families to service coordinators, therapies, and family support plans.",
+      website: "https://mn.gov/dhs/early-intervention",
+      phone: "651-431-2225"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "PACER Center",
+      category: "parent-family",
+      description: "Minnesota's federally funded Parent Training and Information Center offering workshops, publications, and one-on-one support for families of children with disabilities, including autism.",
+      website: "https://www.pacer.org",
+      phone: "952-838-9000"
+    },
+    {
+      name: "Autism Society of Minnesota (AuSM)",
+      category: "parent-family",
+      description: "Provides education, advocacy, and community programs for individuals with autism and their families, including support groups, camps, and an annual autism conference.",
+      website: "https://ausm.org",
+      phone: "651-647-1083"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Minnesota",
+      category: "advocacy",
+      description: "Minnesota's federally designated Protection & Advocacy organization providing free legal assistance and advocacy for people with disabilities, including those with autism.",
+      website: "https://www.disabilityrightsmn.org",
+      phone: "612-334-5970"
+    },
+    {
+      name: "Minnesota Governor's Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, independence, and community inclusion for Minnesotans with developmental disabilities through grants, education, and advocacy.",
+      website: "https://mn.gov/mnddc",
+      phone: "651-296-4018"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc Minnesota",
+      category: "respite",
+      description: "Statewide organization supporting individuals with intellectual and developmental disabilities, offering family resources, respite navigation, and community connection programs.",
+      website: "https://arcminnesota.org",
+      phone: "612-523-0823"
+    },
+    {
+      name: "Fraser – Autism and Developmental Disabilities Services",
+      category: "respite",
+      description: "Provides respite care, behavioral health, and community support services for children and adults with autism and developmental disabilities across the Twin Cities and greater Minnesota.",
+      website: "https://www.fraser.org",
+      phone: "612-861-1688"
+    },
+
+  ],
+
+  "Mississippi": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Mississippi Department of Mental Health – Bureau of Intellectual and Developmental Disabilities",
+      category: "government",
+      description: "Administers Medicaid HCBS waivers and coordinates residential, day, and family support services for Mississippians with intellectual and developmental disabilities, including autism.",
+      website: "https://www.dmh.ms.gov/service-area/intellectual-developmental-disabilities",
+      phone: "601-359-1288"
+    },
+    {
+      name: "Mississippi Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA implementation statewide, ensuring students with disabilities including autism receive a free appropriate public education and supporting families through the IEP process.",
+      website: "https://www.mdek12.org/OSE",
+      phone: "601-359-3498"
+    },
+    {
+      name: "Mississippi First Steps Early Intervention Program",
+      category: "government",
+      description: "Mississippi's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://www.mdh.ms.gov/first-steps",
+      phone: "601-576-7427"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Mississippi Parent Training and Information Center (MPTIC)",
+      category: "parent-family",
+      description: "Federally funded center providing free training, information, and support to families of children with disabilities in Mississippi navigating special education and related services.",
+      website: "https://www.mptic.org",
+      phone: "800-231-3721"
+    },
+    {
+      name: "Autism Society of Mississippi",
+      category: "parent-family",
+      description: "Offers community events, support groups, and resource navigation for individuals with autism and their families across Mississippi.",
+      website: "https://autismsocietyofms.com",
+      phone: "601-987-0088"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Mississippi",
+      category: "advocacy",
+      description: "Mississippi's federally designated Protection & Advocacy organization providing free legal services, investigations, and advocacy for Mississippians with disabilities, including autism.",
+      website: "https://www.drms.ms.gov",
+      phone: "800-772-4057"
+    },
+    {
+      name: "Mississippi Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting systems change, community inclusion, and self-determination for Mississippians with developmental disabilities through advocacy and grants.",
+      website: "https://www.mcdd.ms.gov",
+      phone: "601-359-1270"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Mississippi",
+      category: "respite",
+      description: "Advocates for and supports individuals with intellectual and developmental disabilities, offering family resources, respite navigation, and community programs statewide.",
+      website: "https://www.thearcofms.com",
+      phone: "601-982-1180"
+    },
+    {
+      name: "Gulf Coast Autism Center",
+      category: "respite",
+      description: "Provides behavioral therapy, social skills programming, and family respite supports for individuals with autism and their caregivers in the Gulf Coast region of Mississippi.",
+      website: "https://www.gulfcoastautismcenter.com",
+      phone: "228-365-0205"
+    },
+
+  ],
+
+  "Missouri": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Missouri Division of Developmental Disabilities (DD)",
+      category: "government",
+      description: "Administers Missouri's Medicaid HCBS waivers and state-funded services for individuals with developmental disabilities, including autism, supporting residential, day, and employment programs.",
+      website: "https://dmh.mo.gov/dev-disabilities",
+      phone: "573-751-8676"
+    },
+    {
+      name: "Missouri Department of Elementary and Secondary Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for Missouri students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://dese.mo.gov/special-education",
+      phone: "573-751-2965"
+    },
+    {
+      name: "Missouri First Steps Early Intervention Program",
+      category: "government",
+      description: "Missouri's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
+      website: "https://health.mo.gov/living/families/firststeps",
+      phone: "866-583-2392"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Missouri Parents Act (MPACT)",
+      category: "parent-family",
+      description: "Missouri's federally funded Parent Training and Information Center providing free advocacy, training, and one-on-one support to families of children with disabilities navigating special education.",
+      website: "https://www.ptimpact.org",
+      phone: "800-743-7634"
+    },
+    {
+      name: "Autism Society of the Heartland",
+      category: "parent-family",
+      description: "Offers support groups, community events, and resource navigation for individuals with autism and their families in the greater Kansas City and Missouri region.",
+      website: "https://autismheartland.org",
+      phone: "913-706-0042"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Missouri Protection & Advocacy Services (MO P&A)",
+      category: "advocacy",
+      description: "Missouri's federally designated Protection & Advocacy organization providing free legal services and systemic advocacy for Missourians with disabilities, including autism.",
+      website: "https://moadvocacy.org",
+      phone: "800-392-8667"
+    },
+    {
+      name: "Missouri Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting independence, self-determination, and community inclusion for Missourians with developmental disabilities through advocacy and systems change.",
+      website: "https://moddcouncil.org",
+      phone: "573-751-8611"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Missouri",
+      category: "respite",
+      description: "Statewide organization supporting individuals with intellectual and developmental disabilities and their families, offering respite resources, advocacy, and community programs.",
+      website: "https://www.thearcofmo.org",
+      phone: "573-893-2980"
+    },
+    {
+      name: "Great Circle – Missouri",
+      category: "respite",
+      description: "Provides behavioral health, respite, and family support services for children and families across Missouri, including specialized supports for individuals with autism.",
+      website: "https://www.greatcircle.org",
+      phone: "314-919-4700"
+    },
+
+  ],
+
+  "Montana": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Montana Department of Public Health and Human Services – Developmental Services Division",
+      category: "government",
+      description: "Administers Montana's Medicaid HCBS waivers and Comprehensive Developmental Disability services for individuals with developmental disabilities, including autism.",
+      website: "https://dphhs.mt.gov/developmentalservicesdivision",
+      phone: "406-444-2590"
+    },
+    {
+      name: "Montana Office of Public Instruction – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for Montana students with disabilities, supporting families in accessing IEP services and navigating disability rights.",
+      website: "https://opi.mt.gov/Educators/Teaching-Learning/Special-Education",
+      phone: "406-444-4429"
+    },
+    {
+      name: "Montana Developmental Disabilities Program – Early Intervention",
+      category: "government",
+      description: "Provides IDEA Part C early intervention services for children birth to age 3 with developmental delays, including service coordination and family support in Montana.",
+      website: "https://dphhs.mt.gov/developmentalservicesdivision/earlyintervention",
+      phone: "406-444-2590"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parents Let's Unite for Kids (PLUK)",
+      category: "parent-family",
+      description: "Montana's federally funded Parent Training and Information Center offering free training, information, and one-on-one support to families of children with disabilities navigating education and services.",
+      website: "https://www.pluk.org",
+      phone: "800-222-7585"
+    },
+    {
+      name: "Montana Autism Education Project",
+      category: "parent-family",
+      description: "Provides training, consultation, and resources for families and educators of students with autism spectrum disorder across Montana.",
+      website: "https://mtautism.umt.edu",
+      phone: "406-243-5467"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Montana",
+      category: "advocacy",
+      description: "Montana's federally designated Protection & Advocacy organization providing free legal services and advocacy for Montanans with disabilities, including those with autism.",
+      website: "https://www.disabilityrightsmt.org",
+      phone: "800-245-4743"
+    },
+    {
+      name: "Montana Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Montanans with developmental disabilities through advocacy and grants.",
+      website: "https://mtddc.org",
+      phone: "406-443-4332"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Families Achieving Community Together (FACT) – Montana",
+      category: "respite",
+      description: "Provides family support, respite navigation, and peer connections for caregivers of individuals with developmental disabilities across Montana.",
+      website: "https://dphhs.mt.gov/developmentalservicesdivision/familysupport",
+      phone: "406-444-2590"
+    },
+    {
+      name: "RuraLink – Montana Center for Inclusive Communities",
+      category: "respite",
+      description: "Offers respite care coordination, caregiver training, and community support services for families of individuals with disabilities in rural Montana communities.",
+      website: "https://ruralink.umt.edu",
+      phone: "406-243-2454"
+    },
+
+  ],
+
+  "Nebraska": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Nebraska Division of Developmental Disabilities (DHHS)",
+      category: "government",
+      description: "Administers Medicaid waivers and state-funded services for Nebraskans with developmental disabilities, including autism, supporting day programs, residential, and family support.",
+      website: "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+      phone: "402-471-9108"
+    },
+    {
+      name: "Nebraska Department of Education – Special Education",
+      category: "government",
+      description: "Oversees special education programs under IDEA for Nebraska students with disabilities, providing compliance monitoring, dispute resolution, and family guidance.",
+      website: "https://www.education.ne.gov/sped",
+      phone: "402-471-2471"
+    },
+    {
+      name: "Nebraska's Early Development Network (EDN)",
+      category: "government",
+      description: "Nebraska's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to therapies, service coordination, and family support plans.",
+      website: "https://www.education.ne.gov/sped/early-development-network",
+      phone: "402-471-0016"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "PTI Nebraska (Parent Training and Information Center)",
+      category: "parent-family",
+      description: "Federally funded center providing free training, advocacy coaching, and individualized support to Nebraska families of children with disabilities navigating education and services.",
+      website: "https://www.pti-nebraska.org",
+      phone: "402-346-0525"
+    },
+    {
+      name: "Autism Society of Nebraska",
+      category: "parent-family",
+      description: "Offers family support, community events, and resource navigation for individuals with autism and their families across Nebraska.",
+      website: "https://www.autismsocietyofnebraska.org",
+      phone: "402-853-4003"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Nebraska",
+      category: "advocacy",
+      description: "Nebraska's federally designated Protection & Advocacy organization providing free legal services, investigations, and advocacy for Nebraskans with disabilities, including autism.",
+      website: "https://www.disabilityrightsnebraska.org",
+      phone: "402-474-3183"
+    },
+    {
+      name: "Nebraska Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, independence, and community inclusion for Nebraskans with developmental disabilities through advocacy and systems change.",
+      website: "https://www.nedd.nebraska.gov",
+      phone: "402-471-2117"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Nebraska",
+      category: "respite",
+      description: "Provides advocacy, family resources, and community support for individuals with intellectual and developmental disabilities and their families across Nebraska.",
+      website: "https://www.arc-nebraska.org",
+      phone: "402-475-4407"
+    },
+    {
+      name: "Autism Family Network of Nebraska",
+      category: "respite",
+      description: "Peer-support network offering family connections, respite resources, and community events for caregivers of individuals with autism across Nebraska.",
+      website: "https://autismfamilynetwork.org",
+      phone: "402-932-0087"
+    },
+
+  ],
+
+  "Nevada": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Nevada Division of Public and Behavioral Health – Developmental Services",
+      category: "government",
+      description: "Administers Nevada's Medicaid HCBS waivers and state developmental services for individuals with intellectual and developmental disabilities, including autism.",
+      website: "https://dpbh.nv.gov/Programs/ClinicalPrgms/Developmental_Services/Developmental_Services_-_Home",
+      phone: "775-687-5943"
+    },
+    {
+      name: "Nevada Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for Nevada students with disabilities, providing guidance on IEPs and family rights for students including those with autism.",
+      website: "https://doe.nv.gov/Students_Families/Special_Education",
+      phone: "702-486-6458"
+    },
+    {
+      name: "Nevada Early Intervention Services (NEIS)",
+      category: "government",
+      description: "Nevada's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family supports.",
+      website: "https://dpbh.nv.gov/Programs/ClinicalPrgms/NEIS/Nevada_Early_Intervention_Services_-_Home",
+      phone: "775-684-3388"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Nevada PEP (Parents Encouraging Parents)",
+      category: "parent-family",
+      description: "Nevada's federally funded Parent Training and Information Center offering free workshops, advocacy coaching, and resources for families of children with disabilities navigating schools and services.",
+      website: "https://www.nvpep.org",
+      phone: "702-388-8899"
+    },
+    {
+      name: "Autism Coalition of Nevada",
+      category: "parent-family",
+      description: "Statewide coalition providing community support, awareness events, and resource navigation for individuals with autism and their families across Nevada.",
+      website: "https://autismcoalitionofnevada.org",
+      phone: "702-395-0163"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Nevada",
+      category: "advocacy",
+      description: "Nevada's federally designated Protection & Advocacy organization providing free legal services and advocacy for Nevadans with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilityrightsnevada.org",
+      phone: "702-257-8150"
+    },
+    {
+      name: "Nevada Governor's Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting community inclusion, self-determination, and systems change for Nevadans with developmental disabilities through advocacy and grants.",
+      website: "https://gcdd.nv.gov",
+      phone: "775-687-4452"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Nevada",
+      category: "respite",
+      description: "Provides advocacy, family support, and respite resources for individuals with intellectual and developmental disabilities and their families across Nevada.",
+      website: "https://www.arcnv.org",
+      phone: "702-870-7050"
+    },
+    {
+      name: "Nevada Caregiver Support Center",
+      category: "respite",
+      description: "Offers respite referrals, caregiver education, and support group connections for families caring for individuals with disabilities across Nevada communities.",
+      website: "https://adsd.nv.gov/Programs/Aging/CSP/Caregiver_Support_Pgm",
+      phone: "800-216-3184"
+    },
+
+  ],
+
+  "New Hampshire": [
+
+    // Government & Public Benefits Services
+    {
+      name: "New Hampshire Bureau of Developmental Services (BDS)",
+      category: "government",
+      description: "Administers New Hampshire's area agency system and Medicaid HCBS waivers for individuals with developmental disabilities and autism, coordinating residential, employment, and family support.",
+      website: "https://www.dhhs.nh.gov/programs-services/developmental-disabilities",
+      phone: "603-271-5034"
+    },
+    {
+      name: "New Hampshire Department of Education – Bureau of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for New Hampshire students with disabilities, providing family guidance, dispute resolution, and compliance monitoring.",
+      website: "https://www.education.nh.gov/who-we-are/division-of-learner-support/bureau-of-special-education",
+      phone: "603-271-3741"
+    },
+    {
+      name: "NH Early Supports and Services (Part C)",
+      category: "government",
+      description: "New Hampshire's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to service coordinators and individualized family support plans.",
+      website: "https://www.dhhs.nh.gov/programs-services/developmental-disabilities/early-supports-and-services",
+      phone: "603-271-5122"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parent Information Center (PIC-NH)",
+      category: "parent-family",
+      description: "New Hampshire's federally funded Parent Training and Information Center providing free workshops, advocacy support, and one-on-one assistance to families of children with disabilities.",
+      website: "https://www.picnh.org",
+      phone: "603-224-7005"
+    },
+    {
+      name: "Autism Society of New Hampshire",
+      category: "parent-family",
+      description: "Provides support groups, community events, and resource connections for individuals with autism and their families throughout New Hampshire.",
+      website: "https://autismnh.org",
+      phone: "603-679-2424"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Center – NH",
+      category: "advocacy",
+      description: "New Hampshire's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for Granite Staters with disabilities.",
+      website: "https://drcnh.org",
+      phone: "603-228-0432"
+    },
+    {
+      name: "New Hampshire Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council advocating for self-determination, community inclusion, and systems change for New Hampshirites with developmental disabilities.",
+      website: "https://www.nhcdd.org",
+      phone: "603-271-3236"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Easter Seals New Hampshire",
+      category: "respite",
+      description: "Provides respite, adult day programs, and community support services for individuals with autism and developmental disabilities and their families across New Hampshire.",
+      website: "https://www.eastersealsnh.org",
+      phone: "603-621-3000"
+    },
+    {
+      name: "NFI North – Family Support Services",
+      category: "respite",
+      description: "Offers in-home respite, family support coordination, and community integration services for individuals with developmental disabilities across New Hampshire.",
+      website: "https://www.nfinorth.com",
+      phone: "800-346-6229"
+    },
+
+  ],
+
+  "New Jersey": [
+
+    // Government & Public Benefits Services
+    {
+      name: "New Jersey Division of Developmental Disabilities (DDD)",
+      category: "government",
+      description: "Administers New Jersey's Medicaid Community Care waiver and state-funded services for adults with developmental disabilities, including autism, supporting residential, day, and employment programs.",
+      website: "https://www.nj.gov/humanservices/ddd",
+      phone: "800-832-9173"
+    },
+    {
+      name: "New Jersey Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance, IEP implementation, and family rights for New Jersey students with disabilities including autism, with complaint investigation and mediation services.",
+      website: "https://www.nj.gov/education/specialed",
+      phone: "609-376-3800"
+    },
+    {
+      name: "New Jersey Early Intervention System (NJEIS)",
+      category: "government",
+      description: "New Jersey's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and family support plans.",
+      website: "https://www.nj.gov/health/fhs/eis",
+      phone: "609-777-7734"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Statewide Parent Advocacy Network (SPAN)",
+      category: "parent-family",
+      description: "New Jersey's federally funded Parent Training and Information Center providing free education, advocacy coaching, and support for families of children with disabilities navigating schools and services.",
+      website: "https://www.spanadvocacy.org",
+      phone: "800-654-7726"
+    },
+    {
+      name: "Autism New Jersey",
+      category: "parent-family",
+      description: "Comprehensive statewide resource offering family support, professional training, public awareness, and a helpline for individuals with autism and their families in New Jersey.",
+      website: "https://www.autismnj.org",
+      phone: "800-428-8476"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights New Jersey",
+      category: "advocacy",
+      description: "New Jersey's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for New Jerseyans with disabilities, including autism.",
+      website: "https://www.drnj.org",
+      phone: "800-922-7233"
+    },
+    {
+      name: "New Jersey Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting systems change, self-determination, and community inclusion for New Jerseyans with developmental disabilities through advocacy and grants.",
+      website: "https://njcdd.org",
+      phone: "609-292-3745"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Easterseals New Jersey",
+      category: "respite",
+      description: "Provides respite, adult day programs, and community support services for individuals with autism and developmental disabilities and their families throughout New Jersey.",
+      website: "https://nj.easterseals.com",
+      phone: "732-257-6662"
+    },
+    {
+      name: "Family Resource Network (FRN) – New Jersey",
+      category: "respite",
+      description: "Offers family support, respite coordination, and peer connections for families of individuals with developmental disabilities across New Jersey.",
+      website: "https://www.familyresource.org",
+      phone: "732-506-6858"
+    },
+
+  ],
+
+  "New Mexico": [
+
+    // Government & Public Benefits Services
+    {
+      name: "New Mexico Developmental Disabilities Supports Division (DDSD)",
+      category: "government",
+      description: "Administers New Mexico's Mi Via and Developmental Disabilities Medicaid waivers for individuals with developmental disabilities, including autism, funding person-centered support services.",
+      website: "https://www.hsd.state.nm.us/ddsd",
+      phone: "505-476-8973"
+    },
+    {
+      name: "New Mexico Public Education Department – Special Education Bureau",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for New Mexico students with disabilities, providing guidance, dispute resolution, and family support resources.",
+      website: "https://webnew.ped.state.nm.us/bureaus/special-education",
+      phone: "505-827-1457"
+    },
+    {
+      name: "New Mexico Family Infant Toddler (FIT) Program",
+      category: "government",
+      description: "New Mexico's IDEA Part C early intervention program providing services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
+      website: "https://www.nmfit.org",
+      phone: "505-476-0364"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parents Reaching Out (PRO)",
+      category: "parent-family",
+      description: "New Mexico's federally funded Parent Training and Information Center offering free advocacy training, workshops, and individualized support for families of children with disabilities.",
+      website: "https://www.parentsreachingout.org",
+      phone: "800-524-5176"
+    },
+    {
+      name: "Autism Society of New Mexico",
+      category: "parent-family",
+      description: "Provides community support, resource navigation, and awareness events for individuals with autism and their families throughout New Mexico.",
+      website: "https://www.autismsocietynm.org",
+      phone: "505-217-8699"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights New Mexico",
+      category: "advocacy",
+      description: "New Mexico's federally designated Protection & Advocacy organization providing free legal services and advocacy for New Mexicans with disabilities, including those on the autism spectrum.",
+      website: "https://www.drnm.org",
+      phone: "800-432-4682"
+    },
+    {
+      name: "New Mexico Developmental Disabilities Planning Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for New Mexicans with developmental disabilities through advocacy and grants.",
+      website: "https://nmddpc.com",
+      phone: "505-827-7590"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Adelante Development Center",
+      category: "respite",
+      description: "Provides day habilitation, respite, and community support services for adults with developmental disabilities and autism in the Albuquerque area and surrounding communities.",
+      website: "https://www.adelante.org",
+      phone: "505-243-1097"
+    },
+    {
+      name: "New Mexico Caregiver Coalition – Respite Resources",
+      category: "respite",
+      description: "Connects family caregivers of individuals with disabilities to respite care options and support resources across New Mexico, including training and peer networks.",
+      website: "https://nmaging.state.nm.us",
+      phone: "866-451-2901"
+    },
+
+  ],
+
+  "New York": [
+
+    // Government & Public Benefits Services
+    {
+      name: "NYS Office for People With Developmental Disabilities (OPWDD)",
+      category: "government",
+      description: "Administers New York's Home and Community Based Services waivers and coordinates a comprehensive system of supports for individuals with developmental disabilities, including autism, across the state.",
+      website: "https://opwdd.ny.gov",
+      phone: "518-473-1997"
+    },
+    {
+      name: "NYS Education Department – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for New York students with disabilities, supporting families through the IEP process, complaint procedures, and impartial hearings.",
+      website: "https://www.nysed.gov/special-education",
+      phone: "518-473-2878"
+    },
+    {
+      name: "NYS Early Intervention Program",
+      category: "government",
+      description: "New York's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, coordinated through local health departments.",
+      website: "https://www.health.ny.gov/community/infants_children/early_intervention",
+      phone: "518-473-7016"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Resources for Children with Special Needs",
+      category: "parent-family",
+      description: "New York City-based organization providing information, training, and advocacy for families of children with disabilities navigating special education and related services.",
+      website: "https://www.resourcesnyc.org",
+      phone: "212-677-4650"
+    },
+    {
+      name: "Autism Society of Greater New York",
+      category: "parent-family",
+      description: "Provides community programs, support groups, and resource navigation for individuals with autism and their families in the greater New York metropolitan area.",
+      website: "https://www.autismny.org",
+      phone: "718-863-4455"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights New York (DRNY)",
+      category: "advocacy",
+      description: "New York's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for New Yorkers with disabilities, including autism.",
+      website: "https://www.drny.org",
+      phone: "518-432-7861"
+    },
+    {
+      name: "NYS Developmental Disabilities Planning Council (DDPC)",
+      category: "advocacy",
+      description: "Federally funded council advocating for self-determination, community inclusion, and systems change for New Yorkers with developmental disabilities through grants and policy work.",
+      website: "https://ddpc.ny.gov",
+      phone: "518-486-7505"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "AutismUp",
+      category: "respite",
+      description: "Provides inclusive recreational programs, social skills groups, and respite opportunities for individuals with autism and their families across western New York.",
+      website: "https://www.autismup.org",
+      phone: "585-736-0870"
+    },
+    {
+      name: "New York Foundling – Autism and Developmental Disabilities Services",
+      category: "respite",
+      description: "Offers residential respite, family support, and community habilitation services for individuals with autism and developmental disabilities in the New York metro area.",
+      website: "https://www.nyfoundling.org",
+      phone: "212-870-3333"
+    },
+
+  ],
+
+  "North Carolina": [
+
+    // Government & Public Benefits Services
+    {
+      name: "NC Division of Mental Health, Developmental Disabilities and Substance Use Services",
+      category: "government",
+      description: "Administers North Carolina's Medicaid HCBS waivers and state-funded services for individuals with developmental disabilities, including autism, through a network of Local Management Entities.",
+      website: "https://www.ncdhhs.gov/divisions/mhddsus",
+      phone: "919-733-7011"
+    },
+    {
+      name: "NC Department of Public Instruction – Exceptional Children Division",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for North Carolina students with disabilities, providing guidance on IEPs, due process, and family rights.",
+      website: "https://www.dpi.nc.gov/students-families/exceptional-children",
+      phone: "984-236-2400"
+    },
+    {
+      name: "NC Infant-Toddler Program",
+      category: "government",
+      description: "North Carolina's IDEA Part C early intervention program providing services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
+      website: "https://www.ncdhhs.gov/divisions/public-health/north-carolina-infant-toddler-program",
+      phone: "919-707-5520"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Exceptional Children's Assistance Center (ECAC)",
+      category: "parent-family",
+      description: "North Carolina's federally funded Parent Training and Information Center offering free training, advocacy support, and one-on-one assistance to families of children with disabilities.",
+      website: "https://www.ecac-parentcenter.org",
+      phone: "800-962-6817"
+    },
+    {
+      name: "Autism Society of North Carolina",
+      category: "parent-family",
+      description: "Provides family support, crisis assistance, adult services, and community programs for individuals with autism and their families across all 100 North Carolina counties.",
+      website: "https://www.autismsociety-nc.org",
+      phone: "800-442-2762"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights NC",
+      category: "advocacy",
+      description: "North Carolina's federally designated Protection & Advocacy organization providing free legal services and systemic advocacy for North Carolinians with disabilities, including autism.",
+      website: "https://disabilityrightsnc.org",
+      phone: "877-235-4210"
+    },
+    {
+      name: "NC Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for North Carolinians with developmental disabilities through advocacy and grants.",
+      website: "https://nccdd.org",
+      phone: "919-850-2901"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "TEACCH Autism Program – UNC Chapel Hill",
+      category: "respite",
+      description: "Evidence-based autism service, training, and research program providing assessment, therapy, family education, and community support for individuals with autism across North Carolina.",
+      website: "https://teacch.com",
+      phone: "919-966-2174"
+    },
+    {
+      name: "Families Together NC",
+      category: "respite",
+      description: "Provides family peer support, respite navigation, and caregiver training for families of individuals with developmental disabilities across North Carolina.",
+      website: "https://www.familiestogethernc.org",
+      phone: "919-865-8880"
+    },
+
+  ],
+
+  "North Dakota": [
+
+    // Government & Public Benefits Services
+    {
+      name: "North Dakota Department of Human Services – Developmental Disabilities Division",
+      category: "government",
+      description: "Administers North Dakota's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, coordinating residential, day, and family support.",
+      website: "https://www.hhs.nd.gov/disabilities/developmental-disabilities",
+      phone: "701-328-8930"
+    },
+    {
+      name: "North Dakota Department of Public Instruction – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for North Dakota students with disabilities, providing guidance on IEPs and supporting families in navigating their rights.",
+      website: "https://www.nd.gov/dpi/districts-schools/student-support-services/special-education",
+      phone: "701-328-2277"
+    },
+    {
+      name: "North Dakota Early Intervention Program",
+      category: "government",
+      description: "North Dakota's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family supports.",
+      website: "https://www.hhs.nd.gov/disabilities/early-intervention",
+      phone: "701-328-8930"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Pathfinder Parent Center",
+      category: "parent-family",
+      description: "North Dakota's federally funded Parent Training and Information Center offering free advocacy training, workshops, and one-on-one support to families of children with disabilities.",
+      website: "https://www.pathfinder-nd.org",
+      phone: "800-245-5840"
+    },
+    {
+      name: "Autism Society of North Dakota",
+      category: "parent-family",
+      description: "Provides community awareness, support group connections, and resource navigation for individuals with autism and their families across North Dakota.",
+      website: "https://autismnd.com",
+      phone: "701-277-0844"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights North Dakota",
+      category: "advocacy",
+      description: "North Dakota's federally designated Protection & Advocacy organization providing free legal services and advocacy for North Dakotans with disabilities, including those with autism.",
+      website: "https://www.disabilityrightnd.org",
+      phone: "800-642-6694"
+    },
+    {
+      name: "North Dakota Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for North Dakotans with developmental disabilities through advocacy and grants.",
+      website: "https://www.nd.gov/ndcpd",
+      phone: "701-328-8953"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of North Dakota",
+      category: "respite",
+      description: "Provides advocacy, family support, and community resources for individuals with intellectual and developmental disabilities and their families across North Dakota.",
+      website: "https://arcnd.org",
+      phone: "701-221-1811"
+    },
+    {
+      name: "HIT Program – Hope, Independence & Transition (Sanford Health)",
+      category: "respite",
+      description: "Offers therapeutic recreation, social skills, and family respite programs for children and adults with autism and developmental disabilities in North Dakota.",
+      website: "https://www.sanfordhealth.org",
+      phone: "701-234-2000"
+    },
+
+  ],
+
+  "Ohio": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Ohio Department of Developmental Disabilities (DODD)",
+      category: "government",
+      description: "Administers Ohio's Medicaid HCBS waivers and county board system supporting individuals with developmental disabilities, including autism, with residential, day, and family support services.",
+      website: "https://dodd.ohio.gov",
+      phone: "800-617-6733"
+    },
+    {
+      name: "Ohio Department of Education – Office for Exceptional Children",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Ohio students with disabilities, providing guidance on IEPs, due process, and family rights for students including those with autism.",
+      website: "https://education.ohio.gov/Topics/Special-Education",
+      phone: "614-466-2650"
+    },
+    {
+      name: "Ohio Help Me Grow – Early Intervention",
+      category: "government",
+      description: "Ohio's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to therapies, service coordinators, and individualized family support plans.",
+      website: "https://helpmegrow.ohio.gov",
+      phone: "800-755-4769"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Ohio Coalition for the Education of Children with Disabilities (OCECD)",
+      category: "parent-family",
+      description: "Ohio's federally funded Parent Training and Information Center offering free training, advocacy support, and one-on-one help to Ohio families navigating special education and disability services.",
+      website: "https://www.ocecd.org",
+      phone: "800-374-2806"
+    },
+    {
+      name: "Autism Society of Greater Cincinnati",
+      category: "parent-family",
+      description: "Provides support groups, resource navigation, and community events for individuals with autism and their families in the greater Cincinnati area and surrounding Ohio region.",
+      website: "https://www.autismcincy.org",
+      phone: "513-561-2300"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Ohio",
+      category: "advocacy",
+      description: "Ohio's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for Ohioans with disabilities, including autism.",
+      website: "https://www.disabilityrightsohio.org",
+      phone: "800-282-9181"
+    },
+    {
+      name: "Ohio Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Ohioans with developmental disabilities through advocacy, grants, and policy work.",
+      website: "https://ddc.ohio.gov",
+      phone: "800-766-7426"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Ohio",
+      category: "respite",
+      description: "Statewide organization providing advocacy, family support, and respite resources for individuals with intellectual and developmental disabilities and their families across Ohio.",
+      website: "https://www.thearcofohio.org",
+      phone: "800-875-2723"
+    },
+    {
+      name: "Ohio Respite Coalition",
+      category: "respite",
+      description: "Promotes and expands respite care services for families of individuals with disabilities across Ohio, providing referrals and caregiver support resources.",
+      website: "https://www.ohiorespitecoalition.org",
+      phone: "614-310-6270"
+    },
+
+  ],
+
+  "Oklahoma": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Oklahoma Department of Human Services – Developmental Disabilities Services (DDS)",
+      category: "government",
+      description: "Administers Oklahoma's Medicaid HCBS waivers and state-funded services for individuals with intellectual and developmental disabilities, including autism, supporting community living and family care.",
+      website: "https://oklahoma.gov/okdhs/services/dd.html",
+      phone: "405-521-6267"
+    },
+    {
+      name: "Oklahoma State Department of Education – Special Education Services",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Oklahoma students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://sde.ok.gov/special-education",
+      phone: "405-521-3351"
+    },
+    {
+      name: "Oklahoma SoonerStart Early Intervention Program",
+      category: "government",
+      description: "Oklahoma's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
+      website: "https://oklahoma.gov/health/family-health/sooner-start.html",
+      phone: "405-271-8333"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Oklahoma Parents Center (OPC)",
+      category: "parent-family",
+      description: "Oklahoma's federally funded Parent Training and Information Center offering free training, advocacy support, and one-on-one assistance to families of children with disabilities.",
+      website: "https://www.oklahomaparentscenter.org",
+      phone: "877-553-4332"
+    },
+    {
+      name: "Autism Society of Oklahoma",
+      category: "parent-family",
+      description: "Provides community events, support groups, and resource navigation for individuals with autism and their families across Oklahoma.",
+      website: "https://www.autismsocietyofoklahoma.org",
+      phone: "405-844-4028"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Oklahoma",
+      category: "advocacy",
+      description: "Oklahoma's federally designated Protection & Advocacy organization providing free legal services and advocacy for Oklahomans with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilityrightsok.org",
+      phone: "800-880-7755"
+    },
+    {
+      name: "Oklahoma Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Oklahomans with developmental disabilities through advocacy and grants.",
+      website: "https://www.okddc.ok.gov",
+      phone: "405-521-4984"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Oklahoma",
+      category: "respite",
+      description: "Provides advocacy, family support, and respite resources for individuals with intellectual and developmental disabilities and their families across Oklahoma.",
+      website: "https://www.arcok.org",
+      phone: "405-525-7631"
+    },
+    {
+      name: "Enable Oklahoma",
+      category: "respite",
+      description: "Provides home modification, assistive technology, and respite resources to support individuals with disabilities and their caregivers in living independently across Oklahoma.",
+      website: "https://www.enableok.com",
+      phone: "405-751-3885"
+    },
+
+  ],
+
+  "Oregon": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Oregon Department of Human Services – Intellectual and Developmental Disabilities (IDD)",
+      category: "government",
+      description: "Administers Oregon's Medicaid K Plan and state IDD services for individuals with developmental disabilities, including autism, through a network of county community developmental disability programs.",
+      website: "https://www.oregon.gov/odhs/providers-partners/intellectual-developmental-disabilities",
+      phone: "503-945-5944"
+    },
+    {
+      name: "Oregon Department of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education services for Oregon students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://www.oregon.gov/ode/students-and-family/specialeducation",
+      phone: "503-947-5600"
+    },
+    {
+      name: "Oregon Early Intervention / Early Childhood Special Education (EI/ECSE)",
+      category: "government",
+      description: "Oregon's IDEA Part B and C programs providing early intervention and special education for children birth to age 5 with developmental delays or disabilities, including service coordination.",
+      website: "https://www.oregon.gov/ode/students-and-family/specialeducation/earlyintervention",
+      phone: "503-947-5600"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Family and Community Together (FACT Oregon)",
+      category: "parent-family",
+      description: "Oregon's federally funded Parent Training and Information Center offering free training, advocacy support, and one-on-one assistance to families of children with disabilities.",
+      website: "https://factoregon.org",
+      phone: "888-988-3228"
+    },
+    {
+      name: "Autism Society of Oregon",
+      category: "parent-family",
+      description: "Provides support groups, community events, and resource navigation for individuals with autism and their families throughout Oregon.",
+      website: "https://www.autismsocietyoforegon.org",
+      phone: "503-636-1676"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Oregon",
+      category: "advocacy",
+      description: "Oregon's federally designated Protection & Advocacy organization providing free legal services and advocacy for Oregonians with disabilities, including those on the autism spectrum.",
+      website: "https://droregon.org",
+      phone: "503-243-2081"
+    },
+    {
+      name: "Oregon Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Oregonians with developmental disabilities through advocacy and grants.",
+      website: "https://ocdd.org",
+      phone: "503-945-9941"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Relief Nursery",
+      category: "respite",
+      description: "Provides therapeutic respite, family support, and early intervention services for families of young children with developmental needs in Lane County and surrounding Oregon communities.",
+      website: "https://reliefnursery.org",
+      phone: "541-343-3958"
+    },
+    {
+      name: "Albertina Kerr – Autism and Developmental Disabilities",
+      category: "respite",
+      description: "Offers respite care, residential support, and community services for individuals with autism and developmental disabilities and their families across Oregon.",
+      website: "https://www.albertinakerr.org",
+      phone: "503-239-8101"
+    },
+
+  ],
+
+  "Pennsylvania": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Pennsylvania Office of Developmental Programs (ODP)",
+      category: "government",
+      description: "Administers Pennsylvania's Medicaid HCBS waivers and state-funded services for individuals with intellectual disabilities and autism, supporting residential, day, employment, and family programs.",
+      website: "https://www.dhs.pa.gov/Services/Disabilities-Special-Needs/Pages/ODP.aspx",
+      phone: "888-565-9435"
+    },
+    {
+      name: "Pennsylvania Department of Education – Bureau of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Pennsylvania students with disabilities, providing guidance on IEPs, due process rights, and dispute resolution.",
+      website: "https://www.education.pa.gov/K-12/Special%20Education/Pages/default.aspx",
+      phone: "717-783-6913"
+    },
+    {
+      name: "Pennsylvania Early Intervention Program",
+      category: "government",
+      description: "Pennsylvania's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
+      website: "https://www.dhs.pa.gov/Services/Children/Early-Intervention/Pages/default.aspx",
+      phone: "800-692-7288"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "PEAL Center – Parent Education and Advocacy Leadership Center",
+      category: "parent-family",
+      description: "Pennsylvania's federally funded Parent Training and Information Center providing free training, advocacy, and one-on-one support to families of children with disabilities navigating schools and services.",
+      website: "https://www.pealcenter.org",
+      phone: "866-950-1040"
+    },
+    {
+      name: "Autism Society of Greater Pittsburgh",
+      category: "parent-family",
+      description: "Provides community programs, support groups, and resource navigation for individuals with autism and their families in the greater Pittsburgh area and western Pennsylvania.",
+      website: "https://www.autismsocietypittsburgh.org",
+      phone: "888-278-8476"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Pennsylvania",
+      category: "advocacy",
+      description: "Pennsylvania's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for Pennsylvanians with disabilities, including autism.",
+      website: "https://www.disabilityrightspa.org",
+      phone: "800-692-7443"
+    },
+    {
+      name: "Pennsylvania Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Pennsylvanians with developmental disabilities through advocacy and grants.",
+      website: "https://www.paddc.org",
+      phone: "717-787-6057"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Pennsylvania",
+      category: "respite",
+      description: "Statewide organization providing advocacy, family support, and respite resources for individuals with intellectual and developmental disabilities and their families across Pennsylvania.",
+      website: "https://thearcpa.org",
+      phone: "717-790-2094"
+    },
+    {
+      name: "Pressley Ridge – Autism Services",
+      category: "respite",
+      description: "Provides therapeutic respite, behavioral support, and community services for children and families affected by autism in Pennsylvania and surrounding states.",
+      website: "https://www.pressleyridge.org",
+      phone: "800-344-7858"
+    },
+
+  ],
+
+  "Rhode Island": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Rhode Island Division of Developmental Disabilities (DDD)",
+      category: "government",
+      description: "Administers Rhode Island's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, funding residential, day, employment, and family support.",
+      website: "https://bhddh.ri.gov/developmental-disabilities",
+      phone: "401-462-3191"
+    },
+    {
+      name: "Rhode Island Department of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Rhode Island students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://ride.ri.gov/students-families/special-education",
+      phone: "401-222-4600"
+    },
+    {
+      name: "Rhode Island Early Intervention Program",
+      category: "government",
+      description: "Rhode Island's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
+      website: "https://health.ri.gov/programs/earlyintervention",
+      phone: "401-222-4607"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Rhode Island Parent Information Network (RIPIN)",
+      category: "parent-family",
+      description: "Rhode Island's federally funded Parent Training and Information Center offering free peer support, training, and advocacy for families of children with disabilities navigating education and services.",
+      website: "https://www.ripin.org",
+      phone: "401-270-0101"
+    },
+    {
+      name: "Autism Society of Rhode Island",
+      category: "parent-family",
+      description: "Provides community support, resource navigation, and awareness programs for individuals with autism and their families throughout Rhode Island.",
+      website: "https://autismri.org",
+      phone: "401-785-2666"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Rhode Island",
+      category: "advocacy",
+      description: "Rhode Island's federally designated Protection & Advocacy organization providing free legal services and advocacy for Rhode Islanders with disabilities, including those with autism.",
+      website: "https://drri.org",
+      phone: "401-831-3150"
+    },
+    {
+      name: "Rhode Island Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Rhode Islanders with developmental disabilities through advocacy and grants.",
+      website: "https://riddc.org",
+      phone: "401-737-1238"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Blackstone Valley",
+      category: "respite",
+      description: "Provides residential, day, and respite services for individuals with intellectual and developmental disabilities and their families in the Blackstone Valley region of Rhode Island.",
+      website: "https://www.arcbv.org",
+      phone: "401-765-3400"
+    },
+    {
+      name: "Meeting Street",
+      category: "respite",
+      description: "Offers early intervention, educational, therapeutic, and family support services for children and adults with disabilities, including autism, throughout Rhode Island.",
+      website: "https://www.meetingstreet.org",
+      phone: "401-438-9500"
+    },
+
+  ],
+
+  "South Carolina": [
+
+    // Government & Public Benefits Services
+    {
+      name: "South Carolina Department of Disabilities and Special Needs (DDSN)",
+      category: "government",
+      description: "Administers South Carolina's Medicaid HCBS waivers and state services for individuals with intellectual disabilities and autism, funding residential, day, and family support programs.",
+      website: "https://www.ddsn.sc.gov",
+      phone: "803-898-9600"
+    },
+    {
+      name: "South Carolina Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for South Carolina students with disabilities, providing guidance on IEPs, due process, and family rights.",
+      website: "https://ed.sc.gov/districts-schools/special-education-services",
+      phone: "803-734-8224"
+    },
+    {
+      name: "BabyNet – South Carolina Early Intervention",
+      category: "government",
+      description: "South Carolina's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://www.dhec.sc.gov/health/women-infants-children/babynet",
+      phone: "803-898-0784"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "PRO-Parents of South Carolina",
+      category: "parent-family",
+      description: "South Carolina's federally funded Parent Training and Information Center providing free advocacy training, information, and one-on-one support to families of children with disabilities.",
+      website: "https://www.proparents.org",
+      phone: "800-759-4776"
+    },
+    {
+      name: "Autism Society of South Carolina",
+      category: "parent-family",
+      description: "Provides community support, awareness events, and resource navigation for individuals with autism and their families throughout South Carolina.",
+      website: "https://www.autismsc.org",
+      phone: "803-750-6988"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights South Carolina",
+      category: "advocacy",
+      description: "South Carolina's federally designated Protection & Advocacy organization providing free legal services and advocacy for South Carolinians with disabilities, including those with autism.",
+      website: "https://www.disabilityrightssc.org",
+      phone: "803-782-0639"
+    },
+    {
+      name: "South Carolina Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for South Carolinians with developmental disabilities through advocacy and grants.",
+      website: "https://www.scddc.sc.gov",
+      phone: "803-734-0465"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Able South Carolina",
+      category: "respite",
+      description: "Provides independent living services, peer support, assistive technology, and respite resources for individuals with disabilities across South Carolina.",
+      website: "https://www.ablesouthcarolina.org",
+      phone: "803-779-5121"
+    },
+    {
+      name: "Moss Foundation – SC Autism and Disability Resources",
+      category: "respite",
+      description: "Offers therapeutic recreation, respite, and community support services for individuals with autism and developmental disabilities and their families across South Carolina.",
+      website: "https://www.mossfoundationsc.org",
+      phone: "803-252-9777"
+    },
+
+  ],
+
+  "South Dakota": [
+
+    // Government & Public Benefits Services
+    {
+      name: "South Dakota Division of Developmental Disabilities (DHS)",
+      category: "government",
+      description: "Administers South Dakota's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, supporting residential, day, and family support programs.",
+      website: "https://dss.sd.gov/developmentaldisabilities",
+      phone: "605-773-3438"
+    },
+    {
+      name: "South Dakota Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for South Dakota students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://doe.sd.gov/oess/specialed.aspx",
+      phone: "605-773-3678"
+    },
+    {
+      name: "South Dakota Birth to 3 Connections – Early Intervention",
+      category: "government",
+      description: "South Dakota's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
+      website: "https://dss.sd.gov/developmentaldisabilities/birthto3.aspx",
+      phone: "605-773-3438"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "South Dakota Parent Connection (SDPC)",
+      category: "parent-family",
+      description: "South Dakota's federally funded Parent Training and Information Center offering free training, advocacy support, and one-on-one assistance to families of children with disabilities.",
+      website: "https://www.sdparent.org",
+      phone: "800-640-4553"
+    },
+    {
+      name: "Autism Society of the Black Hills",
+      category: "parent-family",
+      description: "Provides community support, awareness events, and resource navigation for individuals with autism and their families in the Black Hills region and across South Dakota.",
+      website: "https://www.autismsocietyblackhills.org",
+      phone: "605-716-1866"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights South Dakota",
+      category: "advocacy",
+      description: "South Dakota's federally designated Protection & Advocacy organization providing free legal services and advocacy for South Dakotans with disabilities, including those with autism.",
+      website: "https://www.drsdlaw.org",
+      phone: "800-658-4782"
+    },
+    {
+      name: "South Dakota Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for South Dakotans with developmental disabilities through advocacy and grants.",
+      website: "https://www.sdcdd.org",
+      phone: "605-367-5463"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of South Dakota",
+      category: "respite",
+      description: "Provides advocacy, family support, and community resources for individuals with intellectual and developmental disabilities and their families across South Dakota.",
+      website: "https://thearcofsouthdakota.org",
+      phone: "605-332-5654"
+    },
+    {
+      name: "LifeQuest of the Midlands",
+      category: "respite",
+      description: "Offers day habilitation, respite care, and community support services for individuals with developmental disabilities and autism in eastern South Dakota.",
+      website: "https://lifequestofthemidlands.org",
+      phone: "605-336-1765"
+    },
+
+  ],
+
+  "Tennessee": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Tennessee Division of Intellectual Disabilities (DIDD)",
+      category: "government",
+      description: "Administers Tennessee's Medicaid HCBS waivers and state-funded services for individuals with intellectual disabilities and autism, supporting residential, employment, and family programs.",
+      website: "https://www.tn.gov/didd.html",
+      phone: "615-532-6530"
+    },
+    {
+      name: "Tennessee Department of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Tennessee students with disabilities, providing guidance on IEPs, due process rights, and compliance monitoring.",
+      website: "https://www.tn.gov/education/districts/special-populations/special-education.html",
+      phone: "615-741-2851"
+    },
+    {
+      name: "Tennessee Early Intervention System (TEIS)",
+      category: "government",
+      description: "Tennessee's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
+      website: "https://www.tn.gov/didd/for-families/tennessee-early-intervention-system.html",
+      phone: "800-852-7157"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Support and Training for Exceptional Parents (STEP)",
+      category: "parent-family",
+      description: "Tennessee's federally funded Parent Training and Information Center offering free workshops, one-on-one advocacy coaching, and resources for families of children with disabilities.",
+      website: "https://www.tnstep.org",
+      phone: "800-280-7837"
+    },
+    {
+      name: "Autism Tennessee",
+      category: "parent-family",
+      description: "Provides community programs, support groups, and resource navigation for individuals with autism and their families across Tennessee.",
+      website: "https://www.autismtn.org",
+      phone: "615-385-2077"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Tennessee",
+      category: "advocacy",
+      description: "Tennessee's federally designated Protection & Advocacy organization providing free legal services and advocacy for Tennesseans with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilityrightstn.org",
+      phone: "800-342-1660"
+    },
+    {
+      name: "Tennessee Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Tennesseans with developmental disabilities through advocacy and grants.",
+      website: "https://www.tn.gov/cdd.html",
+      phone: "615-532-6615"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Vanderbilt Kennedy Center – TRIAD Autism Services",
+      category: "respite",
+      description: "Treatment and Research Institute for Autism Spectrum Disorders (TRIAD) offering assessment, family consultation, training, and community support for individuals with autism across Tennessee.",
+      website: "https://vkc.vumc.org/vkc/triad",
+      phone: "615-936-0267"
+    },
+    {
+      name: "Respite Care Association of Tennessee",
+      category: "respite",
+      description: "Promotes and connects families of individuals with disabilities to respite care services and caregiver support resources across Tennessee.",
+      website: "https://www.respitetn.org",
+      phone: "615-383-0161"
+    },
+
+  ],
+
+  "Texas": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Texas Health and Human Services – Intellectual and Developmental Disability Services (IDDS)",
+      category: "government",
+      description: "Administers Texas's Medicaid HCBS waivers and state-funded IDD services for individuals with developmental disabilities, including autism, through a network of local authorities.",
+      website: "https://www.hhs.texas.gov/services/disability/intellectual-developmental-disability-idd-services",
+      phone: "877-541-7905"
+    },
+    {
+      name: "Texas Education Agency – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Texas students with disabilities, providing guidance on IEPs, dispute resolution, and family rights across Texas school districts.",
+      website: "https://tea.texas.gov/academics/special-student-populations/special-education",
+      phone: "512-463-9414"
+    },
+    {
+      name: "Texas Early Childhood Intervention (ECI) Program",
+      category: "government",
+      description: "Texas's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://www.hhs.texas.gov/services/disability/early-childhood-intervention-services",
+      phone: "877-787-8999"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Partners Resource Network (PRN) – Texas",
+      category: "parent-family",
+      description: "Texas's federally funded Parent Training and Information network with regional centers offering free training, advocacy coaching, and support to families of children with disabilities.",
+      website: "https://prntexas.org",
+      phone: "409-898-4684"
+    },
+    {
+      name: "Autism Society of Texas",
+      category: "parent-family",
+      description: "Provides community support, resource navigation, and advocacy for individuals with autism and their families across the Lone Star State.",
+      website: "https://www.autismsocietytx.org",
+      phone: "512-479-4199"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Texas",
+      category: "advocacy",
+      description: "Texas's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for Texans with disabilities, including autism.",
+      website: "https://www.disabilityrightstx.org",
+      phone: "800-252-9108"
+    },
+    {
+      name: "Texas Council for Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Texans with developmental disabilities through advocacy, grants, and policy work.",
+      website: "https://www.tcdd.texas.gov",
+      phone: "512-437-5432"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Texas Respite Resource Network",
+      category: "respite",
+      description: "Connects families of individuals with disabilities across Texas to respite care providers, caregiver training, and support resources to prevent caregiver burnout.",
+      website: "https://www.respiteresources.org",
+      phone: "210-615-7788"
+    },
+    {
+      name: "Autism Treatment Center",
+      category: "respite",
+      description: "Provides behavioral therapy, social skills programming, and family support services for individuals with autism and their caregivers in the Dallas-Fort Worth metroplex and across Texas.",
+      website: "https://www.atcoftexas.org",
+      phone: "972-644-2076"
+    },
+
+  ],
+
+  "Utah": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Utah Division of Services for People with Disabilities (DSPD)",
+      category: "government",
+      description: "Administers Utah's Medicaid HCBS waivers and state-funded services for individuals with developmental disabilities, including autism, supporting residential, day, employment, and family programs.",
+      website: "https://dspd.utah.gov",
+      phone: "801-538-4200"
+    },
+    {
+      name: "Utah State Board of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Utah students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://www.schools.utah.gov/specialeducation",
+      phone: "801-538-7706"
+    },
+    {
+      name: "Baby Watch Early Intervention Program – Utah",
+      category: "government",
+      description: "Utah's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://www.health.utah.gov/babywatch",
+      phone: "801-584-8226"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Utah Parent Center",
+      category: "parent-family",
+      description: "Utah's federally funded Parent Training and Information Center offering free training, advocacy coaching, and support to families of children with disabilities navigating schools and services.",
+      website: "https://www.utahparentcenter.org",
+      phone: "800-468-1160"
+    },
+    {
+      name: "Autism Council of Utah",
+      category: "parent-family",
+      description: "Provides community education, resource navigation, and family support for individuals with autism and their families throughout Utah.",
+      website: "https://www.autismcouncilofutah.org",
+      phone: "801-560-1563"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Law Center – Utah",
+      category: "advocacy",
+      description: "Utah's federally designated Protection & Advocacy organization providing free legal services and advocacy for Utahns with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilitylawcenter.org",
+      phone: "801-363-1347"
+    },
+    {
+      name: "Utah Governor's Council for People with Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Utahns with developmental disabilities through advocacy and grants.",
+      website: "https://gcpd.utah.gov",
+      phone: "801-533-3965"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Utah Respite Coalition",
+      category: "respite",
+      description: "Connects Utah families of individuals with disabilities to respite care resources, caregiver training, and support networks to sustain family caregiving.",
+      website: "https://jobs.utah.gov/usor/vr/community/respite.html",
+      phone: "801-538-7530"
+    },
+    {
+      name: "Utah Autism Foundation",
+      category: "respite",
+      description: "Provides family support, respite resources, and community programs for individuals with autism and their caregivers across Utah.",
+      website: "https://utahautismfoundation.org",
+      phone: "801-266-2111"
+    },
+
+  ],
+
+  "Vermont": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Vermont Division of Disability and Aging Services – Developmental Services (DS)",
+      category: "government",
+      description: "Administers Vermont's Medicaid HCBS waivers and state services for adults with developmental disabilities, including autism, through regional designated agencies across Vermont.",
+      website: "https://dail.vermont.gov/services/developmental-services",
+      phone: "802-871-3065"
+    },
+    {
+      name: "Vermont Agency of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Vermont students with disabilities, providing guidance on IEPs, due process rights, and compliance monitoring.",
+      website: "https://education.vermont.gov/student-support/vermont-special-education",
+      phone: "802-828-1256"
+    },
+    {
+      name: "Vermont Family Infant Toddler (FIT) Program",
+      category: "government",
+      description: "Vermont's IDEA Part C early intervention program providing services for children birth to age 3 with developmental delays, including service coordination and individualized family support plans.",
+      website: "https://dail.vermont.gov/fit",
+      phone: "802-871-3272"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Vermont Family Network",
+      category: "parent-family",
+      description: "Vermont's federally funded Parent Training and Information Center offering free training, advocacy coaching, and peer support for families of children with disabilities navigating education and services.",
+      website: "https://www.vermontfamilynetwork.org",
+      phone: "800-800-4005"
+    },
+    {
+      name: "Autism Society of Vermont",
+      category: "parent-family",
+      description: "Provides community support, awareness events, and resource navigation for individuals with autism and their families throughout Vermont.",
+      website: "https://www.autismvermont.org",
+      phone: "802-985-9288"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Vermont",
+      category: "advocacy",
+      description: "Vermont's federally designated Protection & Advocacy organization providing free legal services and advocacy for Vermonters with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilityrightsvt.org",
+      phone: "800-834-7890"
+    },
+    {
+      name: "Vermont Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Vermonters with developmental disabilities through advocacy and grants.",
+      website: "https://ddcouncil.vermont.gov",
+      phone: "802-828-1310"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Howard Center – Developmental and Autism Services",
+      category: "respite",
+      description: "Provides community-based respite, residential support, and family services for individuals with developmental disabilities and autism in Chittenden County and across Vermont.",
+      website: "https://www.howardcenter.org",
+      phone: "802-488-6000"
+    },
+    {
+      name: "Vermont Caregiver Alliance",
+      category: "respite",
+      description: "Supports family caregivers across Vermont through education, peer connections, and respite resource navigation to sustain long-term caregiving.",
+      website: "https://www.vermontcaregiversalliance.org",
+      phone: "802-662-5283"
+    },
+
+  ],
+
+  "Virginia": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Virginia Department of Behavioral Health and Developmental Services (DBHDS)",
+      category: "government",
+      description: "Administers Virginia's Medicaid HCBS waivers for individuals with developmental disabilities, including autism, through community services boards statewide.",
+      website: "https://dbhds.virginia.gov",
+      phone: "804-786-3921"
+    },
+    {
+      name: "Virginia Department of Education – Division of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Virginia students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://www.doe.virginia.gov/programs-services/special-education",
+      phone: "804-225-2402"
+    },
+    {
+      name: "Virginia's Early Intervention System (Part C)",
+      category: "government",
+      description: "Virginia's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://www.infantva.org",
+      phone: "804-371-6592"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Parent Educational Advocacy Training Center (PEATC)",
+      category: "parent-family",
+      description: "Virginia's federally funded Parent Training and Information Center offering free workshops, advocacy coaching, and individualized support to families of children with disabilities.",
+      website: "https://www.peatc.org",
+      phone: "800-869-6782"
+    },
+    {
+      name: "Commonwealth Autism",
+      category: "parent-family",
+      description: "Provides training, consultation, and resource navigation for individuals with autism, their families, and professionals across Virginia.",
+      website: "https://www.commonwealthautism.org",
+      phone: "804-355-0300"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "disAbility Law Center of Virginia (dLCV)",
+      category: "advocacy",
+      description: "Virginia's federally designated Protection & Advocacy organization providing free legal services and advocacy for Virginians with disabilities, including those on the autism spectrum.",
+      website: "https://www.dlcv.org",
+      phone: "800-552-3962"
+    },
+    {
+      name: "Virginia Board for People with Disabilities (VBPD)",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Virginians with developmental disabilities through advocacy and grants.",
+      website: "https://www.vbpd.virginia.gov",
+      phone: "800-846-4464"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Virginia",
+      category: "respite",
+      description: "Provides advocacy, family resources, and community support for individuals with intellectual and developmental disabilities and their families across Virginia.",
+      website: "https://thearcofva.org",
+      phone: "804-649-8481"
+    },
+    {
+      name: "Virginia Autism Project",
+      category: "respite",
+      description: "Offers training, consultation, and family support services for individuals with autism and their caregivers, with a focus on evidence-based practices across Virginia.",
+      website: "https://www.virginiaautismproject.com",
+      phone: "804-828-8196"
+    },
+
+  ],
+
+  "Washington": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Washington State Developmental Disabilities Administration (DDA – DSHS)",
+      category: "government",
+      description: "Administers Washington's Medicaid HCBS waivers and state-funded services for individuals with developmental disabilities, including autism, supporting residential, employment, and family programs.",
+      website: "https://www.dshs.wa.gov/dda",
+      phone: "360-725-3410"
+    },
+    {
+      name: "Office of Superintendent of Public Instruction (OSPI) – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Washington students with disabilities, providing guidance on IEPs, dispute resolution, and family rights statewide.",
+      website: "https://www.k12.wa.us/student-success/special-education",
+      phone: "360-725-6075"
+    },
+    {
+      name: "Washington State Birth to 3 Program",
+      category: "government",
+      description: "Washington's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to service coordinators and individualized family support plans.",
+      website: "https://www.dcyf.wa.gov/services/early-learning/birth-to-3",
+      phone: "360-725-3200"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Washington PAVE – Partnerships for Action, Voices for Empowerment",
+      category: "parent-family",
+      description: "Washington's federally funded Parent Training and Information Center offering free training, advocacy support, and peer connections for families of children with disabilities.",
+      website: "https://wapave.org",
+      phone: "800-572-7368"
+    },
+    {
+      name: "Autism Society of Washington",
+      category: "parent-family",
+      description: "Provides community programs, support groups, and resource navigation for individuals with autism and their families throughout Washington State.",
+      website: "https://www.autismsocietyofwa.org",
+      phone: "206-763-2704"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Washington (DRW)",
+      category: "advocacy",
+      description: "Washington's federally designated Protection & Advocacy organization providing free legal services and advocacy for Washingtonians with disabilities, including those with autism.",
+      website: "https://www.disabilityrightswa.org",
+      phone: "800-562-2702"
+    },
+    {
+      name: "Developmental Disabilities Council of Washington (DDC)",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Washingtonians with developmental disabilities through advocacy and grants.",
+      website: "https://www.ddc.wa.gov",
+      phone: "360-586-3560"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Washington State",
+      category: "respite",
+      description: "Statewide advocacy organization providing family resources, respite navigation, and community support for individuals with intellectual and developmental disabilities across Washington.",
+      website: "https://www.arcwa.org",
+      phone: "253-896-6755"
+    },
+    {
+      name: "Outdoors for All Foundation",
+      category: "respite",
+      description: "Provides adaptive sports, recreation therapy, and respite through inclusive outdoor programs for children and adults with disabilities, including autism, in the greater Seattle area.",
+      website: "https://www.outdoorsforall.org",
+      phone: "206-838-6030"
+    },
+
+  ],
+
+  "West Virginia": [
+
+    // Government & Public Benefits Services
+    {
+      name: "West Virginia Department of Health – Office of Developmental Services",
+      category: "government",
+      description: "Administers West Virginia's Medicaid HCBS waivers for individuals with intellectual and developmental disabilities, including autism, coordinating residential, day, and family support services.",
+      website: "https://dhhr.wv.gov/bhhf/developmental",
+      phone: "304-356-4811"
+    },
+    {
+      name: "West Virginia Department of Education – Office of Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for West Virginia students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://wvde.us/special-education",
+      phone: "304-558-2696"
+    },
+    {
+      name: "West Virginia Birth to Three – Early Intervention",
+      category: "government",
+      description: "West Virginia's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and family support plans.",
+      website: "https://dhhr.wv.gov/birth23",
+      phone: "304-356-3191"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "West Virginia Parent Training and Information Center (WVPTI)",
+      category: "parent-family",
+      description: "West Virginia's federally funded Parent Training and Information Center providing free advocacy training, workshops, and one-on-one support to families of children with disabilities.",
+      website: "https://www.wvpti.org",
+      phone: "304-624-1436"
+    },
+    {
+      name: "Autism Society of West Virginia",
+      category: "parent-family",
+      description: "Provides community support, resource navigation, and awareness programs for individuals with autism and their families throughout West Virginia.",
+      website: "https://www.autismwv.org",
+      phone: "304-768-3350"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights West Virginia",
+      category: "advocacy",
+      description: "West Virginia's federally designated Protection & Advocacy organization providing free legal services and advocacy for West Virginians with disabilities, including those with autism.",
+      website: "https://www.drnc.org",
+      phone: "800-950-5250"
+    },
+    {
+      name: "West Virginia Developmental Disabilities Council",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for West Virginians with developmental disabilities through advocacy and grants.",
+      website: "https://www.wvddc.org",
+      phone: "304-558-0416"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of West Virginia",
+      category: "respite",
+      description: "Provides advocacy, family support, and community resources for individuals with intellectual and developmental disabilities and their families across West Virginia.",
+      website: "https://arcwv.org",
+      phone: "304-768-8878"
+    },
+    {
+      name: "Celebrate EDU – West Virginia",
+      category: "respite",
+      description: "Offers respite care, behavioral support, and community integration services for individuals with autism and developmental disabilities and their families in West Virginia.",
+      website: "https://celebrateedu.com",
+      phone: "304-906-6005"
+    },
+
+  ],
+
+  "Wisconsin": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Wisconsin Department of Health Services – Family Care and IRIS Programs",
+      category: "government",
+      description: "Administers Wisconsin's Medicaid HCBS managed care programs (Family Care and Include, Respect, I Self-Direct) for adults with developmental disabilities, including autism.",
+      website: "https://www.dhs.wisconsin.gov/familycare/index.htm",
+      phone: "608-266-0554"
+    },
+    {
+      name: "Wisconsin Department of Public Instruction – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Wisconsin students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://dpi.wi.gov/sped",
+      phone: "608-266-1649"
+    },
+    {
+      name: "Wisconsin Birth to 3 Program",
+      category: "government",
+      description: "Wisconsin's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and family support plans.",
+      website: "https://www.dhs.wisconsin.gov/birthto3/index.htm",
+      phone: "608-267-3270"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "WI FACETS – Wisconsin Family Assistance Center for Education, Training and Support",
+      category: "parent-family",
+      description: "Wisconsin's federally funded Parent Training and Information Center offering free advocacy training, workshops, and peer support for families of children with disabilities.",
+      website: "https://www.wifacets.org",
+      phone: "414-374-4645"
+    },
+    {
+      name: "Autism Society of Wisconsin",
+      category: "parent-family",
+      description: "Provides community programs, support groups, and resource navigation for individuals with autism and their families throughout Wisconsin.",
+      website: "https://www.autismwisconsin.org",
+      phone: "888-428-8476"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Wisconsin",
+      category: "advocacy",
+      description: "Wisconsin's federally designated Protection & Advocacy organization providing free legal services and advocacy for Wisconsinites with disabilities, including those on the autism spectrum.",
+      website: "https://www.drwi.org",
+      phone: "800-928-8778"
+    },
+    {
+      name: "Wisconsin Board for People with Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Wisconsinites with developmental disabilities through advocacy and grants.",
+      website: "https://www.wi-bpdd.org",
+      phone: "608-266-7826"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc Wisconsin",
+      category: "respite",
+      description: "Statewide organization providing advocacy, family support, and respite resources for individuals with intellectual and developmental disabilities and their families across Wisconsin.",
+      website: "https://www.arcwisconsin.org",
+      phone: "608-846-2860"
+    },
+    {
+      name: "Waisman Center – Respite and Family Support",
+      category: "respite",
+      description: "University of Wisconsin research and service center providing assessment, family support, respite coordination, and training for individuals with developmental disabilities and autism.",
+      website: "https://www.waisman.wisc.edu",
+      phone: "608-263-5940"
+    },
+
+  ],
+
+  "Wyoming": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Wyoming Department of Health – Developmental Disabilities Division",
+      category: "government",
+      description: "Administers Wyoming's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, supporting residential, employment, and family programs.",
+      website: "https://health.wyo.gov/healthcarefin/dd",
+      phone: "307-777-5246"
+    },
+    {
+      name: "Wyoming Department of Education – Special Education",
+      category: "government",
+      description: "Oversees IDEA compliance and special education for Wyoming students with disabilities, providing guidance on IEPs, dispute resolution, and family rights.",
+      website: "https://edu.wyoming.gov/educators/special-education",
+      phone: "307-777-7417"
+    },
+    {
+      name: "Wyoming Early Intervention Program (Part C)",
+      category: "government",
+      description: "Wyoming's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
+      website: "https://health.wyo.gov/publichealth/children/early-intervention",
+      phone: "307-777-6921"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Wyoming Parent Information Center (WPIC)",
+      category: "parent-family",
+      description: "Wyoming's federally funded Parent Training and Information Center offering free advocacy training, workshops, and one-on-one support to families of children with disabilities.",
+      website: "https://www.wpic.org",
+      phone: "800-660-9742"
+    },
+    {
+      name: "Autism Society of Wyoming",
+      category: "parent-family",
+      description: "Provides community support, awareness events, and resource navigation for individuals with autism and their families throughout Wyoming.",
+      website: "https://www.autismwy.org",
+      phone: "307-632-4008"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Wyoming",
+      category: "advocacy",
+      description: "Wyoming's federally designated Protection & Advocacy organization providing free legal services and advocacy for Wyomingites with disabilities, including those on the autism spectrum.",
+      website: "https://www.disabilityrightswy.org",
+      phone: "307-632-3496"
+    },
+    {
+      name: "Wyoming Governor's Council on Developmental Disabilities",
+      category: "advocacy",
+      description: "Federally funded council promoting self-determination, community inclusion, and systems change for Wyomingites with developmental disabilities through advocacy and grants.",
+      website: "https://gcdd.wyo.gov",
+      phone: "307-777-6972"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc of Teton Valley",
+      category: "respite",
+      description: "Provides advocacy, family support, and community resources for individuals with intellectual and developmental disabilities and their families in Teton County and greater Wyoming.",
+      website: "https://www.arctetonvalley.org",
+      phone: "307-733-3080"
+    },
+    {
+      name: "Wyoming Respite Network",
+      category: "respite",
+      description: "Connects Wyoming families of individuals with disabilities to respite care providers, caregiver training, and support resources across the state.",
+      website: "https://health.wyo.gov/aging/wyoming-respite-network",
+      phone: "307-777-7986"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
