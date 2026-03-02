@@ -1541,6 +1541,81 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Michigan": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Michigan Department of Health and Human Services – Developmental Disabilities",
+      category: "government",
+      description: "Administers Michigan's Medicaid Home and Community-Based Services waivers for individuals with developmental disabilities, including autism, coordinating residential, respite, and community support services.",
+      website: "https://www.michigan.gov/mdhhs/keep-mi-healthy/mentalhealth/developmental-disabilities",
+      phone: "517-335-3723"
+    },
+    {
+      name: "Michigan Early On Program",
+      category: "government",
+      description: "Michigan's IDEA Part C early intervention system serving children birth to age 3 with developmental delays, providing service coordination, therapies, and family support through local early intervention agencies.",
+      website: "https://www.michigan.gov/mde/early-on",
+      phone: "800-327-5966"
+    },
+    {
+      name: "Michigan Department of Education – Special Education",
+      category: "government",
+      description: "Oversees special education programs statewide, ensuring students with disabilities including autism receive appropriate services, and provides dispute resolution and compliance monitoring.",
+      website: "https://www.michigan.gov/mde/services/special-edu",
+      phone: "517-373-0923"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Michigan Alliance for Families",
+      category: "parent-family",
+      description: "Michigan's federally funded Parent Training and Information Center offering free resources, workshops, and one-on-one support to families of children with disabilities navigating special education.",
+      website: "https://www.michiganallianceforfamilies.org",
+      phone: "800-552-4821"
+    },
+    {
+      name: "Autism Alliance of Michigan (AAoM)",
+      category: "parent-family",
+      description: "Provides family navigation, community programs, and advocacy for individuals with autism and their families across Michigan, including the ECHO Autism program for healthcare providers.",
+      website: "https://autismallianceofmichigan.org",
+      phone: "877-463-2287"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Michigan (DRM)",
+      category: "advocacy",
+      description: "Michigan's federally designated Protection & Advocacy organization providing free legal services, investigations, and systemic advocacy for people with disabilities, including autism.",
+      website: "https://www.drmich.org",
+      phone: "800-288-5923"
+    },
+    {
+      name: "Michigan Developmental Disabilities Council (MDDC)",
+      category: "advocacy",
+      description: "Federally funded council promoting independence, self-determination, and community inclusion for Michiganders with developmental disabilities through advocacy, grants, and systems change.",
+      website: "https://www.michigan.gov/mddc",
+      phone: "517-335-3158"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "The Arc Michigan",
+      category: "respite",
+      description: "Statewide advocacy and support organization providing family resources, respite navigation, and community programs for individuals with intellectual and developmental disabilities including autism.",
+      website: "https://www.arcmichigan.org",
+      phone: "517-487-5426"
+    },
+    {
+      name: "Lutheran Social Services of Michigan – Autism & Developmental Disabilities",
+      category: "respite",
+      description: "Offers respite, residential support, and community integration services for individuals with autism and developmental disabilities and their families across Michigan.",
+      website: "https://www.lssm.org",
+      phone: "800-515-1116"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
