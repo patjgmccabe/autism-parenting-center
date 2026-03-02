@@ -313,4 +313,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "California": [
+
+    // Government & Public Benefits Services
+    {
+      name: "California Department of Developmental Services (DDS) – Early Start Program",
+      category: "government",
+      description: "Administers Part C IDEA early intervention services for infants and toddlers (birth–age 3) with developmental disabilities, connecting families with service coordination, therapy, and 47 state-funded Family Resource Centers statewide.",
+      website: "https://dds.ca.gov/early-start",
+      phone: "800-515-2229"
+    },
+    {
+      name: "California Department of Developmental Services (DDS) – Regional Center System",
+      category: "government",
+      description: "Contracts with 21 nonprofit Regional Centers statewide to provide lifelong case management, service coordination, respite care authorization, behavioral supports, and Individual Program Plans (IPPs) for individuals with developmental disabilities and their families at no cost.",
+      website: "https://dds.ca.gov",
+      phone: "916-654-1690"
+    },
+    {
+      name: "California State Council on Developmental Disabilities (SCDD)",
+      category: "government",
+      description: "An independent state agency mandated under federal law to advocate for systems change and improved services for Californians with developmental disabilities and their families; funds grassroots advocacy and self-determination projects statewide.",
+      website: "https://scdd.ca.gov"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "California Autism Professional Training and Information Network (CAPTAIN)",
+      category: "parent-family",
+      description: "A statewide cross-agency network supporting families and professionals in understanding and applying evidence-based practices for individuals with autism spectrum disorder across education, regional center, and health systems.",
+      website: "https://captain.ucdavis.edu"
+    },
+    {
+      name: "Family Empowerment Centers (FECs) – California Department of Education",
+      category: "parent-family",
+      description: "A statewide network of 32 parent-led nonprofit centers serving families of students with disabilities ages 3–22; offers peer-to-peer support, IEP navigation, training workshops, and dispute resolution assistance at no cost.",
+      website: "https://cde.ca.gov/FECs"
+    },
+    {
+      name: "Family Resource Centers Network of California (FRCNCA)",
+      category: "parent-family",
+      description: "The statewide coalition of California's 47 Early Start Family Resource Centers, each staffed by parents of children with special needs; provides parent-to-parent support, resource navigation, and advocacy training for families of children with disabilities ages 0–3.",
+      website: "https://frcnca.org"
+    },
+    {
+      name: "Team of Advocates for Special Kids (TASK)",
+      category: "parent-family",
+      description: "Southern California's federally designated Parent Training and Information (PTI) Center serving families of individuals with disabilities from birth through age 26; provides free trainings, workshops, and individual support on special education rights, IEPs, and transition planning.",
+      website: "https://taskca.org",
+      phone: "714-533-8275"
+    },
+    {
+      name: "UC Davis MIND Institute – Family Navigator Program",
+      category: "parent-family",
+      description: "A no-cost peer mentoring program matching families who have received a new autism or neurodevelopmental diagnosis with trained peer mentors who are themselves family members of individuals with disabilities; helps families navigate services and reduce isolation.",
+      website: "https://health.ucdavis.edu/mind-institute"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights California",
+      category: "advocacy",
+      description: "California's federally designated Protection and Advocacy (P&A) organization and the largest disability rights legal organization in the U.S.; provides free legal advocacy, representation, and a dedicated Clients' Rights Advocate in each of California's 21 Regional Centers.",
+      website: "https://disabilityrightsca.org",
+      phone: "800-776-5746"
+    },
+    {
+      name: "The Arc of California",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, Individual Program Plan (IPP) guidance, and service denial navigation.",
+      website: "https://thearcca.org"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "California Regional Center Respite Services",
+      category: "respite",
+      description: "Through each family's Individual Program Plan (IPP), California's 21 Regional Centers authorize and fund free in-home respite care for families of individuals with developmental disabilities, providing caregivers scheduled relief of typically 8–30 hours per month with trained respite providers.",
+      website: "https://dds.ca.gov/rc"
+    },
+
+  ],
+
 };
