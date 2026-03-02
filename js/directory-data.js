@@ -547,6 +547,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Florida": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Agency for Persons with Disabilities (APD) – Florida",
+      category: "government",
+      description: "The primary state agency supporting Floridians with developmental disabilities and their families; administers the iBudget Medicaid waiver, service coordination, and community-based services for eligible individuals statewide.",
+      website: "https://apdcares.org",
+      phone: "866-273-2273"
+    },
+    {
+      name: "Florida Developmental Disabilities Council (FDDC)",
+      category: "government",
+      description: "Florida's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives that improve the independence and community participation of individuals with developmental disabilities and their families.",
+      website: "https://fddc.org",
+      phone: "850-488-4180"
+    },
+    {
+      name: "Florida Early Steps – Early Intervention Program",
+      category: "government",
+      description: "Florida's Part C IDEA program providing early intervention services for infants and toddlers (birth–age 3) with developmental delays or disabilities; offers service coordination, therapies, and family training through a statewide network of lead agencies.",
+      website: "https://floridaschildren.org/earlysteps",
+      phone: "888-352-5337"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "Family Network on Disabilities (FND)",
+      category: "parent-family",
+      description: "Florida's federally designated Parent Training and Information (PTI) Center and Family-to-Family Health Information Center; staffed primarily by parents of children with disabilities, offering free IEP support, peer mentoring, training workshops, and resource navigation statewide in English and Spanish.",
+      website: "https://fndusa.org",
+      phone: "800-825-5736"
+    },
+    {
+      name: "Autism Society of Greater Orlando",
+      category: "parent-family",
+      description: "One of Florida's largest Autism Society affiliates; provides family support groups, resource navigation, community events, and advocacy assistance for families of individuals with autism across Central Florida.",
+      website: "https://autismsocietyoforlando.org",
+      phone: "407-855-1202"
+    },
+    {
+      name: "Florida Autism Center of Excellence (FACE) – University of South Florida",
+      category: "parent-family",
+      description: "A USF-based initiative providing family education, professional training, and community outreach on evidence-based autism practices; offers free parent workshops and consultations across Florida.",
+      website: "https://usf.edu"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Florida",
+      category: "advocacy",
+      description: "Florida's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the civil and human rights of Floridians with disabilities in areas including special education, Medicaid, abuse and neglect, and employment.",
+      website: "https://disabilityrightsflorida.org",
+      phone: "800-342-0823"
+    },
+    {
+      name: "The Arc of Florida",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, APD waiver navigation, and connection to local Arc chapters statewide.",
+      website: "https://arcflorida.com",
+      phone: "850-921-0460"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Florida Lifespan Respite Network – Caregiver Action Network Florida",
+      category: "respite",
+      description: "Statewide network coordinating respite resources, caregiver education, and provider training for families caring for individuals with disabilities or chronic conditions of any age; maintains a searchable respite provider database.",
+      website: "https://floridarespite.org"
+    },
+    {
+      name: "Medicaid Waiver Respite Services – APD Florida",
+      category: "respite",
+      description: "Through the iBudget Medicaid waiver, eligible Florida families of individuals with developmental disabilities can access funded in-home and out-of-home respite care to provide temporary caregiver relief and support family stability.",
+      website: "https://apdcares.org",
+      phone: "866-273-2273"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
