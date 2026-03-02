@@ -935,6 +935,86 @@ const DIRECTORY_DATA = {
 
   ],
 
+  "Indiana": [
+
+    // Government & Public Benefits Services
+    {
+      name: "Indiana Division of Disability and Rehabilitative Services (DDRS)",
+      category: "government",
+      description: "The primary state agency administering Medicaid waiver programs, service coordination, and community-based supports for Hoosiers with developmental disabilities; oversees the Family Supports Waiver and Community Integration and Habilitation Waiver.",
+      website: "https://www.in.gov/fssa/ddrs",
+      phone: "800-545-7763"
+    },
+    {
+      name: "Indiana Governor's Council for People with Disabilities",
+      category: "government",
+      description: "Indiana's federally mandated DD Council; funds advocacy, self-determination, and systems-change initiatives that improve independence and community inclusion for individuals with developmental disabilities and their families statewide.",
+      website: "https://www.in.gov/gpcpd",
+      phone: "317-232-7770"
+    },
+    {
+      name: "Indiana First Steps – Early Intervention Program",
+      category: "government",
+      description: "Indiana's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities through a statewide network of providers.",
+      website: "https://www.in.gov/fssa/firststeps",
+      phone: "800-441-7837"
+    },
+
+    // Parent & Family Support Networks
+    {
+      name: "IN*SOURCE – Indiana Resource Center for Families with Special Needs",
+      category: "parent-family",
+      description: "Indiana's federally designated Parent Training and Information (PTI) Center; provides free one-on-one support, IEP navigation, workshops, and advocacy training to families of children with disabilities from birth through age 26 statewide.",
+      website: "https://insource.org",
+      phone: "800-332-4433"
+    },
+    {
+      name: "Autism Society of Indiana",
+      category: "parent-family",
+      description: "Statewide affiliate of the Autism Society of America; provides peer support, resource navigation, community events, and public education for families of individuals with autism across Indiana.",
+      website: "https://autismsocietyofindiana.org",
+      phone: "317-420-2889"
+    },
+    {
+      name: "Family Voices Indiana",
+      category: "parent-family",
+      description: "Indiana's affiliate of the national Family Voices network; provides information, peer support, and resource navigation for families of children and youth with special health care needs, and helps families navigate insurance and state service systems.",
+      website: "https://familyvoicesindiana.org"
+    },
+
+    // Advocacy, Legal & Rights Protection
+    {
+      name: "Disability Rights Indiana",
+      category: "advocacy",
+      description: "Indiana's federally designated Protection and Advocacy (P&A) organization; provides free legal advocacy, investigations, and representation to protect the rights of Hoosiers with disabilities in areas including special education, Medicaid, abuse and neglect, and civil rights.",
+      website: "https://disabilityrightsindiana.org",
+      phone: "800-622-4845"
+    },
+    {
+      name: "The Arc of Indiana",
+      category: "advocacy",
+      description: "Statewide advocacy organization promoting the rights and full inclusion of individuals with intellectual and developmental disabilities; supports families through legislative advocacy, resource referrals, and connection to local Arc chapters statewide.",
+      website: "https://arcind.org",
+      phone: "317-977-2375"
+    },
+
+    // Respite, Wellness & Specialized Caregiver Services
+    {
+      name: "Indiana Lifespan Respite Care Network",
+      category: "respite",
+      description: "A statewide network coordinating respite care resources and caregiver support for families of individuals with disabilities of all ages; provides caregiver education, provider training, and a respite resource locator.",
+      website: "https://indianarespite.org"
+    },
+    {
+      name: "DDRS Family Supports Waiver – Respite Services",
+      category: "respite",
+      description: "Through Indiana's Family Supports Waiver, eligible families of individuals with developmental disabilities can access funded respite care to provide temporary caregiver relief and support long-term family stability.",
+      website: "https://www.in.gov/fssa/ddrs",
+      phone: "800-545-7763"
+    },
+
+  ],
+
   "Colorado": [
 
     // Government & Public Benefits Services
