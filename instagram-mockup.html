@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Instagram Post Mockup</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* The post itself — 1080×1080 scaled to 540×540 for screen preview */
+    .post {
+      width: 540px;
+      height: 540px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(145deg, #2e6fa3 0%, #4a8abf 45%, #3a7aaf 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 44px 48px;
+      gap: 0;
+    }
+
+    /* Decorative circles */
+    .post::before {
+      content: '';
+      position: absolute;
+      width: 380px;
+      height: 380px;
+      border-radius: 50%;
+      border: 40px solid rgba(255,255,255,0.06);
+      top: -120px;
+      right: -100px;
+    }
+    .post::after {
+      content: '';
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 30px solid rgba(255,255,255,0.06);
+      bottom: -80px;
+      left: -60px;
+    }
+
+    .brand {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 18px;
+    }
+
+    .headline {
+      font-size: 36px;
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .headline span {
+      color: #f4a94e;
+    }
+
+    .subline {
+      font-size: 13.5px;
+      color: rgba(255,255,255,0.82);
+      text-align: center;
+      line-height: 1.55;
+      margin-bottom: 26px;
+      max-width: 370px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 28px;
+    }
+
+    .cat {
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 10px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #fff;
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    .cat-icon {
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    .cta-btn {
+      background: #f4a94e;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 13px 36px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 18px rgba(244,169,78,0.45);
+    }
+
+    .url {
+      font-size: 11.5px;
+      color: rgba(255,255,255,0.65);
+      letter-spacing: 0.5px;
+    }
+
+    /* Green accent bar at bottom */
+    .accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #6daf7e, #4a8abf, #f4a94e);
+    }
+
+    /* Helper text outside the post */
+    .hint {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div class="post">
+      <p class="brand">Autism Parenting Center</p>
+
+      <h1 class="headline">You Don't Have to<br>Navigate This <span>Alone.</span></h1>
+
+      <p class="subline">Our free Support Organization Directory connects families with trusted resources — filtered by state and category.</p>
+
+      <div class="categories">
+        <div class="cat"><span class="cat-icon">🏛️</span> Gov &amp; Benefits</div>
+        <div class="cat"><span class="cat-icon">👨‍👩‍👧</span> Parent &amp; Family</div>
+        <div class="cat"><span class="cat-icon">⚖️</span> Advocacy &amp; Legal</div>
+        <div class="cat"><span class="cat-icon">💆</span> Respite &amp; Wellness</div>
+      </div>
+
+      <div class="cta-btn">Explore the Directory →</div>
+
+      <p class="url">autismparentingcenter.com</p>
+
+      <div class="accent-bar"></div>
+    </div>
+
+    <p class="hint">Screenshot the blue card above — it's sized at 540×540 (prints at 1080×1080 @2x).</p>
+  </div>
+
+</body>
+</html>
