@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Books Instagram Post Mockup</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .post {
+      width: 540px;
+      height: 540px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(150deg, #f7f9fc 0%, #eaf3fb 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 36px 44px 42px;
+    }
+
+    /* Top accent bar */
+    .top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 7px;
+      background: linear-gradient(90deg, #4a8abf, #6daf7e, #f4a94e);
+    }
+
+    /* Decorative background circle */
+    .post::before {
+      content: '';
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(74,138,191,0.06);
+      bottom: -80px;
+      right: -80px;
+    }
+
+    .brand {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #4a8abf;
+      margin-bottom: 10px;
+    }
+
+    .headline {
+      font-size: 30px;
+      font-weight: 800;
+      color: #1a3a55;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .headline span {
+      color: #f4a94e;
+    }
+
+    .subline {
+      font-size: 12.5px;
+      color: #5a7a95;
+      text-align: center;
+      line-height: 1.55;
+      margin-bottom: 22px;
+      max-width: 360px;
+    }
+
+    /* Book series pills */
+    .series {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 24px;
+    }
+
+    .series-card {
+      border-radius: 12px;
+      padding: 12px 18px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .series-card.blue {
+      background: #4a8abf;
+    }
+
+    .series-card.green {
+      background: #6daf7e;
+    }
+
+    .series-icon {
+      font-size: 26px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .series-text {}
+
+    .series-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 2px;
+    }
+
+    .series-books {
+      font-size: 11px;
+      color: rgba(255,255,255,0.8);
+      font-weight: 500;
+    }
+
+    .cta-btn {
+      background: #f4a94e;
+      color: #fff;
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 12px 34px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      box-shadow: 0 4px 16px rgba(244,169,78,0.4);
+    }
+
+    .url {
+      font-size: 11px;
+      color: #8aaabf;
+      letter-spacing: 0.5px;
+    }
+
+    .hint {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div class="post">
+      <div class="top-bar"></div>
+
+      <p class="brand">Autism Parenting Center</p>
+
+      <h1 class="headline">Books That Make<br>Learning <span>Click.</span></h1>
+
+      <p class="subline">Designed for visual learners — our books build communication skills one core word at a time.</p>
+
+      <div class="series">
+        <div class="series-card blue">
+          <span class="series-icon">📖</span>
+          <div class="series-text">
+            <p class="series-title">Core Words for Visual Learners</p>
+            <p class="series-books">Want · Up · Go · Open — and more</p>
+          </div>
+        </div>
+        <div class="series-card green">
+          <span class="series-icon">❓</span>
+          <div class="series-text">
+            <p class="series-title">Wh- Question Books</p>
+            <p class="series-books">Who? · What? — helping kids answer everyday questions</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-btn">Shop on Amazon →</div>
+
+      <p class="url">autismparentingcenter.com</p>
+    </div>
+
+    <p class="hint">Screenshot the card above — 540×540px renders at 1080×1080 @2x.</p>
+  </div>
+
+</body>
+</html>
