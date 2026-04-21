@@ -1109,11 +1109,11 @@ footer a:hover { text-decoration: underline; }
 
 .laminator-products {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 700px) {
   .laminator-products { grid-template-columns: 1fr; }
 }
 
