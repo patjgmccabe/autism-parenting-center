@@ -1080,6 +1080,8 @@ footer a:hover { text-decoration: underline; }
     position: relative;
   }
 
+} /* end @media print */
+
 /* ── Laminator recommendation ─────────────────────────────── */
 .laminator-section {
   max-width: 780px;
@@ -1187,8 +1189,7 @@ footer a:hover { text-decoration: underline; }
   margin-top: 1rem;
 }
 
-/* ── Scissor cut indicator */
-  /* Scissor cut indicator */
+@media print {
   .print-panel::before {
     content: '✂ cut';
     position: absolute;
