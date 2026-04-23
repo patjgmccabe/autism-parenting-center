@@ -227,6 +227,51 @@ nav {
   margin-bottom: 1.75rem;
 }
 
+.books-section-header {
+  margin-bottom: 2rem;
+}
+
+.books-section-title {
+  font-size: 2rem;
+  color: #2d3748;
+  margin-bottom: 0.4rem;
+}
+
+.books-section-desc {
+  color: #666;
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+.affiliate-section-header {
+  padding: 1.5rem 2rem;
+  background: #f0f7ec;
+  border-left: 4px solid #6daf7e;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.affiliate-section-header .books-section-title {
+  color: #3d7a4f;
+}
+
+.btn-affiliate {
+  background: #6daf7e !important;
+}
+
+.btn-affiliate:hover {
+  background: #5a9868 !important;
+}
+
+.book-cover-placeholder-wrap {
+  min-height: 180px;
+}
+
+.affiliate-card {
+  opacity: 0.7;
+  border: 2px dashed #c8e6d0;
+}
+
 .books-divider {
   border: none;
   border-top: 2px solid #e8f0f8;

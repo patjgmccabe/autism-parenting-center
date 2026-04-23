@@ -48,13 +48,18 @@ const translations = {
     dir_cat_respite:   'Respite & Wellness',
 
     // Books page
-    books_page_title:   'Our Books',
+    books_page_title:   'Books',
     books_page_sub:     'Educational books for communication and language development — available on Amazon.',
+    our_books_section_title: 'Our Books',
+    our_books_section_desc:  'Books written by the Autism Parenting Center team to support communication and language development.',
     category_core_title: 'Core Words Books',
     category_core_desc:  'These books focus on high-frequency core vocabulary words used in everyday communication.',
     category_wh_title:   'Wh- Question Books',
     category_wh_desc:    'These books help children understand and answer who, what, where, when, and why questions.',
-    btn_amazon: 'Buy on Amazon',
+    recommended_books_title: 'Recommended Books',
+    recommended_books_desc:  'Books we love and recommend for autism parents, teachers, and therapists. These are affiliate links — we may earn a small commission at no extra cost to you.',
+    btn_amazon:    'Buy on Amazon',
+    btn_affiliate: 'View on Amazon',
 
     // Social Stories — How It Works
     how_title:        'How It Works',
@@ -148,13 +153,18 @@ const translations = {
     dir_cat_advocacy:  'Defensa y Legal',
     dir_cat_respite:   'Respiro y Bienestar',
 
-    books_page_title:   'Nuestros Libros',
+    books_page_title:   'Libros',
     books_page_sub:     'Libros educativos para el desarrollo del lenguaje y la comunicación — disponibles en Amazon.',
+    our_books_section_title: 'Nuestros Libros',
+    our_books_section_desc:  'Libros escritos por el equipo de Autism Parenting Center para apoyar la comunicación y el desarrollo del lenguaje.',
     category_core_title: 'Libros de Palabras Clave',
     category_core_desc:  'Estos libros se enfocan en vocabulario básico de alta frecuencia usado en la comunicación diaria.',
     category_wh_title:   'Libros de Preguntas Qué/Quién/Dónde',
     category_wh_desc:    'Estos libros ayudan a los niños a comprender y responder preguntas de quién, qué, dónde, cuándo y por qué.',
-    btn_amazon: 'Comprar en Amazon',
+    recommended_books_title: 'Libros Recomendados',
+    recommended_books_desc:  'Libros que amamos y recomendamos para padres, maestros y terapeutas. Estos son enlaces de afiliados — podemos ganar una pequeña comisión sin costo adicional para usted.',
+    btn_amazon:    'Comprar en Amazon',
+    btn_affiliate: 'Ver en Amazon',
 
     // Social Stories — How It Works (ES)
     how_title:        'Cómo Funciona',
