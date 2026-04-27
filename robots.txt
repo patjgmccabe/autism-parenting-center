@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://autismparentingcenter.com/sitemap.xml
