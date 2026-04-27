@@ -57,7 +57,8 @@ const translations = {
     category_wh_title:   'Wh- Question Books',
     category_wh_desc:    'These books help children understand and answer who, what, where, when, and why questions.',
     recommended_books_title: 'Recommended Books',
-    recommended_books_desc:  'Books we love and recommend for autism parents, teachers, and therapists. These are affiliate links — we may earn a small commission at no extra cost to you.',
+    recommended_books_desc:  'Books we love and recommend for autism parents, teachers, and therapists.',
+    affiliate_disclosure:    'These are affiliate links — we may earn a small commission at no extra cost to you.',
     btn_amazon:    'Buy on Amazon',
     btn_affiliate: 'View on Amazon',
 
@@ -162,7 +163,8 @@ const translations = {
     category_wh_title:   'Libros de Preguntas Qué/Quién/Dónde',
     category_wh_desc:    'Estos libros ayudan a los niños a comprender y responder preguntas de quién, qué, dónde, cuándo y por qué.',
     recommended_books_title: 'Libros Recomendados',
-    recommended_books_desc:  'Libros que amamos y recomendamos para padres, maestros y terapeutas. Estos son enlaces de afiliados — podemos ganar una pequeña comisión sin costo adicional para usted.',
+    recommended_books_desc:  'Libros que amamos y recomendamos para padres, maestros y terapeutas.',
+    affiliate_disclosure:    'Estos son enlaces de afiliados — podemos ganar una pequeña comisión sin costo adicional para usted.',
     btn_amazon:    'Comprar en Amazon',
     btn_affiliate: 'Ver en Amazon',
 

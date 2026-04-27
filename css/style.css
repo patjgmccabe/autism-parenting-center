@@ -244,15 +244,25 @@ nav {
 }
 
 .affiliate-section-header {
-  padding: 1.5rem 2rem;
-  background: #f0f7ec;
-  border-left: 4px solid #6daf7e;
-  border-radius: 8px;
-  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 2px solid #e8f0f8;
 }
 
 .affiliate-section-header .books-section-title {
   color: #3d7a4f;
+}
+
+.affiliate-section-header .books-section-desc {
+  margin: 0 auto;
+}
+
+.affiliate-disclosure {
+  font-size: 0.8rem;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 0.6rem;
 }
 
 .btn-affiliate {
@@ -273,8 +283,7 @@ nav {
 }
 
 .affiliate-card {
-  opacity: 0.7;
-  border: 2px dashed #c8e6d0;
+  border-top: 3px solid #6daf7e;
 }
 
 .books-divider {
