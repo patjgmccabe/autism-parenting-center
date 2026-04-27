@@ -16,7 +16,7 @@ const translations = {
 
     // Home — hero
     hero_title:    'Welcome to the Autism Parenting Center',
-    hero_subtitle: 'A resource hub for autism parents, teachers, and therapists — everything you need, in one place.',
+    hero_subtitle: 'A resource hub for autism parents, teachers, and therapists, everything you need in one place.',
     hero_btn:      'Explore Resources',
 
     // Home — section
@@ -31,7 +31,7 @@ const translations = {
     card_stories_desc:  'Build custom printable social stories or visual schedules with photos and captions to help children navigate everyday situations.',
     card_stories_link:  'Create a Story or Schedule →',
     card_dir_title:     'Support Organization Directory',
-    card_dir_desc:      'Find government agencies, family support networks, advocacy groups, and respite services — organized by state.',
+    card_dir_desc:      'Find government agencies, family support networks, advocacy groups, and respite services, organized by state.',
     card_dir_link:      'Browse Directory →',
     card_contact_title: 'Contact Us',
     card_contact_desc:  'Have a question or want to connect? We\'d love to hear from you.',
@@ -39,7 +39,7 @@ const translations = {
 
     // Directory page
     dir_page_title:    'Support Organization Directory',
-    dir_page_sub:      'Find support organizations for parents and caregivers of individuals with special needs — filtered by state and category.',
+    dir_page_sub:      'Find support organizations for parents and caregivers of individuals with special needs, filtered by state and category.',
     dir_state_label:   'State:',
     dir_all_states:    'All States',
     dir_cat_all:       'All Categories',
@@ -50,7 +50,7 @@ const translations = {
 
     // Books page
     books_page_title:   'Books',
-    books_page_sub:     'Educational books for communication and language development — available on Amazon.',
+    books_page_sub:     'Educational books for communication and language development, available on Amazon.',
     our_books_section_title: 'Our Books',
     our_books_section_desc:  'Books written by the Autism Parenting Center team to support communication and language development.',
     category_core_title: 'Core Words Books',
@@ -59,7 +59,7 @@ const translations = {
     category_wh_desc:    'These books help children understand and answer who, what, where, when, and why questions.',
     recommended_books_title: 'Recommended Books',
     recommended_books_desc:  'Books we love and recommend for autism parents, teachers, and therapists.',
-    affiliate_disclosure:    'These are affiliate links — we may earn a small commission at no extra cost to you.',
+    affiliate_disclosure:    'These are affiliate links. We may earn a small commission at no extra cost to you.',
     btn_amazon:    'Buy on Amazon',
     btn_affiliate: 'View on Amazon',
 
@@ -77,7 +77,7 @@ const translations = {
     about_mission_title:  'Our Mission',
     about_mission_desc:   'We wanted to create one place people can turn to when they\'re looking for autism resources, without confusion, overwhelm, or wasted time.',
 
-    how_intro:        'This tool lets you build a custom social story or visual schedule — a picture-based book or daily schedule that helps children understand, prepare for, and navigate everyday situations. Follow the steps below to create and print yours!',
+    how_intro:        'This tool lets you build a custom social story or visual schedule, a picture-based book or daily schedule that helps children understand, prepare for, and navigate everyday situations. Follow the steps below to create and print yours!',
     how_step:         'Step',
     how1_title:       'Pick a Photo',
     how1_desc:        'Upload a photo from your device, take one with your camera, or search the image library for the perfect picture.',
@@ -138,7 +138,7 @@ const translations = {
     nav_lang:      'English',
 
     hero_title:    'Bienvenidos al Centro de Crianza del Autismo',
-    hero_subtitle: 'Un centro de recursos para padres, maestros y terapeutas — todo lo que necesitas, en un solo lugar.',
+    hero_subtitle: 'Un centro de recursos para padres, maestros y terapeutas, todo lo que necesitas, en un solo lugar.',
     hero_btn:      'Explorar Recursos',
 
     section_resources:      'Nuestros Recursos',
@@ -151,7 +151,7 @@ const translations = {
     card_stories_desc:  'Crea historias sociales o horarios visuales personalizados con fotos y leyendas para ayudar a los niños a entender situaciones cotidianas.',
     card_stories_link:  'Crear una Historia o Horario →',
     card_dir_title:     'Directorio de Organizaciones de Apoyo',
-    card_dir_desc:      'Encuentra agencias gubernamentales, redes de apoyo familiar, grupos de defensa y servicios de respiro — organizados por estado.',
+    card_dir_desc:      'Encuentra agencias gubernamentales, redes de apoyo familiar, grupos de defensa y servicios de respiro, organizados por estado.',
     card_dir_link:      'Explorar Directorio →',
     card_contact_title: 'Contáctenos',
     card_contact_desc:  '¿Tienes alguna pregunta? Nos encantaría saber de ti.',
@@ -159,7 +159,7 @@ const translations = {
 
     // Directory page (ES)
     dir_page_title:    'Directorio de Organizaciones de Apoyo',
-    dir_page_sub:      'Encuentra organizaciones de apoyo para padres y cuidadores de personas con necesidades especiales — filtra por estado y categoría.',
+    dir_page_sub:      'Encuentra organizaciones de apoyo para padres y cuidadores de personas con necesidades especiales, filtra por estado y categoría.',
     dir_state_label:   'Estado:',
     dir_all_states:    'Todos los Estados',
     dir_cat_all:       'Todas las Categorías',
@@ -169,7 +169,7 @@ const translations = {
     dir_cat_respite:   'Respiro y Bienestar',
 
     books_page_title:   'Libros',
-    books_page_sub:     'Libros educativos para el desarrollo del lenguaje y la comunicación — disponibles en Amazon.',
+    books_page_sub:     'Libros educativos para el desarrollo del lenguaje y la comunicación, disponibles en Amazon.',
     our_books_section_title: 'Nuestros Libros',
     our_books_section_desc:  'Libros escritos por el equipo de Autism Parenting Center para apoyar la comunicación y el desarrollo del lenguaje.',
     category_core_title: 'Libros de Palabras Clave',
@@ -178,13 +178,13 @@ const translations = {
     category_wh_desc:    'Estos libros ayudan a los niños a comprender y responder preguntas de quién, qué, dónde, cuándo y por qué.',
     recommended_books_title: 'Libros Recomendados',
     recommended_books_desc:  'Libros que amamos y recomendamos para padres, maestros y terapeutas.',
-    affiliate_disclosure:    'Estos son enlaces de afiliados — podemos ganar una pequeña comisión sin costo adicional para usted.',
+    affiliate_disclosure:    'Estos son enlaces de afiliados. Podemos ganar una pequeña comisión sin costo adicional para usted.',
     btn_amazon:    'Comprar en Amazon',
     btn_affiliate: 'Ver en Amazon',
 
     // Social Stories — How It Works (ES)
     how_title:        'Cómo Funciona',
-    how_intro:        'Esta herramienta te permite crear una historia social personalizada o un horario visual — un libro o cronograma de imágenes que ayuda a los niños a entender, prepararse y desenvolverse en situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir el tuyo!',
+    how_intro:        'Esta herramienta te permite crear una historia social personalizada o un horario visual, un libro o cronograma de imágenes que ayuda a los niños a entender, prepararse y desenvolverse en situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir el tuyo!',
     how_step:         'Paso',
     how1_title:       'Elige una Foto',
     how1_desc:        'Sube una foto de tu dispositivo, toma una con tu cámara, o busca en la biblioteca de imágenes la foto perfecta.',
