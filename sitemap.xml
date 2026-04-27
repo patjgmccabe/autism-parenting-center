@@ -21,6 +21,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://autismparentingcenter.com/about.html</loc>
+    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://autismparentingcenter.com/contact.html</loc>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>

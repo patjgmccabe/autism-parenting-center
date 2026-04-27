@@ -681,6 +681,46 @@ nav {
 }
 
 /* --- Contact --- */
+.about-section {
+  max-width: 700px;
+  margin: 3rem auto 5rem;
+  padding: 0 1.5rem;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.about-block {
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 2px solid #e8f0f8;
+}
+
+.about-block:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.about-block h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4a8abf;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-block p {
+  color: #555;
+  line-height: 1.7;
+  margin: 0;
+}
+
 .contact-section {
   max-width: 640px;
   margin: 3rem auto 5rem;

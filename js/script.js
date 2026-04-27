@@ -10,6 +10,7 @@ const translations = {
     nav_books:     'Books',
     nav_stories:   'Story & Schedule Creator',
     nav_directory: 'Resource Directory',
+    nav_about:     'About Us',
     nav_contact:   'Contact Us',
     nav_lang:      'Español',
 
@@ -64,6 +65,16 @@ const translations = {
 
     // Social Stories — How It Works
     how_title:        'How It Works',
+    // About page
+    about_page_title:     'About Us',
+    about_page_sub:       'A little about who we are and why we built this.',
+    about_who_title:      'Who We Are',
+    about_who_desc:       'We\'re autism parents. We built this site because we kept bouncing between blogs, apps, Amazon listings, and Facebook groups looking for resources — and figured there had to be a better way.',
+    about_what_title:     'What We Built',
+    about_what_desc:      'Autism Parenting Center is our attempt at a one-stop shop — educational books, a free social story and visual schedule creator, a support organization directory, and a curated list of recommended reads.',
+    about_who_for_title:  'Who It\'s For',
+    about_who_for_desc:   'Everything here is free to use and designed to be practical — for parents, teachers, and therapists who don\'t have time to dig around for what they need.',
+
     how_intro:        'This tool lets you build a custom social story or visual schedule — a picture-based book or daily schedule that helps children understand, prepare for, and navigate everyday situations. Follow the steps below to create and print yours!',
     how_step:         'Step',
     how1_title:       'Pick a Photo',
@@ -116,10 +127,11 @@ const translations = {
   },
 
   es: {
-    nav_home:    'Inicio',
-    nav_books:   'Libros',
+    nav_home:      'Inicio',
+    nav_books:     'Libros',
     nav_stories:   'Historias y Horarios Visuales',
     nav_directory: 'Directorio de Recursos',
+    nav_about:     'Sobre Nosotros',
     nav_contact:   'Contáctenos',
     nav_lang:      'English',
 
