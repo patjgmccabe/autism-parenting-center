@@ -7,7 +7,7 @@ const translations = {
   en: {
     // Nav
     nav_home:      'Home',
-    nav_books:     'Our Books',
+    nav_books:     'Books',
     nav_stories:   'Story & Schedule Creator',
     nav_directory: 'Resource Directory',
     nav_contact:   'Contact Us',
@@ -23,8 +23,8 @@ const translations = {
     section_resources_desc: 'Tools and materials created specifically for autism families, educators, and therapists.',
 
     // Home — cards
-    card_books_title:   'Our Books',
-    card_books_desc:    'Browse our Core Words and Wh-Question books — designed to support communication and language development.',
+    card_books_title:   'Books',
+    card_books_desc:    'Our Core Words and Wh-Question books, plus a curated list of recommended reads for autism families.',
     card_books_link:    'View Books →',
     card_stories_title: 'Social Story or Visual Schedule Creator',
     card_stories_desc:  'Build custom printable social stories or visual schedules with photos and captions to help children navigate everyday situations.',
@@ -117,7 +117,7 @@ const translations = {
 
   es: {
     nav_home:    'Inicio',
-    nav_books:   'Nuestros Libros',
+    nav_books:   'Libros',
     nav_stories:   'Historias y Horarios Visuales',
     nav_directory: 'Directorio de Recursos',
     nav_contact:   'Contáctenos',
@@ -130,8 +130,8 @@ const translations = {
     section_resources:      'Nuestros Recursos',
     section_resources_desc: 'Herramientas y materiales creados específicamente para familias, educadores y terapeutas del autismo.',
 
-    card_books_title:   'Nuestros Libros',
-    card_books_desc:    'Explora nuestros libros de Palabras Clave y Preguntas Qué — diseñados para apoyar la comunicación y el aprendizaje.',
+    card_books_title:   'Libros',
+    card_books_desc:    'Nuestros libros de Palabras Clave y Preguntas Qué, más una lista de lecturas recomendadas para familias del autismo.',
     card_books_link:    'Ver Libros →',
     card_stories_title: 'Creador de Historias Sociales y Horarios Visuales',
     card_stories_desc:  'Crea historias sociales o horarios visuales personalizados con fotos y leyendas para ayudar a los niños a entender situaciones cotidianas.',
