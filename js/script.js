@@ -75,7 +75,7 @@ const translations = {
     about_who_for_title:  'Who It\'s For',
     about_who_for_desc:   'This platform is for parents, teachers, therapists, and anyone supporting individuals with autism. Everything here is selected with the goal of making your search for support simpler, clearer, and more efficient.',
     about_mission_title:  'Our Mission',
-    about_mission_desc:   'We wanted to create one place people can turn to when they\'re looking for autism resources, without confusion, overwhelm, or wasted time.',
+    about_mission_desc:   'We wanted to create one place people can turn to when they\'re looking for autism resources, without confusion.',
 
     how_intro:        'This tool lets you build a custom social story or visual schedule, a picture-based book or daily schedule that helps children understand, prepare for, and navigate everyday situations. Follow the steps below to create and print yours!',
     how_step:         'Step',
