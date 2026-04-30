@@ -1742,7 +1742,8 @@ footer a:hover { text-decoration: underline; }
 @media print {
   .page-cheat-sheet nav,
   .page-cheat-sheet footer,
-  .page-cheat-sheet .cheat-print-bar { display: none !important; }
+  .page-cheat-sheet .cheat-print-bar,
+  .page-cheat-sheet .post-cta { display: none !important; }
 
   .page-cheat-sheet .page-header {
     padding: 0.5rem 0;
