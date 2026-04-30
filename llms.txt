@@ -8,7 +8,13 @@
 - [Books](https://autismparentingcenter.com/books.html): Educational books by Autism Parenting Center and recommended reads for autism families.
 - [Social Story & Visual Schedule Creator](https://autismparentingcenter.com/social-stories.html): Free browser-based tool to create printable social stories and visual schedules using photos and captions. No account needed.
 - [Support Organization Directory](https://autismparentingcenter.com/directory.html): Directory of autism support organizations across the US, filterable by state and category.
+- [Blog](https://autismparentingcenter.com/blog.html): Practical guides and information for autism parents, teachers, and therapists.
+- [About Us](https://autismparentingcenter.com/about.html): About the Autism Parenting Center team.
 - [Contact](https://autismparentingcenter.com/contact.html): Contact form for the Autism Parenting Center team.
+
+## Blog Posts
+
+- [What Is a Social Story?](https://autismparentingcenter.com/blog/what-is-a-social-story.html): A guide covering what social stories are, how they help children with autism, how to write one, and what to include. Published 2026-04-30.
 
 ## Our Books
 

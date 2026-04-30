@@ -2,41 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://autismparentingcenter.com/</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/books.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/social-stories.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/directory.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/blog.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/blog/what-is-a-social-story.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/about.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
     <changefreq>yearly</changefreq>
   </url>
   <url>
     <loc>https://autismparentingcenter.com/contact.html</loc>
+    <lastmod>2026-04-30</lastmod>
     <priority>0.5</priority>
     <changefreq>yearly</changefreq>
   </url>

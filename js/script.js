@@ -16,8 +16,8 @@ const translations = {
     nav_lang:      'Español',
 
     // Home — hero
-    hero_title:    'Welcome to the Autism Parenting Center',
-    hero_subtitle: 'A resource hub for autism parents, teachers, and therapists, everything you need in one place.',
+    hero_title:    'Autism Resources for Parents, Teachers, and Therapists',
+    hero_subtitle: 'Free tools and information for autism families, educators, and therapists, all in one place.',
     hero_btn:      'Explore Resources',
 
     // Home — section
@@ -50,7 +50,7 @@ const translations = {
     dir_cat_respite:   'Respite & Wellness',
 
     // Books page
-    books_page_title:   'Books',
+    books_page_title:   'Autism Books for Parents, Teachers, and Therapists',
     books_page_sub:     'Educational books for communication and language development, available on Amazon.',
     our_books_section_title: 'Our Books',
     our_books_section_desc:  'Books written by the Autism Parenting Center team to support communication and language development.',
@@ -139,8 +139,8 @@ const translations = {
     nav_contact:   'Contáctenos',
     nav_lang:      'English',
 
-    hero_title:    'Bienvenidos al Centro de Crianza del Autismo',
-    hero_subtitle: 'Un centro de recursos para padres, maestros y terapeutas, todo lo que necesitas, en un solo lugar.',
+    hero_title:    'Recursos de Autismo para Padres, Maestros y Terapeutas',
+    hero_subtitle: 'Herramientas e información gratuitas para familias, educadores y terapeutas del autismo, todo en un solo lugar.',
     hero_btn:      'Explorar Recursos',
 
     section_resources:      'Nuestros Recursos',
@@ -170,7 +170,7 @@ const translations = {
     dir_cat_advocacy:  'Defensa y Legal',
     dir_cat_respite:   'Respiro y Bienestar',
 
-    books_page_title:   'Libros',
+    books_page_title:   'Libros de Autismo para Padres, Maestros y Terapeutas',
     books_page_sub:     'Libros educativos para el desarrollo del lenguaje y la comunicación, disponibles en Amazon.',
     our_books_section_title: 'Nuestros Libros',
     our_books_section_desc:  'Libros escritos por el equipo de Autism Parenting Center para apoyar la comunicación y el desarrollo del lenguaje.',
