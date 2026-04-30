@@ -362,6 +362,16 @@ nav {
 
 .btn-amazon:hover { background: #e68a00; }
 
+/* --- Tool Intro --- */
+.tool-intro {
+  max-width: 780px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.5rem;
+  color: #4a5568;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
 /* --- How It Works --- */
 .how-it-works {
   max-width: 780px;
