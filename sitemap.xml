@@ -21,6 +21,16 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://autismparentingcenter.com/blog.html</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://autismparentingcenter.com/blog/what-is-a-social-story.html</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://autismparentingcenter.com/about.html</loc>
     <priority>0.7</priority>
     <changefreq>yearly</changefreq>
