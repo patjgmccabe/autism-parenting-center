@@ -37,6 +37,18 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://autismparentingcenter.com/blog/what-is-an-iep.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://autismparentingcenter.com/iep-cheat-sheet.html</loc>
+    <lastmod>2026-05-01</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://autismparentingcenter.com/about.html</loc>
     <lastmod>2026-04-30</lastmod>
     <priority>0.7</priority>
