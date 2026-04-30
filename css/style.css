@@ -186,9 +186,10 @@ nav {
   box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 
-.card.card-books  { border-top-color: #4a8abf; }
-.card.card-stories { border-top-color: #6daf7e; }
-.card.card-contact { border-top-color: #f4a94e; }
+.card.card-books     { border-top-color: #4a8abf; }
+.card.card-stories   { border-top-color: #6daf7e; }
+.card.card-contact   { border-top-color: #f4a94e; }
+.card.card-iep       { border-top-color: #9b7fd4; }
 
 .card-icon { font-size: 2.8rem; margin-bottom: 1rem; }
 
