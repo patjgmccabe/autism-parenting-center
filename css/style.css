@@ -1397,11 +1397,11 @@ footer a:hover { text-decoration: underline; }
    PRINT STYLES — Social Story Creator
    ============================================================ */
 
-#printArea { display: none; }
+.page-social-stories #printArea { display: none; }
 
 @media print {
-  /* Hide all screen content */
-  body > *:not(#printArea) { display: none !important; }
+  /* Hide all screen content on social story page */
+  .page-social-stories > *:not(#printArea) { display: none !important; }
 
   #printArea {
     display: block !important;
@@ -1582,5 +1582,184 @@ footer a:hover { text-decoration: underline; }
     word-break: break-word;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #111;
+  }
+}
+
+/* ============================================================
+   IEP CHEAT SHEET
+   ============================================================ */
+
+.cheat-container {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+.cheat-print-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cheat-print-bar p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.cheat-print-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #4a8abf;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cheat-print-btn:hover { background: #3a7aaf; }
+
+.cheat-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 660px) {
+  .cheat-grid { grid-template-columns: 1fr; }
+}
+
+.cheat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.4rem 1.5rem;
+  border-top: 4px solid #4a8abf;
+}
+
+.cheat-card.green  { border-top-color: #6daf7e; }
+.cheat-card.orange { border-top-color: #f4a94e; }
+.cheat-card.full   { grid-column: 1 / -1; }
+
+.cheat-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.cheat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.cheat-list li {
+  font-size: 0.9rem;
+  color: #2d3748;
+  line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.cheat-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #4a8abf;
+}
+
+.cheat-card.green  .cheat-list li::before { background: #6daf7e; }
+.cheat-card.orange .cheat-list li::before { background: #f4a94e; }
+
+.cheat-qa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cheat-qa-item { border-bottom: 1px solid #f0f4f8; padding-bottom: 0.75rem; }
+.cheat-qa-item:last-child { border-bottom: none; padding-bottom: 0; }
+
+.cheat-qa-q {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4a8abf;
+  margin-bottom: 0.2rem;
+}
+
+.cheat-qa-a {
+  font-size: 0.9rem;
+  color: #2d3748;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.cheat-terms {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.cheat-term-item {
+  background: #f7f9fc;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+}
+
+.cheat-term-abbr {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4a8abf;
+  display: block;
+}
+
+.cheat-term-def {
+  font-size: 0.82rem;
+  color: #4a5568;
+  line-height: 1.4;
+}
+
+/* ── Cheat Sheet Print ───────────────────────────────────────── */
+@media print {
+  .page-cheat-sheet nav,
+  .page-cheat-sheet footer,
+  .page-cheat-sheet .cheat-print-bar { display: none !important; }
+
+  .page-cheat-sheet .page-header {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+  }
+
+  .page-cheat-sheet .page-header h1 { font-size: 1.3rem; }
+  .page-cheat-sheet .page-header p  { font-size: 0.85rem; }
+
+  .page-cheat-sheet .cheat-card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }
