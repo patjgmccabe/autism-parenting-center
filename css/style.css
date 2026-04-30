@@ -1218,9 +1218,10 @@ footer a:hover { text-decoration: underline; }
   margin-bottom: 0.85rem;
 }
 
-.blog-badge-social-stories { background: #e8f4ee; color: #3d7a4f; }
-.blog-badge-autism-basics   { background: #e8f0fb; color: #3a5fa0; }
-.blog-badge-tips            { background: #fef3e2; color: #a0620a; }
+.blog-badge-social-stories   { background: #e8f4ee; color: #3d7a4f; }
+.blog-badge-autism-basics    { background: #e8f0fb; color: #3a5fa0; }
+.blog-badge-tips             { background: #fef3e2; color: #a0620a; }
+.blog-badge-special-ed       { background: #f0ebfb; color: #6b3fa0; }
 
 .blog-card-title {
   font-size: 1.15rem;
