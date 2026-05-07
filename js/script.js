@@ -6,16 +6,19 @@
 const translations = {
   en: {
     // Nav
-    nav_home:      'Home',
-    nav_books:     'Books',
-    nav_stories:   'Story & Schedule Creator',
-    nav_directory: 'Resource Directory',
-    nav_blog:      'Blog',
-    nav_resources: 'Articles Worth Reading',
-    nav_iep:       'IEP Cheat Sheet',
-    nav_about:     'About Us',
-    nav_contact:   'Contact Us',
-    nav_lang:      'Español',
+    nav_home:           'Home',
+    nav_group_tools:    'Tools',
+    nav_group_resources:'Resources',
+    nav_group_articles: 'Articles',
+    nav_books:          'Books',
+    nav_stories:        'Social Story Creator',
+    nav_directory:      'Resource Directory',
+    nav_blog:           'Our Blog',
+    nav_resources:      'Articles Worth Reading',
+    nav_iep:            'IEP Cheat Sheet',
+    nav_about:          'About Us',
+    nav_contact:        'Contact Us',
+    nav_lang:           'Español',
 
     // Home — hero
     hero_title:    'Autism Resources for Parents, Teachers, and Therapists',
@@ -36,6 +39,15 @@ const translations = {
     card_dir_title:     'Support Organization Directory',
     card_dir_desc:      'Find government agencies, family support networks, advocacy groups, and respite services, organized by state.',
     card_dir_link:      'Browse Directory →',
+    card_iep_title:     'IEP Cheat Sheet',
+    card_iep_desc:      'Key terms, parent rights, questions to ask, and important timelines. Free and printable.',
+    card_iep_link:      'View & Print →',
+    card_blog_title:    'Our Blog',
+    card_blog_desc:     'Practical guides on social stories, IEPs, special education, and more.',
+    card_blog_link:     'Read the Blog →',
+    card_articles_title:'Articles Worth Reading',
+    card_articles_desc: 'Curated reads from trusted sources on autism parenting, special education, and advocacy.',
+    card_articles_link: 'Browse Articles →',
     card_contact_title: 'Contact Us',
     card_contact_desc:  'Have a question or want to connect? We\'d love to hear from you.',
     card_contact_link:  'Get in Touch →',
@@ -132,16 +144,19 @@ const translations = {
   },
 
   es: {
-    nav_home:      'Inicio',
-    nav_books:     'Libros',
-    nav_stories:   'Historias y Horarios Visuales',
-    nav_directory: 'Directorio de Recursos',
-    nav_blog:      'Blog',
-    nav_resources: 'Artículos',
-    nav_iep:       'IEP Cheat Sheet',
-    nav_about:     'Sobre Nosotros',
-    nav_contact:   'Contáctenos',
-    nav_lang:      'English',
+    nav_home:           'Inicio',
+    nav_group_tools:    'Herramientas',
+    nav_group_resources:'Recursos',
+    nav_group_articles: 'Artículos',
+    nav_books:          'Libros',
+    nav_stories:        'Creador de Historias Sociales',
+    nav_directory:      'Directorio de Recursos',
+    nav_blog:           'Nuestro Blog',
+    nav_resources:      'Artículos Recomendados',
+    nav_iep:            'IEP Cheat Sheet',
+    nav_about:          'Sobre Nosotros',
+    nav_contact:        'Contáctenos',
+    nav_lang:           'English',
 
     hero_title:    'Recursos de Autismo para Padres, Maestros y Terapeutas',
     hero_subtitle: 'Herramientas e información gratuitas para familias, educadores y terapeutas del autismo, todo en un solo lugar.',
@@ -159,6 +174,15 @@ const translations = {
     card_dir_title:     'Directorio de Organizaciones de Apoyo',
     card_dir_desc:      'Encuentra agencias gubernamentales, redes de apoyo familiar, grupos de defensa y servicios de respiro, organizados por estado.',
     card_dir_link:      'Explorar Directorio →',
+    card_iep_title:     'IEP Cheat Sheet',
+    card_iep_desc:      'Términos clave, derechos de padres, preguntas para hacer y plazos importantes. Gratis e imprimible.',
+    card_iep_link:      'Ver e Imprimir →',
+    card_blog_title:    'Nuestro Blog',
+    card_blog_desc:     'Guías prácticas sobre historias sociales, IEP, educación especial y más.',
+    card_blog_link:     'Leer el Blog →',
+    card_articles_title:'Artículos Recomendados',
+    card_articles_desc: 'Lecturas seleccionadas de fuentes confiables sobre crianza del autismo, educación especial y defensa.',
+    card_articles_link: 'Ver Artículos →',
     card_contact_title: 'Contáctenos',
     card_contact_desc:  '¿Tienes alguna pregunta? Nos encantaría saber de ti.',
     card_contact_link:  'Ponerse en Contacto →',
@@ -284,6 +308,18 @@ function initMobileNav() {
   links.querySelectorAll('a').forEach(a =>
     a.addEventListener('click', () => links.classList.remove('open'))
   );
+
+  // Dropdown toggles — mobile: tap to open; desktop: handled by CSS hover
+  document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
+    btn.addEventListener('click', e => {
+      if (window.innerWidth > 768) return;
+      const dropdown = btn.closest('.nav-dropdown');
+      const isOpen = dropdown.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      if (!isOpen) dropdown.classList.add('open');
+      e.stopPropagation();
+    });
+  });
 }
 
 function setActiveLink() {

@@ -25,7 +25,7 @@
     "provider": { "@type": "Organization", "name": "Autism Parenting Center", "url": "https://autismparentingcenter.com" }
   }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=11" />
+  <link rel="stylesheet" href="css/style.css?v=17" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC3RG9TC10"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -39,16 +39,30 @@
     <div class="nav-container">
       <a href="index.html" class="nav-logo">Autism Parenting Center</a>
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
-        <li><a href="index.html"          data-i18n="nav_home">Home</a></li>
-        <li><a href="books.html"          data-i18n="nav_books">Books</a></li>
-        <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
-        <li><a href="directory.html"      data-i18n="nav_directory">Resource Directory</a></li>
-        <li><a href="blog.html"           data-i18n="nav_blog">Blog</a></li>
-        <li><a href="resources.html"        data-i18n="nav_resources">Articles</a></li>
-        <li><a href="iep-cheat-sheet.html"  data-i18n="nav_iep">IEP Cheat Sheet</a></li>
-        <li><a href="about.html"          data-i18n="nav_about">About Us</a></li>
-        <li><a href="contact.html"        data-i18n="nav_contact">Contact Us</a></li>
+            <ul class="nav-links">
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_tools">Tools</span>
+          <ul class="dropdown-menu">
+            <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_resources">Resources</span>
+          <ul class="dropdown-menu">
+            <li><a href="books.html"           data-i18n="nav_books">Books</a></li>
+            <li><a href="directory.html"       data-i18n="nav_directory">Resource Directory</a></li>
+            <li><a href="iep-cheat-sheet.html" data-i18n="nav_iep">IEP Cheat Sheet</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_articles">Articles</span>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html"      data-i18n="nav_blog">Our Blog</a></li>
+            <li><a href="resources.html" data-i18n="nav_resources">Articles Worth Reading</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html"   data-i18n="nav_about">About Us</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
       </ul>
       <button class="lang-toggle" data-i18n="nav_lang">Español</button>
     </div>
@@ -249,7 +263,7 @@
   </footer>
 
   <script src="js/config.js"></script>
-  <script src="js/script.js?v=4"></script>
+  <script src="js/script.js?v=5"></script>
   <script src="js/social-stories.js"></script>
 </body>
 </html>
