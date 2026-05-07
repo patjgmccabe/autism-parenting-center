@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Articles Worth Reading — Instagram Post Mockup</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #d0d0d0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .post {
+      width: 540px;
+      height: 540px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(150deg, #2e6ea6 0%, #4a8abf 55%, #5a9fcf 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 36px 44px;
+    }
+
+    .post::before {
+      content: '';
+      position: absolute;
+      width: 340px;
+      height: 340px;
+      border-radius: 50%;
+      border: 36px solid rgba(255,255,255,0.07);
+      top: -110px;
+      right: -90px;
+    }
+    .post::after {
+      content: '';
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 28px solid rgba(255,255,255,0.07);
+      bottom: -60px;
+      left: -50px;
+    }
+
+    .brand {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      background: #f4a94e;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 12px;
+    }
+
+    .headline {
+      font-size: 30px;
+      font-weight: 800;
+      color: #ffffff;
+      text-align: center;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .headline span { color: #f4a94e; }
+
+    .subline {
+      font-size: 12px;
+      color: rgba(255,255,255,0.80);
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      max-width: 360px;
+    }
+
+    .articles {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      width: 100%;
+      max-width: 430px;
+      margin-bottom: 22px;
+    }
+
+    .article-row {
+      background: rgba(255,255,255,0.13);
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 10px;
+      padding: 9px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .article-icon {
+      font-size: 16px;
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .article-text {
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.35;
+    }
+
+    .cta-btn {
+      background: #fff;
+      color: #2e6ea6;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 11px 32px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    }
+
+    .url {
+      font-size: 11px;
+      color: rgba(255,255,255,0.60);
+      letter-spacing: 0.5px;
+    }
+
+    .accent-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(90deg, #4a8abf, #6daf7e, #f4a94e);
+    }
+
+    .hint {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <div class="post">
+
+      <p class="brand">Autism Parenting Center</p>
+      <div class="badge">Articles Worth Reading</div>
+
+      <h1 class="headline">4 Reads Worth<br>Your <span>Time.</span></h1>
+
+      <p class="subline">Handpicked articles on autism parenting, special education, and advocacy.</p>
+
+      <div class="articles">
+        <div class="article-row">
+          <span class="article-icon">💛</span>
+          <p class="article-text">Finding Joy: Lessons from a Son with Asperger's</p>
+        </div>
+        <div class="article-row">
+          <span class="article-icon">🏫</span>
+          <p class="article-text">A Mom's Mission: Persuading Schools to Adapt</p>
+        </div>
+        <div class="article-row">
+          <span class="article-icon">👦</span>
+          <p class="article-text">Daily Life on the Spectrum with Mason, Age 14</p>
+        </div>
+        <div class="article-row">
+          <span class="article-icon">🧠</span>
+          <p class="article-text">Temple Grandin on How Autistic Minds Think</p>
+        </div>
+      </div>
+
+      <div class="cta-btn">Read Now →</div>
+
+      <p class="url">autismparentingcenter.com/resources.html</p>
+
+      <div class="accent-bar"></div>
+    </div>
+
+    <p class="hint">Screenshot the card above — 540×540px renders at 1080×1080 @2x.</p>
+  </div>
+
+</body>
+</html>
