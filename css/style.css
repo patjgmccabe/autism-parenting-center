@@ -1838,3 +1838,140 @@ footer a:hover { text-decoration: underline; }
     print-color-adjust: exact;
   }
 }
+
+/* ============================================================
+   RESOURCES / ARTICLES PAGE
+   ============================================================ */
+
+.resources-container {
+  max-width: 860px;
+  margin: 0 auto 3rem;
+  padding: 0 1.5rem;
+}
+
+/* Featured card */
+.resource-featured {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border-top: 4px solid #4a8abf;
+  padding: 1.8rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  margin-bottom: 1.25rem;
+}
+
+.resource-featured:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+  border-top-color: #6daf7e;
+}
+
+.resource-featured-icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.resource-featured-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #4a8abf;
+  margin-bottom: 0.5rem;
+}
+
+.resource-featured .resource-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+}
+
+/* Grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 620px) {
+  .resources-grid { grid-template-columns: 1fr; }
+  .resource-featured { flex-direction: column; gap: 0.75rem; padding: 1.4rem; }
+}
+
+/* Regular card */
+.resource-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border: 1px solid #e2e8f0;
+  padding: 1.3rem 1.4rem;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.resource-card:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+  border-color: #4a8abf;
+  transform: translateY(-2px);
+}
+
+/* Tags */
+.resource-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 99px;
+  padding: 0.25em 0.75em;
+  margin-bottom: 0.6rem;
+  align-self: flex-start;
+}
+
+.resource-tag-parenting { background: #e8f4ee; color: #3d7a4f; }
+.resource-tag-school    { background: #e8f0fb; color: #3a5fa0; }
+.resource-tag-research  { background: #fef3e2; color: #a0620a; }
+
+/* Card content */
+.resource-meta {
+  font-size: 0.8rem;
+  color: #718096;
+  margin-bottom: 0.4rem;
+}
+
+.resource-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.4;
+  margin: 0 0 0.5rem;
+}
+
+.resource-summary {
+  font-size: 0.88rem;
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+  flex: 1;
+}
+
+.resource-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4a8abf;
+}
+
+.resource-link:hover { color: #3a7aaf; }
