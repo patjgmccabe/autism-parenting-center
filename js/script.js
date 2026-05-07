@@ -11,7 +11,7 @@ const translations = {
     nav_stories:   'Story & Schedule Creator',
     nav_directory: 'Resource Directory',
     nav_blog:      'Blog',
-    nav_resources: 'Articles',
+    nav_resources: 'Articles Worth Reading',
     nav_iep:       'IEP Cheat Sheet',
     nav_about:     'About Us',
     nav_contact:   'Contact Us',
