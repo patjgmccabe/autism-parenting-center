@@ -2038,9 +2038,10 @@ footer a:hover { text-decoration: underline; }
   align-self: flex-start;
 }
 
-.resource-tag-parenting { background: #e8f4ee; color: #3d7a4f; }
-.resource-tag-school    { background: #e8f0fb; color: #3a5fa0; }
-.resource-tag-research  { background: #fef3e2; color: #a0620a; }
+.resource-tag-parenting  { background: #e8f4ee; color: #3d7a4f; }
+.resource-tag-school     { background: #e8f0fb; color: #3a5fa0; }
+.resource-tag-research   { background: #fef3e2; color: #a0620a; }
+.resource-tag-community  { background: #f0ebfb; color: #6b3fa0; }
 
 /* Card content */
 .resource-meta {
