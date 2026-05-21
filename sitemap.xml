@@ -72,13 +72,7 @@
     <priority>0.7</priority>
     <changefreq>yearly</changefreq>
   </url>
-  <url>
-    <loc>https://autismparentingcenter.com/worksheets/what-i-notice.html</loc>
-    <lastmod>2026-05-21</lastmod>
-    <priority>0.7</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-  <url>
+<url>
     <loc>https://autismparentingcenter.com/worksheets/my-questions.html</loc>
     <lastmod>2026-05-21</lastmod>
     <priority>0.7</priority>
