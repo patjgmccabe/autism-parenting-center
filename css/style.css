@@ -249,9 +249,10 @@ nav {
 .card.card-stories    { border-top-color: #6daf7e; }
 .card.card-contact    { border-top-color: #f4a94e; }
 .card.card-iep        { border-top-color: #9b7fd4; }
-.card.card-directory  { border-top-color: #50b8c1; }
-.card.card-blog       { border-top-color: #6daf7e; }
-.card.card-articles   { border-top-color: #f4a94e; }
+.card.card-directory   { border-top-color: #50b8c1; }
+.card.card-blog        { border-top-color: #6daf7e; }
+.card.card-articles    { border-top-color: #f4a94e; }
+.card.card-worksheets  { border-top-color: #9b7fd4; }
 
 /* --- Card Groups (Homepage) --- */
 .card-group { margin-bottom: 2.5rem; }
@@ -2075,3 +2076,208 @@ footer a:hover { text-decoration: underline; }
 }
 
 .resource-link:hover { color: #3a7aaf; }
+
+/* ============================================================
+   WORKSHEETS PAGE
+   ============================================================ */
+
+.worksheets-container {
+  max-width: 900px;
+  margin: 0 auto 4rem;
+  padding: 0 1.5rem;
+}
+
+.ws-intro {
+  max-width: 720px;
+  margin: 2rem auto 2.5rem;
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  text-align: center;
+}
+
+.ws-intro p { margin-bottom: 0.75rem; }
+.ws-intro p:last-child { margin-bottom: 0; }
+.ws-intro a { color: #4a8abf; font-weight: 600; }
+
+.ws-section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #4a8abf;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.45rem;
+  border-bottom: 2px solid #e8f0f8;
+}
+
+.ws-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.ws-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+  border: 1px solid #e8edf3;
+  padding: 1.5rem 1.75rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.ws-card:hover {
+  box-shadow: 0 6px 24px rgba(0,0,0,0.11);
+  border-color: #c5d9ec;
+}
+
+.ws-card-icon {
+  font-size: 2.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ws-icon-blue   { background: #e8f0fb; }
+.ws-icon-green  { background: #e8f4ee; }
+.ws-icon-orange { background: #fef3e2; }
+
+.ws-card-content { flex: 1; }
+
+.ws-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.4rem;
+}
+
+.ws-card-desc {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 0.6rem;
+}
+
+.ws-card-meta {
+  font-size: 0.78rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.ws-card-btn {
+  display: inline-block;
+  background: #4a8abf;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.55rem 1.3rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.ws-card-btn:hover { background: #3a79ae; transform: translateY(-1px); }
+
+.ws-card-btn-green        { background: #6daf7e; }
+.ws-card-btn-green:hover  { background: #5a9868; }
+
+.ws-card-btn-orange       { background: #f4a94e; }
+.ws-card-btn-orange:hover { background: #e09040; }
+
+/* How to use */
+.ws-how {
+  background: #f7f9fc;
+  border-radius: 14px;
+  border: 1px solid #e8edf3;
+  padding: 1.75rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.ws-how h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #4a8abf;
+  margin-bottom: 1.25rem;
+}
+
+.ws-how-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+}
+
+.ws-how-step {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.ws-how-num {
+  background: #4a8abf;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.ws-how-step p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* CTA row */
+.ws-cta-row { margin-bottom: 1.5rem; }
+
+.ws-cta-card {
+  background: linear-gradient(135deg, #e8f4ee, #e8f0fb);
+  border-radius: 12px;
+  padding: 1.4rem 1.75rem;
+  text-align: center;
+}
+
+.ws-cta-card p {
+  font-size: 0.95rem;
+  color: #4a5568;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.ws-cta-link {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #4a8abf;
+  text-decoration: none;
+}
+
+.ws-cta-link:hover { text-decoration: underline; }
+
+.ws-license {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #aaa;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .ws-card { flex-direction: column; gap: 1rem; padding: 1.25rem; }
+  .ws-card-icon { width: 48px; height: 48px; font-size: 2rem; }
+  .ws-how { padding: 1.25rem; }
+}

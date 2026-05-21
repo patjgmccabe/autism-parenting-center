@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Find &amp; Ask — Free Printable Worksheet — Autism Parenting Center</title>
+  <meta name="description" content="Free printable communication worksheet for autistic children. Children go on a mission to find people and ask them questions — building initiation and communication skills." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #edf2f7;
+      color: #2d3748;
+    }
+
+    /* ── Top bar (screen only) ── */
+    .topbar {
+      background: #fff;
+      border-bottom: 1px solid #dde6f0;
+      padding: 0.7rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .topbar-left { font-size: 0.88rem; color: #666; }
+    .topbar-left a { color: #4a8abf; text-decoration: none; font-weight: 600; }
+    .topbar-left a:hover { text-decoration: underline; }
+
+    .btn-print {
+      background: #4a8abf;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s;
+    }
+    .btn-print:hover { background: #3a79ae; }
+
+    /* ── Page wrapper ── */
+    .sheet-wrap {
+      max-width: 820px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1.5rem;
+    }
+
+    /* ── The worksheet ── */
+    .sheet {
+      background: #fff;
+      box-shadow: 0 4px 28px rgba(0,0,0,0.11);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* Header */
+    .sheet-header {
+      background: linear-gradient(135deg, #4a8abf 0%, #5b9fd4 100%);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .sheet-header-icon { font-size: 2.4rem; line-height: 1; flex-shrink: 0; }
+    .sheet-header h1 { font-size: 1.7rem; font-weight: 800; color: #fff; line-height: 1.15; }
+    .sheet-header p { font-size: 0.85rem; color: rgba(255,255,255,0.88); margin-top: 0.25rem; }
+
+    /* Body */
+    .sheet-body { padding: 1.4rem 2rem 0.75rem; }
+
+    /* Info row */
+    .info-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .info-field { flex: 1; min-width: 130px; }
+    .info-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #718096;
+      margin-bottom: 0.25rem;
+    }
+    .info-line {
+      border: none;
+      border-bottom: 2px solid #cbd5e0;
+      width: 100%;
+      height: 1.3rem;
+      display: block;
+    }
+
+    /* Instructions */
+    .instructions {
+      background: #edf8f0;
+      border-left: 4px solid #6daf7e;
+      border-radius: 0 8px 8px 0;
+      padding: 0.6rem 1rem;
+      font-size: 0.84rem;
+      color: #2f6b45;
+      margin-bottom: 1.1rem;
+      line-height: 1.45;
+    }
+
+    /* Missions */
+    .missions { display: flex; flex-direction: column; gap: 0.85rem; }
+
+    .mission {
+      background: #f8fafc;
+      border: 1.5px solid #e2e8f0;
+      border-left: 4px solid #4a8abf;
+      border-radius: 0 10px 10px 0;
+      padding: 0.8rem 1.1rem 0.85rem;
+    }
+
+    .mission-head {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+    .m-badge {
+      background: #4a8abf;
+      color: #fff;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .m-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #4a8abf;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .m-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .m-row:last-child { margin-bottom: 0; }
+    .m-lbl {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: #4a5568;
+      white-space: nowrap;
+      flex-shrink: 0;
+      min-width: 78px;
+    }
+    .m-line {
+      flex: 1;
+      height: 1.2rem;
+      border: none;
+      border-bottom: 1.5px solid #cbd5e0;
+      min-width: 0;
+    }
+
+    .m-answer .m-lbl { color: #2f6b45; font-weight: 700; }
+    .m-answer .m-line { border-bottom-color: #6daf7e; border-bottom-width: 2px; }
+
+    /* Footer */
+    .sheet-footer {
+      text-align: center;
+      font-size: 0.7rem;
+      color: #b0bec5;
+      padding: 0.65rem 2rem 0.9rem;
+      border-top: 1px solid #f0f4f8;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Print ── */
+    @media print {
+      @page { margin: 0.45in; size: letter; }
+      .topbar { display: none !important; }
+      body { background: #fff; }
+      .sheet-wrap { max-width: 100%; margin: 0; padding: 0; }
+      .sheet { box-shadow: none; border-radius: 0; }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    @media (max-width: 560px) {
+      .sheet-header { padding: 1rem 1.2rem; }
+      .sheet-body { padding: 1.1rem 1.2rem 0.75rem; }
+      .sheet-header h1 { font-size: 1.35rem; }
+      .info-row { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-left">
+      Free worksheet from <a href="../worksheets.html">Autism Parenting Center</a>
+      &nbsp;&middot;&nbsp; Free for personal and classroom use
+    </div>
+    <button class="btn-print" onclick="window.print()">&#128438; Print / Save as PDF</button>
+  </div>
+
+  <div class="sheet-wrap">
+    <div class="sheet">
+
+      <div class="sheet-header">
+        <div class="sheet-header-icon">&#128269;</div>
+        <div>
+          <h1>Go Find &amp; Ask!</h1>
+          <p>Your mission: find each person and ask them the question. Write down what they say!</p>
+        </div>
+      </div>
+
+      <div class="sheet-body">
+
+        <div class="info-row">
+          <div class="info-field">
+            <div class="info-label">Name</div>
+            <div class="info-line"></div>
+          </div>
+          <div class="info-field">
+            <div class="info-label">Date</div>
+            <div class="info-line"></div>
+          </div>
+          <div class="info-field">
+            <div class="info-label">Class / Group</div>
+            <div class="info-line"></div>
+          </div>
+        </div>
+
+        <div class="instructions">
+          A parent or teacher fills in the <strong>Find</strong> and <strong>Ask them</strong> lines before the activity. Then the child goes on their mission, asks the question, and writes what they hear!
+        </div>
+
+        <div class="missions">
+
+          <div class="mission">
+            <div class="mission-head"><div class="m-badge">1</div><span class="m-title">Mission 1</span></div>
+            <div class="m-row"><span class="m-lbl">Find:</span><div class="m-line"></div></div>
+            <div class="m-row"><span class="m-lbl">Ask them:</span><div class="m-line"></div></div>
+            <div class="m-row m-answer"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+          </div>
+
+          <div class="mission">
+            <div class="mission-head"><div class="m-badge">2</div><span class="m-title">Mission 2</span></div>
+            <div class="m-row"><span class="m-lbl">Find:</span><div class="m-line"></div></div>
+            <div class="m-row"><span class="m-lbl">Ask them:</span><div class="m-line"></div></div>
+            <div class="m-row m-answer"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+          </div>
+
+          <div class="mission">
+            <div class="mission-head"><div class="m-badge">3</div><span class="m-title">Mission 3</span></div>
+            <div class="m-row"><span class="m-lbl">Find:</span><div class="m-line"></div></div>
+            <div class="m-row"><span class="m-lbl">Ask them:</span><div class="m-line"></div></div>
+            <div class="m-row m-answer"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+          </div>
+
+          <div class="mission">
+            <div class="mission-head"><div class="m-badge">4</div><span class="m-title">Mission 4</span></div>
+            <div class="m-row"><span class="m-lbl">Find:</span><div class="m-line"></div></div>
+            <div class="m-row"><span class="m-lbl">Ask them:</span><div class="m-line"></div></div>
+            <div class="m-row m-answer"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+          </div>
+
+          <div class="mission">
+            <div class="mission-head"><div class="m-badge">5</div><span class="m-title">Mission 5</span></div>
+            <div class="m-row"><span class="m-lbl">Find:</span><div class="m-line"></div></div>
+            <div class="m-row"><span class="m-lbl">Ask them:</span><div class="m-line"></div></div>
+            <div class="m-row m-answer"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="sheet-footer">
+        Free for personal and classroom use &nbsp;&middot;&nbsp; autismparentingcenter.com
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
