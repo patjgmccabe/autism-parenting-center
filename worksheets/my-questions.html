@@ -291,7 +291,7 @@
         sheet.style.width          = PAGE_W + 'px';
         sheet.style.transform      = 'scale(' + scale + ')';
         sheet.style.transformOrigin = 'top left';
-        wrap.style.height = Math.ceil(sheet.scrollHeight * scale) + 'px';
+        wrap.style.height = Math.ceil(sheet.offsetHeight * scale + 4) + 'px';
       }
       document.addEventListener('DOMContentLoaded', fit);
       window.addEventListener('resize', fit);
