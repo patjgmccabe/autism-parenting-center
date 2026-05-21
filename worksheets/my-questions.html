@@ -286,9 +286,10 @@
         sheet.style.width     = '';
         sheet.style.transform = '';
         wrap.style.height     = '';
-        var avail = window.innerWidth - 16;
+        var avail = window.innerWidth - 20;
         var scale = Math.min(1, avail / PAGE_W);
         sheet.style.width          = PAGE_W + 'px';
+        sheet.style.marginLeft     = '4px';
         sheet.style.transform      = 'scale(' + scale + ')';
         sheet.style.transformOrigin = 'top left';
         wrap.style.height = Math.ceil(sheet.offsetHeight * scale + 4) + 'px';
