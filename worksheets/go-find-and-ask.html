@@ -43,9 +43,8 @@
 
     /* ── Sheet wrapper ── */
     .sheet-wrap {
-      max-width: 800px;
-      margin: 1.5rem auto 3rem;
-      padding: 0 1rem;
+      margin: 0.75rem auto;
+      overflow: hidden;
     }
 
     /* ── The worksheet ── */
@@ -193,14 +192,9 @@
       @page { margin: 0.45in; size: letter; }
       .topbar { display: none !important; }
       body { background: #fff; }
-      .sheet-wrap { max-width: 100%; margin: 0; padding: 0; }
+      .sheet-wrap { margin: 0 !important; overflow: visible !important; height: auto !important; }
+      .sheet { width: 100% !important; transform: none !important; }
       * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    }
-
-    @media (max-width: 560px) {
-      .sheet { padding: 1rem 1rem 0.75rem; }
-      .sheet-title { font-size: 1.4rem; }
-      .info-line { width: 100px; }
     }
   </style>
 </head>
@@ -290,5 +284,26 @@
     </div>
   </div>
 
+  <script>
+    (function () {
+      var PAGE_W = 816; // 8.5 in @ 96 dpi
+      function fit() {
+        var sheet = document.querySelector('.sheet');
+        var wrap  = document.querySelector('.sheet-wrap');
+        if (!sheet || !wrap) return;
+        sheet.style.width     = '';
+        sheet.style.transform = '';
+        wrap.style.height     = '';
+        var avail = window.innerWidth - 16;
+        var scale = Math.min(1, avail / PAGE_W);
+        sheet.style.width          = PAGE_W + 'px';
+        sheet.style.transform      = 'scale(' + scale + ')';
+        sheet.style.transformOrigin = 'top left';
+        wrap.style.height = Math.ceil(sheet.scrollHeight * scale) + 'px';
+      }
+      document.addEventListener('DOMContentLoaded', fit);
+      window.addEventListener('resize', fit);
+    })();
+  </script>
 </body>
 </html>
