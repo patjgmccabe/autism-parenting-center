@@ -103,8 +103,8 @@
     /* Info row */
     .info-row {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 2rem;
+      flex-wrap: nowrap;
+      gap: 0.5rem 1.5rem;
       margin-bottom: 0.8rem;
       font-size: 0.88rem;
       font-weight: 700;
@@ -114,11 +114,12 @@
       display: flex;
       align-items: baseline;
       gap: 0.3rem;
+      flex: 1;
     }
 
     .info-line {
-      display: inline-block;
-      width: 140px;
+      flex: 1;
+      min-width: 60px;
       border-bottom: 1.5px solid #555;
       height: 1.1rem;
     }
@@ -236,8 +237,7 @@
 
       <div class="info-row">
         <div class="info-field">Name:<span class="info-line"></span></div>
-        <div class="info-field">Date:<span class="info-line" style="width:110px;"></span></div>
-        <div class="info-field">Class:<span class="info-line" style="width:110px;"></span></div>
+        <div class="info-field">Date:<span class="info-line"></span></div>
       </div>
 
       <div class="instructions">
