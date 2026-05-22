@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Go Find &amp; Ask — Customizable Worksheet — Autism Parenting Center</title>
+  <meta name="description" content="Customizable printable Go Find &amp; Ask worksheet. Add photos of the people to find, fill in the questions, then print." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { font-family: Arial, 'Segoe UI', sans-serif; background: #fff; color: #000; }
+
+    .topbar {
+      background: #fff; border-bottom: 1px solid #bbb;
+      padding: 0.65rem 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
+    }
+    .topbar-left { font-size: 0.85rem; color: #555; }
+    .topbar-left a { color: #4a8abf; text-decoration: none; font-weight: 600; }
+    .btn-print {
+      background: #333; color: #fff; border: none;
+      padding: 0.55rem 1.3rem; border-radius: 6px;
+      font-size: 0.88rem; font-weight: 700; cursor: pointer; font-family: inherit;
+    }
+    .btn-print:hover { background: #111; }
+
+    .screen-tip {
+      background: #f0f6ff; border-bottom: 1px solid #c8dcf0;
+      padding: 0.5rem 1.5rem; font-size: 0.8rem; color: #3a6a9a;
+    }
+
+    .sheet-wrap { margin: 0.75rem auto; overflow: hidden; }
+
+    .sheet {
+      background: #fff; border: 2.5px solid #111; padding: 1.25rem 1.5rem 1rem;
+      display: flex; flex-direction: column;
+      min-height: 969px;
+    }
+
+    .sheet-top {
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 1rem; margin-bottom: 0.6rem;
+    }
+    .sheet-title-area { flex: 1; }
+    .sheet-title { font-size: 1.85rem; font-weight: 900; color: #000; line-height: 1.1; text-transform: uppercase; letter-spacing: 0.02em; }
+    .sheet-illus { flex-shrink: 0; }
+
+    .divider { border: none; border-top: 2.5px solid #111; margin: 0.6rem 0 0.75rem; }
+
+    .info-row { display: flex; flex-wrap: nowrap; gap: 0.5rem 1.5rem; margin-bottom: 0.8rem; font-size: 0.88rem; font-weight: 700; }
+    .info-field { display: flex; align-items: baseline; gap: 0.3rem; flex: 1; }
+    .info-input {
+      flex: 1; min-width: 60px; border: none; border-bottom: 1.5px solid #555;
+      height: 1.25rem; font-family: inherit; font-size: 0.88rem; font-weight: 400;
+      outline: none; background: transparent; padding: 0;
+    }
+
+    .instructions { border: 1.5px solid #555; padding: 0.45rem 0.75rem; font-size: 0.8rem; color: #333; margin-bottom: 0.5rem; line-height: 1.5; font-style: italic; }
+
+    .missions { flex: 1; display: flex; flex-direction: column; }
+
+    .mission {
+      flex: 1;
+      border-left: 3px solid #333; padding: 0 0 0 0.85rem;
+      display: flex; flex-direction: column; justify-content: center;
+      gap: 1.1rem;
+    }
+    .mission + .mission { border-top: 1px solid #ddd; }
+
+    .mission-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; }
+
+    .m-row { display: flex; align-items: baseline; gap: 0.35rem; font-size: 0.95rem; }
+
+    .m-lbl { font-weight: 700; white-space: nowrap; flex-shrink: 0; min-width: 86px; }
+    .m-input { flex: 1; min-width: 0; border: none; border-bottom: 1.5px solid #555; height: 1.25rem; font-family: inherit; font-size: 0.88rem; outline: none; background: transparent; padding: 0; }
+    .m-line { flex: 1; border-bottom: 2px solid #000; height: 1.2rem; }
+
+    /* "Find:" row — photo lives here */
+    .m-row-find { align-items: center; cursor: pointer; }
+    .m-row-find.loaded { cursor: default; }
+
+    .m-photo {
+      width: 90px; height: 90px; border-radius: 50%;
+      object-fit: cover; border: 2.5px solid #333;
+      display: none; flex-shrink: 0; margin-right: 0.6rem;
+    }
+
+    .m-photo-ph {
+      width: 90px; height: 90px; border-radius: 50%;
+      border: 2px dashed #bbb; flex-shrink: 0; margin-right: 0.6rem;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: #999; text-align: center; line-height: 1.3;
+      transition: border-color 0.15s, color 0.15s;
+      pointer-events: none;
+    }
+    .m-row-find:not(.loaded):hover .m-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .m-photo-ph span { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
+
+    .m-photo-remove {
+      font-size: 0.6rem; color: #aaa; cursor: pointer;
+      text-decoration: underline; display: none; flex-shrink: 0; margin-left: 0.25rem;
+    }
+    .m-photo-remove:hover { color: #c00; }
+
+    .m-upload { display: none; }
+
+    .sheet-footer { margin-top: auto; padding-top: 0.45rem; border-top: 1px solid #bbb; font-size: 0.65rem; color: #888; text-align: center; letter-spacing: 0.02em; }
+
+    /* ── Print ── */
+    @media print {
+      @page { margin: 0.45in; size: letter; }
+      .topbar     { display: none !important; }
+      .screen-tip { display: none !important; }
+      body { background: #fff; }
+      .sheet-wrap { margin: 0 !important; overflow: visible !important; height: auto !important; }
+      .sheet { width: 100% !important; transform: none !important; margin-left: 0 !important; }
+
+      .m-photo-ph     { display: none !important; }
+      .m-photo-remove { display: none !important; }
+      .m-upload       { display: none !important; }
+      .m-row-find     { cursor: default !important; }
+
+      .mission.has-photo .m-photo { display: block !important; }
+
+      .m-input, .info-input {
+        -webkit-appearance: none; border: none;
+        border-bottom: 1.5px solid #555; border-radius: 0;
+      }
+      * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-left">
+      Free worksheet from <a href="../worksheets.html">Autism Parenting Center</a>
+      &nbsp;&middot;&nbsp; Free for personal and classroom use
+    </div>
+    <button class="btn-print" onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <div class="screen-tip">
+    Tap the circle on <strong>Find:</strong> to add a photo of the person &nbsp;&middot;&nbsp; Type in any field &nbsp;&middot;&nbsp; Then tap <strong>Print / Save as PDF</strong>
+  </div>
+
+  <div class="sheet-wrap">
+    <div class="sheet">
+
+      <div class="sheet-top">
+        <div class="sheet-title-area">
+          <h1 class="sheet-title">Go Find &amp; Ask!</h1>
+        </div>
+        <div class="sheet-illus">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 90" width="85" height="85" aria-hidden="true">
+            <circle cx="36" cy="36" r="28" stroke="#111" stroke-width="3" fill="white"/>
+            <text x="36" y="46" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="900" fill="#111">?</text>
+            <line x1="56" y1="57" x2="83" y2="83" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+            <path d="M 20 22 Q 17 18 21 15" stroke="#555" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="info-row">
+        <div class="info-field">Name:<input class="info-input" type="text" aria-label="Student name"></div>
+        <div class="info-field">Date:<input class="info-input" type="text" aria-label="Date"></div>
+      </div>
+
+      <div class="instructions">
+        <strong>Directions:</strong> A parent or teacher fills in the <em>Find</em> and <em>Ask them</em> lines before the activity. Then the student finds each person, asks the question, and writes down what they say.
+      </div>
+
+      <div class="missions">
+
+        <div class="mission" id="mission-1">
+          <div class="mission-label">Mission 1</div>
+          <div class="m-row m-row-find" id="find-row-1" onclick="rowClick(1)">
+            <span class="m-lbl">Find:</span>
+            <img class="m-photo" id="photo-1" src="" alt="Person to find">
+            <div class="m-photo-ph" id="placeholder-1">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
+            </div>
+            <input type="file" accept="image/*" class="m-upload" id="upload-1" onchange="loadPhoto(1, this)">
+            <input class="m-input" type="text" onclick="stopProp(event)">
+            <span class="m-photo-remove" id="remove-1" onclick="stopProp(event); removePhoto(1)">remove</span>
+          </div>
+          <div class="m-row"><span class="m-lbl">Ask them:</span><input class="m-input" type="text"></div>
+          <div class="m-row"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+        </div>
+
+        <div class="mission" id="mission-2">
+          <div class="mission-label">Mission 2</div>
+          <div class="m-row m-row-find" id="find-row-2" onclick="rowClick(2)">
+            <span class="m-lbl">Find:</span>
+            <img class="m-photo" id="photo-2" src="" alt="Person to find">
+            <div class="m-photo-ph" id="placeholder-2">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
+            </div>
+            <input type="file" accept="image/*" class="m-upload" id="upload-2" onchange="loadPhoto(2, this)">
+            <input class="m-input" type="text" onclick="stopProp(event)">
+            <span class="m-photo-remove" id="remove-2" onclick="stopProp(event); removePhoto(2)">remove</span>
+          </div>
+          <div class="m-row"><span class="m-lbl">Ask them:</span><input class="m-input" type="text"></div>
+          <div class="m-row"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+        </div>
+
+        <div class="mission" id="mission-3">
+          <div class="mission-label">Mission 3</div>
+          <div class="m-row m-row-find" id="find-row-3" onclick="rowClick(3)">
+            <span class="m-lbl">Find:</span>
+            <img class="m-photo" id="photo-3" src="" alt="Person to find">
+            <div class="m-photo-ph" id="placeholder-3">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
+            </div>
+            <input type="file" accept="image/*" class="m-upload" id="upload-3" onchange="loadPhoto(3, this)">
+            <input class="m-input" type="text" onclick="stopProp(event)">
+            <span class="m-photo-remove" id="remove-3" onclick="stopProp(event); removePhoto(3)">remove</span>
+          </div>
+          <div class="m-row"><span class="m-lbl">Ask them:</span><input class="m-input" type="text"></div>
+          <div class="m-row"><span class="m-lbl">They said:</span><div class="m-line"></div></div>
+        </div>
+
+      </div>
+
+      <div class="sheet-footer">
+        Free for personal and classroom use &nbsp;&middot;&nbsp; autismparentingcenter.com
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function stopProp(e) { e.stopPropagation(); }
+
+    function rowClick(n) {
+      if (!document.getElementById('mission-' + n).classList.contains('has-photo')) {
+        document.getElementById('upload-' + n).click();
+      }
+    }
+
+    function loadPhoto(n, input) {
+      if (!input.files || !input.files[0]) return;
+      var reader = new FileReader();
+      reader.onload = function (e) {
+        var img = document.getElementById('photo-' + n);
+        var ph  = document.getElementById('placeholder-' + n);
+        var rm  = document.getElementById('remove-' + n);
+        var row = document.getElementById('find-row-' + n);
+        img.src = e.target.result;
+        img.style.display = 'block';
+        ph.style.display  = 'none';
+        rm.style.display  = 'inline';
+        row.classList.add('loaded');
+        document.getElementById('mission-' + n).classList.add('has-photo');
+        fitSheet();
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+
+    function removePhoto(n) {
+      var img = document.getElementById('photo-' + n);
+      var ph  = document.getElementById('placeholder-' + n);
+      var rm  = document.getElementById('remove-' + n);
+      var row = document.getElementById('find-row-' + n);
+      img.src = '';
+      img.style.display = 'none';
+      ph.style.display  = '';
+      rm.style.display  = 'none';
+      row.classList.remove('loaded');
+      document.getElementById('upload-' + n).value = '';
+      document.getElementById('mission-' + n).classList.remove('has-photo');
+      fitSheet();
+    }
+
+    (function () {
+      var PAGE_W = 816;
+      function fitSheet() {
+        var sheet = document.querySelector('.sheet');
+        var wrap  = document.querySelector('.sheet-wrap');
+        if (!sheet || !wrap) return;
+        sheet.style.width      = '';
+        sheet.style.transform  = '';
+        sheet.style.marginLeft = '';
+        wrap.style.height      = '';
+        var avail = window.innerWidth - 20;
+        var scale = Math.min(1, avail / PAGE_W);
+        sheet.style.width           = PAGE_W + 'px';
+        sheet.style.marginLeft      = '4px';
+        sheet.style.transform       = 'scale(' + scale + ')';
+        sheet.style.transformOrigin = 'top left';
+        wrap.style.height = Math.ceil(sheet.offsetHeight * scale + 4) + 'px';
+      }
+      window.fitSheet = fitSheet;
+      document.addEventListener('DOMContentLoaded', fitSheet);
+      window.addEventListener('resize', fitSheet);
+    })();
+  </script>
+</body>
+</html>
