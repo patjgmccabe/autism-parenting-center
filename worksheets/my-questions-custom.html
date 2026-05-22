@@ -33,7 +33,11 @@
 
     .sheet-wrap { margin: 0.75rem auto; overflow: hidden; }
 
-    .sheet { background: #fff; border: 2.5px solid #111; padding: 1.25rem 1.5rem 1rem; }
+    .sheet {
+      background: #fff; border: 2.5px solid #111; padding: 1.25rem 1.5rem 1rem;
+      display: flex; flex-direction: column;
+      min-height: 969px; /* letter page content height at 96 dpi */
+    }
 
     .sheet-top {
       display: flex; align-items: flex-start; justify-content: space-between;
@@ -53,17 +57,23 @@
       outline: none; background: transparent; padding: 0;
     }
 
-    .instructions { border: 1.5px solid #555; padding: 0.45rem 0.75rem; font-size: 0.8rem; color: #333; margin-bottom: 0.9rem; line-height: 1.5; font-style: italic; }
+    .instructions { border: 1.5px solid #555; padding: 0.45rem 0.75rem; font-size: 0.8rem; color: #333; margin-bottom: 0.5rem; line-height: 1.5; font-style: italic; }
 
-    .questions { display: flex; flex-direction: column; gap: 0.9rem; }
+    /* stretch questions to fill the remaining page height */
+    .questions { flex: 1; display: flex; flex-direction: column; }
 
-    .question { border-left: 3px solid #333; padding: 0.6rem 0 0.6rem 0.85rem; }
+    .question {
+      flex: 1;
+      border-left: 3px solid #333; padding: 0 0 0 0.85rem;
+      display: flex; flex-direction: column; justify-content: center;
+      gap: 1.1rem;
+    }
+    .question + .question { border-top: 1px solid #ddd; }
 
-    .question-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 0.5rem; }
+    .question-label { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; }
 
     /* standard rows */
-    .q-row { display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.45rem; font-size: 0.9rem; }
-    .q-row:last-child { margin-bottom: 0; }
+    .q-row { display: flex; align-items: baseline; gap: 0.35rem; font-size: 0.95rem; }
 
     .q-lbl { font-weight: 700; white-space: nowrap; flex-shrink: 0; min-width: 110px; }
     .q-input { flex: 1; min-width: 0; border: none; border-bottom: 1.5px solid #555; height: 1.25rem; font-family: inherit; font-size: 0.88rem; outline: none; background: transparent; padding: 0; }
@@ -74,21 +84,21 @@
     .q-row-ask.loaded { cursor: default; }
 
     .q-photo {
-      width: 58px; height: 58px; border-radius: 50%;
-      object-fit: cover; border: 2px solid #333;
-      display: none; flex-shrink: 0; margin-right: 0.4rem;
+      width: 90px; height: 90px; border-radius: 50%;
+      object-fit: cover; border: 2.5px solid #333;
+      display: none; flex-shrink: 0; margin-right: 0.6rem;
     }
 
     .q-photo-ph {
-      width: 58px; height: 58px; border-radius: 50%;
-      border: 2px dashed #bbb; flex-shrink: 0; margin-right: 0.4rem;
+      width: 90px; height: 90px; border-radius: 50%;
+      border: 2px dashed #bbb; flex-shrink: 0; margin-right: 0.6rem;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       color: #999; text-align: center; line-height: 1.3;
       transition: border-color 0.15s, color 0.15s;
       pointer-events: none; /* whole row handles the click */
     }
     .q-row-ask:not(.loaded):hover .q-photo-ph { border-color: #4a8abf; color: #4a8abf; }
-    .q-photo-ph span { font-size: 0.52rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
+    .q-photo-ph span { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
 
     .q-photo-remove {
       font-size: 0.6rem; color: #aaa; cursor: pointer;
@@ -98,7 +108,7 @@
 
     .q-upload { display: none; }
 
-    .sheet-footer { margin-top: 0.8rem; padding-top: 0.45rem; border-top: 1px solid #bbb; font-size: 0.65rem; color: #888; text-align: center; letter-spacing: 0.02em; }
+    .sheet-footer { margin-top: auto; padding-top: 0.45rem; border-top: 1px solid #bbb; font-size: 0.65rem; color: #888; text-align: center; letter-spacing: 0.02em; }
 
     /* ── Print ── */
     @media print {
@@ -177,7 +187,7 @@
             <span class="q-lbl">I will ask:</span>
             <img class="q-photo" id="photo-1" src="" alt="Person to ask">
             <div class="q-photo-ph" id="placeholder-1">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
             </div>
             <input type="file" accept="image/*" class="q-upload" id="upload-1" onchange="loadPhoto(1, this)">
@@ -198,7 +208,7 @@
             <span class="q-lbl">I will ask:</span>
             <img class="q-photo" id="photo-2" src="" alt="Person to ask">
             <div class="q-photo-ph" id="placeholder-2">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
             </div>
             <input type="file" accept="image/*" class="q-upload" id="upload-2" onchange="loadPhoto(2, this)">
@@ -219,7 +229,7 @@
             <span class="q-lbl">I will ask:</span>
             <img class="q-photo" id="photo-3" src="" alt="Person to ask">
             <div class="q-photo-ph" id="placeholder-3">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
             </div>
             <input type="file" accept="image/*" class="q-upload" id="upload-3" onchange="loadPhoto(3, this)">
