@@ -2203,6 +2203,13 @@ footer a:hover { text-decoration: underline; }
 .ws-card-btn-orange       { background: #f4a94e; }
 .ws-card-btn-orange:hover { background: #e09040; }
 
+.ws-card-btn-outline {
+  background: transparent;
+  color: #4a8abf;
+  border: 2px solid #4a8abf;
+}
+.ws-card-btn-outline:hover { background: #eef4fb; transform: translateY(-1px); }
+
 /* How to use */
 .ws-how {
   background: #f7f9fc;
