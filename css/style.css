@@ -2207,9 +2207,10 @@ footer a:hover { text-decoration: underline; }
   background: transparent;
   color: #4a8abf;
   border: 2px solid #4a8abf;
-  margin-top: 0.5rem;
 }
 .ws-card-btn-outline:hover { background: #eef4fb; transform: translateY(-1px); }
+
+.ws-card-btns { display: flex; flex-direction: column; gap: 0.6rem; }
 
 /* How to use */
 .ws-how {
