@@ -4,279 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Questions — Customizable Worksheet — Autism Parenting Center</title>
-  <meta name="description" content="Customizable printable My Questions worksheet. Add photos of the people your child will ask, fill in questions, then print." />
+  <meta name="description" content="Customizable printable My Questions worksheet. Add a photo of the person your child will ask, fill in questions, then print." />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      font-family: Arial, 'Segoe UI', sans-serif;
-      background: #fff;
-      color: #000;
-    }
+    body { font-family: Arial, 'Segoe UI', sans-serif; background: #fff; color: #000; }
 
     .topbar {
       background: #fff;
       border-bottom: 1px solid #bbb;
       padding: 0.65rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      flex-wrap: wrap;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 1rem; flex-wrap: wrap;
     }
     .topbar-left { font-size: 0.85rem; color: #555; }
     .topbar-left a { color: #4a8abf; text-decoration: none; font-weight: 600; }
-
     .btn-print {
-      background: #333;
-      color: #fff;
-      border: none;
-      padding: 0.55rem 1.3rem;
-      border-radius: 6px;
-      font-size: 0.88rem;
-      font-weight: 700;
-      cursor: pointer;
-      font-family: inherit;
+      background: #333; color: #fff; border: none;
+      padding: 0.55rem 1.3rem; border-radius: 6px;
+      font-size: 0.88rem; font-weight: 700; cursor: pointer; font-family: inherit;
     }
     .btn-print:hover { background: #111; }
 
     .screen-tip {
-      background: #f0f6ff;
-      border-bottom: 1px solid #c8dcf0;
-      padding: 0.55rem 1.5rem;
-      font-size: 0.8rem;
-      color: #3a6a9a;
+      background: #f0f6ff; border-bottom: 1px solid #c8dcf0;
+      padding: 0.5rem 1.5rem; font-size: 0.8rem; color: #3a6a9a;
     }
 
-    .sheet-wrap {
-      max-width: 800px;
-      margin: 1rem auto 2rem;
-      padding: 0 1rem;
-    }
+    .sheet-wrap { margin: 0.75rem auto; overflow: hidden; }
 
-    .sheet {
-      background: #fff;
-      border: 2.5px solid #111;
-      padding: 1.25rem 1.5rem 1rem;
-    }
+    .sheet { background: #fff; border: 2.5px solid #111; padding: 1.25rem 1.5rem 1rem; }
 
     .sheet-top {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 0.6rem;
+      display: flex; align-items: flex-start; justify-content: space-between;
+      gap: 1rem; margin-bottom: 0.6rem;
     }
-
     .sheet-title-area { flex: 1; }
-
-    .sheet-title {
-      font-size: 1.85rem;
-      font-weight: 900;
-      color: #000;
-      line-height: 1.1;
-      text-transform: uppercase;
-      letter-spacing: 0.02em;
-    }
-
+    .sheet-title { font-size: 1.85rem; font-weight: 900; color: #000; line-height: 1.1; text-transform: uppercase; letter-spacing: 0.02em; }
     .sheet-illus { flex-shrink: 0; }
 
-    .divider {
-      border: none;
-      border-top: 2.5px solid #111;
-      margin: 0.6rem 0 0.75rem;
-    }
+    .divider { border: none; border-top: 2.5px solid #111; margin: 0.6rem 0 0.75rem; }
 
-    .info-row {
-      display: flex;
-      flex-wrap: nowrap;
-      gap: 0.5rem 1.5rem;
-      margin-bottom: 0.8rem;
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .info-field {
-      display: flex;
-      align-items: baseline;
-      gap: 0.3rem;
-      flex: 1;
-    }
-
+    .info-row { display: flex; flex-wrap: nowrap; gap: 0.5rem 1.5rem; margin-bottom: 0.8rem; font-size: 0.88rem; font-weight: 700; }
+    .info-field { display: flex; align-items: baseline; gap: 0.3rem; flex: 1; }
     .info-input {
-      flex: 1;
-      min-width: 60px;
-      border: none;
-      border-bottom: 1.5px solid #555;
-      height: 1.25rem;
-      font-family: inherit;
-      font-size: 0.88rem;
-      font-weight: 400;
-      outline: none;
-      background: transparent;
-      padding: 0;
+      flex: 1; min-width: 60px; border: none; border-bottom: 1.5px solid #555;
+      height: 1.25rem; font-family: inherit; font-size: 0.88rem; font-weight: 400;
+      outline: none; background: transparent; padding: 0;
     }
 
-    .instructions {
-      border: 1.5px solid #555;
-      padding: 0.45rem 0.75rem;
-      font-size: 0.8rem;
-      color: #333;
-      margin-bottom: 0.9rem;
-      line-height: 1.5;
-      font-style: italic;
-    }
+    .instructions { border: 1.5px solid #555; padding: 0.45rem 0.75rem; font-size: 0.8rem; color: #333; margin-bottom: 0.9rem; line-height: 1.5; font-style: italic; }
 
     .questions { display: flex; flex-direction: column; gap: 0.9rem; }
 
-    .question {
-      border-left: 3px solid #333;
-      padding: 0.6rem 0 0.6rem 0.85rem;
-    }
+    .question { border-left: 3px solid #333; padding: 0.6rem 0 0.6rem 0.85rem; }
 
-    .question-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: #555;
-      margin-bottom: 0.5rem;
-    }
+    .question-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #555; margin-bottom: 0.5rem; }
 
-    .q-body {
-      display: flex;
-      gap: 0.85rem;
-      align-items: flex-start;
-    }
+    /* standard rows */
+    .q-row { display: flex; align-items: baseline; gap: 0.35rem; margin-bottom: 0.45rem; font-size: 0.9rem; }
+    .q-row:last-child { margin-bottom: 0; }
 
-    /* Photo column */
-    .q-photo-col {
-      flex-shrink: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.25rem;
-      width: 76px;
-    }
+    .q-lbl { font-weight: 700; white-space: nowrap; flex-shrink: 0; min-width: 110px; }
+    .q-input { flex: 1; min-width: 0; border: none; border-bottom: 1.5px solid #555; height: 1.25rem; font-family: inherit; font-size: 0.88rem; outline: none; background: transparent; padding: 0; }
+    .q-line { flex: 1; border-bottom: 2px solid #000; height: 1.2rem; }
+
+    /* "I will ask:" row — photo lives here */
+    .q-row-ask { align-items: center; cursor: pointer; }
+    .q-row-ask.loaded { cursor: default; }
 
     .q-photo {
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 2px solid #333;
-      display: none;
+      width: 58px; height: 58px; border-radius: 50%;
+      object-fit: cover; border: 2px solid #333;
+      display: none; flex-shrink: 0; margin-right: 0.4rem;
     }
 
-    .q-photo-placeholder {
-      width: 68px;
-      height: 68px;
-      border-radius: 50%;
-      border: 2px dashed #bbb;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      color: #999;
-      text-align: center;
-      line-height: 1.3;
+    .q-photo-ph {
+      width: 58px; height: 58px; border-radius: 50%;
+      border: 2px dashed #bbb; flex-shrink: 0; margin-right: 0.4rem;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: #999; text-align: center; line-height: 1.3;
       transition: border-color 0.15s, color 0.15s;
+      pointer-events: none; /* whole row handles the click */
     }
-    .q-photo-placeholder:hover { border-color: #4a8abf; color: #4a8abf; }
-
-    .q-photo-placeholder svg { margin-bottom: 3px; }
-
-    .q-photo-placeholder span {
-      font-size: 0.58rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
+    .q-row-ask:not(.loaded):hover .q-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .q-photo-ph span { font-size: 0.52rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
 
     .q-photo-remove {
-      font-size: 0.58rem;
-      color: #aaa;
-      cursor: pointer;
-      text-decoration: underline;
-      display: none;
+      font-size: 0.6rem; color: #aaa; cursor: pointer;
+      text-decoration: underline; display: none; flex-shrink: 0; margin-left: 0.25rem;
     }
     .q-photo-remove:hover { color: #c00; }
 
-    .q-photo-upload { display: none; }
+    .q-upload { display: none; }
 
-    /* Fields */
-    .q-fields { flex: 1; min-width: 0; }
-
-    .q-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.35rem;
-      margin-bottom: 0.45rem;
-      font-size: 0.9rem;
-    }
-    .q-row:last-child { margin-bottom: 0; }
-
-    .q-lbl {
-      font-weight: 700;
-      white-space: nowrap;
-      flex-shrink: 0;
-      min-width: 110px;
-    }
-
-    .q-input {
-      flex: 1;
-      min-width: 0;
-      border: none;
-      border-bottom: 1.5px solid #555;
-      height: 1.25rem;
-      font-family: inherit;
-      font-size: 0.88rem;
-      outline: none;
-      background: transparent;
-      padding: 0;
-    }
-
-    .q-line {
-      flex: 1;
-      border-bottom: 2px solid #000;
-      height: 1.2rem;
-    }
-
-    .sheet-footer {
-      margin-top: 0.8rem;
-      padding-top: 0.45rem;
-      border-top: 1px solid #bbb;
-      font-size: 0.65rem;
-      color: #888;
-      text-align: center;
-      letter-spacing: 0.02em;
-    }
+    .sheet-footer { margin-top: 0.8rem; padding-top: 0.45rem; border-top: 1px solid #bbb; font-size: 0.65rem; color: #888; text-align: center; letter-spacing: 0.02em; }
 
     /* ── Print ── */
     @media print {
       @page { margin: 0.45in; size: letter; }
-      .topbar    { display: none !important; }
+      .topbar     { display: none !important; }
       .screen-tip { display: none !important; }
       body { background: #fff; }
-      .sheet-wrap { max-width: 100%; margin: 0; padding: 0; }
+      .sheet-wrap { margin: 0 !important; overflow: visible !important; height: auto !important; }
+      .sheet { width: 100% !important; transform: none !important; margin-left: 0 !important; }
 
-      /* Hide photo placeholder and remove link; show photo only if loaded */
-      .q-photo-placeholder { display: none !important; }
-      .q-photo-remove      { display: none !important; }
-      .q-photo-upload      { display: none !important; }
+      .q-photo-ph     { display: none !important; }
+      .q-photo-remove { display: none !important; }
+      .q-upload       { display: none !important; }
+      .q-row-ask      { cursor: default !important; }
 
-      /* If no photo loaded, collapse the photo column */
-      .q-photo-col { display: none; }
-      .question.has-photo .q-photo-col { display: flex; }
-      .question.has-photo .q-photo { display: block; }
+      .question.has-photo .q-photo { display: block !important; }
 
-      /* Input text prints as-is */
       .q-input, .info-input {
-        -webkit-appearance: none;
-        border: none;
-        border-bottom: 1.5px solid #555;
-        border-radius: 0;
+        -webkit-appearance: none; border: none;
+        border-bottom: 1.5px solid #555; border-radius: 0;
       }
       * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
     }
@@ -293,7 +135,7 @@
   </div>
 
   <div class="screen-tip">
-    Tap a circle to add a photo of the person your child will ask &nbsp;&middot;&nbsp; Type in any field &nbsp;&middot;&nbsp; Then tap <strong>Print / Save as PDF</strong>
+    Tap the circle on <strong>I will ask:</strong> to add a photo &nbsp;&middot;&nbsp; Type in any field &nbsp;&middot;&nbsp; Then tap <strong>Print / Save as PDF</strong>
   </div>
 
   <div class="sheet-wrap">
@@ -328,61 +170,64 @@
 
         <div class="question" id="question-1">
           <div class="question-label">Question 1</div>
-          <div class="q-body">
-            <div class="q-photo-col">
-              <img class="q-photo" id="photo-1" src="" alt="Person to ask">
-              <div class="q-photo-placeholder" id="placeholder-1" onclick="document.getElementById('upload-1').click()" role="button" tabindex="0" aria-label="Add photo for question 1">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                <span>Add Photo</span>
-              </div>
-              <span class="q-photo-remove" id="remove-1" onclick="removePhoto(1)" role="button" tabindex="0">remove</span>
-              <input type="file" accept="image/*" class="q-photo-upload" id="upload-1" onchange="loadPhoto(1, this)" aria-label="Upload photo for question 1">
+          <div class="q-row">
+            <span class="q-lbl">I want to know:</span><input class="q-input" type="text">
+          </div>
+          <div class="q-row q-row-ask" id="ask-row-1" onclick="rowClick(1)">
+            <span class="q-lbl">I will ask:</span>
+            <img class="q-photo" id="photo-1" src="" alt="Person to ask">
+            <div class="q-photo-ph" id="placeholder-1">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
             </div>
-            <div class="q-fields">
-              <div class="q-row"><span class="q-lbl">I want to know:</span><input class="q-input" type="text" aria-label="Question 1"></div>
-              <div class="q-row"><span class="q-lbl">I will ask:</span><input class="q-input" type="text" aria-label="Who to ask for question 1"></div>
-              <div class="q-row"><span class="q-lbl">Answer:</span><div class="q-line"></div></div>
-            </div>
+            <input type="file" accept="image/*" class="q-upload" id="upload-1" onchange="loadPhoto(1, this)">
+            <input class="q-input" type="text" onclick="stopProp(event)">
+            <span class="q-photo-remove" id="remove-1" onclick="stopProp(event); removePhoto(1)">remove</span>
+          </div>
+          <div class="q-row">
+            <span class="q-lbl">Answer:</span><div class="q-line"></div>
           </div>
         </div>
 
         <div class="question" id="question-2">
           <div class="question-label">Question 2</div>
-          <div class="q-body">
-            <div class="q-photo-col">
-              <img class="q-photo" id="photo-2" src="" alt="Person to ask">
-              <div class="q-photo-placeholder" id="placeholder-2" onclick="document.getElementById('upload-2').click()" role="button" tabindex="0" aria-label="Add photo for question 2">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                <span>Add Photo</span>
-              </div>
-              <span class="q-photo-remove" id="remove-2" onclick="removePhoto(2)" role="button" tabindex="0">remove</span>
-              <input type="file" accept="image/*" class="q-photo-upload" id="upload-2" onchange="loadPhoto(2, this)" aria-label="Upload photo for question 2">
+          <div class="q-row">
+            <span class="q-lbl">I want to know:</span><input class="q-input" type="text">
+          </div>
+          <div class="q-row q-row-ask" id="ask-row-2" onclick="rowClick(2)">
+            <span class="q-lbl">I will ask:</span>
+            <img class="q-photo" id="photo-2" src="" alt="Person to ask">
+            <div class="q-photo-ph" id="placeholder-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
             </div>
-            <div class="q-fields">
-              <div class="q-row"><span class="q-lbl">I want to know:</span><input class="q-input" type="text" aria-label="Question 2"></div>
-              <div class="q-row"><span class="q-lbl">I will ask:</span><input class="q-input" type="text" aria-label="Who to ask for question 2"></div>
-              <div class="q-row"><span class="q-lbl">Answer:</span><div class="q-line"></div></div>
-            </div>
+            <input type="file" accept="image/*" class="q-upload" id="upload-2" onchange="loadPhoto(2, this)">
+            <input class="q-input" type="text" onclick="stopProp(event)">
+            <span class="q-photo-remove" id="remove-2" onclick="stopProp(event); removePhoto(2)">remove</span>
+          </div>
+          <div class="q-row">
+            <span class="q-lbl">Answer:</span><div class="q-line"></div>
           </div>
         </div>
 
         <div class="question" id="question-3">
           <div class="question-label">Question 3</div>
-          <div class="q-body">
-            <div class="q-photo-col">
-              <img class="q-photo" id="photo-3" src="" alt="Person to ask">
-              <div class="q-photo-placeholder" id="placeholder-3" onclick="document.getElementById('upload-3').click()" role="button" tabindex="0" aria-label="Add photo for question 3">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                <span>Add Photo</span>
-              </div>
-              <span class="q-photo-remove" id="remove-3" onclick="removePhoto(3)" role="button" tabindex="0">remove</span>
-              <input type="file" accept="image/*" class="q-photo-upload" id="upload-3" onchange="loadPhoto(3, this)" aria-label="Upload photo for question 3">
+          <div class="q-row">
+            <span class="q-lbl">I want to know:</span><input class="q-input" type="text">
+          </div>
+          <div class="q-row q-row-ask" id="ask-row-3" onclick="rowClick(3)">
+            <span class="q-lbl">I will ask:</span>
+            <img class="q-photo" id="photo-3" src="" alt="Person to ask">
+            <div class="q-photo-ph" id="placeholder-3">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+              <span>Add Photo</span>
             </div>
-            <div class="q-fields">
-              <div class="q-row"><span class="q-lbl">I want to know:</span><input class="q-input" type="text" aria-label="Question 3"></div>
-              <div class="q-row"><span class="q-lbl">I will ask:</span><input class="q-input" type="text" aria-label="Who to ask for question 3"></div>
-              <div class="q-row"><span class="q-lbl">Answer:</span><div class="q-line"></div></div>
-            </div>
+            <input type="file" accept="image/*" class="q-upload" id="upload-3" onchange="loadPhoto(3, this)">
+            <input class="q-input" type="text" onclick="stopProp(event)">
+            <span class="q-photo-remove" id="remove-3" onclick="stopProp(event); removePhoto(3)">remove</span>
+          </div>
+          <div class="q-row">
+            <span class="q-lbl">Answer:</span><div class="q-line"></div>
           </div>
         </div>
 
@@ -396,6 +241,16 @@
   </div>
 
   <script>
+    function stopProp(e) { e.stopPropagation(); }
+
+    /* Tapping anywhere on the "I will ask:" row triggers photo upload */
+    function rowClick(n) {
+      var q = document.getElementById('question-' + n);
+      if (!q.classList.contains('has-photo')) {
+        document.getElementById('upload-' + n).click();
+      }
+    }
+
     function loadPhoto(n, input) {
       if (!input.files || !input.files[0]) return;
       var reader = new FileReader();
@@ -403,11 +258,14 @@
         var img = document.getElementById('photo-' + n);
         var ph  = document.getElementById('placeholder-' + n);
         var rm  = document.getElementById('remove-' + n);
+        var row = document.getElementById('ask-row-' + n);
         img.src = e.target.result;
         img.style.display = 'block';
         ph.style.display  = 'none';
-        rm.style.display  = 'block';
+        rm.style.display  = 'inline';
+        row.classList.add('loaded');
         document.getElementById('question-' + n).classList.add('has-photo');
+        fitSheet();
       };
       reader.readAsDataURL(input.files[0]);
     }
@@ -416,21 +274,39 @@
       var img = document.getElementById('photo-' + n);
       var ph  = document.getElementById('placeholder-' + n);
       var rm  = document.getElementById('remove-' + n);
-      var up  = document.getElementById('upload-' + n);
+      var row = document.getElementById('ask-row-' + n);
       img.src = '';
       img.style.display = 'none';
       ph.style.display  = '';
       rm.style.display  = 'none';
-      up.value = '';
+      row.classList.remove('loaded');
+      document.getElementById('upload-' + n).value = '';
       document.getElementById('question-' + n).classList.remove('has-photo');
+      fitSheet();
     }
 
-    /* keyboard support for photo placeholders */
-    document.querySelectorAll('.q-photo-placeholder').forEach(function (el) {
-      el.addEventListener('keydown', function (e) {
-        if (e.key === 'Enter' || e.key === ' ') el.click();
-      });
-    });
+    (function () {
+      var PAGE_W = 816;
+      function fitSheet() {
+        var sheet = document.querySelector('.sheet');
+        var wrap  = document.querySelector('.sheet-wrap');
+        if (!sheet || !wrap) return;
+        sheet.style.width      = '';
+        sheet.style.transform  = '';
+        sheet.style.marginLeft = '';
+        wrap.style.height      = '';
+        var avail = window.innerWidth - 20;
+        var scale = Math.min(1, avail / PAGE_W);
+        sheet.style.width           = PAGE_W + 'px';
+        sheet.style.marginLeft      = '4px';
+        sheet.style.transform       = 'scale(' + scale + ')';
+        sheet.style.transformOrigin = 'top left';
+        wrap.style.height = Math.ceil(sheet.offsetHeight * scale + 4) + 'px';
+      }
+      window.fitSheet = fitSheet;
+      document.addEventListener('DOMContentLoaded', fitSheet);
+      window.addEventListener('resize', fitSheet);
+    })();
   </script>
 </body>
 </html>
