@@ -1489,6 +1489,90 @@ footer a:hover { text-decoration: underline; }
   transform: translateY(-2px);
 }
 
+.post-callout {
+  background: #f0f7ff;
+  border-left: 4px solid #4a8abf;
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.post-callout h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 0.5rem;
+}
+
+.post-callout > p {
+  color: #555;
+  font-size: 0.93rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+
+.post-callout-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-callout-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.post-callout-item strong {
+  display: block;
+  font-size: 0.95rem;
+  color: #2d3748;
+  margin-bottom: 0.3rem;
+}
+
+.post-callout-item p {
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0 0 0.75rem;
+}
+
+.post-callout-btns {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.post-callout-btn {
+  display: inline-block;
+  background: #4a8abf;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.post-callout-btn:hover {
+  background: #3a79ae;
+}
+
+.post-callout-btn-outline {
+  background: transparent;
+  color: #4a8abf;
+  border: 2px solid #4a8abf;
+}
+
+.post-callout-btn-outline:hover {
+  background: #4a8abf;
+  color: #fff;
+}
+
 @media (max-width: 768px) {
   .blog-grid { grid-template-columns: 1fr; }
   .post-body h2 { font-size: 1.25rem; }
