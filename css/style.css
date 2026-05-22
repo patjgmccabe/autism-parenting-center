@@ -2184,6 +2184,16 @@ footer a:hover { text-decoration: underline; }
 .ws-intro p:last-child { margin-bottom: 0; }
 .ws-intro a { color: #4a8abf; font-weight: 600; }
 
+.ws-customize-tip {
+  background: #f0f7ff;
+  border-left: 3px solid #4a8abf;
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem !important;
+}
+
 .ws-section-label {
   font-size: 0.75rem;
   font-weight: 700;
