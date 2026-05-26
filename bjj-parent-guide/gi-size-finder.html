@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gi Size Finder | BJJ Parent Guide</title>
+  <meta name="description" content="Find the right gi size for your child. Enter height and weight in inches/pounds or cm/kg and get an instant recommendation with a full size reference chart." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">BJJ Parent Guide</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Tools</span>
+          <ul class="dropdown-menu">
+            <li><a href="gi-size-finder.html">Gi Size Finder</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Resources</span>
+          <ul class="dropdown-menu">
+            <li><a href="glossary.html">BJJ Glossary</a></li>
+            <li><a href="belts.html">Belt Guide</a></li>
+            <li><a href="tournament.html">Tournament Guide</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Gi Size Finder</h1>
+    <p>Enter your child's height and weight to find the right gi size.</p>
+  </header>
+
+  <div class="gi-finder-container">
+
+    <div class="gi-finder-card">
+      <h2>Find the Right Size</h2>
+      <p>Height is the primary factor for gi sizing. Weight is used as a secondary check — if they suggest different sizes, we'll recommend the larger one and note it.</p>
+
+      <!-- Height inputs -->
+      <div class="gi-form-row">
+        <div>
+          <label class="gi-field-label">Height</label>
+          <div class="gi-unit-toggle" id="heightUnitToggle">
+            <button class="gi-unit-btn active" data-unit="imperial" onclick="setHeightUnit('imperial')">ft / in</button>
+            <button class="gi-unit-btn" data-unit="metric" onclick="setHeightUnit('metric')">cm</button>
+          </div>
+          <div id="heightImperial" class="gi-inputs">
+            <input type="number" class="gi-input" id="heightFt" min="0" max="8" placeholder="ft" aria-label="Height feet" />
+            <span class="gi-input-label">ft</span>
+            <input type="number" class="gi-input" id="heightIn" min="0" max="11" placeholder="in" aria-label="Height inches" />
+            <span class="gi-input-label">in</span>
+          </div>
+          <div id="heightMetric" style="display:none;">
+            <input type="number" class="gi-input gi-input-wide" id="heightCm" min="0" max="250" placeholder="e.g. 130" aria-label="Height cm" />
+            <span class="gi-input-label" style="margin-left:.4rem;">cm</span>
+          </div>
+        </div>
+
+        <!-- Weight inputs -->
+        <div>
+          <label class="gi-field-label">Weight</label>
+          <div class="gi-unit-toggle" id="weightUnitToggle">
+            <button class="gi-unit-btn active" data-unit="imperial" onclick="setWeightUnit('imperial')">lbs</button>
+            <button class="gi-unit-btn" data-unit="metric" onclick="setWeightUnit('metric')">kg</button>
+          </div>
+          <div id="weightImperial" class="gi-inputs">
+            <input type="number" class="gi-input gi-input-wide" id="weightLbs" min="0" max="500" placeholder="e.g. 85" aria-label="Weight pounds" />
+            <span class="gi-input-label">lbs</span>
+          </div>
+          <div id="weightMetric" style="display:none;" class="gi-inputs">
+            <input type="number" class="gi-input gi-input-wide" id="weightKg" min="0" max="250" placeholder="e.g. 38" aria-label="Weight kg" />
+            <span class="gi-input-label">kg</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="gi-submit" onclick="findGiSize()">Find My Size</button>
+
+      <!-- Result -->
+      <div class="gi-result" id="giResult">
+        <div class="gi-result-size" id="giResultSize"></div>
+        <div class="gi-result-label" id="giResultLabel"></div>
+        <div class="gi-result-note" id="giResultNote"></div>
+      </div>
+
+      <p class="gi-disclaimer">Gi sizes vary by brand. This is a general guide — always check the brand's specific size chart before buying. Kids' sizing (M000–M4) follows the IBJJF standard; individual manufacturers may differ slightly.</p>
+    </div>
+
+    <!-- Size Reference Table -->
+    <div class="gi-chart">
+      <h3>Kids Gi Size Reference Chart</h3>
+      <table class="gi-table" id="kidsTable">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Height (in)</th>
+            <th>Height (cm)</th>
+            <th>Weight (lbs)</th>
+            <th>Weight (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-size="M000">
+            <td><strong>M000</strong></td>
+            <td>Up to 47"</td>
+            <td>Up to 120 cm</td>
+            <td>Under 55 lbs</td>
+            <td>Under 25 kg</td>
+          </tr>
+          <tr data-size="M00">
+            <td><strong>M00</strong></td>
+            <td>47" – 52"</td>
+            <td>120 – 132 cm</td>
+            <td>55 – 75 lbs</td>
+            <td>25 – 34 kg</td>
+          </tr>
+          <tr data-size="M0">
+            <td><strong>M0</strong></td>
+            <td>52" – 57"</td>
+            <td>132 – 145 cm</td>
+            <td>75 – 95 lbs</td>
+            <td>34 – 43 kg</td>
+          </tr>
+          <tr data-size="M1">
+            <td><strong>M1</strong></td>
+            <td>57" – 61"</td>
+            <td>145 – 155 cm</td>
+            <td>95 – 115 lbs</td>
+            <td>43 – 52 kg</td>
+          </tr>
+          <tr data-size="M2">
+            <td><strong>M2</strong></td>
+            <td>61" – 65"</td>
+            <td>155 – 165 cm</td>
+            <td>115 – 135 lbs</td>
+            <td>52 – 61 kg</td>
+          </tr>
+          <tr data-size="M3">
+            <td><strong>M3</strong></td>
+            <td>65" – 69"</td>
+            <td>165 – 175 cm</td>
+            <td>135 – 160 lbs</td>
+            <td>61 – 73 kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="gi-chart" style="margin-top:2rem;">
+      <h3>Adult Gi Size Reference Chart</h3>
+      <p style="font-size:.88rem;color:#555;margin-bottom:.75rem;line-height:1.6;">For teens 16+ or when kids outgrow the M-series sizes.</p>
+      <table class="gi-table" id="adultTable">
+        <thead>
+          <tr>
+            <th>Size</th>
+            <th>Height (in)</th>
+            <th>Height (cm)</th>
+            <th>Weight (lbs)</th>
+            <th>Weight (kg)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-size="A0">
+            <td><strong>A0</strong></td>
+            <td>65" – 67"</td>
+            <td>165 – 170 cm</td>
+            <td>130 – 150 lbs</td>
+            <td>59 – 68 kg</td>
+          </tr>
+          <tr data-size="A1">
+            <td><strong>A1</strong></td>
+            <td>67" – 70"</td>
+            <td>170 – 178 cm</td>
+            <td>150 – 170 lbs</td>
+            <td>68 – 77 kg</td>
+          </tr>
+          <tr data-size="A2">
+            <td><strong>A2</strong></td>
+            <td>70" – 72"</td>
+            <td>178 – 183 cm</td>
+            <td>170 – 190 lbs</td>
+            <td>77 – 86 kg</td>
+          </tr>
+          <tr data-size="A3">
+            <td><strong>A3</strong></td>
+            <td>72" – 74"</td>
+            <td>183 – 188 cm</td>
+            <td>190 – 215 lbs</td>
+            <td>86 – 98 kg</td>
+          </tr>
+          <tr data-size="A4">
+            <td><strong>A4</strong></td>
+            <td>74" – 76"</td>
+            <td>188 – 193 cm</td>
+            <td>215 – 250 lbs</td>
+            <td>98 – 113 kg</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div><!-- end .gi-finder-container -->
+
+  <footer>
+    <p>&copy; <span id="copyrightYear"></span> BJJ Parent Guide. Free resources for jiu-jitsu parents.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Unit state
+    let heightUnit = 'imperial'; // 'imperial' | 'metric'
+    let weightUnit = 'imperial'; // 'imperial' | 'metric'
+
+    function setHeightUnit(unit) {
+      heightUnit = unit;
+      document.getElementById('heightImperial').style.display = unit === 'imperial' ? '' : 'none';
+      document.getElementById('heightMetric').style.display   = unit === 'metric'   ? '' : 'none';
+      document.querySelectorAll('#heightUnitToggle .gi-unit-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.unit === unit);
+      });
+    }
+
+    function setWeightUnit(unit) {
+      weightUnit = unit;
+      document.getElementById('weightImperial').style.display = unit === 'imperial' ? '' : 'none';
+      document.getElementById('weightMetric').style.display   = unit === 'metric'   ? '' : 'none';
+      document.querySelectorAll('#weightUnitToggle .gi-unit-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.unit === unit);
+      });
+    }
+
+    // Sizing data — all stored internally in inches and lbs
+    // Kids: { size, heightMin (in), heightMax (in), weightMin (lbs), weightMax (lbs) }
+    const kidsSizes = [
+      { size: 'M000', heightMin: 0,    heightMax: 47,  weightMin: 0,   weightMax: 55  },
+      { size: 'M00',  heightMin: 47,   heightMax: 52,  weightMin: 55,  weightMax: 75  },
+      { size: 'M0',   heightMin: 52,   heightMax: 57,  weightMin: 75,  weightMax: 95  },
+      { size: 'M1',   heightMin: 57,   heightMax: 61,  weightMin: 95,  weightMax: 115 },
+      { size: 'M2',   heightMin: 61,   heightMax: 65,  weightMin: 115, weightMax: 135 },
+      { size: 'M3',   heightMin: 65,   heightMax: 69,  weightMin: 135, weightMax: 160 },
+    ];
+
+    const adultSizes = [
+      { size: 'A0', heightMin: 65,  heightMax: 67,  weightMin: 130, weightMax: 150 },
+      { size: 'A1', heightMin: 67,  heightMax: 70,  weightMin: 150, weightMax: 170 },
+      { size: 'A2', heightMin: 70,  heightMax: 72,  weightMin: 170, weightMax: 190 },
+      { size: 'A3', heightMin: 72,  heightMax: 74,  weightMin: 190, weightMax: 215 },
+      { size: 'A4', heightMin: 74,  heightMax: 76,  weightMin: 215, weightMax: 250 },
+    ];
+
+    function getSizeByHeight(heightIn, sizeList) {
+      for (let i = 0; i < sizeList.length; i++) {
+        const s = sizeList[i];
+        // Last entry: accept >= min (no upper bound cap)
+        if (i === sizeList.length - 1) {
+          if (heightIn >= s.heightMin) return s.size;
+        } else {
+          if (heightIn >= s.heightMin && heightIn < s.heightMax) return s.size;
+        }
+      }
+      return null;
+    }
+
+    function getSizeByWeight(weightLbs, sizeList) {
+      for (let i = 0; i < sizeList.length; i++) {
+        const s = sizeList[i];
+        if (i === sizeList.length - 1) {
+          if (weightLbs >= s.weightMin) return s.size;
+        } else {
+          if (weightLbs >= s.weightMin && weightLbs < s.weightMax) return s.size;
+        }
+      }
+      return null;
+    }
+
+    function sizeIndex(size, list) {
+      return list.findIndex(s => s.size === size);
+    }
+
+    function findGiSize() {
+      // Gather inputs
+      let heightIn = null;
+      let weightLbs = null;
+
+      if (heightUnit === 'imperial') {
+        const ft = parseFloat(document.getElementById('heightFt').value) || 0;
+        const inches = parseFloat(document.getElementById('heightIn').value) || 0;
+        heightIn = ft * 12 + inches;
+      } else {
+        const cm = parseFloat(document.getElementById('heightCm').value);
+        if (!isNaN(cm)) heightIn = cm / 2.54;
+      }
+
+      if (weightUnit === 'imperial') {
+        weightLbs = parseFloat(document.getElementById('weightLbs').value);
+      } else {
+        const kg = parseFloat(document.getElementById('weightKg').value);
+        if (!isNaN(kg)) weightLbs = kg * 2.20462;
+      }
+
+      if (!heightIn || heightIn <= 0) {
+        alert('Please enter a valid height.');
+        return;
+      }
+      if (!weightLbs || weightLbs <= 0) {
+        alert('Please enter a valid weight.');
+        return;
+      }
+
+      // Determine if we're in kids or adult territory.
+      // Kids M3 covers 65"–69". At 69"+ we switch to adult.
+      // Weight >= 160 lbs also pushes to adult territory.
+      let isAdult = false;
+      let sizeList = kidsSizes;
+      let heightSize = getSizeByHeight(heightIn, kidsSizes);
+      let weightSize = getSizeByWeight(weightLbs, kidsSizes);
+
+      // Switch to adult if height is at/above top of kids range OR weight beyond kids max
+      if (heightIn >= 69 || weightLbs >= 160) {
+        isAdult = true;
+        sizeList = adultSizes;
+        heightSize = getSizeByHeight(heightIn, adultSizes);
+        weightSize = getSizeByWeight(weightLbs, adultSizes);
+      }
+
+      // Resolve: if sizes differ, go with larger
+      let finalSize = heightSize;
+      let sizeNote = '';
+      let mismatch = false;
+
+      if (heightSize && weightSize && heightSize !== weightSize) {
+        const hi = sizeIndex(heightSize, sizeList);
+        const wi = sizeIndex(weightSize, sizeList);
+        if (wi > hi) {
+          finalSize = weightSize;
+          mismatch = true;
+          sizeNote = 'Your child\'s weight suggests a size up from their height alone. We recommend the larger size (' + finalSize + ') for a better fit.';
+        } else {
+          finalSize = heightSize;
+          mismatch = true;
+          sizeNote = 'Height and weight suggest slightly different sizes. We recommend ' + finalSize + ' based on height, which is the primary fit factor.';
+        }
+      }
+
+      if (!finalSize) {
+        finalSize = isAdult ? 'A4+' : 'M3+';
+        sizeNote = 'Your measurements are at the top of our standard chart. Check with the brand directly for larger sizes.';
+      }
+
+      // Show result
+      const resultEl = document.getElementById('giResult');
+      document.getElementById('giResultSize').textContent = finalSize;
+      document.getElementById('giResultLabel').textContent = isAdult ? 'Adult Gi Size' : 'Kids Gi Size';
+      document.getElementById('giResultNote').textContent = sizeNote || 'This is our recommended starting point. Remember to check the brand\'s own size chart before purchasing, as sizing varies between manufacturers.';
+      resultEl.style.display = 'block';
+
+      // Highlight table row
+      document.querySelectorAll('.gi-table tr').forEach(row => row.classList.remove('highlight'));
+      const targetRow = document.querySelector('.gi-table tr[data-size="' + finalSize + '"]');
+      if (targetRow) {
+        targetRow.classList.add('highlight');
+        targetRow.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    }
+
+    // Allow Enter key to submit
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Enter') findGiSize();
+    });
+  </script>
+</body>
+</html>
