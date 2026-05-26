@@ -1630,7 +1630,40 @@ footer a:hover { text-decoration: underline; }
   line-height: 1.35;
 }
 
+/* ============================================================
+   HOME — About / indexable body copy
+   ============================================================ */
 
+.home-about {
+  background: #fff;
+  border-top: 1px solid #e8f0f8;
+  padding: 3rem 1.5rem 3.5rem;
+}
+
+.home-about-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.home-about-inner h2 {
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-bottom: 1.1rem;
+}
+
+.home-about-inner p {
+  color: #555;
+  font-size: 0.97rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.home-about-inner p:last-child { margin-bottom: 0; }
+
+.home-about-inner a { color: #4a8abf; font-weight: 600; }
+
+/* ============================================================
+   PRINT STYLES — Social Story Creator
    ============================================================ */
 
 .page-social-stories #printArea { display: none; }
