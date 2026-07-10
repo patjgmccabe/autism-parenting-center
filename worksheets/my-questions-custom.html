@@ -83,12 +83,14 @@
     /* "I will ask:" row — photo lives here */
     .q-row-ask { align-items: center; cursor: pointer; }
 
-    .q-photo {
+    .q-photo-wrap {
       width: 90px; height: 90px; border-radius: 50%;
-      object-fit: cover; border: 2.5px solid #333;
+      border: 2.5px solid #333; overflow: hidden;
       display: none; flex-shrink: 0; margin-right: 0.6rem;
-      transition: opacity 0.15s;
+      position: relative; cursor: grab; user-select: none; touch-action: none;
     }
+    .q-photo-wrap:active { cursor: grabbing; }
+    .q-photo { position: absolute; pointer-events: none; display: block; }
 
     .q-photo-ph {
       width: 90px; height: 90px; border-radius: 50%;
@@ -96,10 +98,9 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       color: #999; text-align: center; line-height: 1.3;
       transition: border-color 0.15s, color 0.15s;
-      pointer-events: none; /* whole row handles the click */
+      pointer-events: none;
     }
     .q-row-ask:hover .q-photo-ph { border-color: #4a8abf; color: #4a8abf; }
-    .q-row-ask.loaded:hover .q-photo { opacity: 0.8; }
     .q-photo-ph span { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
 
     .q-photo-remove {
@@ -126,7 +127,7 @@
       .q-upload       { display: none !important; }
       .q-row-ask      { cursor: default !important; }
 
-      .question.has-photo .q-photo { display: block !important; }
+      .question.has-photo .q-photo-wrap { display: block !important; }
 
       .q-input, .info-input {
         -webkit-appearance: none; border: none;
@@ -147,7 +148,7 @@
   </div>
 
   <div class="screen-tip">
-    Tap the circle on <strong>I will ask:</strong> to add a photo &nbsp;&middot;&nbsp; Type in any field &nbsp;&middot;&nbsp; Then tap <strong>Print / Save as PDF</strong>
+    Tap the circle on <strong>I will ask:</strong> to add a photo &nbsp;&middot;&nbsp; Drag the photo to reposition &nbsp;&middot;&nbsp; Type in any field &nbsp;&middot;&nbsp; Then tap <strong>Print / Save as PDF</strong>
   </div>
 
   <div class="sheet-wrap">
@@ -187,7 +188,11 @@
           </div>
           <div class="q-row q-row-ask" id="ask-row-1" onclick="rowClick(1)">
             <span class="q-lbl">I will ask:</span>
-            <img class="q-photo" id="photo-1" src="" alt="Person to ask">
+            <div class="q-photo-wrap" id="photo-wrap-1" title="Drag to reposition"
+                 onmousedown="startDrag(event,1)" ontouchstart="startDrag(event,1)"
+                 onclick="photoWrapClick(event,1)">
+              <img class="q-photo" id="photo-1" src="" alt="Person to ask">
+            </div>
             <div class="q-photo-ph" id="placeholder-1">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
@@ -208,7 +213,11 @@
           </div>
           <div class="q-row q-row-ask" id="ask-row-2" onclick="rowClick(2)">
             <span class="q-lbl">I will ask:</span>
-            <img class="q-photo" id="photo-2" src="" alt="Person to ask">
+            <div class="q-photo-wrap" id="photo-wrap-2" title="Drag to reposition"
+                 onmousedown="startDrag(event,2)" ontouchstart="startDrag(event,2)"
+                 onclick="photoWrapClick(event,2)">
+              <img class="q-photo" id="photo-2" src="" alt="Person to ask">
+            </div>
             <div class="q-photo-ph" id="placeholder-2">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
@@ -229,7 +238,11 @@
           </div>
           <div class="q-row q-row-ask" id="ask-row-3" onclick="rowClick(3)">
             <span class="q-lbl">I will ask:</span>
-            <img class="q-photo" id="photo-3" src="" alt="Person to ask">
+            <div class="q-photo-wrap" id="photo-wrap-3" title="Drag to reposition"
+                 onmousedown="startDrag(event,3)" ontouchstart="startDrag(event,3)"
+                 onclick="photoWrapClick(event,3)">
+              <img class="q-photo" id="photo-3" src="" alt="Person to ask">
+            </div>
             <div class="q-photo-ph" id="placeholder-3">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
               <span>Add Photo</span>
@@ -255,44 +268,109 @@
   <script>
     function stopProp(e) { e.stopPropagation(); }
 
-    /* Tapping the "I will ask:" row always opens the file picker — even to replace a photo */
+    /* Clicking empty parts of the row opens the file picker */
     function rowClick(n) {
       var inp = document.getElementById('upload-' + n);
       inp.value = '';
       inp.click();
     }
 
+    /* Photo wrap click: replace photo unless it was a drag */
+    var photoPos = {}, didDrag = {};
+    function photoWrapClick(e, n) {
+      e.stopPropagation();
+      if (!didDrag[n]) { rowClick(n); }
+      didDrag[n] = false;
+    }
+
+    /* Drag to reposition photo within the circle */
+    function startDrag(e, n) {
+      var wrap = document.getElementById('photo-wrap-' + n);
+      if (!wrap || wrap.style.display === 'none') return;
+      if (e.cancelable) e.preventDefault();
+      didDrag[n] = false;
+      var img = document.getElementById('photo-' + n);
+      var pos = photoPos[n];
+      if (!pos) return;
+      var isTouch = e.type === 'touchstart';
+      var startX = isTouch ? e.touches[0].clientX : e.clientX;
+      var startY = isTouch ? e.touches[0].clientY : e.clientY;
+      var origX = pos.x, origY = pos.y;
+
+      function onMove(evt) {
+        if (evt.cancelable) evt.preventDefault();
+        var cx = isTouch ? evt.touches[0].clientX : evt.clientX;
+        var cy = isTouch ? evt.touches[0].clientY : evt.clientY;
+        if (Math.abs(cx - startX) > 3 || Math.abs(cy - startY) > 3) didDrag[n] = true;
+        if (!didDrag[n]) return;
+        var m = (document.querySelector('.sheet').style.transform || '').match(/scale\(([^)]+)\)/);
+        var scale = m ? parseFloat(m[1]) : 1;
+        var newX = Math.max(-(pos.rw - 90), Math.min(0, origX + (cx - startX) / scale));
+        var newY = Math.max(-(pos.rh - 90), Math.min(0, origY + (cy - startY) / scale));
+        img.style.left = newX + 'px';
+        img.style.top  = newY + 'px';
+        photoPos[n] = { x: newX, y: newY, rw: pos.rw, rh: pos.rh };
+      }
+      function onUp() {
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onUp);
+        document.removeEventListener('touchmove', onMove);
+        document.removeEventListener('touchend', onUp);
+      }
+      document.addEventListener('mousemove', onMove);
+      document.addEventListener('mouseup', onUp);
+      document.addEventListener('touchmove', onMove, { passive: false });
+      document.addEventListener('touchend', onUp);
+    }
+
     function loadPhoto(n, input) {
       if (!input.files || !input.files[0]) return;
       var reader = new FileReader();
       reader.onload = function (e) {
-        var img = document.getElementById('photo-' + n);
-        var ph  = document.getElementById('placeholder-' + n);
-        var rm  = document.getElementById('remove-' + n);
-        var row = document.getElementById('ask-row-' + n);
-        img.src = e.target.result;
-        img.style.display = 'block';
-        ph.style.display  = 'none';
-        rm.style.display  = 'inline';
-        row.classList.add('loaded');
-        document.getElementById('question-' + n).classList.add('has-photo');
-        fitSheet();
+        var src  = e.target.result;
+        var wrap = document.getElementById('photo-wrap-' + n);
+        var img  = document.getElementById('photo-' + n);
+        var ph   = document.getElementById('placeholder-' + n);
+        var rm   = document.getElementById('remove-' + n);
+        var row  = document.getElementById('ask-row-' + n);
+        img.onload = function () {
+          var C = 90, scale = C / Math.min(img.naturalWidth, img.naturalHeight);
+          var rw = Math.round(img.naturalWidth * scale);
+          var rh = Math.round(img.naturalHeight * scale);
+          var x  = -Math.round((rw - C) / 2);
+          var y  = -Math.round((rh - C) / 2);
+          img.style.width  = rw + 'px';
+          img.style.height = rh + 'px';
+          img.style.left   = x + 'px';
+          img.style.top    = y + 'px';
+          photoPos[n] = { x: x, y: y, rw: rw, rh: rh };
+          ph.style.display  = 'none';
+          rm.style.display  = 'inline';
+          wrap.style.display = 'block';
+          row.classList.add('loaded');
+          document.getElementById('question-' + n).classList.add('has-photo');
+          fitSheet();
+        };
+        img.src = src;
       };
       reader.readAsDataURL(input.files[0]);
     }
 
     function removePhoto(n) {
-      var img = document.getElementById('photo-' + n);
-      var ph  = document.getElementById('placeholder-' + n);
-      var rm  = document.getElementById('remove-' + n);
-      var row = document.getElementById('ask-row-' + n);
+      var wrap = document.getElementById('photo-wrap-' + n);
+      var img  = document.getElementById('photo-' + n);
+      var ph   = document.getElementById('placeholder-' + n);
+      var rm   = document.getElementById('remove-' + n);
+      var row  = document.getElementById('ask-row-' + n);
       img.src = '';
-      img.style.display = 'none';
-      ph.style.display  = '';
-      rm.style.display  = 'none';
+      img.style.width = img.style.height = img.style.left = img.style.top = '';
+      wrap.style.display = 'none';
+      ph.style.display   = '';
+      rm.style.display   = 'none';
       row.classList.remove('loaded');
       document.getElementById('upload-' + n).value = '';
       document.getElementById('question-' + n).classList.remove('has-photo');
+      photoPos[n] = null;
       fitSheet();
     }
 
