@@ -502,14 +502,15 @@
       reader.onload = function (e) {
         var src  = e.target.result;
         var wrap = document.getElementById('photo-wrap-' + n);
-        var img  = document.getElementById('photo-' + n);
         var ph   = document.getElementById('placeholder-' + n);
         var rm   = document.getElementById('remove-' + n);
         var row  = document.getElementById('ask-row-' + n);
-        img.onload = function () {
-          var mBase    = MODAL_R / Math.min(img.naturalWidth, img.naturalHeight);
-          var baseW    = Math.round(img.naturalWidth  * mBase);
-          var baseH    = Math.round(img.naturalHeight * mBase);
+        var tmp = new Image();
+        tmp.onload = function () {
+          var img  = document.getElementById('photo-' + n);
+          var mBase    = MODAL_R / Math.min(tmp.naturalWidth, tmp.naturalHeight);
+          var baseW    = Math.round(tmp.naturalWidth  * mBase);
+          var baseH    = Math.round(tmp.naturalHeight * mBase);
           var initZoom = 1.5;
           var mx = -Math.round((baseW * initZoom - MODAL_R) / 2);
           var my = -Math.round((baseH * initZoom - MODAL_R) / 2);
@@ -517,6 +518,7 @@
           var ratio = SHEET_R / MODAL_R;
           var sw = Math.round(baseW * initZoom * ratio);
           var sh = Math.round(baseH * initZoom * ratio);
+          img.src = src;
           img.style.width  = sw + 'px';
           img.style.height = sh + 'px';
           img.style.left   = Math.max(-(sw - SHEET_R), Math.min(0, Math.round(mx * ratio))) + 'px';
@@ -529,7 +531,7 @@
           fitSheet();
           openReposition(n);
         };
-        img.src = src;
+        tmp.src = src;
       };
       reader.readAsDataURL(input.files[0]);
     }
