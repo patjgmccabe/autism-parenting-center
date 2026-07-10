@@ -79,12 +79,12 @@
 
     /* "Find:" row — photo lives here */
     .m-row-find { align-items: center; cursor: pointer; }
-    .m-row-find.loaded { cursor: default; }
 
     .m-photo {
       width: 90px; height: 90px; border-radius: 50%;
       object-fit: cover; border: 2.5px solid #333;
       display: none; flex-shrink: 0; margin-right: 0.6rem;
+      transition: opacity 0.15s;
     }
 
     .m-photo-ph {
@@ -95,7 +95,8 @@
       transition: border-color 0.15s, color 0.15s;
       pointer-events: none;
     }
-    .m-row-find:not(.loaded):hover .m-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .m-row-find:hover .m-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .m-row-find.loaded:hover .m-photo { opacity: 0.8; }
     .m-photo-ph span { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
 
     .m-photo-remove {
@@ -240,9 +241,9 @@
     function stopProp(e) { e.stopPropagation(); }
 
     function rowClick(n) {
-      if (!document.getElementById('mission-' + n).classList.contains('has-photo')) {
-        document.getElementById('upload-' + n).click();
-      }
+      var inp = document.getElementById('upload-' + n);
+      inp.value = '';
+      inp.click();
     }
 
     function loadPhoto(n, input) {

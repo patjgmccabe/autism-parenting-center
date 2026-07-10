@@ -82,12 +82,12 @@
 
     /* "I will ask:" row — photo lives here */
     .q-row-ask { align-items: center; cursor: pointer; }
-    .q-row-ask.loaded { cursor: default; }
 
     .q-photo {
       width: 90px; height: 90px; border-radius: 50%;
       object-fit: cover; border: 2.5px solid #333;
       display: none; flex-shrink: 0; margin-right: 0.6rem;
+      transition: opacity 0.15s;
     }
 
     .q-photo-ph {
@@ -98,7 +98,8 @@
       transition: border-color 0.15s, color 0.15s;
       pointer-events: none; /* whole row handles the click */
     }
-    .q-row-ask:not(.loaded):hover .q-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .q-row-ask:hover .q-photo-ph { border-color: #4a8abf; color: #4a8abf; }
+    .q-row-ask.loaded:hover .q-photo { opacity: 0.8; }
     .q-photo-ph span { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 3px; }
 
     .q-photo-remove {
@@ -254,12 +255,11 @@
   <script>
     function stopProp(e) { e.stopPropagation(); }
 
-    /* Tapping anywhere on the "I will ask:" row triggers photo upload */
+    /* Tapping the "I will ask:" row always opens the file picker — even to replace a photo */
     function rowClick(n) {
-      var q = document.getElementById('question-' + n);
-      if (!q.classList.contains('has-photo')) {
-        document.getElementById('upload-' + n).click();
-      }
+      var inp = document.getElementById('upload-' + n);
+      inp.value = '';
+      inp.click();
     }
 
     function loadPhoto(n, input) {
