@@ -496,16 +496,21 @@
       document.addEventListener('touchend',  onUp);
     }
 
+    var PHOTO_ERR_MSG = 'This photo could not be loaded.\n\nIf you selected it from Google Photos, it may only exist in the cloud and has not been downloaded to your device yet.\n\nTo fix: open the photo in the Google Photos app, tap the three-dot menu → Download, then try selecting it again.';
+
     function loadPhoto(n, input) {
       if (!input.files || !input.files[0]) return;
       var reader = new FileReader();
+      reader.onerror = function() { alert(PHOTO_ERR_MSG); };
       reader.onload = function (e) {
         var src  = e.target.result;
+        if (!src || src.length < 200) { alert(PHOTO_ERR_MSG); return; }
         var wrap = document.getElementById('photo-wrap-' + n);
         var ph   = document.getElementById('placeholder-' + n);
         var rm   = document.getElementById('remove-' + n);
         var row  = document.getElementById('ask-row-' + n);
         var tmp = new Image();
+        tmp.onerror = function() { alert(PHOTO_ERR_MSG); };
         tmp.onload = function () {
           var img  = document.getElementById('photo-' + n);
           var mBase    = MODAL_R / Math.min(tmp.naturalWidth, tmp.naturalHeight);
