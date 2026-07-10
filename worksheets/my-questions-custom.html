@@ -286,7 +286,7 @@
     /* Drag to reposition photo within the circle */
     function startDrag(e, n) {
       var wrap = document.getElementById('photo-wrap-' + n);
-      if (!wrap || wrap.style.display === 'none') return;
+      if (!wrap || getComputedStyle(wrap).display === 'none') return;
       if (e.cancelable) e.preventDefault();
       didDrag[n] = false;
       var img = document.getElementById('photo-' + n);
