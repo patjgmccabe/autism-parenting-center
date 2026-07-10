@@ -157,6 +157,15 @@
       cursor: pointer; font-size: 0.82rem; font-weight: 700; font-family: inherit;
     }
     .repos-btn-ok:hover { background: #111; }
+    .repos-zoom-bar { display: flex; align-items: center; gap: 0.5rem; justify-content: center; width: 100%; }
+    .repos-zoom-btn {
+      width: 36px; height: 36px; border: 1.5px solid #bbb; background: #fff;
+      border-radius: 50%; cursor: pointer; font-size: 1.3rem;
+      font-family: inherit; display: flex; align-items: center; justify-content: center;
+      color: #333; padding: 0; line-height: 1;
+    }
+    .repos-zoom-btn:hover { border-color: #555; background: #f5f5f5; }
+    .repos-zoom-lbl { font-size: 0.82rem; color: #555; min-width: 40px; text-align: center; font-weight: 600; }
 
     /* ── Print ── */
     @media print {
@@ -313,10 +322,15 @@
     <div class="repos-backdrop" onclick="confirmReposition()"></div>
     <div class="repos-dialog">
       <p class="repos-title">Position Photo</p>
-      <p class="repos-hint">Drag the photo to center on the face, then tap Done</p>
+      <p class="repos-hint">Drag to move &middot; Pinch or use &minus;&thinsp;&#43; to zoom</p>
       <div class="repos-circle" id="reposCircle"
            onmousedown="startModalDrag(event)" ontouchstart="startModalDrag(event)">
         <img class="repos-img" id="reposImg" src="" alt="">
+      </div>
+      <div class="repos-zoom-bar">
+        <button class="repos-zoom-btn" onclick="adjustZoom(-0.25)" aria-label="Zoom out">&#8722;</button>
+        <span class="repos-zoom-lbl" id="reposZoomLabel">150%</span>
+        <button class="repos-zoom-btn" onclick="adjustZoom(+0.25)" aria-label="Zoom in">&#43;</button>
       </div>
       <div class="repos-btns">
         <button class="repos-btn-replace" onclick="replacePhotoFromModal()">Replace Photo</button>
@@ -338,25 +352,59 @@
     var photoPos = {};
     var MODAL_R  = 220, SHEET_R = 90;
     var activeN  = null;
-    var mPos     = { x: 0, y: 0, rw: 0, rh: 0 };
+    var mZoom    = 1.5;
+    var MAX_ZOOM = 4.0;
+    var mPos     = { x: 0, y: 0, baseW: 0, baseH: 0 };
+
+    function applyModalState() {
+      var mImg = document.getElementById('reposImg');
+      var w = Math.round(mPos.baseW * mZoom);
+      var h = Math.round(mPos.baseH * mZoom);
+      mImg.style.width  = w + 'px';
+      mImg.style.height = h + 'px';
+      mImg.style.left   = mPos.x + 'px';
+      mImg.style.top    = mPos.y + 'px';
+    }
+
+    function updateZoomLabel() {
+      document.getElementById('reposZoomLabel').textContent = Math.round(mZoom * 100) + '%';
+    }
+
+    function adjustZoom(delta) {
+      var newZoom = Math.max(1.0, Math.min(MAX_ZOOM, mZoom + delta));
+      if (newZoom === mZoom) return;
+      var cx = MODAL_R / 2 - mPos.x;
+      var cy = MODAL_R / 2 - mPos.y;
+      var k  = newZoom / mZoom;
+      var newW = Math.round(mPos.baseW * newZoom);
+      var newH = Math.round(mPos.baseH * newZoom);
+      mPos.x = Math.max(-(newW - MODAL_R), Math.min(0, Math.round(MODAL_R / 2 - cx * k)));
+      mPos.y = Math.max(-(newH - MODAL_R), Math.min(0, Math.round(MODAL_R / 2 - cy * k)));
+      mZoom  = newZoom;
+      applyModalState();
+      updateZoomLabel();
+    }
 
     function openReposition(n) {
       activeN = n;
       var img   = document.getElementById('photo-' + n);
       var mImg  = document.getElementById('reposImg');
       var pos   = photoPos[n];
-      var s     = MODAL_R / Math.min(img.naturalWidth, img.naturalHeight);
-      var rw    = Math.round(img.naturalWidth  * s);
-      var rh    = Math.round(img.naturalHeight * s);
-      var ratio = MODAL_R / SHEET_R;
-      var x = pos ? Math.round(pos.x * ratio) : -Math.round((rw - MODAL_R) / 2);
-      var y = pos ? Math.round(pos.y * ratio) : -Math.round((rh - MODAL_R) / 2);
-      mImg.src          = img.src;
-      mImg.style.width  = rw + 'px';
-      mImg.style.height = rh + 'px';
-      mImg.style.left   = x  + 'px';
-      mImg.style.top    = y  + 'px';
-      mPos = { x: x, y: y, rw: rw, rh: rh };
+      var mBase = MODAL_R / Math.min(img.naturalWidth, img.naturalHeight);
+      var baseW = Math.round(img.naturalWidth  * mBase);
+      var baseH = Math.round(img.naturalHeight * mBase);
+      if (pos && pos.baseW) {
+        mZoom = pos.zoom;
+        mPos  = { x: pos.modalX, y: pos.modalY, baseW: baseW, baseH: baseH };
+      } else {
+        mZoom = 1.5;
+        var w = Math.round(baseW * mZoom);
+        var h = Math.round(baseH * mZoom);
+        mPos  = { x: -Math.round((w - MODAL_R) / 2), y: -Math.round((h - MODAL_R) / 2), baseW: baseW, baseH: baseH };
+      }
+      mImg.src = img.src;
+      applyModalState();
+      updateZoomLabel();
       document.getElementById('reposModal').style.display = 'flex';
     }
 
@@ -364,16 +412,16 @@
       var n = activeN;
       if (n === null) return;
       var ratio = SHEET_R / MODAL_R;
-      var rw  = Math.round(mPos.rw * ratio);
-      var rh  = Math.round(mPos.rh * ratio);
-      var x   = Math.max(-(rw - SHEET_R), Math.min(0, Math.round(mPos.x * ratio)));
-      var y   = Math.max(-(rh - SHEET_R), Math.min(0, Math.round(mPos.y * ratio)));
+      var sw = Math.round(mPos.baseW * mZoom * ratio);
+      var sh = Math.round(mPos.baseH * mZoom * ratio);
+      var sx = Math.max(-(sw - SHEET_R), Math.min(0, Math.round(mPos.x * ratio)));
+      var sy = Math.max(-(sh - SHEET_R), Math.min(0, Math.round(mPos.y * ratio)));
       var img = document.getElementById('photo-' + n);
-      img.style.width  = rw + 'px';
-      img.style.height = rh + 'px';
-      img.style.left   = x  + 'px';
-      img.style.top    = y  + 'px';
-      photoPos[n] = { x: x, y: y, rw: rw, rh: rh };
+      img.style.width  = sw + 'px';
+      img.style.height = sh + 'px';
+      img.style.left   = sx + 'px';
+      img.style.top    = sy + 'px';
+      photoPos[n] = { modalX: mPos.x, modalY: mPos.y, baseW: mPos.baseW, baseH: mPos.baseH, zoom: mZoom };
       document.getElementById('reposModal').style.display = 'none';
       activeN = null;
     }
@@ -387,20 +435,54 @@
 
     function startModalDrag(e) {
       if (e.cancelable) e.preventDefault();
-      var mImg    = document.getElementById('reposImg');
       var isTouch = e.type === 'touchstart';
+      if (isTouch && e.touches.length === 2) {
+        var initDist = Math.hypot(
+          e.touches[1].clientX - e.touches[0].clientX,
+          e.touches[1].clientY - e.touches[0].clientY
+        );
+        var initZoom = mZoom;
+        function onPinch(evt) {
+          if (evt.cancelable) evt.preventDefault();
+          if (evt.touches.length < 2) return;
+          var d = Math.hypot(
+            evt.touches[1].clientX - evt.touches[0].clientX,
+            evt.touches[1].clientY - evt.touches[0].clientY
+          );
+          var newZoom = Math.max(1.0, Math.min(MAX_ZOOM, initZoom * (d / initDist)));
+          if (newZoom === mZoom) return;
+          var cx = MODAL_R / 2 - mPos.x;
+          var cy = MODAL_R / 2 - mPos.y;
+          var k  = newZoom / mZoom;
+          var newW = Math.round(mPos.baseW * newZoom);
+          var newH = Math.round(mPos.baseH * newZoom);
+          mPos.x = Math.max(-(newW - MODAL_R), Math.min(0, Math.round(MODAL_R / 2 - cx * k)));
+          mPos.y = Math.max(-(newH - MODAL_R), Math.min(0, Math.round(MODAL_R / 2 - cy * k)));
+          mZoom  = newZoom;
+          applyModalState();
+          updateZoomLabel();
+        }
+        function onPinchEnd() {
+          document.removeEventListener('touchmove', onPinch);
+          document.removeEventListener('touchend',  onPinchEnd);
+        }
+        document.addEventListener('touchmove', onPinch,    { passive: false });
+        document.addEventListener('touchend',  onPinchEnd);
+        return;
+      }
       var sx = isTouch ? e.touches[0].clientX : e.clientX;
       var sy = isTouch ? e.touches[0].clientY : e.clientY;
-      var ox = mPos.x, oy = mPos.y, rw = mPos.rw, rh = mPos.rh;
+      var ox = mPos.x, oy = mPos.y;
       function onMove(evt) {
         if (evt.cancelable) evt.preventDefault();
         var cx = isTouch ? evt.touches[0].clientX : evt.clientX;
         var cy = isTouch ? evt.touches[0].clientY : evt.clientY;
-        var nx = Math.max(-(rw - MODAL_R), Math.min(0, ox + cx - sx));
-        var ny = Math.max(-(rh - MODAL_R), Math.min(0, oy + cy - sy));
-        mImg.style.left = nx + 'px';
-        mImg.style.top  = ny + 'px';
+        var w  = Math.round(mPos.baseW * mZoom);
+        var h  = Math.round(mPos.baseH * mZoom);
+        var nx = Math.max(-(w - MODAL_R), Math.min(0, ox + cx - sx));
+        var ny = Math.max(-(h - MODAL_R), Math.min(0, oy + cy - sy));
         mPos.x = nx; mPos.y = ny;
+        applyModalState();
       }
       function onUp() {
         document.removeEventListener('mousemove', onMove);
@@ -425,16 +507,20 @@
         var rm   = document.getElementById('remove-' + n);
         var row  = document.getElementById('ask-row-' + n);
         img.onload = function () {
-          var C = SHEET_R, s = C / Math.min(img.naturalWidth, img.naturalHeight);
-          var rw = Math.round(img.naturalWidth  * s);
-          var rh = Math.round(img.naturalHeight * s);
-          var x  = -Math.round((rw - C) / 2);
-          var y  = -Math.round((rh - C) / 2);
-          img.style.width  = rw + 'px';
-          img.style.height = rh + 'px';
-          img.style.left   = x  + 'px';
-          img.style.top    = y  + 'px';
-          photoPos[n] = { x: x, y: y, rw: rw, rh: rh };
+          var mBase    = MODAL_R / Math.min(img.naturalWidth, img.naturalHeight);
+          var baseW    = Math.round(img.naturalWidth  * mBase);
+          var baseH    = Math.round(img.naturalHeight * mBase);
+          var initZoom = 1.5;
+          var mx = -Math.round((baseW * initZoom - MODAL_R) / 2);
+          var my = -Math.round((baseH * initZoom - MODAL_R) / 2);
+          photoPos[n] = { modalX: mx, modalY: my, baseW: baseW, baseH: baseH, zoom: initZoom };
+          var ratio = SHEET_R / MODAL_R;
+          var sw = Math.round(baseW * initZoom * ratio);
+          var sh = Math.round(baseH * initZoom * ratio);
+          img.style.width  = sw + 'px';
+          img.style.height = sh + 'px';
+          img.style.left   = Math.max(-(sw - SHEET_R), Math.min(0, Math.round(mx * ratio))) + 'px';
+          img.style.top    = Math.max(-(sh - SHEET_R), Math.min(0, Math.round(my * ratio))) + 'px';
           ph.style.display   = 'none';
           rm.style.display   = 'inline';
           wrap.style.display = 'block';
@@ -485,7 +571,16 @@
         wrap.style.height = Math.ceil(sheet.offsetHeight * scale + 4) + 'px';
       }
       window.fitSheet = fitSheet;
-      document.addEventListener('DOMContentLoaded', fitSheet);
+      document.addEventListener('DOMContentLoaded', function () {
+        fitSheet();
+        var circle = document.getElementById('reposCircle');
+        if (circle) {
+          circle.addEventListener('wheel', function (e) {
+            e.preventDefault();
+            adjustZoom(e.deltaY < 0 ? 0.15 : -0.15);
+          }, { passive: false });
+        }
+      });
       window.addEventListener('resize', fitSheet);
     })();
   </script>
