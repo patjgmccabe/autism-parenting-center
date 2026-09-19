@@ -167,6 +167,7 @@ nav {
 
 .hero-btn {
   display: inline-block;
+  margin: 0.4rem;
   background: #fff;
   color: #4a8abf;
   text-decoration: none;
