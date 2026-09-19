@@ -19,6 +19,7 @@ const translations = {
     nav_worksheets:     'Free Worksheets',
     nav_about:          'About Us',
     nav_contact:        'Contact Us',
+    nav_start:          'Start Here',
     nav_lang:           'Español',
 
     // Home — hero
@@ -161,6 +162,7 @@ const translations = {
     nav_worksheets:     'Hojas de Trabajo Gratis',
     nav_about:          'Sobre Nosotros',
     nav_contact:        'Contáctenos',
+    nav_start:          'Comienza Aquí',
     nav_lang:           'English',
 
     hero_title:    'Recursos de Autismo para Padres, Maestros y Terapeutas',
