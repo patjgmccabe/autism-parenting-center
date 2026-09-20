@@ -2269,6 +2269,7 @@ footer a:hover { text-decoration: underline; }
 .resource-tag-school     { background: #e8f0fb; color: #3a5fa0; }
 .resource-tag-research   { background: #fef3e2; color: #a0620a; }
 .resource-tag-community  { background: #f0ebfb; color: #6b3fa0; }
+.resource-tag-advocacy   { background: #fdeef0; color: #a03a55; }
 
 /* Card content */
 .resource-meta {
