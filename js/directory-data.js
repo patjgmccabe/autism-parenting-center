@@ -143,7 +143,7 @@ const DIRECTORY_DATA = {
       name: "Governor's Council on Disabilities and Special Education (GCDSE)",
       category: "government",
       description: "Alaska's federally mandated Developmental Disabilities Council; advocates for systems change and improved services for individuals with disabilities and their families through policy, planning, and community engagement.",
-      website: "https://health.alaska.gov/GCDSE",
+      website: "https://health.alaska.gov/en/senior-and-disabilities-services/governors-council-on-disabilities/",
       phone: "888-269-8990"
     },
 
@@ -1796,7 +1796,7 @@ const DIRECTORY_DATA = {
       name: "Missouri Parents Act (MPACT)",
       category: "parent-family",
       description: "Missouri's federally funded Parent Training and Information Center providing free advocacy, training, and one-on-one support to families of children with disabilities navigating special education.",
-      website: "https://www.ptimpact.org",
+      website: "https://www.missouriparentsact.org",
       phone: "800-743-7634"
     },
     {
@@ -2551,7 +2551,7 @@ const DIRECTORY_DATA = {
       name: "Ohio Help Me Grow – Early Intervention",
       category: "government",
       description: "Ohio's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to therapies, service coordinators, and individualized family support plans.",
-      website: "https://helpmegrow.ohio.gov",
+      website: "https://childrenandyouth.ohio.gov/for-families/early-childhood-development/help-me-grow",
       phone: "800-755-4769"
     },
 
@@ -2762,21 +2762,21 @@ const DIRECTORY_DATA = {
       name: "Pennsylvania Office of Developmental Programs (ODP)",
       category: "government",
       description: "Administers Pennsylvania's Medicaid HCBS waivers and state-funded services for individuals with intellectual disabilities and autism, supporting residential, day, employment, and family programs.",
-      website: "https://www.dhs.pa.gov/Services/Disabilities-Special-Needs/Pages/ODP.aspx",
+      website: "https://www.pa.gov/agencies/dhs",
       phone: "888-565-9435"
     },
     {
       name: "Pennsylvania Department of Education – Bureau of Special Education",
       category: "government",
       description: "Oversees IDEA compliance and special education for Pennsylvania students with disabilities, providing guidance on IEPs, due process rights, and dispute resolution.",
-      website: "https://www.education.pa.gov/K-12/Special%20Education/Pages/default.aspx",
+      website: "https://www.pa.gov/agencies/education/programs-and-services/instruction/elementary-and-secondary-education/special-education",
       phone: "717-783-6913"
     },
     {
       name: "Pennsylvania Early Intervention Program",
       category: "government",
       description: "Pennsylvania's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
-      website: "https://www.dhs.pa.gov/Services/Children/Early-Intervention/Pages/default.aspx",
+      website: "https://www.pa.gov/agencies/dhs",
       phone: "800-692-7288"
     },
 
@@ -3082,10 +3082,10 @@ const DIRECTORY_DATA = {
 
     // Parent & Family Support Networks
     {
-      name: "Support and Training for Exceptional Parents (STEP)",
+      name: "TNSTEP (Support and Training for Exceptional Parents)",
       category: "parent-family",
       description: "Tennessee's federally funded Parent Training and Information Center offering free workshops, one-on-one advocacy coaching, and resources for families of children with disabilities.",
-      website: "https://www.tnstep.org",
+      website: "https://tnstep.info",
       phone: "800-280-7837"
     },
     {
