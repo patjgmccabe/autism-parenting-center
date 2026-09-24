@@ -1722,6 +1722,51 @@ footer a:hover { text-decoration: underline; }
 .home-about-inner a { color: #4a8abf; font-weight: 600; }
 
 /* ============================================================
+   NEWSLETTER — signup band + newsletter page
+   ============================================================ */
+
+.newsletter-band {
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.newsletter-band-inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.newsletter-band h2 {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  margin-bottom: 0.8rem;
+  line-height: 1.25;
+}
+
+.newsletter-band p {
+  font-size: 1.08rem;
+  opacity: 0.93;
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+.newsletter-cta-btn {
+  font-size: 1.1rem;
+  padding: 1rem 2.6rem;
+}
+
+.newsletter-fineprint {
+  margin-top: 1.2rem !important;
+  margin-bottom: 0 !important;
+  font-size: 0.85rem !important;
+  opacity: 0.8 !important;
+}
+
+.page-newsletter .cards-section {
+  padding-bottom: 1rem;
+}
+
+/* ============================================================
    PRINT STYLES — Social Story Creator
    ============================================================ */
 
