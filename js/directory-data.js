@@ -1698,7 +1698,7 @@ const DIRECTORY_DATA = {
       name: "Mississippi Department of Mental Health – Bureau of Intellectual and Developmental Disabilities",
       category: "government",
       description: "Administers Medicaid HCBS waivers and coordinates residential, day, and family support services for Mississippians with intellectual and developmental disabilities, including autism.",
-      website: "https://www.dmh.ms.gov/service-area/intellectual-developmental-disabilities",
+      website: "https://www.dmh.ms.gov/providers/iddd/",
       phone: "601-359-1288"
     },
     {
@@ -2658,7 +2658,7 @@ const DIRECTORY_DATA = {
       name: "Oklahoma Developmental Disabilities Council",
       category: "advocacy",
       description: "Federally funded council promoting self-determination, community inclusion, and systems change for Oklahomans with developmental disabilities through advocacy and grants.",
-      website: "https://www.okddc.ok.gov",
+      website: "https://okddc.ok.gov",
       phone: "405-521-4984"
     },
 
