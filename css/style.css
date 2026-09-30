@@ -1,5 +1,5 @@
 /* ============================================================
-   Autism Parenting Center — style.css
+   Autism Parenting Center - style.css
    ============================================================ */
 
 /* --- Reset & Base --- */
@@ -1062,7 +1062,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   DIRECTORY — Support Organization Directory
+   DIRECTORY - Support Organization Directory
    ============================================================ */
 
 .dir-filters-bar {
@@ -1241,7 +1241,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   BLOG — Listing Page
+   BLOG - Listing Page
    ============================================================ */
 
 .blog-section {
@@ -1360,7 +1360,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   BLOG — Individual Post
+   BLOG - Individual Post
    ============================================================ */
 
 .post-header {
@@ -1690,7 +1690,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   HOME — About / indexable body copy
+   HOME - About / indexable body copy
    ============================================================ */
 
 .home-about {
@@ -1722,7 +1722,7 @@ footer a:hover { text-decoration: underline; }
 .home-about-inner a { color: #4a8abf; font-weight: 600; }
 
 /* ============================================================
-   NEWSLETTER — signup band + newsletter page
+   NEWSLETTER - signup band + newsletter page
    ============================================================ */
 
 .newsletter-band {
@@ -1767,7 +1767,7 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   PRINT STYLES — Social Story Creator
+   PRINT STYLES - Social Story Creator
    ============================================================ */
 
 .page-social-stories #printArea { display: none; }

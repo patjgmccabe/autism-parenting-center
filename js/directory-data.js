@@ -1,6 +1,6 @@
 /* ============================================================
-   Autism Parenting Center — directory-data.js
-   Support Organization Directory — state-by-state data
+   Autism Parenting Center - directory-data.js
+   Support Organization Directory - state-by-state data
 
    Category slugs:
      "government"    → Government & Public Benefits Services
@@ -13,8 +13,8 @@
      name:        "Organization Name",
      category:    "government",          // one of the four slugs above
      description: "Brief description.",
-     website:     "https://example.org", // optional — omit if none
-     phone:       "800-000-0000"         // optional — omit if none
+     website:     "https://example.org", // optional - omit if none
+     phone:       "800-000-0000"         // optional - omit if none
    }
    ============================================================ */
 
@@ -129,7 +129,7 @@ const DIRECTORY_DATA = {
     {
       name: "Alaska Aging and Disability Resource Centers (ADRC)",
       category: "government",
-      description: "A statewide network of regional centers connecting seniors, people with disabilities, and their caregivers to long-term services and supports including Medicaid options, respite, transportation, and home modifications—regardless of age or income.",
+      description: "A statewide network of regional centers connecting seniors, people with disabilities, and their caregivers to long-term services and supports including Medicaid options, respite, transportation, and home modifications, regardless of age or income.",
       website: "https://health.alaska.gov/ADRC",
       phone: "855-565-2017"
     },
@@ -181,7 +181,7 @@ const DIRECTORY_DATA = {
     {
       name: "UReCares Stipend and Respite Program – Alaska Impact Alliance",
       category: "respite",
-      description: "Funded by the Alaska Mental Health Trust Authority; provides direct financial stipends to eligible caregivers of individuals with special needs—including a general-use stipend and a designated respite/self-care stipend—to reduce caregiver burnout statewide.",
+      description: "Funded by the Alaska Mental Health Trust Authority; provides direct financial stipends to eligible caregivers of individuals with special needs, including a general-use stipend and a designated respite/self-care stipend, to reduce caregiver burnout statewide.",
       website: "https://alaskaimpactalliance.com"
     },
 

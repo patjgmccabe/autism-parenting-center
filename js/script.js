@@ -1,5 +1,5 @@
 /* ============================================================
-   Autism Parenting Center — script.js
+   Autism Parenting Center - script.js
    Shared: language toggle, navigation
    ============================================================ */
 
@@ -30,32 +30,32 @@ const translations = {
     nl_subtitle:  "The week's best autism articles, videos & book picks for parents. Free, every week.",
     nl_what:      "What you'll get each week",
     nl_card1_title: 'This Week\u2019s Articles',
-    nl_card1_desc: 'The most helpful new autism stories on research, parenting, special education, and advocacy \u2014 hand-picked from our Articles Worth Reading page.',
+    nl_card1_desc: 'The most helpful new autism stories on research, parenting, special education, and advocacy, hand-picked from our Articles Worth Reading page.',
     nl_card2_title: 'Video of the Week',
     nl_card2_desc: 'Our Autism News Briefs video summarizing the week\u2019s stories, so you can catch up in a few minutes.',
     nl_card3_title: 'Book Picks',
     nl_card3_desc: 'Parent-tested autism book recommendations to help you go deeper on the topics that matter to your family.',
-    nl_cta_title: 'Join the Brief \u2014 it\u2019s free',
-    nl_cta_desc:   'One short email a week. No spam, no noise \u2014 just the stories worth your time. Unsubscribe anytime.',
+    nl_cta_title: 'Join the Brief: it\u2019s free',
+    nl_cta_desc:   'One short email a week. No spam, no noise. Just the stories worth your time. Unsubscribe anytime.',
     nl_cta_btn:   'Subscribe Free \u2192',
     nl_fineprint: 'You\u2019ll enter your email on our secure signup page.',
     nl_band_title: '📬 The Autism Parenting Center Brief',
-    nl_band_desc:  'The week\u2019s best autism articles, videos & book picks \u2014 free in your inbox every week.',
+    nl_band_desc:  'The week\u2019s best autism articles, videos & book picks. Free in your inbox every week.',
     nl_band_btn:  'Subscribe Free \u2192',
 
     // All About My Child tool
     aamc_hero_title:     'All About My Child',
-    aamc_hero_desc:      'Create a beautiful, easy-to-read one-pager about your child to hand to teachers, therapists, babysitters, and anyone who cares for them. Takes minutes \u2014 free forever.',
+    aamc_hero_desc:      'Create a beautiful, easy-to-read one-pager about your child to hand to teachers, therapists, babysitters, and anyone who cares for them. Takes just a few minutes. Free to use.',
     aamc_privacy:        '🔒 Private: everything you type stays in your browser. Nothing is uploaded or saved.',
     aamc_name_label:     'Child\u2019s first name',
     aamc_name_ph:        'e.g. Liam',
     aamc_age_label:      'Age or grade (optional)',
     aamc_age_ph:         'e.g. 7 years old, 2nd grade',
     aamc_interests_label:'What I love',
-    aamc_interests_help: 'Favorite toys, shows, foods, activities \u2014 the things that light them up.',
+    aamc_interests_help: 'Favorite toys, shows, foods, activities: the things that light them up.',
     aamc_interests_ph:   'e.g. Dinosaurs, swimming, chicken nuggets, the color blue',
     aamc_strengths_label:'What I\u2019m great at',
-    aamc_strengths_help: 'Skills, talents, proud moments \u2014 lead with strengths.',
+    aamc_strengths_help: 'Skills, talents, proud moments. Lead with strengths.',
     aamc_strengths_ph:   'e.g. Amazing memory, kind to animals, great at puzzles',
     aamc_comm_label:     'How I communicate',
     aamc_comm_help:      'Tap the chips that fit, or type your own.',
@@ -67,11 +67,11 @@ const translations = {
     aamc_hard_help:      'Sensory triggers or situations to be aware of.',
     aamc_hard_ph:        'e.g. Loud hand dryers, bright fluorescent lights, being rushed',
     aamc_help_label:     'How to help when I\u2019m upset',
-    aamc_help_help:      'What actually works \u2014 be specific.',
+    aamc_help_help:      'What actually works. Be specific.',
     aamc_help_ph:        'e.g. Give space and time, offer the calm-down corner, speak softly',
     aamc_important_label:'Important things to know',
     aamc_important_help: 'Allergies, medications, routines, must-knows.',
-    aamc_important_ph:   'e.g. Peanut allergy \u2014 EpiPen in backpack; needs a visual schedule for transitions',
+    aamc_important_ph:   'e.g. Peanut allergy. EpiPen in backpack; needs a visual schedule for transitions',
     aamc_contact_label:  'Emergency contact',
     aamc_contact_name_ph:'Name',
     aamc_contact_phone_ph:'Phone number',
@@ -83,7 +83,7 @@ const translations = {
     aamc_print_tip:      'Tip: in the print dialog, choose "Save as PDF" to keep a digital copy.',
     aamc_name_required:  'Please enter your child\u2019s first name to create the one-pager.',
     aamc_s_allabout:     'ALL ABOUT ME',
-    aamc_s_guide:        'A quick guide from my family \u2014 for my teachers, therapists & caregivers',
+    aamc_s_guide:        'A quick guide from my family: for my teachers, therapists & caregivers',
     aamc_s_love:         'What I Love',
     aamc_s_strengths:    'What I\u2019m Great At',
     aamc_s_comm:         'How I Communicate',
@@ -112,16 +112,16 @@ const translations = {
     aamc_chip_hard_5:    'Certain textures',
     aamc_chip_hard_6:    'Being rushed',
 
-    // Home — hero
+    // Home - hero
     hero_title:    'Autism Resources for Parents, Teachers, and Therapists',
     hero_subtitle: 'Free tools and information for autism families, educators, and therapists, all in one place.',
     hero_btn:      'Explore Resources',
 
-    // Home — section
+    // Home - section
     section_resources:      'Our Resources',
     section_resources_desc: 'Tools and materials created specifically for autism families, educators, and therapists.',
 
-    // Home — cards
+    // Home - cards
     card_books_title:   'Books',
     card_books_desc:    'Our Core Words and Wh-Question books, plus a curated list of recommended reads for autism families.',
     card_books_link:    'View Books →',
@@ -176,7 +176,7 @@ const translations = {
     btn_amazon:    'Buy on Amazon',
     btn_affiliate: 'View on Amazon',
 
-    // Social Stories — How It Works
+    // Social Stories - How It Works
     how_title:        'How It Works',
     // About page
     about_page_title:     'About Us',
@@ -266,32 +266,32 @@ const translations = {
     nl_subtitle:  'Los mejores artículos, videos y libros sobre autismo para padres. Gratis, cada semana.',
     nl_what:      'Lo que recibirás cada semana',
     nl_card1_title: 'Artículos de la Semana',
-    nl_card1_desc: 'Las historias más útiles sobre investigación, crianza, educación especial y defensa — seleccionadas de nuestra página de artículos recomendados.',
+    nl_card1_desc: 'Las historias más útiles sobre investigación, crianza, educación especial y defensa, seleccionadas de nuestra página de artículos recomendados.',
     nl_card2_title: 'Video de la Semana',
     nl_card2_desc: 'Nuestro video resumen con las noticias de la semana, para ponerte al día en pocos minutos.',
     nl_card3_title: 'Libros Recomendados',
     nl_card3_desc: 'Libros sobre autismo probados por padres para profundizar en los temas que importan a tu familia.',
-    nl_cta_title: 'Únete al Resumen — es gratis',
-    nl_cta_desc:   'Un correo corto por semana. Sin spam — solo las historias que valen tu tiempo. Cancela cuando quieras.',
+    nl_cta_title: 'Únete al Resumen: es gratis',
+    nl_cta_desc:   'Un correo corto por semana. Sin spam. Solo las historias que valen tu tiempo. Cancela cuando quieras.',
     nl_cta_btn:   'Suscribirme Gratis →',
     nl_fineprint: 'Ingresarás tu correo en nuestra página segura de registro.',
     nl_band_title: '📬 El Resumen del Autism Parenting Center',
-    nl_band_desc:  'Los mejores artículos, videos y libros sobre autismo — gratis en tu correo cada semana.',
+    nl_band_desc:  'Los mejores artículos, videos y libros sobre autismo. Gratis en tu correo cada semana.',
     nl_band_btn:  'Suscribirme Gratis →',
 
     // All About My Child tool
     aamc_hero_title:     'Todo Sobre Mi Hijo',
-    aamc_hero_desc:      'Crea una hoja informativa hermosa y fácil de leer sobre tu hijo para entregar a maestros, terapeutas, niñeras y a cualquier persona que lo cuide. Toma unos minutos — gratis para siempre.',
+    aamc_hero_desc:      'Crea una hoja informativa hermosa y fácil de leer sobre tu hijo para entregar a maestros, terapeutas, niñeras y a cualquier persona que lo cuide. Toma solo unos minutos. Es gratis de usar.',
     aamc_privacy:        '🔒 Privado: todo lo que escribas permanece en tu navegador. Nada se sube ni se guarda.',
     aamc_name_label:     'Nombre del niño',
     aamc_name_ph:        'p. ej. Liam',
     aamc_age_label:      'Edad o grado (opcional)',
     aamc_age_ph:         'p. ej. 7 años, 2.º grado',
     aamc_interests_label:'Lo que me encanta',
-    aamc_interests_help: 'Juguetes, programas, comidas y actividades favoritas — lo que lo ilumina.',
+    aamc_interests_help: 'Juguetes, programas, comidas y actividades favoritas: lo que lo ilumina.',
     aamc_interests_ph:   'p. ej. Dinosaurios, natación, nuggets de pollo, el color azul',
     aamc_strengths_label:'En lo que soy bueno',
-    aamc_strengths_help: 'Habilidades, talentos, momentos de orgullo — empieza por las fortalezas.',
+    aamc_strengths_help: 'Habilidades, talentos, momentos de orgullo. Empieza por las fortalezas.',
     aamc_strengths_ph:   'p. ej. Memoria increíble, amable con los animales, bueno en rompecabezas',
     aamc_comm_label:     'Cómo me comunico',
     aamc_comm_help:      'Toca las opciones que correspondan o escribe las tuyas.',
@@ -303,11 +303,11 @@ const translations = {
     aamc_hard_help:      'Estímulos sensoriales o situaciones a tener en cuenta.',
     aamc_hard_ph:        'p. ej. Secadores de manos ruidosos, luces fluorescentes, las prisas',
     aamc_help_label:     'Cómo ayudarme cuando estoy molesto',
-    aamc_help_help:      'Lo que realmente funciona — sé específico.',
+    aamc_help_help:      'Lo que realmente funciona. Sé específico.',
     aamc_help_ph:        'p. ej. Dale espacio y tiempo, ofrece el rincón de calma, habla suave',
     aamc_important_label:'Cosas importantes que debes saber',
     aamc_important_help: 'Alergias, medicamentos, rutinas, lo esencial.',
-    aamc_important_ph:   'p. ej. Alergia al maní — EpiPen en la mochila; necesita horario visual para las transiciones',
+    aamc_important_ph:   'p. ej. Alergia al maní. EpiPen en la mochila; necesita horario visual para las transiciones',
     aamc_contact_label:  'Contacto de emergencia',
     aamc_contact_name_ph:'Nombre',
     aamc_contact_phone_ph:'Número de teléfono',
@@ -319,7 +319,7 @@ const translations = {
     aamc_print_tip:      'Consejo: en el diálogo de impresión, elige «Guardar como PDF» para tener una copia digital.',
     aamc_name_required:  'Por favor escribe el nombre de tu hijo para crear la hoja.',
     aamc_s_allabout:     'TODO SOBRE MÍ',
-    aamc_s_guide:        'Una guía rápida de mi familia — para mis maestros, terapeutas y cuidadores',
+    aamc_s_guide:        'Una guía rápida de mi familia: para mis maestros, terapeutas y cuidadores',
     aamc_s_love:         'Lo Que Me Encanta',
     aamc_s_strengths:    'En Lo Que Soy Bueno',
     aamc_s_comm:         'Cómo Me Comunico',
@@ -408,7 +408,7 @@ const translations = {
     btn_amazon:    'Comprar en Amazon',
     btn_affiliate: 'Ver en Amazon',
 
-    // Social Stories — How It Works (ES)
+    // Social Stories - How It Works (ES)
     how_title:        'Cómo Funciona',
     how_intro:        'Esta herramienta te permite crear una historia social personalizada o un horario visual, un libro o cronograma de imágenes que ayuda a los niños a entender, prepararse y desenvolverse en situaciones cotidianas. ¡Sigue los pasos a continuación para crear e imprimir el tuyo!',
     how_step:         'Paso',
@@ -505,7 +505,7 @@ function initMobileNav() {
     a.addEventListener('click', () => links.classList.remove('open'))
   );
 
-  // Dropdown toggles — mobile: tap to open; desktop: handled by CSS hover
+  // Dropdown toggles - mobile: tap to open; desktop: handled by CSS hover
   document.querySelectorAll('.nav-dropdown-toggle').forEach(btn => {
     btn.addEventListener('click', e => {
       if (window.innerWidth > 768) return;

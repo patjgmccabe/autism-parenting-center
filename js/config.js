@@ -1,5 +1,5 @@
 /* ============================================================
-   Autism Parenting Center — config.js
+   Autism Parenting Center - config.js
 
    PIXABAY API KEY SETUP:
    1. Go to https://pixabay.com/accounts/register/ and create a free account

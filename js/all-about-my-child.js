@@ -1,5 +1,5 @@
 /* ============================================================
-   Autism Parenting Center — all-about-my-child.js
+   Autism Parenting Center - all-about-my-child.js
    "All About My Child" one-pager tool.
    Everything stays in the browser: nothing is uploaded or stored.
    ============================================================ */

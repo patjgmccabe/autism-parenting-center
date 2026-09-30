@@ -1,6 +1,6 @@
 /* ============================================================
-   Autism Parenting Center — directory.js
-   Support Organization Directory — filtering & rendering
+   Autism Parenting Center - directory.js
+   Support Organization Directory - filtering & rendering
    ============================================================ */
 
 (function () {

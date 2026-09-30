@@ -1,5 +1,5 @@
 /* ============================================================
-   Autism Parenting Center — social-stories.js
+   Autism Parenting Center - social-stories.js
    Social Story Creator tool
    ============================================================ */
 
@@ -321,7 +321,7 @@
         canvas.getContext('2d').drawImage(img, 0, 0, w, h);
         currentImageDataURL = canvas.toDataURL('image/jpeg', JPEG_Q);
       } catch (e) {
-        // CORS blocked canvas — fall back to URL directly
+        // CORS blocked canvas - fall back to URL directly
         currentImageDataURL = url;
       }
       showSelectedImage();
