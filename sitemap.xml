@@ -138,4 +138,10 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://autismparentingcenter.com/all-about-my-child.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

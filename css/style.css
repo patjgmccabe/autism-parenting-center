@@ -2582,3 +2582,276 @@ footer a:hover { text-decoration: underline; }
   .ws-card-thumb svg { width: 90px; height: 119px; }
   .ws-how { padding: 1.25rem; }
 }
+
+/* ============================================================
+   ALL ABOUT MY CHILD TOOL
+   ============================================================ */
+
+.aamc-main { max-width: 820px; margin: 0 auto; padding: 0 1.25rem; }
+
+.page-header .aamc-privacy {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.92;
+}
+
+.aamc-form-section {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(74, 138, 191, 0.12);
+  padding: 2rem;
+  margin: 2.5rem 0;
+}
+
+.aamc-field { margin-bottom: 1.75rem; }
+
+.aamc-field > label {
+  display: block;
+  font-weight: 700;
+  font-size: 1.08rem;
+  margin-bottom: 0.25rem;
+  color: #1f3a4d;
+}
+
+.aamc-help { color: #5b7a8c; font-size: 0.93rem; margin: 0 0 0.55rem; }
+
+.aamc-field input[type="text"],
+.aamc-field input[type="tel"],
+.aamc-field textarea {
+  width: 100%;
+  border: 2px solid #dbe7ef;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  background: #fbfdff;
+  color: #223845;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.aamc-field input:focus,
+.aamc-field textarea:focus {
+  outline: none;
+  border-color: #4a8abf;
+  box-shadow: 0 0 0 3px rgba(74, 138, 191, 0.18);
+  background: #fff;
+}
+
+.aamc-field textarea { resize: vertical; min-height: 3.2rem; }
+
+.aamc-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.aamc-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+
+.aamc-chip {
+  border: 2px solid #dbe7ef;
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.45rem 0.95rem;
+  font-size: 0.92rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: #33566b;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.1s;
+}
+
+.aamc-chip:hover { border-color: #4a8abf; transform: translateY(-1px); }
+
+.aamc-chip.active {
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  border-color: transparent;
+  font-weight: 600;
+}
+
+.aamc-btn {
+  display: block;
+  width: 100%;
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 1.1rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.aamc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(74, 138, 191, 0.35);
+}
+
+.aamc-error {
+  color: #b3261e;
+  background: #fdecea;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+.aamc-print-controls {
+  max-width: 820px;
+  margin: 0 auto 3rem;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.aamc-print-controls h2 { color: #1f3a4d; margin-bottom: 0.4rem; }
+.aamc-print-controls p { color: #5b7a8c; }
+.aamc-btn-print { max-width: 420px; margin: 1.2rem auto 0.6rem; }
+.aamc-print-tip { font-size: 0.9rem; }
+
+/* ---- One-pager (shared screen + print) ---- */
+
+.page-all-about #printArea { display: none; }
+
+.page-all-about #printArea.show {
+  display: block;
+  max-width: 860px;
+  margin: 0 auto 1rem;
+  padding: 0 1.25rem;
+}
+
+.onepager {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(31, 58, 77, 0.18);
+  overflow: hidden;
+  color: #223845;
+  display: flex;
+  flex-direction: column;
+}
+
+.op-header {
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  padding: 2.2rem 2.2rem 1.8rem;
+  text-align: center;
+}
+
+.op-kicker {
+  letter-spacing: 0.35em;
+  font-size: 0.8rem;
+  font-weight: 800;
+  opacity: 0.92;
+  margin-bottom: 0.4rem;
+}
+
+.op-name { font-size: 3rem; margin: 0; line-height: 1.1; }
+.op-sub { margin-top: 0.5rem; font-size: 1rem; opacity: 0.93; }
+.op-age { font-weight: 700; }
+
+.op-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1.6rem 1.8rem;
+}
+
+.op-card {
+  border-radius: 14px;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #e6eef4;
+  border-top: 5px solid var(--accent, #4a8abf);
+  background: var(--bg, #f6fafd);
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.op-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.45rem;
+}
+
+.op-icon { font-size: 1.4rem; line-height: 1; }
+.op-card h2 { font-size: 1.02rem; margin: 0; color: #1f3a4d; }
+.op-card p { margin: 0; font-size: 0.98rem; line-height: 1.55; color: #33566b; }
+
+.op-love      { --accent: #f2b705; --bg: #fffbe8; }
+.op-strengths { --accent: #7c6cf0; --bg: #f4f2ff; }
+.op-comm      { --accent: #4a8abf; --bg: #eef6fc; }
+.op-calm      { --accent: #6daf7e; --bg: #effaf1; }
+.op-hard      { --accent: #e8853d; --bg: #fef4ea; }
+.op-help      { --accent: #3d9be8; --bg: #eaf5fe; }
+.op-important { --accent: #e05d7a; --bg: #fdeef2; }
+
+.op-footer { margin-top: auto; padding: 1rem 1.8rem 1.4rem; }
+
+.op-emergency {
+  background: #1f3a4d;
+  color: #fff;
+  border-radius: 12px;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.02rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.op-credit { text-align: center; color: #8aa2b1; font-size: 0.85rem; }
+
+@media (max-width: 640px) {
+  .op-grid { grid-template-columns: 1fr; }
+  .aamc-field-row { grid-template-columns: 1fr; }
+  .op-name { font-size: 2.2rem; }
+  .aamc-form-section { padding: 1.4rem; }
+}
+
+/* ---- Print: letter-size one-pager, nothing else on the page ---- */
+
+@page { size: letter; margin: 0; }
+
+@media print {
+  .page-all-about > *:not(#printArea) { display: none !important; }
+
+  .page-all-about #printArea,
+  .page-all-about #printArea.show {
+    display: block !important;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-all-about * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-all-about .onepager {
+    box-shadow: none;
+    border-radius: 0;
+    width: 8.5in;
+    height: 11in;
+    overflow: hidden;
+  }
+
+  .page-all-about .op-header { padding: 0.55in 0.6in 0.45in; }
+  .page-all-about .op-kicker { font-size: 11pt; }
+  .page-all-about .op-name { font-size: 42pt; }
+  .page-all-about .op-sub { font-size: 11pt; }
+
+  .page-all-about .op-grid { padding: 0.32in 0.5in; gap: 0.16in; }
+  .page-all-about .op-card { padding: 0.15in 0.2in; border-radius: 0.12in; }
+  .page-all-about .op-card h2 { font-size: 12pt; }
+  .page-all-about .op-card p { font-size: 10.5pt; line-height: 1.45; }
+  .page-all-about .op-icon { font-size: 16pt; }
+
+  .page-all-about .op-footer { padding: 0.08in 0.5in 0.35in; }
+  .page-all-about .op-emergency { font-size: 11pt; padding: 0.13in 0.2in; border-radius: 0.1in; }
+  .page-all-about .op-credit { font-size: 8.5pt; }
+}
