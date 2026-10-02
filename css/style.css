@@ -2713,7 +2713,14 @@ footer a:hover { text-decoration: underline; }
 .aamc-print-controls h2 { color: #1f3a4d; margin-bottom: 0.4rem; }
 .aamc-print-controls p { color: #5b7a8c; }
 .aamc-btn-print { max-width: 420px; margin: 1.2rem auto 0.6rem; }
+.aamc-btn-wallet { margin-top: 0.2rem; }
 .aamc-print-tip { font-size: 0.9rem; }
+
+.laminator-products.laminator-products-two { grid-template-columns: repeat(2, 1fr); }
+
+@media (max-width: 700px) {
+  .laminator-products.laminator-products-two { grid-template-columns: 1fr; }
+}
 
 /* ---- One-pager (shared screen + print) ---- */
 
@@ -2805,8 +2812,74 @@ footer a:hover { text-decoration: underline; }
 
 .op-credit { text-align: center; color: #8aa2b1; font-size: 0.85rem; }
 
+/* ---- Wallet card (screen preview) ---- */
+
+.wallet-wrap { margin-top: 2.5rem; }
+
+.wallet-heading { text-align: center; color: #1f3a4d; margin: 0 0 0.4rem; }
+
+.wallet-desc { text-align: center; color: #5b7a8c; margin: 0 auto 1.4rem; max-width: 560px; }
+
+.wallet-sheet { display: grid; gap: 1.5rem; }
+
+.wallet-card {
+  background: #fff;
+  border: 2px dashed #b9cfdd;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(31, 58, 77, 0.14);
+  color: #223845;
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.wc-header {
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  padding: 0.9rem 1.4rem;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.7rem;
+}
+
+.wc-kicker { letter-spacing: 0.25em; font-size: 0.68rem; font-weight: 800; opacity: 0.92; width: 100%; }
+
+.wc-name { font-size: 1.6rem; font-weight: 800; line-height: 1.1; }
+
+.wc-age { font-size: 0.95rem; font-weight: 700; opacity: 0.93; }
+
+.wc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem 1.3rem;
+  padding: 1.05rem 1.4rem;
+}
+
+.wc-row-head { color: #1f3a4d; font-size: 0.95rem; }
+
+.wc-row p { margin: 0.2rem 0 0; font-size: 0.93rem; line-height: 1.5; color: #33566b; }
+
+.wc-footer { margin-top: auto; padding: 0 1.4rem 1rem; }
+
+.wc-emergency {
+  background: #1f3a4d;
+  color: #fff;
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  font-size: 0.95rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.wc-credit { text-align: center; color: #8aa2b1; font-size: 0.78rem; }
+
 @media (max-width: 640px) {
   .op-grid { grid-template-columns: 1fr; }
+  .wc-grid { grid-template-columns: 1fr; }
   .aamc-field-row { grid-template-columns: 1fr; }
   .op-name { font-size: 2.2rem; }
   .aamc-form-section { padding: 1.4rem; }
@@ -2854,4 +2927,46 @@ footer a:hover { text-decoration: underline; }
   .page-all-about .op-footer { padding: 0.08in 0.5in 0.35in; }
   .page-all-about .op-emergency { font-size: 11pt; padding: 0.13in 0.2in; border-radius: 0.1in; }
   .page-all-about .op-credit { font-size: 8.5pt; }
+
+  /* Wallet mode: print the wallet sheet instead of the one-pager */
+  .page-all-about .wallet-wrap { display: none; }
+
+  .page-all-about.printing-wallet .onepager { display: none; }
+
+  .page-all-about.printing-wallet .wallet-wrap {
+    display: block;
+    margin: 0;
+    padding: 0.5in;
+  }
+
+  .page-all-about.printing-wallet .wallet-heading,
+  .page-all-about.printing-wallet .wallet-desc { display: none; }
+
+  .page-all-about.printing-wallet .wallet-sheet { display: block; }
+
+  .page-all-about.printing-wallet .wallet-card {
+    width: 7.5in;
+    max-width: none;
+    margin: 0 auto;
+    border: 2px dashed #8aa2b1;
+    border-radius: 0.14in;
+    box-shadow: none;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .page-all-about.printing-wallet .wallet-card + .wallet-card { margin-top: 0.4in; }
+
+  .page-all-about.printing-wallet .wc-header { padding: 0.2in 0.3in; }
+  .page-all-about.printing-wallet .wc-kicker { font-size: 8pt; }
+  .page-all-about.printing-wallet .wc-name { font-size: 20pt; }
+  .page-all-about.printing-wallet .wc-age { font-size: 10pt; }
+
+  .page-all-about.printing-wallet .wc-grid { padding: 0.18in 0.3in; gap: 0.13in 0.28in; }
+  .page-all-about.printing-wallet .wc-row-head { font-size: 10pt; }
+  .page-all-about.printing-wallet .wc-row p { font-size: 9.5pt; line-height: 1.4; }
+
+  .page-all-about.printing-wallet .wc-footer { padding: 0 0.3in 0.2in; }
+  .page-all-about.printing-wallet .wc-emergency { font-size: 9.5pt; padding: 0.08in 0.15in; }
+  .page-all-about.printing-wallet .wc-credit { font-size: 7.5pt; }
 }
