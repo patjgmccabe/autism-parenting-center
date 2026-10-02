@@ -21,7 +21,7 @@
     "description": "A free, private tool that creates a beautiful printable 'All About My Child' one-pager for teachers, therapists, babysitters, and caregivers."
   }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=24" />
+  <link rel="stylesheet" href="css/style.css?v=25" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC3RG9TC10"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -73,7 +73,7 @@
 
     <section class="page-header">
       <h1 data-i18n="aamc_hero_title">All About My Child</h1>
-      <p data-i18n="aamc_hero_desc">Create a beautiful, easy-to-read one-pager about your child to hand to teachers, therapists, babysitters, and anyone who cares for them. Takes just a few minutes. Free to use.</p>
+      <p data-i18n="aamc_hero_desc">Create a beautiful, easy-to-read one-pager about your child to hand to teachers, therapists, babysitters, and anyone who cares for them, plus a smaller wallet card version for everyday carry. Takes just a few minutes. Free to use.</p>
       <p class="aamc-privacy" data-i18n="aamc_privacy">🔒 Private: everything you type stays in your browser. Nothing is uploaded or saved.</p>
     </section>
 
@@ -157,16 +157,51 @@
 
   <div class="aamc-print-controls" id="printControls" hidden>
     <h2 data-i18n="aamc_preview_title">Your one-pager</h2>
-    <p data-i18n="aamc_preview_desc">Here's how it will look. Print it, or save it as a PDF to email.</p>
-    <button type="button" class="aamc-btn aamc-btn-print" onclick="window.print()" data-i18n="aamc_print">🖨️ Print / Save as PDF</button>
+    <p data-i18n="aamc_preview_desc">Here's how it will look. Print the one-pager, or print the smaller wallet card version below it.</p>
+    <button type="button" class="aamc-btn aamc-btn-print" id="aamcPrintOne" data-i18n="aamc_print">🖨️ Print One-Pager / Save as PDF</button>
+    <button type="button" class="aamc-btn aamc-btn-print aamc-btn-wallet" id="aamcPrintWallet" data-i18n="aamc_print_wallet">🪪 Print Wallet Card</button>
     <p class="aamc-print-tip" data-i18n="aamc_print_tip">Tip: in the print dialog, choose "Save as PDF" to keep a digital copy.</p>
+  </div>
+
+  <!-- Laminator note: optional supplies for families who want their printouts to last -->
+  <div class="laminator-section">
+    <hr class="books-divider" style="margin-bottom:2rem;">
+    <p class="laminator-disclaimer" data-i18n="aamc_lam_disclaimer">As an Amazon Associate, Autism Parenting Center earns from qualifying purchases.</p>
+    <h2 class="laminator-title" data-i18n="aamc_lam_title">🖨️ An easy way to make them last</h2>
+    <p class="laminator-intro" data-i18n="aamc_lam_intro">Paper is enough for most families, and there is no need to buy anything. If your one-pager or wallet card will get daily use, laminating it helps it hold up and wipe clean. These are the same supplies we link on our Social Story Creator page.</p>
+
+    <div class="laminator-products laminator-products-two">
+
+      <div class="laminator-card">
+        <div class="laminator-img-wrap">
+          <img src="images/Laminatorimage.jpg" alt="Scotch Thermal Laminator" onerror="this.style.display='none'" />
+        </div>
+        <div class="laminator-info">
+          <p class="laminator-product-title" data-i18n="aamc_lam_1_title">Scotch Thermal Laminator (TL901X)</p>
+          <p class="laminator-product-desc" data-i18n="aamc_lam_1_desc">A reliable home and classroom laminator, great for preserving your printed one-pager and wallet cards.</p>
+          <a href="https://amzn.to/4mPaktS" target="_blank" rel="noopener sponsored" class="laminator-btn" data-i18n="aamc_lam_btn">View on Amazon →</a>
+        </div>
+      </div>
+
+      <div class="laminator-card">
+        <div class="laminator-img-wrap">
+          <img src="images/image.jpg" alt="Scotch Thermal Laminating Pouches" onerror="this.style.display='none'" />
+        </div>
+        <div class="laminator-info">
+          <p class="laminator-product-title" data-i18n="aamc_lam_2_title">Scotch Laminating Pouches (100 Pack)</p>
+          <p class="laminator-product-desc" data-i18n="aamc_lam_2_desc">Letter-size pouches (8.9 × 11.4 in) for the one-pager, compatible with the laminator above. Trim the pouch after sealing to size a wallet card.</p>
+          <a href="https://amzn.to/48cdYYy" target="_blank" rel="noopener sponsored" class="laminator-btn" data-i18n="aamc_lam_btn">View on Amazon →</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
   <footer>
     <p>&copy; <span id="copyrightYear"></span> Autism Parenting Center. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js?v=6"></script>
+  <script src="js/script.js?v=7"></script>
   <script src="js/all-about-my-child.js"></script>
 </body>
 </html>

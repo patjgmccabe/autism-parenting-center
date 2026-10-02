@@ -146,6 +146,61 @@
         '<footer class="op-footer">' + emergency +
           '<div class="op-credit">' + escapeHtml(t('aamc_s_madeby')) + '</div>' +
         '</footer>' +
+      '</div>' +
+      buildWalletSheet(v);
+  }
+
+  // ---- Wallet card builder (smaller version, key details only) ----
+  const WALLET_FIELDS = [
+    { icon: '💬', titleKey: 'aamc_s_comm',      field: 'f_communicate' },
+    { icon: '🌱', titleKey: 'aamc_s_calm',      field: 'f_calm' },
+    { icon: '🤝', titleKey: 'aamc_s_help',      field: 'f_help' },
+    { icon: '📌', titleKey: 'aamc_s_important', field: 'f_important' },
+  ];
+
+  function buildWalletCard(v) {
+    const name = escapeHtml(v.f_name);
+    const age  = v.f_age ? '<span class="wc-age">' + escapeHtml(v.f_age) + '</span>' : '';
+
+    let rows = '';
+    WALLET_FIELDS.forEach(s => {
+      const text = v[s.field];
+      if (!text) return; // skip empty sections
+      rows +=
+        '<div class="wc-row">' +
+          '<div class="wc-row-head"><span aria-hidden="true">' + s.icon + '</span> ' +
+          '<strong>' + escapeHtml(t(s.titleKey)) + '</strong></div>' +
+          '<p>' + escapeHtml(text).replace(/\n/g, '<br>') + '</p>' +
+        '</div>';
+    });
+
+    let emergency = '';
+    if (v.f_contact_name || v.f_contact_phone) {
+      const who = [v.f_contact_name, v.f_contact_phone].filter(Boolean).map(escapeHtml).join(' &bull; ');
+      emergency = '<div class="wc-emergency"><span aria-hidden="true">🚨</span> <strong>' +
+                  escapeHtml(t('aamc_s_emergency')) + ':</strong> ' + who + '</div>';
+    }
+
+    return '' +
+      '<div class="wallet-card">' +
+        '<header class="wc-header">' +
+          '<span class="wc-kicker">' + escapeHtml(t('aamc_s_allabout')) + '</span>' +
+          '<span class="wc-name">' + name + '</span>' + age +
+        '</header>' +
+        '<div class="wc-grid">' + rows + '</div>' +
+        '<footer class="wc-footer">' + emergency +
+          '<div class="wc-credit">' + escapeHtml(t('aamc_s_madeby')) + '</div>' +
+        '</footer>' +
+      '</div>';
+  }
+
+  function buildWalletSheet(v) {
+    const card = buildWalletCard(v);
+    return '' +
+      '<div class="wallet-wrap">' +
+        '<h2 class="wallet-heading">' + escapeHtml(t('aamc_w_heading')) + '</h2>' +
+        '<p class="wallet-desc">' + escapeHtml(t('aamc_w_desc')) + '</p>' +
+        '<div class="wallet-sheet">' + card + card + '</div>' +
       '</div>';
   }
 
@@ -170,6 +225,18 @@
   }
 
   generateBtn.addEventListener('click', generate);
+
+  // ---- Print mode: one-pager (full page) or wallet cards ----
+  function printWithMode(mode) {
+    document.body.classList.toggle('printing-wallet', mode === 'wallet');
+    document.body.classList.toggle('printing-onepager', mode !== 'wallet');
+    window.print();
+  }
+
+  const printOneBtn = document.getElementById('aamcPrintOne');
+  const printWalletBtn = document.getElementById('aamcPrintWallet');
+  if (printOneBtn) printOneBtn.addEventListener('click', () => printWithMode('onepager'));
+  if (printWalletBtn) printWalletBtn.addEventListener('click', () => printWithMode('wallet'));
 
   // Re-render chips + preview when the site language changes
   document.addEventListener('langchange', () => {
