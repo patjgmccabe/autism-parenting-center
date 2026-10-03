@@ -144,4 +144,10 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://autismparentingcenter.com/visual-schedule.html</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

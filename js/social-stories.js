@@ -33,6 +33,150 @@
     return (window.translations && window.translations[lang] && window.translations[lang][key]) || key;
   }
 
+  // ---- Ready-made story templates ----
+  // Each template is a short set of simple sentences, one per page.
+  // Loading a template fills in the caption for each page, one at a
+  // time. Parents add a photo per page and can edit any of the words.
+
+  const TEMPLATES = {
+    dentist: {
+      en: [
+        'Soon I will go to the dentist.',
+        'The dentist helps keep my teeth healthy and strong.',
+        'I will sit in a big chair. The chair can move up and down.',
+        'The dentist will look at my teeth with a small mirror. I will open my mouth wide.',
+        'The dentist will clean my teeth. It might feel a little strange, and that is okay.',
+        'When I am done, my teeth will be clean. I did a great job.',
+      ],
+      es: [
+        'Pronto iré al dentista.',
+        'El dentista ayuda a mantener mis dientes sanos y fuertes.',
+        'Me sentaré en una silla grande. La silla puede subir y bajar.',
+        'El dentista mirará mis dientes con un espejo pequeño. Abriré bien la boca.',
+        'El dentista limpiará mis dientes. Puede sentirse un poco raro, y eso está bien.',
+        'Cuando termine, mis dientes estarán limpios. ¡Lo hice muy bien!',
+      ],
+    },
+    haircut: {
+      en: [
+        'Soon I will get a haircut.',
+        'First, I will sit in a special chair.',
+        'The barber will put a cape around me. The cape keeps hair off my clothes.',
+        'The barber will cut my hair with scissors or clippers. Clippers buzz and might tickle.',
+        'If I need a break, I can ask for one.',
+        'When my haircut is done, I will look great. I did it!',
+      ],
+      es: [
+        'Pronto me cortaré el cabello.',
+        'Primero, me sentaré en una silla especial.',
+        'El peluquero me pondrá una capa. La capa evita que el cabello caiga en mi ropa.',
+        'El peluquero cortará mi cabello con tijeras o máquina. La máquina hace un zumbido y puede hacer cosquillas.',
+        'Si necesito un descanso, puedo pedirlo.',
+        'Cuando termine mi corte, me veré muy bien. ¡Lo logré!',
+      ],
+    },
+    newschool: {
+      en: [
+        'I am starting a new school.',
+        'My school has teachers who will help me learn.',
+        'I will have a classroom where I learn and play.',
+        'I will meet new kids. Some of them might become my friends.',
+        'If I feel nervous, I can take deep breaths or ask a teacher for help.',
+        'Each day, school will feel easier. I can do this.',
+      ],
+      es: [
+        'Voy a empezar en una escuela nueva.',
+        'Mi escuela tiene maestros que me ayudarán a aprender.',
+        'Tendré un salón donde aprenderé y jugaré.',
+        'Conoceré a niños nuevos. Algunos podrían hacerse mis amigos.',
+        'Si me siento nervioso, puedo respirar profundo o pedir ayuda a un maestro.',
+        'Cada día, la escuela se sentirá más fácil. ¡Yo puedo hacerlo!',
+      ],
+    },
+    firedrill: {
+      en: [
+        'Sometimes my school has a fire drill. A fire drill is practice.',
+        'During a fire drill, an alarm will ring. The alarm is loud.',
+        'When the alarm rings, I will stop what I am doing and line up with my class.',
+        'I will walk quietly with my teacher to a safe place outside.',
+        'We will wait outside until a teacher says it is safe to go back in.',
+        'Fire drills keep everyone safe. I know what to do.',
+      ],
+      es: [
+        'A veces mi escuela hace un simulacro de incendio. Un simulacro es una práctica.',
+        'Durante el simulacro, sonará una alarma. La alarma hace mucho ruido.',
+        'Cuando suene la alarma, dejaré lo que estoy haciendo y haré fila con mi clase.',
+        'Caminaré en silencio con mi maestro hasta un lugar seguro afuera.',
+        'Esperaremos afuera hasta que un maestro diga que es seguro volver a entrar.',
+        'Los simulacros mantienen a todos seguros. Yo sé qué hacer.',
+      ],
+    },
+    airplane: {
+      en: [
+        'Soon I will ride on an airplane.',
+        'At the airport, we will check in and wait for our plane.',
+        'On the plane, I will sit in my seat and wear my seatbelt.',
+        'The plane will get loud when it takes off. I can wear headphones.',
+        'During the flight, I can read, draw, or watch a show.',
+        'When the plane lands, we will be at our destination. I did a great job flying!',
+      ],
+      es: [
+        'Pronto viajaré en avión.',
+        'En el aeropuerto, nos registraremos y esperaremos nuestro avión.',
+        'En el avión, me sentaré en mi asiento y usaré el cinturón de seguridad.',
+        'El avión hará mucho ruido cuando despegue. Puedo usar audífonos.',
+        'Durante el vuelo, puedo leer, dibujar o ver un programa.',
+        'Cuando el avión aterrice, habremos llegado a nuestro destino. ¡Lo hice muy bien!',
+      ],
+    },
+  };
+
+  let tpl = null; // { id, index } - index is the caption currently in the textarea
+
+  const tplSelect  = document.getElementById('tplSelect');
+  const tplLoadBtn = document.getElementById('tplLoadBtn');
+  const tplStatus  = document.getElementById('tplStatus');
+
+  function tplCaptions(id) {
+    const lang = localStorage.getItem('apc_lang') || 'en';
+    return (TEMPLATES[id] && (TEMPLATES[id][lang] || TEMPLATES[id].en)) || [];
+  }
+
+  function tplShowStatus() {
+    if (!tpl || !tplStatus) return;
+    const caps = tplCaptions(tpl.id);
+    if (tpl.index >= caps.length) {
+      tplStatus.textContent = t('stories_tpl_done');
+    } else {
+      tplStatus.textContent = t('stories_tpl_' + tpl.id) + ': ' +
+        t('stories_step') + ' ' + (tpl.index + 1) + ' ' + t('stories_tpl_of') + ' ' + caps.length + '. ' +
+        t('stories_tpl_hint');
+    }
+    tplStatus.hidden = false;
+  }
+
+  function tplLoad() {
+    if (!tplSelect) return;
+    const caps = tplCaptions(tplSelect.value);
+    if (!caps.length) return;
+    tpl = { id: tplSelect.value, index: 0 };
+    captionInput.value = caps[0];
+    tplShowStatus();
+    const builder = document.querySelector('.story-container');
+    if (builder) builder.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Called after a page is saved: fill in the next template caption.
+  function tplAdvance() {
+    if (!tpl) return;
+    tpl.index++;
+    const caps = tplCaptions(tpl.id);
+    if (tpl.index < caps.length) captionInput.value = caps[tpl.index];
+    tplShowStatus();
+  }
+
+  if (tplLoadBtn) tplLoadBtn.addEventListener('click', tplLoad);
+
   // ---- Image compression ----
   // Resizes and compresses any image to a manageable size before storing.
   // Phone cameras can produce 10-15 MB images; this keeps each panel ~100-200 KB.
@@ -161,6 +305,7 @@
       document.querySelector('.pages-strip h4') &&
         (document.querySelector('.pages-strip h4').textContent = t('stories_thumbs_label'));
     }
+    tplShowStatus();
   });
 
   // ---- Continue ----
@@ -169,6 +314,7 @@
     if (!savePanel()) return;
     updateUI();
     resetForm();
+    tplAdvance();
   });
 
   // ---- Font size based on caption length ----
