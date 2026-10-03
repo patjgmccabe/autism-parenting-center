@@ -26,7 +26,7 @@
     "provider": { "@type": "Organization", "name": "Autism Parenting Center", "url": "https://autismparentingcenter.com" }
   }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=24" />
+  <link rel="stylesheet" href="css/style.css?v=25" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC3RG9TC10"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -48,6 +48,7 @@
           <ul class="dropdown-menu">
             <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
             <li><a href="all-about-my-child.html" data-i18n="nav_child">All About My Child</a></li>
+            <li><a href="visual-schedule.html" data-i18n="nav_schedule">Visual Schedule Builder</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
@@ -130,6 +131,25 @@
         <strong data-i18n="how_result_title">What you'll get:</strong>
         <span data-i18n="how_result_desc"> A printed sheet with up to 6 picture cards per page. Cut along the dotted lines to create individual story cards you can arrange, laminate, or share!</span>
       </div>
+    </div>
+  </div>
+
+  <!-- Ready-made story templates -->
+  <div class="tpl-wrap">
+    <div class="tpl-card">
+      <h2 data-i18n="stories_tpl_title">Or Start From a Ready-Made Story</h2>
+      <p data-i18n="stories_tpl_desc">Pick a story and we fill in the words for each page. You add a photo for each page, and you can change any of the words.</p>
+      <div class="tpl-row">
+        <select id="tplSelect" class="tpl-select" aria-label="Ready-made story templates">
+          <option value="dentist" data-i18n="stories_tpl_dentist">Going to the Dentist</option>
+          <option value="haircut" data-i18n="stories_tpl_haircut">Getting a Haircut</option>
+          <option value="newschool" data-i18n="stories_tpl_newschool">Starting a New School</option>
+          <option value="firedrill" data-i18n="stories_tpl_firedrill">Fire Drill at School</option>
+          <option value="airplane" data-i18n="stories_tpl_airplane">Riding on an Airplane</option>
+        </select>
+        <button type="button" class="btn-library tpl-btn" id="tplLoadBtn" data-i18n="stories_tpl_btn">Use This Story</button>
+      </div>
+      <p class="tpl-status" id="tplStatus" hidden></p>
     </div>
   </div>
 
@@ -269,7 +289,7 @@
   </footer>
 
   <script src="js/config.js"></script>
-  <script src="js/script.js?v=6"></script>
+  <script src="js/script.js?v=7"></script>
   <script src="js/social-stories.js"></script>
 </body>
 </html>
