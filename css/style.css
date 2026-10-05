@@ -144,6 +144,17 @@ nav {
 .dropdown-menu li a:hover,
 .dropdown-menu li a.active { background: #f0f7ff; color: #4a8abf; }
 
+.dropdown-heading {
+  padding: 0.6rem 1.25rem 0.2rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8aa5b8;
+}
+
+.dropdown-menu li.guide-item a { padding-left: 2rem; }
+
 /* --- Hero --- */
 .hero {
   background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
