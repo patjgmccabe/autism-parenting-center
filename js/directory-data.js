@@ -285,7 +285,7 @@ const DIRECTORY_DATA = {
       name: "Partners for Inclusive Communities – University of Arkansas",
       category: "parent-family",
       description: "Arkansas's federally designated University Center on Excellence in Developmental Disabilities (UCEDD); provides research, training, technical assistance, and community education to improve outcomes for individuals with disabilities and their families.",
-      website: "https://uark.edu/partners"
+      website: "https://uofapartners.uark.edu"
     },
 
     // Advocacy, Legal & Rights Protection
@@ -480,7 +480,7 @@ const DIRECTORY_DATA = {
       name: "Delaware Division of Developmental Disabilities Services (DDDS)",
       category: "government",
       description: "The primary state agency providing residential, day, employment, and family support services for Delawareans with intellectual and developmental disabilities; administers Medicaid waiver supports and service coordination for eligible individuals and their families.",
-      website: "https://dhss.delaware.gov/dds",
+      website: "https://dhss.delaware.gov/ddds/",
       phone: "302-255-9390"
     },
     {
@@ -541,7 +541,7 @@ const DIRECTORY_DATA = {
       name: "DDDS Family Support Services – Respite Care",
       category: "respite",
       description: "Through Delaware DDDS, eligible families of individuals with developmental disabilities may access funded in-home respite care to provide temporary relief, reduce caregiver burnout, and support family stability.",
-      website: "https://dhss.delaware.gov/dds",
+      website: "https://dhss.delaware.gov/ddds/homepage/family-caregiver-resources/",
       phone: "302-255-9390"
     },
 
@@ -1412,7 +1412,7 @@ const DIRECTORY_DATA = {
       name: "Maryland Infant and Toddlers Program (MITP)",
       category: "government",
       description: "Provides IDEA Part C early intervention services for children birth to age 3 with developmental delays or disabilities, including service coordination and family support plans.",
-      website: "https://health.maryland.gov/mitp",
+      website: "https://mditp.org",
       phone: "410-767-5671"
     },
 
@@ -1855,7 +1855,7 @@ const DIRECTORY_DATA = {
       name: "Montana Office of Public Instruction – Special Education",
       category: "government",
       description: "Oversees IDEA compliance and special education services for Montana students with disabilities, supporting families in accessing IEP services and navigating disability rights.",
-      website: "https://opi.mt.gov/Educators/Teaching-Learning/Special-Education",
+      website: "https://opi.mt.gov/Educators/School-Climate-Student-Wellness/Special-Education",
       phone: "406-444-4429"
     },
     {
@@ -1903,7 +1903,7 @@ const DIRECTORY_DATA = {
       name: "Families Achieving Community Together (FACT) – Montana",
       category: "respite",
       description: "Provides family support, respite navigation, and peer connections for caregivers of individuals with developmental disabilities across Montana.",
-      website: "https://dphhs.mt.gov/developmentalservicesdivision/familysupport",
+      website: "https://dphhs.mt.gov/bhdd/DisabilityServices/developmentaldisabilities/",
       phone: "406-444-2590"
     },
     {
@@ -1923,7 +1923,7 @@ const DIRECTORY_DATA = {
       name: "Nebraska Division of Developmental Disabilities (DHHS)",
       category: "government",
       description: "Administers Medicaid waivers and state-funded services for Nebraskans with developmental disabilities, including autism, supporting day programs, residential, and family support.",
-      website: "https://dhhs.ne.gov/Pages/Developmental-Disabilities.aspx",
+      website: "https://dhhs.ne.gov/Pages/DD-Service-Array.aspx",
       phone: "402-471-9108"
     },
     {
@@ -1937,7 +1937,7 @@ const DIRECTORY_DATA = {
       name: "Nebraska's Early Development Network (EDN)",
       category: "government",
       description: "Nebraska's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to therapies, service coordination, and family support plans.",
-      website: "https://www.education.ne.gov/sped/early-development-network",
+      website: "https://edn.ne.gov",
       phone: "402-471-0016"
     },
 
@@ -2687,7 +2687,7 @@ const DIRECTORY_DATA = {
       name: "Oregon Department of Human Services – Intellectual and Developmental Disabilities (IDD)",
       category: "government",
       description: "Administers Oregon's Medicaid K Plan and state IDD services for individuals with developmental disabilities, including autism, through a network of county community developmental disability programs.",
-      website: "https://www.oregon.gov/odhs/providers-partners/intellectual-developmental-disabilities",
+      website: "https://www.oregon.gov/odhs/idd/",
       phone: "503-945-5944"
     },
     {
@@ -3267,7 +3267,7 @@ const DIRECTORY_DATA = {
       name: "Utah Respite Coalition",
       category: "respite",
       description: "Connects Utah families of individuals with disabilities to respite care resources, caregiver training, and support networks to sustain family caregiving.",
-      website: "https://jobs.utah.gov/usor/vr/community/respite.html",
+      website: "https://utahrespite.care",
       phone: "801-538-7530"
     },
     {
@@ -3301,7 +3301,7 @@ const DIRECTORY_DATA = {
       name: "Vermont Family Infant Toddler (FIT) Program",
       category: "government",
       description: "Vermont's IDEA Part C early intervention program providing services for children birth to age 3 with developmental delays, including service coordination and individualized family support plans.",
-      website: "https://dail.vermont.gov/fit",
+      website: "https://dcf.vermont.gov/services/cis",
       phone: "802-871-3272"
     },
 
@@ -3451,7 +3451,7 @@ const DIRECTORY_DATA = {
       name: "Washington State Birth to 3 Program",
       category: "government",
       description: "Washington's IDEA Part C early intervention program connecting families of children birth to age 3 with developmental delays to service coordinators and individualized family support plans.",
-      website: "https://www.dcyf.wa.gov/services/early-learning/birth-to-3",
+      website: "https://dcyf.wa.gov/services/child-development-supports/esit",
       phone: "360-725-3200"
     },
 
@@ -3526,7 +3526,7 @@ const DIRECTORY_DATA = {
       name: "West Virginia Birth to Three – Early Intervention",
       category: "government",
       description: "West Virginia's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and family support plans.",
-      website: "https://dhhr.wv.gov/birth23",
+      website: "https://www.wvdhhr.org/birth23/",
       phone: "304-356-3191"
     },
 
