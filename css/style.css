@@ -260,6 +260,7 @@ nav {
 .card.card-books      { border-top-color: #4a8abf; }
 .card.card-stories    { border-top-color: #6daf7e; }
 .card.card-schedule   { border-top-color: #3d9be8; }
+.card.card-firstthen  { border-top-color: #e8853d; }
 .card.card-contact    { border-top-color: #f4a94e; }
 .card.card-iep        { border-top-color: #9b7fd4; }
 .card.card-directory   { border-top-color: #50b8c1; }
@@ -3213,4 +3214,318 @@ footer a:hover { text-decoration: underline; }
   color: #3d7a50 !important;
   font-weight: 600;
   font-size: 0.95rem;
+}
+
+/* ============================================================
+   FIRST-THEN BOARD BUILDER TOOL
+   ============================================================ */
+
+.page-first-then #printArea { display: none; }
+
+.page-first-then #printArea.show {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+  padding: 0 1.25rem;
+}
+
+.ft-board {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 12px 40px rgba(31, 58, 77, 0.18);
+  overflow: hidden;
+  color: #223845;
+  display: flex;
+  flex-direction: column;
+}
+
+.ft-header {
+  background: linear-gradient(135deg, #4a8abf 0%, #6daf7e 100%);
+  color: #fff;
+  padding: 1.1rem 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.ft-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.ft-box {
+  flex: 1 1 0;
+  border-radius: 16px;
+  padding: 1.4rem 1rem 1.6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.ft-first { background: #eef6fc; border: 3px solid #4a8abf; }
+
+.ft-then { background: #effaf1; border: 3px solid #6daf7e; }
+
+.ft-box-word {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+  color: #1f3a4d;
+}
+
+.ft-box-icon { font-size: 5rem; line-height: 1.15; }
+
+.ft-box-label { font-size: 1.5rem; font-weight: 700; color: #1f3a4d; line-height: 1.3; }
+
+.ft-arrow { align-self: center; color: #8aa2b1; font-size: 2rem; }
+
+.ft-footer { text-align: center; color: #8aa2b1; font-size: 0.85rem; padding: 0 1rem 1.1rem; }
+
+@media (max-width: 640px) {
+  .ft-box-icon { font-size: 3.6rem; }
+  .ft-box-label { font-size: 1.15rem; }
+  .ft-box-word { font-size: 1.05rem; }
+}
+
+/* ---- Print: landscape letter sheet, nothing else on the page ---- */
+
+@page ft-landscape { size: letter landscape; margin: 0; }
+
+@media print {
+  .page-first-then > *:not(#printArea) { display: none !important; }
+
+  .page-first-then #printArea,
+  .page-first-then #printArea.show {
+    display: block !important;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page-first-then * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page-first-then .ft-board {
+    page: ft-landscape;
+    box-shadow: none;
+    border-radius: 0;
+    width: 11in;
+    height: 8.5in;
+    overflow: hidden;
+  }
+
+  .page-first-then .ft-header { padding: 0.35in 0.6in; font-size: 24pt; }
+
+  .page-first-then .ft-row { flex: 1; padding: 0.45in 0.6in; gap: 0.25in; }
+
+  .page-first-then .ft-box { justify-content: center; border-radius: 0.18in; padding: 0.3in; }
+  .page-first-then .ft-first { border-width: 4pt; }
+  .page-first-then .ft-then { border-width: 4pt; }
+  .page-first-then .ft-box-word { font-size: 26pt; }
+  .page-first-then .ft-box-icon { font-size: 90pt; }
+  .page-first-then .ft-box-label { font-size: 28pt; }
+  .page-first-then .ft-arrow { font-size: 30pt; }
+
+  .page-first-then .ft-footer { padding: 0 0.5in 0.3in; font-size: 8.5pt; }
+}
+
+/* --- First-Then: photo upload --- */
+
+.ft-upload-row { margin-top: 0.9rem; }
+
+.ft-upload-btn {
+  background: #fff;
+  border: 2px solid #4a8abf;
+  color: #2d6a9f;
+  border-radius: 999px;
+  padding: 0.55rem 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ft-upload-btn:hover { background: #eef6fc; }
+
+.ft-photo-preview {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.ft-photo-preview[hidden] { display: none; }
+
+.ft-photo-preview img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #dbe7ef;
+}
+
+.ft-photo-remove {
+  background: none;
+  border: none;
+  color: #b3261e;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.ft-box-img {
+  width: 100%;
+  max-height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* --- First-Then: timer setup card --- */
+
+.ft-timer-card {
+  margin-top: 2.2rem;
+  border-top: 2px solid #e6eef4;
+  padding-top: 1.6rem;
+}
+
+.ft-timer-min-label { font-weight: 700; color: #1f3a4d; margin-bottom: 0.6rem; }
+
+.ft-min-chips { justify-content: center; margin-bottom: 0.9rem; }
+
+.ft-custom-min-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #5b7a8c;
+  font-weight: 600;
+}
+
+.ft-custom-min-row input {
+  width: 150px;
+  border: 2px solid #dbe7ef;
+  border-radius: 10px;
+  padding: 0.55rem 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  text-align: center;
+  background: #fbfdff;
+  color: #223845;
+}
+
+/* --- First-Then: timer view (full screen) --- */
+
+.ft-timer-view {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #f7f9fc;
+  overflow-y: auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.ft-timer-view[hidden] { display: none; }
+
+.ft-timer-inner { max-width: 820px; margin: 0 auto; text-align: center; }
+
+.ft-timer-status {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1f3a4d;
+  margin-bottom: 1rem;
+  min-height: 2rem;
+}
+
+.ft-timer-board .ft-row { padding: 0 0 1.5rem; }
+
+.ft-timer-board .ft-box { position: relative; }
+
+.ft-done-badge {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  background: #6daf7e;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.95rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+}
+
+.ft-timer-view.ft-timer-done .ft-first { filter: grayscale(1); opacity: 0.55; }
+
+.ft-timer-view.ft-timer-done .ft-then {
+  box-shadow: 0 0 0 6px #6daf7e, 0 0 34px rgba(109, 175, 126, 0.65);
+  animation: ft-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes ft-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+.ft-timer-circle {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  margin: 0 auto 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: conic-gradient(#4a8abf 100%, #e3edf4 100%);
+}
+
+.ft-timer-time {
+  width: 178px;
+  height: 178px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1f3a4d;
+}
+
+.ft-timer-controls { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
+
+.ft-timer-btn { max-width: 220px; }
+
+.ft-timer-stop { background: #fff; color: #33566b; border: 2px solid #dbe7ef; }
+
+@media (max-width: 640px) {
+  .ft-timer-status { font-size: 1.25rem; }
+  .ft-timer-circle { width: 200px; height: 200px; }
+  .ft-timer-time { width: 146px; height: 146px; font-size: 2.4rem; }
+}
+
+@media print {
+  .page-first-then .ft-box-img { max-height: none; height: 2.3in; }
+  .page-first-then .ft-timer-view { display: none !important; }
+}
+
+.ft-timer-steps {
+  max-width: 560px;
+  margin: 0.8rem auto 1.2rem;
+  text-align: left;
+  color: #33566b;
+  line-height: 1.55;
+  padding-left: 1.4rem;
+}
+
+.ft-timer-steps li { margin-bottom: 0.35rem; }
+
+.ft-timer-hint {
+  color: #5b7a8c;
+  font-size: 1rem;
+  margin: -0.3rem 0 1.1rem;
 }

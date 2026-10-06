@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First-Then Board Builder | Free Printable First-Then Board | Autism Parenting Center</title>
+  <meta name="description" content="Make a free printable first-then board for your child. Pick what comes first and what comes next, and print a simple two-box board for home or school. No account, no cost." />
+  <link rel="canonical" href="https://autismparentingcenter.com/first-then.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Autism Parenting Center" />
+  <meta property="og:title" content="First-Then Board Builder | Free Printable First-Then Board" />
+  <meta property="og:description" content="Pick what comes first and what comes next, and print a simple first-then board for your child. Free to use, ready in minutes." />
+  <meta property="og:url" content="https://autismparentingcenter.com/first-then.html" />
+  <meta property="og:image" content="https://autismparentingcenter.com/images/og-image.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "First-Then Board Builder | Autism Parenting Center",
+    "url": "https://autismparentingcenter.com/first-then.html",
+    "description": "A free, private tool that creates a simple printable first-then board for children with autism."
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css?v=27" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC3RG9TC10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MC3RG9TC10');
+  </script></head>
+<body class="page-first-then">
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Autism Parenting Center</a>
+      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-links">
+                    <li><a href="start-here.html" data-i18n="nav_start">Start Here</a></li>
+                    <li><a href="glossary.html" data-i18n="nav_glossary">Glossary</a></li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_tools">Tools</span>
+          <ul class="dropdown-menu">
+            <li><a href="social-stories.html" data-i18n="nav_stories">Social Story Creator</a></li>
+            <li><a href="all-about-my-child.html" data-i18n="nav_child">All About My Child</a></li>
+            <li><a href="visual-schedule.html" data-i18n="nav_schedule">Visual Schedule Builder</a></li>
+            <li><a href="first-then.html" data-i18n="nav_firstthen">First-Then Board</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_resources">Resources</span>
+          <ul class="dropdown-menu">
+            <li><a href="books.html"           data-i18n="nav_books">Books</a></li>
+            <li><a href="directory.html"       data-i18n="nav_directory">Resource Directory</a></li>
+            <li><a href="iep-cheat-sheet.html" data-i18n="nav_iep">IEP Cheat Sheet</a></li>
+            <li><a href="worksheets.html"      data-i18n="nav_worksheets">Free Worksheets</a></li>
+          </ul>
+        </li>
+        <li class="nav-dropdown">
+          <span class="nav-dropdown-toggle" data-i18n="nav_group_articles">Articles</span>
+          <ul class="dropdown-menu">
+            <li><a href="blog.html"      data-i18n="nav_blog">Our Blog</a></li>
+            <li><a href="resources.html" data-i18n="nav_resources">Articles Worth Reading</a></li>
+          </ul>
+        </li>
+        <li><a href="newsletter.html" data-i18n="nav_newsletter">Newsletter</a></li>
+        <li><a href="about.html"   data-i18n="nav_about">About Us</a></li>
+        <li><a href="contact.html" data-i18n="nav_contact">Contact Us</a></li>
+      </ul>
+      <button class="lang-toggle" data-i18n="nav_lang">Español</button>
+    </div>
+  </nav>
+
+  <main class="aamc-main">
+
+    <section class="page-header">
+      <h1 data-i18n="ft_title">First-Then Board Builder</h1>
+      <p data-i18n="ft_desc">Make a simple first-then board for your child. For each box, pick a ready picture, type your own words, or upload a photo. Print the board, or run it on screen with a timer. Free to use.</p>
+      <p class="aamc-privacy" data-i18n="aamc_privacy">🔒 Private: everything you type stays in your browser. Nothing is uploaded or saved.</p>
+    </section>
+
+    <section class="aamc-form-section">
+
+      <div class="aamc-field">
+        <label for="ft_name_input" data-i18n="ft_name_label">Child's first name (optional)</label>
+        <input type="text" id="ft_name_input" maxlength="40" data-i18n-ph="ft_name_ph" placeholder="e.g. Liam" />
+      </div>
+
+      <div class="aamc-field">
+        <label data-i18n="ft_first_label">First: the task</label>
+        <p class="aamc-help" data-i18n="ft_first_help">Tap the step your child does first, type your own, or upload a photo. This is usually the hard or non-preferred task.</p>
+        <div class="aamc-chips vs-chips" id="ftFirstChips"></div>
+        <input type="text" id="ft_first_custom" maxlength="40" data-i18n-ph="ft_custom_ph" placeholder="Or type your own step, e.g. Finish math worksheet" />
+        <div class="ft-upload-row">
+          <button type="button" class="ft-upload-btn" id="ftFirstUploadBtn">📁 <span data-i18n="ft_upload_btn">Upload a Photo Instead</span></button>
+          <input type="file" id="ftFirstUpload" accept="image/*" style="display:none" />
+        </div>
+        <div class="ft-photo-preview" id="ftFirstPhotoWrap" hidden>
+          <img id="ftFirstPhoto" alt="Your uploaded photo for the First box" />
+          <button type="button" class="ft-photo-remove" id="ftFirstPhotoRemove" data-i18n="ft_remove_photo">Remove photo</button>
+        </div>
+      </div>
+
+      <div class="aamc-field">
+        <label data-i18n="ft_then_label">Then: what comes next</label>
+        <p class="aamc-help" data-i18n="ft_then_help">Tap what happens right after, type your own, or upload a photo. This is usually something your child likes.</p>
+        <div class="aamc-chips vs-chips" id="ftThenChips"></div>
+        <input type="text" id="ft_then_custom" maxlength="40" data-i18n-ph="ft_custom_ph" placeholder="Or type your own step, e.g. Finish math worksheet" />
+        <div class="ft-upload-row">
+          <button type="button" class="ft-upload-btn" id="ftThenUploadBtn">📁 <span data-i18n="ft_upload_btn">Upload a Photo Instead</span></button>
+          <input type="file" id="ftThenUpload" accept="image/*" style="display:none" />
+        </div>
+        <div class="ft-photo-preview" id="ftThenPhotoWrap" hidden>
+          <img id="ftThenPhoto" alt="Your uploaded photo for the Then box" />
+          <button type="button" class="ft-photo-remove" id="ftThenPhotoRemove" data-i18n="ft_remove_photo">Remove photo</button>
+        </div>
+      </div>
+
+      <p class="aamc-error" id="ftError" role="alert" hidden></p>
+
+      <button type="button" class="aamc-btn" id="ftGenerate" data-i18n="ft_create">Create My Board →</button>
+    </section>
+
+  </main>
+
+  <section id="printArea" aria-label="First-then board preview"></section>
+
+  <div class="aamc-print-controls" id="ftPrintControls" hidden>
+    <h2 data-i18n="ft_preview_title">Your board</h2>
+    <p data-i18n="ft_preview_desc">Here's how it will look. Print it, or save it as a PDF. Show it to your child before the task starts.</p>
+    <button type="button" class="aamc-btn aamc-btn-print" onclick="window.print()" data-i18n="ft_print">🖨️ Print / Save as PDF</button>
+    <p class="aamc-print-tip" data-i18n="aamc_print_tip">Tip: in the print dialog, choose "Save as PDF" to keep a digital copy.</p>
+
+    <div class="ft-timer-card">
+      <h2 data-i18n="ft_timer_title">Or run it with the timer</h2>
+      <p data-i18n="ft_timer_desc">Set a time for the First activity. Your child sees the board and the countdown together on this screen. When the time runs out, the First box is marked done and the Then box lights up: time to move on.</p>
+      <ol class="ft-timer-steps">
+        <li data-i18n="ft_timer_step1">Pick how many minutes the First activity gets.</li>
+        <li data-i18n="ft_timer_step2">Tap Start Timer and keep the screen where your child can see it.</li>
+        <li data-i18n="ft_timer_step3">When the time runs out, First is done and the Then box lights up. Move on to Then.</li>
+      </ol>
+      <p class="ft-timer-min-label" data-i18n="ft_timer_minutes">How many minutes for First?</p>
+      <div class="aamc-chips vs-chips ft-min-chips" id="ftMinChips"></div>
+      <div class="ft-custom-min-row">
+        <input type="number" id="ft_custom_min" min="1" max="120" step="1" data-i18n-ph="ft_timer_custom_ph" placeholder="Or type a number" />
+        <span data-i18n="ft_timer_min">min</span>
+      </div>
+      <button type="button" class="aamc-btn aamc-btn-print" id="ftTimerStart" data-i18n="ft_timer_start">▶ Start Timer</button>
+    </div>
+  </div>
+
+  <!-- Timer view: the board and the countdown on one screen -->
+  <div class="ft-timer-view" id="ftTimerView" hidden>
+    <div class="ft-timer-inner">
+      <div class="ft-timer-status" id="ftTimerStatus"></div>
+      <p class="ft-timer-hint" data-i18n="ft_timer_hint">The circle shows the time left for First. When the circle is empty, First is done.</p>
+      <div class="ft-timer-board" id="ftTimerBoard"></div>
+      <div class="ft-timer-circle" id="ftTimerCircle"><div class="ft-timer-time" id="ftTimerTime">5:00</div></div>
+      <div class="ft-timer-controls">
+        <button type="button" class="aamc-btn ft-timer-btn" id="ftTimerPause" data-i18n="ft_timer_pause">Pause</button>
+        <button type="button" class="aamc-btn ft-timer-btn ft-timer-stop" id="ftTimerClose" data-i18n="ft_timer_stop">Stop Timer</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="copyrightYear"></span> Autism Parenting Center. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js?v=9"></script>
+  <script src="js/first-then.js"></script>
+</body>
+</html>
