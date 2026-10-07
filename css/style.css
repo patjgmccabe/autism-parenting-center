@@ -3529,3 +3529,74 @@ footer a:hover { text-decoration: underline; }
   font-size: 1rem;
   margin: -0.3rem 0 1.1rem;
 }
+
+/* --- Tool Finder (homepage quiz) --- */
+
+.tf-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.6rem 1.5rem 0.6rem;
+  text-align: center;
+}
+
+.tf-section h2 { color: #1f3a4d; font-size: 1.8rem; margin-bottom: 0.5rem; }
+
+.tf-desc { color: #5b7a8c; max-width: 620px; margin: 0 auto 1.4rem; line-height: 1.55; }
+
+.tf-progress {
+  color: #4a8abf;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.tf-question { color: #223845; font-size: 1.3rem; margin-bottom: 1.1rem; }
+
+.tf-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.tf-option {
+  background: #fff;
+  border: 2px solid #dbe7ef;
+  border-radius: 14px;
+  padding: 0.85rem 1.1rem;
+  font-size: 1.03rem;
+  font-weight: 600;
+  font-family: inherit;
+  color: #223845;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tf-option:hover { border-color: #4a8abf; background: #eef6fc; }
+
+.tf-back {
+  background: none;
+  border: none;
+  color: #2d6a9f;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.tf-results-title { color: #223845; font-size: 1.3rem; margin-bottom: 0.3rem; }
+
+.tf-results-desc { color: #5b7a8c; margin-bottom: 1.2rem; }
+
+#tfResults .cards-grid { text-align: left; margin-bottom: 1.4rem; }
+
+.tf-restart { max-width: 260px; margin: 0 auto; }
+
+.tf-see-all { margin-top: 1rem; }
+
+.tf-see-all a { color: #2d6a9f; font-weight: 600; }
