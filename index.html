@@ -34,7 +34,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="css/style.css?v=27" />
+  <link rel="stylesheet" href="css/style.css?v=28" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MC3RG9TC10"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -92,6 +92,25 @@
     <p data-i18n="hero_subtitle">Free tools and information for autism families, educators, and therapists, all in one place.</p>
     <a href="#resources" class="hero-btn" data-i18n="hero_btn">Explore Resources</a>
     <a href="start-here.html" class="hero-btn">Newly diagnosed? Start here &rarr;</a>
+  </section>
+
+  <!-- Find the Right Tool finder -->
+  <section class="tf-section" id="toolFinder">
+    <h2 data-i18n="tf_title">Find the Right Tool in 30 Seconds</h2>
+    <p class="tf-desc" data-i18n="tf_desc">Answer 3 quick questions and we will point you to the tools and guides that fit. Free to use.</p>
+    <div id="tfQuiz">
+      <p class="tf-progress" id="tfProgress"></p>
+      <h3 class="tf-question" id="tfQuestion"></h3>
+      <div class="tf-options" id="tfOptions"></div>
+      <button type="button" class="tf-back" id="tfBack" data-i18n="tf_back" hidden>← Back</button>
+    </div>
+    <div id="tfResults" hidden>
+      <h3 class="tf-results-title" data-i18n="tf_results_title">Best matches for you</h3>
+      <p class="tf-results-desc" data-i18n="tf_results_desc">Based on your answers, start with these:</p>
+      <div class="cards-grid" id="tfResultsGrid"></div>
+      <button type="button" class="aamc-btn tf-restart" id="tfRestart" data-i18n="tf_restart">Start Over</button>
+      <p class="tf-see-all"><a href="#resources" data-i18n="tf_see_all">Or browse everything below ↓</a></p>
+    </div>
   </section>
 
   <!-- Resource Cards -->
@@ -215,6 +234,7 @@
     <p>&copy; <span id="copyrightYear"></span> Autism Parenting Center. All rights reserved.</p>
   </footer>
 
-  <script src="js/script.js?v=9"></script>
+  <script src="js/script.js?v=10"></script>
+  <script src="js/tool-finder.js"></script>
 </body>
 </html>
