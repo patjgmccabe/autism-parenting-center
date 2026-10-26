@@ -130,7 +130,7 @@ const DIRECTORY_DATA = {
       name: "Alaska Aging and Disability Resource Centers (ADRC)",
       category: "government",
       description: "A statewide network of regional centers connecting seniors, people with disabilities, and their caregivers to long-term services and supports including Medicaid options, respite, transportation, and home modifications, regardless of age or income.",
-      website: "https://health.alaska.gov/ADRC",
+      website: "https://health.alaska.gov/en/topics/senior-care/",
       phone: "855-565-2017"
     },
     {
@@ -176,7 +176,7 @@ const DIRECTORY_DATA = {
       name: "Alaska Family Caregiver Support Program (FCSP)",
       category: "respite",
       description: "Administered through the Division of Senior and Disabilities Services; provides caregivers with information, counseling, support groups, caregiver training, and respite funding, including serving grandparents (age 55+) raising grandchildren with special needs.",
-      website: "https://health.alaska.gov/FCSP"
+      website: "https://health.alaska.gov/en/topics/disability-care/"
     },
     {
       name: "UReCares Stipend and Respite Program – Alaska Impact Alliance",
@@ -1036,7 +1036,7 @@ const DIRECTORY_DATA = {
       name: "Iowa Early ACCESS – Early Intervention Program",
       category: "government",
       description: "Iowa's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity and support child development.",
-      website: "https://educateiowa.gov/earlyaccess",
+      website: "https://educate.iowa.gov/pk-12/early-childhood/early-access",
       phone: "888-425-4371"
     },
 
@@ -1594,7 +1594,7 @@ const DIRECTORY_DATA = {
       name: "Michigan Developmental Disabilities Council (MDDC)",
       category: "advocacy",
       description: "Federally funded council promoting independence, self-determination, and community inclusion for Michiganders with developmental disabilities through advocacy, grants, and systems change.",
-      website: "https://www.michigan.gov/mddc",
+      website: "https://www.michigan.gov/ddcouncil",
       phone: "517-335-3158"
     },
 
@@ -2223,7 +2223,7 @@ const DIRECTORY_DATA = {
       name: "New Mexico Developmental Disabilities Supports Division (DDSD)",
       category: "government",
       description: "Administers New Mexico's Mi Via and Developmental Disabilities Medicaid waivers for individuals with developmental disabilities, including autism, funding person-centered support services.",
-      website: "https://www.hsd.state.nm.us/ddsd",
+      website: "https://www.hca.nm.gov/ddw-case-management-services/",
       phone: "505-476-8973"
     },
     {
@@ -2394,7 +2394,7 @@ const DIRECTORY_DATA = {
       name: "NC Department of Public Instruction – Exceptional Children Division",
       category: "government",
       description: "Oversees IDEA compliance and special education services for North Carolina students with disabilities, providing guidance on IEPs, due process, and family rights.",
-      website: "https://www.dpi.nc.gov/students-families/exceptional-children",
+      website: "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
       phone: "984-236-2400"
     },
     {
