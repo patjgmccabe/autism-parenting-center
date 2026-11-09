@@ -130,7 +130,7 @@ const DIRECTORY_DATA = {
       name: "Alaska Aging and Disability Resource Centers (ADRC)",
       category: "government",
       description: "A statewide network of regional centers connecting seniors, people with disabilities, and their caregivers to long-term services and supports including Medicaid options, respite, transportation, and home modifications, regardless of age or income.",
-      website: "https://health.alaska.gov/ADRC",
+      website: "https://health.alaska.gov/en/services/aging-and-disability-resource-centers-adrc/",
       phone: "855-565-2017"
     },
     {
@@ -176,7 +176,7 @@ const DIRECTORY_DATA = {
       name: "Alaska Family Caregiver Support Program (FCSP)",
       category: "respite",
       description: "Administered through the Division of Senior and Disabilities Services; provides caregivers with information, counseling, support groups, caregiver training, and respite funding, including serving grandparents (age 55+) raising grandchildren with special needs.",
-      website: "https://health.alaska.gov/FCSP"
+      website: "https://health.alaska.gov/en/services/family-caregiver-support-program/"
     },
     {
       name: "UReCares Stipend and Respite Program – Alaska Impact Alliance",
@@ -494,7 +494,7 @@ const DIRECTORY_DATA = {
       name: "Delaware Early Intervention Program – Birth to Three",
       category: "government",
       description: "Delaware's Part C IDEA early intervention program providing service coordination, therapy, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities.",
-      website: "https://dhss.delaware.gov/dph/cphpc/bthreeabout.html",
+      website: "https://www.b23de.org/",
       phone: "302-295-8620"
     },
 
@@ -802,7 +802,7 @@ const DIRECTORY_DATA = {
       name: "Idaho Infant/Toddler Program (Infants and Toddlers with Disabilities)",
       category: "government",
       description: "Idaho's Part C IDEA early intervention program providing service coordination, therapies, and family supports for children (birth–age 3) with developmental delays or disabilities; builds family capacity to support their child's development.",
-      website: "https://healthandwelfare.idaho.gov/services-programs/children-families/infant-toddler-program",
+      website: "https://healthandwelfare.idaho.gov/services-programs/children-families-older-adults/about-infant-toddler-program",
       phone: "800-926-2588"
     },
 
@@ -1036,7 +1036,7 @@ const DIRECTORY_DATA = {
       name: "Iowa Early ACCESS – Early Intervention Program",
       category: "government",
       description: "Iowa's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity and support child development.",
-      website: "https://educateiowa.gov/earlyaccess",
+      website: "https://educate.iowa.gov/pk-12/early-childhood/early-access",
       phone: "888-425-4371"
     },
 
@@ -1184,7 +1184,7 @@ const DIRECTORY_DATA = {
       name: "Kentucky First Steps – Early Intervention Program",
       category: "government",
       description: "Kentucky's Part C IDEA program providing service coordination, therapies, and family supports for infants and toddlers (birth–age 3) with developmental delays or disabilities to build family capacity.",
-      website: "https://chfs.ky.gov/firststeps",
+      website: "https://www.chfs.ky.gov/agencies/dph/dmch/ecdb/pages/default.aspx",
       phone: "800-442-0087"
     },
 
@@ -1331,7 +1331,7 @@ const DIRECTORY_DATA = {
       name: "Maine Developmental Services Oversight and Advisory Board (DSOAB)",
       category: "government",
       description: "Independent oversight body that monitors quality and safety of services for people with intellectual disabilities and autism in Maine, issuing reports and recommendations to the legislature.",
-      website: "https://www.maine.gov/dhhs/oads/dsoab"
+      website: "https://www.maine.gov/dhhs/oads"
     },
     {
       name: "Maine Early Intervention – Child Development Services (CDS)",
@@ -1460,7 +1460,7 @@ const DIRECTORY_DATA = {
       name: "Therapeutic Recreation Inclusion Services (TRIS) – Maryland",
       category: "respite",
       description: "Offers inclusive recreation programs and respite activities for children and adults with autism and other developmental disabilities in Maryland communities.",
-      website: "https://www.pgparks.com/tris",
+      website: "https://www.pgparks.com/disability-services",
       phone: "301-446-3388"
     },
 
@@ -1487,7 +1487,7 @@ const DIRECTORY_DATA = {
       name: "Massachusetts Department of Elementary and Secondary Education – Special Education",
       category: "government",
       description: "Oversees special education services under IDEA for students with disabilities including autism, providing guidance, monitoring, and dispute resolution supports for families.",
-      website: "https://www.doe.mass.edu/sped",
+      website: "https://www.doe.mass.edu/specialeducation/",
       phone: "781-338-3000"
     },
 
@@ -1548,21 +1548,21 @@ const DIRECTORY_DATA = {
       name: "Michigan Department of Health and Human Services – Developmental Disabilities",
       category: "government",
       description: "Administers Michigan's Medicaid Home and Community-Based Services waivers for individuals with developmental disabilities, including autism, coordinating residential, respite, and community support services.",
-      website: "https://www.michigan.gov/mdhhs/keep-mi-healthy/mentalhealth/developmental-disabilities",
+      website: "https://www.michigan.gov/mdhhs/keep-mi-healthy/mentalhealth/developmentaldisability",
       phone: "517-335-3723"
     },
     {
       name: "Michigan Early On Program",
       category: "government",
       description: "Michigan's IDEA Part C early intervention system serving children birth to age 3 with developmental delays, providing service coordination, therapies, and family support through local early intervention agencies.",
-      website: "https://www.michigan.gov/mde/early-on",
+      website: "https://www.michigan.gov/mikidsmatter/programs/early-on",
       phone: "800-327-5966"
     },
     {
       name: "Michigan Department of Education – Special Education",
       category: "government",
       description: "Oversees special education programs statewide, ensuring students with disabilities including autism receive appropriate services, and provides dispute resolution and compliance monitoring.",
-      website: "https://www.michigan.gov/mde/services/special-edu",
+      website: "https://www.michigan.gov/mde/services/special-education",
       phone: "517-373-0923"
     },
 
@@ -1594,7 +1594,7 @@ const DIRECTORY_DATA = {
       name: "Michigan Developmental Disabilities Council (MDDC)",
       category: "advocacy",
       description: "Federally funded council promoting independence, self-determination, and community inclusion for Michiganders with developmental disabilities through advocacy, grants, and systems change.",
-      website: "https://www.michigan.gov/mddc",
+      website: "https://michigan.gov/ddcouncil",
       phone: "517-335-3158"
     },
 
@@ -1787,7 +1787,7 @@ const DIRECTORY_DATA = {
       name: "Missouri First Steps Early Intervention Program",
       category: "government",
       description: "Missouri's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
-      website: "https://health.mo.gov/living/families/firststeps",
+      website: "https://dese.mo.gov/childhood/early-intervention/first-steps",
       phone: "866-583-2392"
     },
 
@@ -1848,7 +1848,7 @@ const DIRECTORY_DATA = {
       name: "Montana Department of Public Health and Human Services – Developmental Services Division",
       category: "government",
       description: "Administers Montana's Medicaid HCBS waivers and Comprehensive Developmental Disability services for individuals with developmental disabilities, including autism.",
-      website: "https://dphhs.mt.gov/developmentalservicesdivision",
+      website: "https://dphhs.mt.gov/BHDD/DisabilityServices/developmentaldisabilities/",
       phone: "406-444-2590"
     },
     {
@@ -1862,7 +1862,7 @@ const DIRECTORY_DATA = {
       name: "Montana Developmental Disabilities Program – Early Intervention",
       category: "government",
       description: "Provides IDEA Part C early intervention services for children birth to age 3 with developmental delays, including service coordination and family support in Montana.",
-      website: "https://dphhs.mt.gov/developmentalservicesdivision/earlyintervention",
+      website: "https://dphhs.mt.gov/ecfsd/childcare/montanamilestones/",
       phone: "406-444-2590"
     },
 
@@ -1998,7 +1998,7 @@ const DIRECTORY_DATA = {
       name: "Nevada Division of Public and Behavioral Health – Developmental Services",
       category: "government",
       description: "Administers Nevada's Medicaid HCBS waivers and state developmental services for individuals with intellectual and developmental disabilities, including autism.",
-      website: "https://dpbh.nv.gov/Programs/ClinicalPrgms/Developmental_Services/Developmental_Services_-_Home",
+      website: "https://www.adsd.nv.gov/programs/developmental-services/",
       phone: "775-687-5943"
     },
     {
@@ -2012,7 +2012,7 @@ const DIRECTORY_DATA = {
       name: "Nevada Early Intervention Services (NEIS)",
       category: "government",
       description: "Nevada's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family supports.",
-      website: "https://dpbh.nv.gov/Programs/ClinicalPrgms/NEIS/Nevada_Early_Intervention_Services_-_Home",
+      website: "https://www.adsd.nv.gov/programs/NEIS/",
       phone: "775-684-3388"
     },
 
@@ -2060,7 +2060,7 @@ const DIRECTORY_DATA = {
       name: "Nevada Caregiver Support Center",
       category: "respite",
       description: "Offers respite referrals, caregiver education, and support group connections for families caring for individuals with disabilities across Nevada communities.",
-      website: "https://adsd.nv.gov/Programs/Aging/CSP/Caregiver_Support_Pgm",
+      website: "https://www.adsd.nv.gov/programs/ATAP/aging-and-disability-resource-center-adrc/",
       phone: "800-216-3184"
     },
 
@@ -2223,7 +2223,7 @@ const DIRECTORY_DATA = {
       name: "New Mexico Developmental Disabilities Supports Division (DDSD)",
       category: "government",
       description: "Administers New Mexico's Mi Via and Developmental Disabilities Medicaid waivers for individuals with developmental disabilities, including autism, funding person-centered support services.",
-      website: "https://www.hsd.state.nm.us/ddsd",
+      website: "https://www.hca.nm.gov/developmental-disabilities-supports-division-2/",
       phone: "505-476-8973"
     },
     {
@@ -2394,14 +2394,14 @@ const DIRECTORY_DATA = {
       name: "NC Department of Public Instruction – Exceptional Children Division",
       category: "government",
       description: "Oversees IDEA compliance and special education services for North Carolina students with disabilities, providing guidance on IEPs, due process, and family rights.",
-      website: "https://www.dpi.nc.gov/students-families/exceptional-children",
+      website: "https://www.dpi.nc.gov/districts-schools/classroom-resources/exceptional-children",
       phone: "984-236-2400"
     },
     {
       name: "NC Infant-Toddler Program",
       category: "government",
       description: "North Carolina's IDEA Part C early intervention program providing services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
-      website: "https://www.ncdhhs.gov/divisions/public-health/north-carolina-infant-toddler-program",
+      website: "https://www.ncdhhs.gov/divisions/child-and-family-well-being/north-carolina-infant-toddler-program-nc-itp",
       phone: "919-707-5520"
     },
 
@@ -2462,21 +2462,21 @@ const DIRECTORY_DATA = {
       name: "North Dakota Department of Human Services – Developmental Disabilities Division",
       category: "government",
       description: "Administers North Dakota's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, coordinating residential, day, and family support.",
-      website: "https://www.hhs.nd.gov/disabilities/developmental-disabilities",
+      website: "https://www.hhs.nd.gov/dd",
       phone: "701-328-8930"
     },
     {
       name: "North Dakota Department of Public Instruction – Special Education",
       category: "government",
       description: "Oversees IDEA compliance and special education services for North Dakota students with disabilities, providing guidance on IEPs and supporting families in navigating their rights.",
-      website: "https://www.nd.gov/dpi/districts-schools/student-support-services/special-education",
+      website: "https://www.nd.gov/dpi/education-programs/special-education",
       phone: "701-328-2277"
     },
     {
       name: "North Dakota Early Intervention Program",
       category: "government",
       description: "North Dakota's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family supports.",
-      website: "https://www.hhs.nd.gov/disabilities/early-intervention",
+      website: "https://www.hhs.nd.gov/early-childhood-services/early-intervention",
       phone: "701-328-8930"
     },
 
@@ -2508,7 +2508,7 @@ const DIRECTORY_DATA = {
       name: "North Dakota Developmental Disabilities Council",
       category: "advocacy",
       description: "Federally funded council promoting self-determination, community inclusion, and systems change for North Dakotans with developmental disabilities through advocacy and grants.",
-      website: "https://www.nd.gov/ndcpd",
+      website: "https://www.nd.gov/scdd/",
       phone: "701-328-8953"
     },
 
@@ -2626,7 +2626,7 @@ const DIRECTORY_DATA = {
       name: "Oklahoma SoonerStart Early Intervention Program",
       category: "government",
       description: "Oklahoma's IDEA Part C program providing early intervention services for children birth to age 3 with developmental delays, including service coordination and family support plans.",
-      website: "https://oklahoma.gov/health/family-health/sooner-start.html",
+      website: "https://oklahoma.gov/health/services/children-family-health/sooner-start.html",
       phone: "405-271-8333"
     },
 
@@ -2851,7 +2851,7 @@ const DIRECTORY_DATA = {
       name: "Rhode Island Early Intervention Program",
       category: "government",
       description: "Rhode Island's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
-      website: "https://health.ri.gov/programs/earlyintervention",
+      website: "https://gcd.ri.gov/education/early-intervention-services",
       phone: "401-222-4607"
     },
 
@@ -2987,7 +2987,7 @@ const DIRECTORY_DATA = {
       name: "South Dakota Division of Developmental Disabilities (DHS)",
       category: "government",
       description: "Administers South Dakota's Medicaid HCBS waivers and state services for individuals with developmental disabilities, including autism, supporting residential, day, and family support programs.",
-      website: "https://dss.sd.gov/developmentaldisabilities",
+      website: "https://dhs.sd.gov/en/division-developmental-disabilities",
       phone: "605-773-3438"
     },
     {
@@ -3076,7 +3076,7 @@ const DIRECTORY_DATA = {
       name: "Tennessee Early Intervention System (TEIS)",
       category: "government",
       description: "Tennessee's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family support plans.",
-      website: "https://www.tn.gov/didd/for-families/tennessee-early-intervention-system.html",
+      website: "https://www.tn.gov/disability-and-aging/disability-aging-programs/teis.html",
       phone: "800-852-7157"
     },
 
@@ -3287,7 +3287,7 @@ const DIRECTORY_DATA = {
       name: "Vermont Division of Disability and Aging Services – Developmental Services (DS)",
       category: "government",
       description: "Administers Vermont's Medicaid HCBS waivers and state services for adults with developmental disabilities, including autism, through regional designated agencies across Vermont.",
-      website: "https://dail.vermont.gov/services/developmental-services",
+      website: "https://ddsd.vermont.gov/",
       phone: "802-871-3065"
     },
     {
@@ -3512,7 +3512,7 @@ const DIRECTORY_DATA = {
       name: "West Virginia Department of Health – Office of Developmental Services",
       category: "government",
       description: "Administers West Virginia's Medicaid HCBS waivers for individuals with intellectual and developmental disabilities, including autism, coordinating residential, day, and family support services.",
-      website: "https://dhhr.wv.gov/bhhf/developmental",
+      website: "https://iddwprogram.wv.gov/",
       phone: "304-356-4811"
     },
     {
@@ -3676,7 +3676,7 @@ const DIRECTORY_DATA = {
       name: "Wyoming Early Intervention Program (Part C)",
       category: "government",
       description: "Wyoming's IDEA Part C program connecting families of children birth to age 3 with developmental delays to service coordinators, therapies, and individualized family service plans.",
-      website: "https://health.wyo.gov/publichealth/children/early-intervention",
+      website: "https://health.wyo.gov/behavioralhealth/early-intervention-education-program-eiep/infant-and-toddler-part-c-information/",
       phone: "307-777-6921"
     },
 
@@ -3724,7 +3724,7 @@ const DIRECTORY_DATA = {
       name: "Wyoming Respite Network",
       category: "respite",
       description: "Connects Wyoming families of individuals with disabilities to respite care providers, caregiver training, and support resources across the state.",
-      website: "https://health.wyo.gov/aging/wyoming-respite-network",
+      website: "https://health.wyo.gov/aging/communityliving/older-americans-act-programs/nfcp/",
       phone: "307-777-7986"
     },
 
